@@ -15,14 +15,14 @@
             border: 1px solid #777;
             background-color: transparent;
         }
-        @media screen and (min-width: 0px) and (max-width: 767px) {
+        @media screen and (min-width: 0px) and (max-width: 500px) {
             .iframe-container iframe {
                 height: 266px;
             }
         }
         .responsive {
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   height: auto;
 }
 
