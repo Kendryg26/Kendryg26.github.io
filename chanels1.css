@@ -42,7 +42,7 @@
     width: 83%;
     height: 94%;
 	    border:8px groove rgb(244, 214, 26);
-border-radius:5px;
+border-radius:8px;
 	{}}
 
 
@@ -70,3 +70,10 @@ body{background-color:#000000}
 .boton:active {
 	position:relative;
 	top:1px; 
+.btn-recargar {
+  background-color: #00ff00;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
