@@ -1,0 +1,307 @@
+<html>
+<head>
+    
+<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+<script type="text/javascript">
+    aclib.runPop({
+        zoneId: '7963670',
+    });
+</script>
+
+    
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="https://todopelotatv.com/hora.js?"></script>
+<meta http-equiv="refresh" content="200" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="googlebot" content="noindex">
+<title>Agenda Deportiva - tudeportehd</title>
+<link rel="stylesheet" type="text/css" href="/css/iconos3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="11711032a25a0b41e87824e2-text/javascript"></script>
+</head>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="11711032a25a0b41e87824e2-|49"></script><body link='#FFFFFF' onload='guardaHorario();dT();' vlink='#547484'>
+<div id="wraper">
+<ul class="menu">
+    
+
+<!---(<i style="color:skyblue">... </i>)-->
+
+
+
+
+
+
+<center><div class="sombreada_css3"><font size=3 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+<b>AGENDA DEL DIA 16 DE ENERO 2024</b>
+</font></div></center>
+
+
+<li class="ES"><a href="#">
+Copa del Rey: Getafe vs. Sevilla<span class="t">21:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vc2RoLmh0bWw/Z2V0PWFIUjBjSE02THk4eE1EVTVMWFp2Y3kxa1lTMXRkQzVrZEhadmRIUXVZMjl0TDNZeEwyUmhjMmd2WmpjMk1XRTBNVEF3WTJReFpEUTBaV001TVRsaFlUazFORE01TkRWaFpUZG1Oak5rTmpnMFpTOXNhWFpsWHpFd05Ua3ZSRUZUU0M5dFlXNXBabVZ6ZEM1dGNHUT0ma2V5PU0yVXhZekJrWkRoa09UVXhNek0xWkRsa09HTTFNelJrTWpreU56ZGpPVEU9JmtleTI9T1RjNFpqQTNNMlZsWlRNeU5qQTJZVE5tTWpVME5ETXdObVppTVdFM1lqTT0=" target="_blank">Dsports<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGxzMS5odG1sP3VybD1hSFIwY0hNNkx5OWtZWHBqTG0xeVoyRnRhVzVuYzNSeVpXRnRjeTU0ZVhvdlpHRjZZMlYyWlc1MGIzTXhMbTB6ZFRnS0NnPT0=" target="_blank">Liga de Cmpeones 2 - Global<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGxzMS5odG1sP3VybD1hSFIwY0hNNkx5OHdNWEJ0Y1hkbGNpNXpNeTUxY3kxbFlYTjBMVEF3TlM1aVlXTnJZbXhoZW1WaU1pNWpiMjB2YUd4ekx6QXZjM1J5WldGdExtMHpkVGc9" target="_blank">DSports - Global<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+
+
+<li class="HANDBALL"><a href="#">
+Campeonato Europeo de Balonmano: Islandia vs. Hungria<span class="t">21:30</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="HANDBALL"><a href="#">
+Campeonato Europeo de Balonmano: Francia vs. Alemania<span class="t">21:30</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="HANDBALL"><a href="#">
+Campeonato Europeo de Balonmano: España vs. Austria<span class="t">21:30</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="ENG"><a href="#">
+FA Cup: Bristol City vs. West Ham United<span class="t">21:45</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNemN0YVdVdFpHRnphREV0Y0hKa0xXTm1MbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTlvWkM5TWFYWmxMMk5vWVc1dVpXd29jSEpsYldsbGNqRnpjRzl5ZEhNMU1Da3ZiV0Z1YVdabGMzUmZhR1F1YlhCayZrMT1NREF3TlRsalptWTNZakkyTVdGaE9XSXlabU5pWkRVM1lXUXhZMkV6TXpJPSZrMj1NVGczTW1FMVlUTmhabUkwWmpNMk9XRmlNek01TURJMFlUQTVabVJoTWpVPSZhdXQ9dHJ1ZSZsYW5nPTB6" target="_blank">Premier Sports 1 IRL<span>Calidad 1080p</span></a></li>
+
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlrWVMxa05ETTJNak0yTWpJd01ERXdZamc0TURBd01UQXpNRE13TURBd01EQXdNREF3TURBd01EQTBMbWxrTG1Oa2JpNTFjR05pY205aFpHSmhibVF1WTI5dEwzZHdMM2R3TFc5aVl6RXRiR2wyWlMxdWJDMXdjbTlrTG5CeWIyUXVZMlJ1TG1SdFpITmtjQzVqYjIwdlpHRnphQzlPVEY4d01EQXdPVFZmTURFNU16Y3hMMjFoYm1sbVpYTjBMbTF3WkE9PSZrMT1NalUxT0RaaE5XTmhNakE0TkRka05qZzBOVGM1WTJObE1HTXlaV05oWTJNPSZrMj1PV001TWpFMk1tSXlNemN3T1RZMU16WTRPR0UwTnpGaVpXTXdZMll4T1dJPSZhdXQ9dHJ1ZSZsYW5nPTA=" target="_blank">Ziggo Sport Voetbal NL<span>Calidad 720p</span></a></li>
+
+</ul>
+</li>
+
+<li class="BEL"><a href="#">
+Copa de Belgica: Gent vs. Club Brugge<span class="t">21:45</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="IT"><a href="#">
+Serie A: Juventus vs. Sassuolo<span class="t">21:45</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vcmVwcm8uaHRtbD9yPWFIUjBjSE02THk5a1lYcGpablZqYUdsaWIyd3VZMjl0TDJac2IzY3VZM1poZEhRdWFIUnRiRDluWlhROVVsWk9VVlJxU2tsU1FRPT0=" target="_blank">ESPN<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNemN0YVdVdFpHRnphREV0Y0hKa0xXTm1MbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTlvWkM5TWFYWmxMMk5vWVc1dVpXd29jSEpsYldsbGNqRnpjRzl5ZEhNMU1Da3ZiV0Z1YVdabGMzUmZhR1F1YlhCayZrMT1NREF3TlRsalptWTNZakkyTVdGaE9XSXlabU5pWkRVM1lXUXhZMkV6TXpJPSZrMj1NVGczTW1FMVlUTmhabUkwWmpNMk9XRmlNek01TURJMFlUQTVabVJoTWpVPSZhdXQ9dHJ1ZSZsYW5nPTB6" target="_blank">Premier Sports 1 IRL<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNell0YVdVdFpHRnphREV0Y0hKa0xXRnJMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTlvWkM5TWFYWmxMMk5vWVc1dVpXd29kRzUwTVhOd2IzSjBOVEFwTDIxaGJtbG1aWE4wWDJoa0xtMXdaQSZrMT1NREF3TldZMU1EWTNaRGM0TldFME1tUmpOVEUyTjJKaE1EWXhNalpqWVRnJmsyPU9HWTVPVGczWkRNeE5UTmtNREF6WVRJelpqTTBPVGswTlRBeE1UUXhaRGs=" target="_blank">TNT Sports 1 GB<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vbXBkazIuaHRtbD9nZXQ9YUhSMGNITTZMeTlrWVMxa05ETTJNak0yTnpJd01ERXdZamc0TURBd01UQXpNRE13TURBd01EQXdNREF3TURBd01EQTVMbWxrTG1Oa2JpNTFjR05pY205aFpHSmhibVF1WTI5dEwzZHdMM2R3TFc5aVl6VXRiR2wyWlMxdWJDMXdjbTlrTG5CeWIyUXVZMlJ1TG1SdFpITmtjQzVqYjIwdlpHRnphQzlPVEY4d01EQXdPVGhmTURFNU1qVTFMMjFoYm1sbVpYTjBMbTF3WkEma2V5PU1qVTFPRFpoTldOaE1qQTRORGRrTmpnME5UYzVZMk5sTUdNeVpXTmhZMk0ma2V5Mj1PV001TWpFMk1tSXlNemN3T1RZMU16WTRPR0UwTnpGaVpXTXdZMll4T1dJ" target="_blank">Ziggo Sport Docu NL<span>Calidad 720p</span></a></li>
+
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTloYVhNdGN5NWhhWE10ZG1sa2JuUXVZMjl0TDJGcGN5OXdiR0Y1TDI5eWFXZHBiaTlzYVhabEwyVmtjeTlUTURBd015OUVRVk5JTDFNd01EQXpMbTF3WkE9PSZrMT1ZV0UzTWpRNU5ETTNPRGN6TWpBMU9UTm1OVFUyTXpBME9HTTVNREF6TW1RPSZrMj1ZVEF6T1RJM05qSTFOR1kxTXpjMk9XSXdOREF4T1RsaE5HVmpZVGhqTW1NPSZhdXQ9dHJ1ZSZsYW5nPTA=" target="_blank">beIN Sports 3 TH<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTkzWldKMGRuTjBjbVZoYlM1aWFIUmxiR1ZqYjIwdVltRXZhR3h6Tmk5aGMxOXdjbVZ0YVhWdE1pNXRjR1E9JmsxPVl6RTRZalpoWVRjek9XSmxOR013WWpjM05EWXdOV1pqWm1JMVpEWmlOamc9JmsyPVpUUXhZek5oTm1ZM05UTXlZakpsTTJFNE1qaGtPVFU0TURFeU5HTTRPV1E9" target="_blank">Arena Sports 2P<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="HOL"><a href="#">
+Copa de Holanda: AZ vs. Quick Boys<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTkzY0MxdlltTTFMV3hwZG1VdGJtd3RjSEp2WkM1d2NtOWtMbU5rYmk1a2JXUnpaSEF1WTI5dEwyUmhjMmd2VGt4Zk1EQXdNVEEzWHpBeE9UUTBNUzl0WVc1cFptVnpkQzV0Y0dRPSZrMT1ZakU0TnpZMk16QTJZemhpTkRRME5tRTNORE14WmpNMk5qUTVOelpoTldVPSZrMj1NRFkwWTJZek1qSXpZamxqTW1Ka1pHRXlOR1U1WmpnNVltWXlPR0UyWkRJPQ==" target="_blank">ESPN NL<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="AFR"><a href="#">
+Copa Africana: Malí vs. Sur África<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNRGN0WjJJdFpHRnphREV0Y0hKa0xXTm1MbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTl6WkM5TWFYWmxMMk5vWVc1dVpXd29jMnQ1YzNCdmNuUnpiV0ZwYm1WMlpXNTBLUzl0WVc1cFptVnpkRjl6WkM1dGNHUT0mazE9TURBd05UTmpZbUZoTkRNd01XTmpPVGs1TTJVMk9HWmtOR0kyWTJVMk56RT0mazI9TW1FNFpUQXdPRFU1TjJFME5UWXdNbVJqTkdZek9XWXdObVV4TVRrMk16QT0mYXV0PXRydWUmbGFuZz0w" target="_blank">Sky Sports Main Event GB<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNVFl0WjJJdFpHRnphREV0Y0hKa0xXeHNMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTl6WkM5TWFYWmxMMk5vWVc1dVpXd29jMnQ1YzNCdmNuUnpabTl2ZEdKaGJHd3BMMjFoYm1sbVpYTjBYM05rTG0xd1pBPT0mazE9TURBd016TmhOemd3TVdNek1qUmlPVGRrWkRrNU9UZGtNVFZqWkRGbE5tUT0mazI9WkdFNU1ETTBNakkyTm1GbE16SmhNek14WVRnelltUXdOV1EyTXpBNFltUT0mYXV0PXRydWUmbGFuZz0w" target="_blank">Sky Sports Football GB<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGV0di5jb20vbXBkazIuaHRtbD9nZXQ9YUhSMGNITTZMeTkzY0MxdlltTTBMV3hwZG1VdGJtd3RjSEp2WkM1d2NtOWtMbU5rYmk1a2JXUnpaSEF1WTI5dEwyUmhjMmd2WjI4dFpHRnphQzFvWkhKbFlXUjVMV0YyWXk5T1RGOHdNREF3TVRSZk1ERTVOall4TDIxaGJtbG1aWE4wTG0xd1pBJmtleT1PVEJsTXpKaE5EY3hNbVkxTkRnd1ltRmlOMkZpWXpoaE5HWmxaakkxWkdFJmtleTI9TW1WbFlqUTVZVGcyT0RobU1qTTJOV1V4TVRNeFkyWTBZV1UwWkRabU1HRQ==" target="_blank">Ziggo Sport Select NL<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="ES"><a href="#">
+Copa del Rey: Athletic Club vs. Deportivo Alavés<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vc2RoLmh0bWw/Z2V0PWFIUjBjSE02THk4eE1EVTVMWFp2Y3kxa1lTMXRkQzVrZEhadmRIUXVZMjl0TDNZeEwyUmhjMmd2WmpjMk1XRTBNVEF3WTJReFpEUTBaV001TVRsaFlUazFORE01TkRWaFpUZG1Oak5rTmpnMFpTOXNhWFpsWHpFd05Ua3ZSRUZUU0M5dFlXNXBabVZ6ZEM1dGNHUT0ma2V5PU0yVXhZekJrWkRoa09UVXhNek0xWkRsa09HTTFNelJrTWpreU56ZGpPVEU9JmtleTI9T1RjNFpqQTNNMlZsWlRNeU5qQTJZVE5tTWpVME5ETXdObVppTVdFM1lqTT0=" target="_blank">Dsports 2<span>Calidad 720p</span></a></li>
+
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGxzMS5odG1sP3VybD1hSFIwY0hNNkx5OHdNM0oxWkhkNWVDNXpNeTUxY3kxbFlYTjBMVEF3TlM1aVlXTnJZbXhoZW1WaU1pNWpiMjB2YUd4ekx6QXZjM1J5WldGdExtMHpkVGc9" target="_blank">DSports 2- - Global<span>Calidad 720p</span></a></li>
+
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="FUT"><a href="#">
+Serie Río de la Plata: Danubio vs. Huracán<span class="t">22:45</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vcmVwcm8uaHRtbD9yPWFIUjBjSE02THk5a1lYcGpablZqYUdsaWIyd3VZMjl0TDJac2IzY3VZM1poZEhRdWFIUnRiRDluWlhROVVtMDVORmd4VG5kaU0wb3dZekU1VVdOdFZuUmhXRloxV0RCb1JRPT0=" target="_blank">ESPN Premium<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="ES"><a href="#">
+Copa del Rey: Tenerife vs. Mallorca<span class="t">23:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGxzMS5odG1sP3VybD1hSFIwY0hNNkx5OWtZWHBqTG0xeVoyRnRhVzVuYzNSeVpXRnRjeTU0ZVhvdlpHRjZZMlYyWlc1MGIzTXhMbTB6ZFRnS0NnPT0=" target="_blank">Liga de Campeones 3 - Global<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGxzMS5odG1sP3VybD1hSFIwY0hNNkx5OHdOSGgyTldkamRTNXpNeTUxY3kxbFlYTjBMVEF3TlM1aVlXTnJZbXhoZW1WaU1pNWpiMjB2YUd4ekx6QXZjM1J5WldGdExtMHpkVGc9" target="_blank">Opcion 2 - Global<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="FUT"><a href="#">
+Serie Río de la Plata: Defensor Sporting vs. Unión Santa Fe<span class="t">01:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vcmVwcm8uaHRtbD9yPWFIUjBjSE02THk5a1lYcGpablZqYUdsaWIyd3VZMjl0TDJac2IzY3VZM1poZEhRdWFIUnRiRDluWlhROVVtMDVORmd4VG5kaU0wb3dZekU1VVdOdFZuUmhXRloxV0RCb1JRPT0=" target="_blank">ESPN Premium<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="ATP"><a href="#">
+Australian Open: Dia 4 - en Español<span class="t">02:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+
+</ul>
+</li>
+
+<li class="ATP"><a href="#">
+Australian Open: Dia 4 - en Português<span class="t">02:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/agendastarbr.html" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Avalanche vs. Senators<span class="t">02:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NBA"><a href="#">
+NBA: 76ers vs. Nuggets<span class="t">02:30</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNell0YVdVdFpHRnphREV0Y0hKa0xXRnJMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTlvWkM5TWFYWmxMMk5vWVc1dVpXd29kRzUwTVhOd2IzSjBOVEFwTDIxaGJtbG1aWE4wWDJoa0xtMXdaQSZrMT1NREF3TldZMU1EWTNaRGM0TldFME1tUmpOVEUyTjJKaE1EWXhNalpqWVRnJmsyPU9HWTVPVGczWkRNeE5UTmtNREF6WVRJelpqTTBPVGswTlRBeE1UUXhaRGs=" target="_blank">TNT Sports 1 GB<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTkzWldKMGRuTjBjbVZoYlM1aWFIUmxiR1ZqYjIwdVltRXZhR3h6Tmk5aGMxOXdjbVZ0YVhWdE1TNXRjR1E9JmsxPVl6RTRZalpoWVRjek9XSmxOR013WWpjM05EWXdOV1pqWm1JMVpEWmlOamc9JmsyPVpUUXhZek5oTm1ZM05UTXlZakpsTTJFNE1qaGtPVFU0TURFeU5HTTRPV1E9" target="_blank">Arena Sports 1P<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Kings vs. Stars<span class="t">03:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Islanders vs. Jets<span class="t">03:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="MEX"><a href="#">
+Ascenso MX: Cancún vs. Alebrijes de Oaxaca<span class="t">03:05</span></a>
+<ul>
+<li class="subitem1"><a href="/agendavix.html" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="FUT"><a href="#">
+Serie Río de la Plata: Colo-Colo vs. Rosario Central<span class="t">03:15</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vcmVwcm8uaHRtbD9yPWFIUjBjSE02THk5a1lYcGpablZqYUdsaWIyd3VZMjl0TDJac2IzY3VZM1poZEhRdWFIUnRiRDluWlhROVVtMDVORmd4VG5kaU0wb3dZekU1VVdOdFZuUmhXRloxV0RCb1JRPT0=" target="_blank">ESPN Premium<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Sharks vs. Blackhawks<span class="t">03:30</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Leafs vs. Oilers<span class="t">04:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Coyotes vs. Flames<span class="t">04:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NBA"><a href="#">
+NBA: Clippers vs. Thunders<span class="t">05:00</span></a>
+<ul>
+<li class="subitem1"><a href="/agendastar.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly90dWRlcG9ydGVoZC5jb20vaGFwcHkuaHRtbD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNell0YVdVdFpHRnphREV0Y0hKa0xXRnJMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTlvWkM5TWFYWmxMMk5vWVc1dVpXd29kRzUwTVhOd2IzSjBOVEFwTDIxaGJtbG1aWE4wWDJoa0xtMXdaQSZrMT1NREF3TldZMU1EWTNaRGM0TldFME1tUmpOVEUyTjJKaE1EWXhNalpqWVRnJmsyPU9HWTVPVGczWkRNeE5UTmtNREF6WVRJelpqTTBPVGswTlRBeE1UUXhaRGs=" target="_blank">TNT Sports 1 GB<span>Calidad 1080p</span></a></li>
+
+</ul>
+</li>
+
+<li class="MEX"><a href="#">
+Ascenso MX: Correcaminos UAT vs. Tlaxcala<span class="t">05:05</span></a>
+<ul>
+<li class="subitem1"><a href="/agendavix.html" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+
+
+
+<script type="11711032a25a0b41e87824e2-text/javascript">
+	$(function() {
+	
+	 var menu_ul = $('.menu > li > ul'),
+	 menu_a = $('.menu > li > a');
+	 
+	 menu_ul.hide();
+	
+	 menu_a.click(function(e) {
+	 e.preventDefault();
+	 if(!$(this).hasClass('active')) {
+	 menu_a.removeClass('active');
+	 menu_ul.filter(':visible').slideUp('fast');
+	 $(this).addClass('active').next().stop(true,true).slideDown('fast');
+	 } else {
+	 $(this).removeClass('active');
+	 $(this).next().stop(true,true).slideUp('fast');
+	 }
+	 });
+	
+	});
+	
+	
+
+</script>
+<br>
+</div>
+<script type="11711032a25a0b41e87824e2-text/javascript">
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+</script>
+<script src="/js/salgabien.js" data-cf-settings="11711032a25a0b41e87824e2-|49" defer=""></script></body>
+</html>

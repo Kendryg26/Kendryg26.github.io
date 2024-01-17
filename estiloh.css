@@ -1,0 +1,144 @@
+body{
+	font-family: Arial;
+}
+header{
+	border: rgb(252, 12, 12);
+	border-width: 2px;
+	box-shadow: 0px 3px 20px 3px rgba(218, 0, 0, 0.06);
+
+}
+.head_container{
+	padding: 20px;
+	overflow: hidden;
+
+}
+.logo{
+	float:left;
+	margin-left: 20px;
+}
+.logo img{
+	height: 50px;
+	margin-top:-10px;
+
+}
+.menu{
+	margin-top:5px;
+	float:right;
+}
+.menu ul{
+	list-style-type: none;
+	    margin-right: -10px;
+}
+.menu li{
+	display: inline;
+	margin-right-last:0px; 
+}
+.menu a{
+	text-decoration: none;
+	font-weight: 500;
+	color: #ffffff;
+    
+    line-height: normal;
+    font-size: 18px;
+    font-weight: bold;
+	padding:10px;
+	padding-left: 15px;
+	padding-right: 15px;
+    
+}
+
+
+.menu a:hover { 
+	background: rgba(255, 255, 255, 0.1);
+    border:#ff9100;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.2s;
+
+}
+.icon{
+	display: none;
+}
+
+
+
+menu.responsive{
+	position: relative;
+}
+menu.responsive{
+	float: none;
+    display: block;
+    text-align: left;
+}
+
+@media screen and (max-width: 835px) {
+	.logo img {
+	    height: 40px;
+	}
+	ul > li:first-of-type{
+		display:none;
+	}
+	.menu{
+		margin:0;
+        margin-right: -15px;
+    margin-left: -15px;
+	}
+}
+
+
+@media screen and (max-width: 690px) {
+
+.menu li{
+	display: none;
+}
+.icon{
+    font-weight: 900 !important;
+        font-size: 27px !important;
+    padding: 0;
+    margin: 0;
+       margin-top: -22px;
+    display: flex;
+}
+	.logo img {
+	    height: 40px;
+	}
+}
+
+
+
+
+.sidenav {
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1a1818;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 87px;
+    box-shadow: 2px 8px 20px rgba(180, 137, 137, 0.24);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #00fad9;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #F7CA18;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
