@@ -6,7 +6,7 @@
             padding: 0 15px;
         }
         .box-filter input {
-            width: 100%;
+            width: 80%;
             outline: none;
             padding: 8px 20px;
             border-radius: 6px;
@@ -17,7 +17,7 @@
         }
         @media screen and (min-width: 0px) and (max-width: 767px) {
             .iframe-container iframe {
-                height: 150px;
+                height: 266px;
             }
         }
         .responsive {
