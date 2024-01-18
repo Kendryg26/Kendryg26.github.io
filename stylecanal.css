@@ -18,8 +18,7 @@
   transition: 0.2s all;
   text-decoration: none !important;
   border-radius: 12px;
-  color: #0008ff;
-  background: #0008ff;
+text-color: #ffffff;
 }
 
 
@@ -30,6 +29,7 @@
   border-radius: 13px;
   color: #0008ff;
   background: #0008ff;
+  text-color: #ffffff;
 }
 
 .btn-lg i.icon,
@@ -53,10 +53,10 @@
 
 .btn-block {
   width: 80%;
-  color: #ffffff;
   border-radius: 12px;
   color: #0008ff;
   background: #0008ff;
+  text-color: #ffffff;
 }
 
 .btn-group .btn:active {
