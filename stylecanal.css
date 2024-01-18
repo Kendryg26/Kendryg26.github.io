@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-4";
 @import url("src/bootstrap/bootstrap.min.css");
 @import url("src/splide/splide.min.css");
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
@@ -28,6 +28,8 @@
   padding: 3px 24px;
   font-size: 15px;
   border-radius: 13px;
+  color: #0008ff;
+  background: #0008ff;
 }
 
 .btn-lg i.icon,
@@ -51,8 +53,10 @@
 
 .btn-block {
   width: 80%;
-  color: ##ffffff;
+  color: #ffffff;
   border-radius: 12px;
+  color: #0008ff;
+  background: #0008ff;
 }
 
 .btn-group .btn:active {
