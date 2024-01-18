@@ -6,19 +6,106 @@
 
 
 .btn {
-  height: 36px;
-  padding: 3px 18px;
+  background-color: #0008ff;
+  color: #ffffff;
+  border-radius: 12px;
   font-size: 13px;
   line-height: 1.2em;
-  font-weight: 500;
-  box-shadow: none !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s all;
-  text-decoration: none !important;
-  border-radius: 12px;
-text-color: #ffffff;
+  box-shadow: none;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #0b90c5;
+}
+
+.btn.btn-primary:hover {
+  background-color: #028f49;
+}
+
+.btn.btn-disabled {
+  opacity: 0.5;
+}
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.btn-secondary {
+  color: #ffffff;
+}
+
+.btn-success {
+  color: #ffffff;
+}
+
+.btn-danger {
+  color: #ffffff;
+}
+
+.btn-warning {
+  color: #ffffff;
+}
+
+.btn-info {
+  color: #ffffff;
+}
+
+.btn-dark {
+  color: #ffffff;
+}
+
+.btn-light {
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: #0008ff;
+  color: #0008ff;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.btn-outline-info {
+  background-color: transparent;
+  border-color: #00bcd4;
+  color: #00bcd4;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border-color: #343a40;
+  color: #343a40;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: #e0e0e0;
+  color: #e0e0e0;
 }
 
 
