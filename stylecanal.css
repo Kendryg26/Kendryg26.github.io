@@ -17,7 +17,7 @@
   justify-content: center;
   transition: 0.2s all;
   text-decoration: none !important;
-  border-radius: 1px;
+  border-radius: 12px;
   border-width: 2px;
 }
 
@@ -26,17 +26,20 @@
   height: 52px;
   padding: 3px 24px;
   font-size: 15px;
+  border-radius: 12px;
 }
 
 .btn-lg i.icon,
 .btn-lg ion-icon {
   font-size: 26px;
+  border-radius: 12px;
 }
 
 .btn-sm {
   height: 28px;
   padding: 0px 6px;
   font-size: 12px;
+  border-radius: 12px;
 }
 
 .btn-sm i.icon,
@@ -53,38 +56,29 @@
 
 .btn-group .btn:active {
   transform: none;
+  border-radius: 12px;
 }
 
-.btn-icon {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-}
-
-.btn-icon i.icon,
-.btn-icon ion-icon {
-  text-align: center;
-  margin: 0 !important;
-}
 
 
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background: #0b90c5 !important;
-  border-color: #0b90c5 !important;
+  border-radius: 12px;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   background: #028f49;
-  border-color: #028f49;
   opacity: 0.5;
+  border-radius: 12px;
 }
 
 .btn-secondary {
   background: #8494A8 !important;
-  border-color: #8494A8 !important;
   color: #FFFFFF !important;
+  border-radius: 12px;
 }
+
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active {
   background: #75879d !important;
