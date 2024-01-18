@@ -27,7 +27,6 @@ text-color: #ffffff;
   padding: 3px 24px;
   font-size: 15px;
   border-radius: 13px;
-  color: #0008ff;
   background: #0008ff;
   text-color: #ffffff;
 }
@@ -54,7 +53,6 @@ text-color: #ffffff;
 .btn-block {
   width: 80%;
   border-radius: 12px;
-  color: #0008ff;
   background: #0008ff;
   text-color: #ffffff;
 }
