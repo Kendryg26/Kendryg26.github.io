@@ -48,6 +48,7 @@
 .btn-block {
   width: 80%;
   color: #0008ff;
+  border-radius: 12px;
 }
 
 .btn-group .btn:active {
