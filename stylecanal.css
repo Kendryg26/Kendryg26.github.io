@@ -3,20 +3,6 @@
 @import url("src/splide/splide.min.css");
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  line-height: 1.6rem;
-  letter-spacing: 0.004em;
-  color: #ffffff;
-  background: #0c161c;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 
 .btn {
@@ -35,24 +21,6 @@ body {
   border-width: 2px;
 }
 
-.btn i.icon,
-.btn ion-icon {
-  font-size: 22px;
-  margin-right: 7px;
-  margin-top: -2px;
-}
-
-.btn.rounded {
-  border-radius: 100px !important;
-}
-
-.btn.square {
-  border-radius: 0 !important;
-}
-
-.btn.shadowed {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2) !important;
-}
 
 .btn-lg {
   height: 52px;
@@ -78,7 +46,7 @@ body {
 }
 
 .btn-block {
-  width: 100%;
+  width: 80%;
 }
 
 .btn-group .btn:active {
@@ -97,41 +65,7 @@ body {
   margin: 0 !important;
 }
 
-.btn-facebook {
-  color: #fff !important;
-  background: #39579b;
-}
 
-.btn-twitter {
-  color: #fff !important;
-  background: #049ff6;
-}
-
-.btn-instagram {
-  color: #fff !important;
-  background: #df237b;
-}
-
-.btn-linkedin {
-  color: #fff !important;
-  background: #0075aa;
-}
-
-.btn-twitch {
-  color: #fff !important;
-  background: #923cff;
-}
-
-.btn-whatsapp {
-  color: #fff !important;
-  background: #0ad561;
-}
-
-.btn-primary {
-  background: #00a6e5 !important;
-  border-color: #00a6e5 !important;
-  color: #FFFFFF !important;
-}
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background: #0b90c5 !important;
