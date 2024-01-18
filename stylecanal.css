@@ -19,6 +19,7 @@
   text-decoration: none !important;
   border-radius: 12px;
   color: #0008ff;
+  background: #0008ff;
 }
 
 
@@ -26,7 +27,7 @@
   height: 52px;
   padding: 3px 24px;
   font-size: 15px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 .btn-lg i.icon,
@@ -50,7 +51,7 @@
 
 .btn-block {
   width: 80%;
-  color: #0008ff;
+  color: ##ffffff;
   border-radius: 12px;
 }
 
