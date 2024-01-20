@@ -7,6 +7,18 @@ inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-sh
 span,.menu>li>ul li:hover a:before { color: #d9d9e0}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #312e81;border: 0px solid #0c161c;line-height: 1em;height: 1em;padding: 0.4em 1em;margin: -0.9em 0 0;color: #fff;text-indent: 0;text-align: center;-webkit-border-radius: ..569em;-moz-border-radius: .569em;border-radius: .569em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #0008ff;width: 100%px;padding: 12px;color: #278402;box-shadow: 0px 
 1px 1px #333;-webkit-box-shadow: 0px 1px 1px #12c3e2; -moz-box-shadow: 0px 1px 1px #969b06;}
 
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
 /*SOFASCORE.COM*/
 
 .TUR > a:before {
