@@ -1,0 +1,878 @@
+<html>
+<head>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<style type="text/css">
+@charset "UTF-8"; body{ font-size: 100%;background: #141d26}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color: #000;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(148, 204, 124))); background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#727a86', EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
+0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#3069db;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
+a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 42px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
+center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
+inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '►';font-size: 9px;color: #2f00ff; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
+span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 2px solid #2f00ff;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #3069db;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
+1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}
+
+/*SOFASCORE.COM*/
+
+.TUR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/tr.webp);
+}
+
+.ENG > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/en.webp);
+}
+.ALE > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/de.webp);
+}
+.FRA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/fr.webp);
+}
+.HOL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nl.webp);
+}
+.POR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/pt.webp);
+}
+.MEX > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/mx.png);
+}
+.ES > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/es.png);
+}
+.IT > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/it.png);
+}
+.BEL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/be.webp);
+}
+.COSTARICA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/cr.webp);
+}
+.ESC > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/sx.webp);
+}
+.USA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/us.png);
+}
+.FUT > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/international.webp);
+}
+.COL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/co.webp);
+}
+.ATP > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/atp.webp);
+}
+.PY > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/py.png);
+}
+.BO > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/bo.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+
+/* Ajustes Personalizados*/
+.menu > li.NHL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nhl.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 1em; 
+    width: 2em;
+    position: absolute;
+    left: 44px;
+    top: 50%;
+    margin: -.5em 0 0; 
+}
+.menu > li.NBA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nba.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 1em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    margin: -.5em 0 0; 
+}
+
+.menu > li.WWE > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/wwe.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.69em; 
+    width: 1.6em;
+    position: absolute;
+    left: 51px;
+    top: 63%;
+    margin: -.5em 0 0; 
+}
+.menu > li.BOX > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/BOXEO.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.69em; 
+    width: 1.6em;
+    position: absolute;
+    left: 51px;
+    top: 63%;
+    margin: -.5em 0 0; 
+}
+.menu > li.AFCCUP > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/afccup.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.HANDBALL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/handball.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.ENDESA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/endesa.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.UFC > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/UFC.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.NFL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nfl.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.AEW > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/aewusa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 65px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.AFR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/afr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.FIFA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/fifa.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.PREOLIMPICO > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/preolimpico.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 70%;
+    }
+
+    .menu > li > a:before {
+        height: 0.91em; 
+        width: 0.50em;
+    }
+    .menu > li.NHL > a:before {
+        height: 1.0em; 
+        width: 0.7em;
+        left: 46px;
+    }
+    .menu > li.WWE > a:before {
+      
+        height: 1.0em; 
+        width: 0.6em;
+        left: 45px;
+        top: 51%;
+    }
+    .menu > li.NBA > a:before {
+      
+        height: 1.0em; 
+        width: 0.7em;
+    }.menu > li.AFCCUP > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.HANDBALL > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.UFC > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.ENDESA > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.NFL > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.AEW > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.AFR > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.FIFA > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.BOX > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 45px;
+    }.menu > li.PREOLIMPICO > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }
+
+}
+/*FIN*/
+
+</style>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="60">
+<title>Agenda Deportiva</title>
+<style type="text/css">
+@charset "UTF-8"; body{ font-size: 100%;background: #00000000}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color: #000;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(148, 204, 124))); background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#727a86', EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
+0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#2d2d30;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
+a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 50px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
+center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
+inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '►';font-size: 9px;color: #3069db; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
+span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 2px solid #3069db;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #57B230;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
+1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}
+
+/*SOFASCORE.COM*/
+
+.TUR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/tr.webp);
+}
+
+.ENG > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/en.webp);
+}
+.ALE > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/de.webp);
+}
+.FRA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/fr.webp);
+}
+.HOL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nl.webp);
+}
+.POR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/pt.webp);
+}
+.MEX > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/mx.png);
+}
+.ES > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/es.png);
+}
+.IT > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/it.png);
+}
+.BEL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/be.webp);
+}
+.COSTARICA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/cr.webp);
+}
+.ESC > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/sx.webp);
+}
+.USA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/us.png);
+}
+.FUT > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/international.webp);
+}
+.COL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/co.webp);
+}
+.ATP > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/atp.webp);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+.ETC > a:before {
+    background-image: url(https://www.sofascore.com/static/images/flags/en.png);
+}
+
+/* Ajustes Personalizados*/
+.menu > li.NHL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nhl.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 1em; 
+    width: 2em;
+    position: absolute;
+    left: 44px;
+    top: 50%;
+    margin: -.5em 0 0; 
+}
+.menu > li.NBA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nba.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 1em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    margin: -.5em 0 0; 
+}
+
+.menu > li.WWE > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/wwe.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.69em; 
+    width: 1.6em;
+    position: absolute;
+    left: 51px;
+    top: 63%;
+    margin: -.5em 0 0; 
+}
+.menu > li.BOX > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/BOXEO.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.69em; 
+    width: 1.6em;
+    position: absolute;
+    left: 51px;
+    top: 63%;
+    margin: -.5em 0 0; 
+}
+.menu > li.AFCCUP > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/afccup.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.HANDBALL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/handball.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.ENDESA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/endesa.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.UFC > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/UFC.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.NFL > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/nfl.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    font-size: 36px;
+    height: 0.9em; 
+    width: 2em;
+    position: absolute;
+    left: 45px;
+    top: 55%;
+    margin: -.5em 0 0; 
+}
+.menu > li.AEW > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/aewusa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 65px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.AFR > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/afr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.FIFA > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/fifa.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}.menu > li.PREOLIMPICO > a:before {
+    background-image: url(//futbolgratisenhd.com/flags/preolimpico.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 36px;
+    height: 0.9em;
+    width: 1em;
+    position: absolute;
+    left: 63px;
+    top: 55%;
+    margin: -0.5em 0 0;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 70%;
+    }
+
+    .menu > li > a:before {
+        height: 0.91em; 
+        width: 0.50em;
+    }
+    .menu > li.NHL > a:before {
+        height: 1.0em; 
+        width: 0.7em;
+        left: 46px;
+    }
+    .menu > li.WWE > a:before {
+      
+        height: 1.0em; 
+        width: 0.6em;
+        left: 45px;
+        top: 51%;
+    }
+    .menu > li.NBA > a:before {
+      
+        height: 1.0em; 
+        width: 0.7em;
+    }.menu > li.AFCCUP > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.HANDBALL > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.UFC > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.ENDESA > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.NFL > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.AEW > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.AFR > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.FIFA > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }.menu > li.BOX > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 45px;
+    }.menu > li.PREOLIMPICO > a:before {
+      
+        height: 0.95em; 
+        width: 0.6em;
+        left: 48px;
+    }
+
+}
+/*FIN*/
+
+</style>
+<script type="text/javascript" src="/hora.js?"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body link="#547484" onload="guardaHorario();dT();" vlink="#547484">
+<div id="wraper">
+<ul class="menu">
+
+
+
+
+
+
+<center><div class="sombreada_css3"><font size="3" face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+<b>23 de Enero - Agenda Deportiva</b>
+</font></div></center>
+
+<li class="ENG"><a href="#">
+FA Cup: Chelsea vs. Middlesbrough<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9mdXRib2xpYnJlcGUub25saW5lL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtbmEtc291dGgtMi5tZWRpYS5zdGFyb3R0LmNvbS9jbHQyL3ZhMDEvc3RhcnBsdXMvZXZlbnQvMjAyNC8wMS8yMy9DaGVsc2VhX3ZzX01pZGRsZXNicm91Z2hfXzIwMjQwMTIzXzE3MDYwMzQwMjIwNDIvY3RyLWFsbC1jb21wbGV0ZS5tM3U4JmltZz1odHRwczovL3Byb2QtcmlwY3V0LWRlbGl2ZXJ5LmRpc25leS1wbHVzLm5ldC92MS92YXJpYW50L3N0YXIvOUQ2QzM3MkI2OEQzODE5ODEzN0UwREQ0QUE3MjFCOTFBOUVERjg2RkI0M0Q3NEYzQUIwNjdCMTA2RkIwREJDMy9zY2FsZT93aWR0aD0xOTIwJmFzcGVjdFJhdGlvPTEuNzgmZm9ybWF0PWpwZWcma2V5PTM4NDRjOTY1Mzg2ZTRmMDdhZjVmYTE3NzQyNjI1MWQ4JmtleTI9NmJlM2QzOTdiOWQ4OGM1N2Y4NDE4ZDkzMjE0ZGU0YWY=" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9mdXRib2xpYnJlcGUub25saW5lL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtc2EtZWFzdC0xLm1lZGlhLnN0YXJvdHQuY29tL2dydTEvcWIwMS9zdGFycGx1cy9ldmVudC8yMDI0LzAxLzIzL0NoZWxzZWFfdnNfTWlkZGxlc2Jyb3VnaF9fMjAyNDAxMjNfMTcwNjAzNDAyMjA4NS9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci85RDZDMzcyQjY4RDM4MTk4MTM3RTBERDRBQTcyMUI5MUE5RURGODZGQjQzRDc0RjNBQjA2N0IxMDZGQjBEQkMzL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9M2FjZTdkNzA2Y2ZlNGQ1OGIxZjQ0YTJjZGZjZTE1Njkma2V5Mj0yZjA0YmUxM2MxMmZjMGE4YzcwMzk5NmE5ZjkyMDMzOQ==" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/en-live/ESPN.html" target="_blank">ESPN<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9jbGFyb3ZpZGVvLmRvc2tpbGFzLmNvbS8xLmh0bWw/dXJsPWFIUjBjSE02THk5c1lYUmhiWFp2YzJ4cGRtVmpiR0Z5YjNacFpHVnZMbUZyWVcxaGFYcGxaQzV1WlhRdlEyOXVkR1Z1ZEM5RVFWTklYMFJCVTBoZlJrc3ZUR2wyWlM5RGFHRnVibVZzS0VWVFVFNWZNbDlJUkNrdmJXRnVhV1psYzNRdWJYQmsmazE9T0dRM1kySTRabUpqT0RGalpqTmxaR1JtT0dWaVlqVmtZalZsTVRFeU9EST0mazI9WWpkaE9UZzRNVEpoWWpoa09EazNORFkwT1dFMlpXTTBNakJqTURFelpURT0mYXV0PXRydWUmbGFuZz0w" target="_blank">ESPN CO<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9jbGFyb3ZpZGVvLnJhd2FzZXMuY29tL3Rlc3RpbmcucGhwP3VybD1hSFIwY0hNNkx5OXNZWFJoYlhadmMyeHBkbVZqYkdGeWIzWnBaR1Z2TG1GcllXMWhhWHBsWkM1dVpYUXZRMjl1ZEdWdWRDOUVRVk5JWDBSQlUwaGZSa3N2VEdsMlpTOURhR0Z1Ym1Wc0tFVlRVRTVmTWw5SVJDa3ZiV0Z1YVdabGMzUXViWEJrJmsxPU9HUTNZMkk0Wm1Kak9ERmpaak5sWkdSbU9HVmlZalZrWWpWbE1URXlPREk9JmsyPVlqZGhPVGc0TVRKaFlqaGtPRGszTkRZME9XRTJaV00wTWpCak1ERXpaVEU9" target="_blank">ESPN MX<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS90b2tlbmRhem4ucGhwP2lkPTAzNw==" target="_blank">DAZN 1 ES<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vZC5waHA/aWQ9MDE3" target="_blank">DAZN 1 DE<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS90b2tlbmRhem4ucGhwP2lkPTAyNA==" target="_blank">Zona DAZN IT<span>Calidad 1080</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS9ub21pcmVzLnBocD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNVFl0WjJJdFpHRnphREV0Y0hKa0xXeHNMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTl6WkM5TWFYWmxMMk5vWVc1dVpXd29jMnQ1YzNCdmNuUnpabTl2ZEdKaGJHd3BMMjFoYm1sbVpYTjBYM05rTG0xd1pBPT0mazE9TURBd016TmhOemd3TVdNek1qUmlPVGRrWkRrNU9UZGtNVFZqWkRGbE5tUT0mazI9WkdFNU1ETTBNakkyTm1GbE16SmhNek14WVRnelltUXdOV1EyTXpBNFltUT0=" target="_blank">Sky Sports Football GB<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vZGFzaGR1bXBlci5waHA/dXJsPWFIUjBjSE02THk5c2FXNWxZWEl3TVRFdFoySXRaR0Z6YURFdGNISmtMV05tTG1Oa2JpNXphM2xqWkhBdVkyOXRMekF4Tm1FdlEyOXVkR1Z1ZEM5RVFWTklYekF3TTE5b1pDOU1hWFpsTDJOb1lXNXVaV3dvYzNCdmNuUnpiV0ZwYm1WMlpXNTBOVEFwTDIxaGJtbG1aWE4wWDJoa0xtMXdaQT09JmsxPU1EQXdNelJrTUdJMFl6UTNZVEl4T1dVNU0yUTRPREJpTkRZeE1HUXhPVGM9JmsyPVlUVmtZMlpoT1RZeU56TTNPV00yT1RJNE5UWTNNRGt5WWpabE5XTmxOREE9JmF1dD10cnVlJmxhbmc9MA==" target="_blank">Sky Sports Main Event GB<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="AFR"><a href="#">
+Copa Africana: Angola vs. Burkina Faso<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS9ub21pcmVzLnBocD91cmw9YUhSMGNITTZMeTlzYVc1bFlYSXdNRE10WjJJdFpHRnphREV0Y0hKa0xXeHNMbU5rYmk1emEzbGpaSEF1WTI5dEx6QXhObUV2UTI5dWRHVnVkQzlFUVZOSVh6QXdNMTl6WkM5TWFYWmxMMk5vWVc1dVpXd29jMnQ1YzNCdmNuUnpjSEpsYldsbGNteGxZV2QxWlNrdmJXRnVhV1psYzNSZmMyUXViWEJrJmsxPU1EQXdNMlUxWkRZMlpEYzFNREZtWmpJNU16QmpPREJsT1dJMU5qQTVabU09JmsyPU16STJOakZpWlRReFlqVmlOekV6WkdOa09EZzJPRE5qWkRNNE9XRm1NakU9JmF1dD10cnVlJmxhbmc9MA==" target="_blank">Sky Sports Premier League GB<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vZGFzaGR1bXBlci5waHA/dXJsPWFIUjBjSE02THk5a1lTMWtORE0yTWpNMk1qSXdNREV3WWpnNE1EQXdNVEF6TURNd01EQXdNREF3TURBd01EQXdNREEwTG1sa0xtTmtiaTUxY0dOaWNtOWhaR0poYm1RdVkyOXRMM2R3TDNkd0xXOWlZekV0YkdsMlpTMXViQzF3Y205a0xuQnliMlF1WTJSdUxtUnRaSE5rY0M1amIyMHZaR0Z6YUM5T1RGOHdNREF3T1RWZk1ERTVNemN4TDIxaGJtbG1aWE4wTG0xd1pBPT0mazE9TWpVMU9EWmhOV05oTWpBNE5EZGtOamcwTlRjNVkyTmxNR015WldOaFkyTT0mazI9T1dNNU1qRTJNbUl5TXpjd09UWTFNelk0T0dFME56RmlaV013WTJZeE9XST0mYXV0PXRydWUmbGFuZz0w" target="_blank">Ziggo Sport Voetbal NL<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/canal-caido.html" target="_blank">beIN Sports 3 ID<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS9ub21pcmVzLnBocD91cmw9YUhSMGNITTZMeTloYVhNdGN5NWhhWE10ZG1sa2JuUXVZMjl0TDJGcGN5OXdiR0Y1TDI5eWFXZHBiaTlzYVhabEwyVmtjeTlUTURBd015OUVRVk5JTDFNd01EQXpMbTF3WkE9PSZrMT1ZV0UzTWpRNU5ETTNPRGN6TWpBMU9UTm1OVFUyTXpBME9HTTVNREF6TW1RPSZrMj1ZVEF6T1RJM05qSTFOR1kxTXpjMk9XSXdOREF4T1RsaE5HVmpZVGhqTW1NPQ==" target="_blank">beIN Sports 3 TH<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="AFR"><a href="#">
+Copa Africana: Mauritania vs. Argelia<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vZGFzaGR1bXBlci5waHA/dXJsPWFIUjBjSE02THk5M2NDMXZZbU0wTFd4cGRtVXRibXd0Y0hKdlpDNXdjbTlrTG1Oa2JpNWtiV1J6WkhBdVkyOXRMMlJoYzJndloyOHRaR0Z6YUMxb1pISmxZV1I1TFdGMll5OU9URjh3TURBd01UUmZNREU1TmpZeEwyMWhibWxtWlhOMExtMXdaQT09JmsxPU9UQmxNekpoTkRjeE1tWTFORGd3WW1GaU4yRmlZemhoTkdabFpqSTFaR0U9JmsyPU1tVmxZalE1WVRnMk9EaG1Nak0yTldVeE1UTXhZMlkwWVdVMFpEWm1NR0U9JmF1dD10cnVlJmxhbmc9MAo=" target="_blank">Ziggo Sport Select NL<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9rZW1pcmFzLm9uZS9ub21pcmVzLnBocD91cmw9YUhSMGNITTZMeTloYVhNdGN5NWhhWE10ZG1sa2JuUXVZMjl0TDJGcGN5OXdiR0Y1TDI5eWFXZHBiaTlzYVhabEwyVmtjeTlUTURBd01TOUVRVk5JTDFNd01EQXhMbTF3WkE9PSZrMT1NMlprTlRKa01XVTVZbUUwWWpFNE1HRmxZekV5WXpreU9UVmlOakpqTUdZPSZrMj1ZbUl5TnpSbE16TmtZVEJqTnpBNVpUWXlZelUxWkRCalltRTVNVEU0T0RrPQ==" target="_blank">beIN Sports 1 TH<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly93d3cudXNlZXR2LmNvbS5hYmNncnUuY29tL2JlaW4uaHRtbD91cmw9YUhSMGNITTZMeTlqWkc0d09HcDBaV1JuWlM1cGJtUnBhRzl0WlhSMkxtTnZiUzlrWVhOelpIWnlMekV6TXk5aVpXbGlNUzl0WVc1cFptVnpkQzV0Y0dRPSZrMT1OamsyTkRaaU56VTFaak14TXpBek1ETXdNekF6TURNd016QXpNRE13TXpBPSZrMj1aVFJoTWpNMU9XSXdOVFUyTXpNNU9XWXhaRGxoWkdaalpUWTBNVGN5TkdFPQ==" target="_blank">beIN Sports 1 ID<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="PREOLIMPICO"><a href="#">
+CONMEBOL Preolímpico 2024: Bolivia vs. Brasil<span class="t">22:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly93My5tcC5sdXJhLmxpdmUvcGxheWVyL3Byb2QvdjMvYW52bG9hZC5odG1sP2tleT1leUp0SWpvZ0lrRk9WaUlzSUNKMklqb2dJbUZrYzNSUFdqVlNjV1ZXVm1RNVJVY2lMQ0FpZEc5clpXNGlPaUFpWlhsS2FHSkhZMmxQYVVwSlZYcEpNVTVwU1hOSmJsSTFZME5KTmtscmNGaFdRMG81TG1WNVNuQmpNMDFwVDJsS2RGVlhTbWhOYXpscldqRkNTVlZzWkZkbGFtUnZWRzAxTUZSdWFFNU5ia3B3VDBSR2VGUnNaRFZYUTBselNXNWFjRnBEU1RaSmJVWnJZek5TVUZkcVZsTmpWMVpYVm0xUk5WSlZZMmxNUTBwc1pVaEJhVTlxUlROTlJGbDRUVlJOTUUxRVozTkpiV3hvWkVOSk5rMVVZM2RPYWtGNVRucEJkMDlJTUM1TFdYTTNWRXQwUzAxWU0wdDBObEJHYUZWbVgxVlFNbUZRWjFwWWNVWkVlVXQ1VTBaTlZFRnZZV3BaSWl3Z0ltRnVkbUZqYXlJNklDSnRVV0poTWs5a1oxQklVbGRXZWpkb1RtNTBUbmhOTW5KcE9ERnhUbGQ1V0NKOQ==" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/en-live/Dsport.html" target="_blank">Dsports<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="ES"><a href="#">
+Copa del Rey: Celta de Vigo vs. Real Sociedad<span class="t">22:30</span></a>
+<ul>
+<li class="subitem1"><a href="/en-live/Dsportplus.html" target="_blank">Dsports +<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly9mdXRib2xpYnJlcGUub25saW5lL3N0YXJfandwLmh0bWw/Z2V0PWh0dHBzOi8vbGl2ZS1mdGMtc2EtZWFzdC0xLm1lZGlhLnN0YXJvdHQuY29tL2dydTEvcWIwMS9zdGFycGx1cy9ldmVudC8yMDI0LzAxLzIzL0NlbHRhX2RlX1ZpZ29fdnNfUmVhbF9Tb2NfMjAyNDAxMjNfMTcwNjAzNTgzNTA0Ny9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci9FNTgzQkVFODc5OEQ4NTc3RjUwQ0M4Q0M1RTIyRjlGQjAyQkYyQTBGRDExM0YxNzQ4NUJBQTg4OTcyMjdDQTY1L3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9YWVjMjNkODU2MThjNGFlYzg3MzJhZGJhYjJlOWJiZTkma2V5Mj1jNTZiNTgzYjYzNmRlMDQ4NjZlZWY2Mjk0ZjhjYWM1Mw==" target="_blank">Star+ (BR)<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/eventos.html?r=Ly9mdXRib2xpYnJlcGUub25saW5lL2NsYXJwL2xhMWVzLnBocA==" target="_blank">TV La 1 ES<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="PY"><a href="#">Copa de Primera : Nacional asuncion vs General Caballero JLM <span class="t">23:30</span></a><ul><li class="subitem1"><a  href="/eventos.html?r=Ly9rZW1pcmFzLm9uZS9ldmVudG9zL3B5LnBocA==" target="_blank">Tigo Sports<span>Calidad 1080p</span></a></li></ul></li><li class="PREOLIMPICO"><a href="#">
+CONMEBOL Preolímpico 2024: Ecuador vs. Venezuela<span class="t">01:00</span></a>
+<ul>
+<li class="subitem1"><a href="/eventos.html?r=aHR0cHM6Ly93My5tcC5sdXJhLmxpdmUvcGxheWVyL3Byb2QvdjMvYW52bG9hZC5odG1sP2tleT1leUp0SWpvZ0lrRk9WaUlzSUNKMklqb2dJbUZrYzNSUFdqVlNjV1ZXVm1RNVJVY2lMQ0FpZEc5clpXNGlPaUFpWlhsS2FHSkhZMmxQYVVwSlZYcEpNVTVwU1hOSmJsSTFZME5KTmtscmNGaFdRMG81TG1WNVNuQmpNMDFwVDJsS2RGVlhTbWhOYXpscldqRkNTVlZzWkZkbGFtUnZWRzAxTUZSdWFFNU5ia3B3VDBSR2VGUnNaRFZYUTBselNXNWFjRnBEU1RaSmJVWnJZek5TVUZkcVZsTmpWMVpYVm0xUk5WSlZZMmxNUTBwc1pVaEJhVTlxUlROTlJGbDRUVlJOTUUxRWEzTkpiV3hvWkVOSk5rMVVZM2RPYWtGNVRucEJkMDlZTUM0NFMyVm1jSGgxYzFCd2VWcFFkMFJJU3pnMWMwdDJlRGh5Y0VvNE0wZG1aVEJsZUhCNVdscGxZUzA0SWl3Z0ltRnVkbUZqYXlJNklDSnRVV0poTWs5a1oxQklVbGRXZWpkb1RtNTBUbmhOTW5KcE9ERnhUbGQ1V0NKOQ==" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+<li class="subitem1"><a href="/en-live/Dsport.html" target="_blank">Dsports<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="PY"><a href="#">Copa de Primera : Tacuary vs. Olimpia FC <span class="t">01:30</span></a><ul><li class="subitem1"><a  href="/eventos.html?r=Ly9rZW1pcmFzLm9uZS9ldmVudG9zL3B5LnBocA==" target="_blank">Tigo Sports<span>Calidad 1080p</span></a></li></ul></li><li class="NHL"><a href="#">
+NHL: Vegas Golden Knights vs. New York Islanders<span class="t">02:00</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Ottawa Senators vs. Montreal Canadiens<span class="t">02:00</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="FUT"><a href="#">
+Serie Rio de la Plata: Peñarol vs. Nacional<span class="t">02:30</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+<li class="subitem1"><a href="/en-live/ESPNPREMIUN.html" target="_blank">ESPN Premium<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="NBA"><a href="#">
+NBA: Nets vs. Knicks<span class="t">02:30</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: Washington Capitals vs. Minnesota Wild<span class="t">02:30</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="MEX"><a href="#">
+Ascenso MX: Alebrijes de Oaxaca vs. Cimarrones de Sonora<span class="t">03:05</span></a>
+<ul>
+<li class="subitem1"><a href="/vix-plus.html" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+<li class="COSTARICA"><a href="#">Primera Division: Cartagines vs Grecia <span class="t">04:00</span></a><ul><li class="subitem1"><a  href="/eventos.html?r=Ly9mdXRib2xsaWJyZW9ubGluZS5wZS9kYXNoLmh0bWw/Z2V0PUx5OWpaRzR3TWk1MFpXeGxkR2xqWVM1amIyMHZVM1J5WldGdFJuVjBkaTlUZEhKbFlXMW1kWFIyTURReE1qSXdNak12Y0d4aGVXeHBjM1F1YlROMU9BPT0=" target="_blank">FUTV<span>Calidad 720P</span></a></li></ul></li><li class="NHL"><a href="#">
+NHL: Buffalo Sabres vs. Anaheim Ducks<span class="t">05:00</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NHL"><a href="#">
+NHL: New York Rangers vs. San Jose Sharks<span class="t">05:00</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="NBA"><a href="#">
+NBA: Clippers vs. Lakers<span class="t">05:00</span></a>
+<ul>
+<li class="subitem1"><a href="/star-plus.html" target="_blank">Star+<span>Calidad 720p</span></a></li>
+</ul>
+</li>
+
+<li class="MEX"><a href="#">
+Ascenso MX: CA La Paz vs. Tepatitlán<span class="t">05:05</span></a>
+<ul>
+<li class="subitem1"><a href="/vix-plus.html" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+</ul>
+</li>
+
+
+<br>
+</ul></div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"84a346bd2da569e3","version":"2024.1.0","r":1,"token":"1b4c0f8a799948aba7f8926355592d52","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<br>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"8336dc0018f4db1d","r":1,"version":"2023.10.0","token":"1b4c0f8a799948aba7f8926355592d52"}' crossorigin="anonymous"></script>
+</body>
+
+
+<script type="text/javascript" src="/js/3.js"></script>
