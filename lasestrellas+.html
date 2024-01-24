@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+ <!-- Player -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/clappr/0.2.86/clappr.min.js"></script>
+  <!-- Video resolution switcher -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <!-- Dash -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/dash-shaka-playback@2.2.1/dist/dash-shaka-playback.min.js"></script>
+<style>
+  body {
+    margin: 0px
+  }
+</style>
+
+</head>
+ 
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://channel01-notusa.akamaized.net/hls/live/2022749-b/event01/index.m3u8",    
+        watermark: "", position: 'top-right',
+        poster: "",
+            shakaConfiguration: {
+            drm: {
+                "clearKeys": {
+                     '':'','':''
+                }
+            },
+            preferredAudioLanguage: 'pt-BR',
+        },
+         width: "100%",
+        height: "100%",
+      parentId: "#player",
+      plugins: {
+        core: [LevelSelector],
+        playback:[DashShakaPlayback]
+      },
+    });
+  </script>
+</body>
