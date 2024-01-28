@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"/><meta content="ie=edge" http-equiv="x-ua-compatible"/><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/><meta content="index,follow" name="robots"/><meta content="index,follow" name="googlebot"/><meta content="notranslate" name="google"/><title>Tele Rebelde — teveo</title><link href="https://cdn.teveo.cu/asset/px52tVQGxwfx6Bmg/2022.5.1/identity.css" rel="stylesheet"/><link href="https://cdn.teveo.cu/asset/px52tVQGxwfx6Bmg/2022.5.1/videojs.css" rel="stylesheet"/><link href="https://cdn.teveo.cu/asset/px52tVQGxwfx6Bmg/2022.5.1/symbol.png" rel="icon" type="image/png"/></head><body style="height: 100%; width: 100%; overflow: hidden; position: absolute; margin: 0 auto; padding: 0;"><div style="height: 100%; width: 100%; left:0; top: 0;"><video-js class="video-js vjs-big-play-centered vjs-fill" controls="" id="t-video-zeZmyVqvdkR4GWRu" playsinline="" poster="https://cdn.teveo.cu/media/live/video/poster-HD-cbe5zatNY9SUcr6x.jpg" preload="auto" webkit-playsinline=""></video-js></div><input name="csrfmiddlewaretoken" type="hidden" value="vnThY6eqMAmxkNvzo0gIOW2HfzTXFdRNL0DwqmnnTm43BE5j4SdAqaYzdqjXef9I"/><script src="https://cdn.teveo.cu/asset/px52tVQGxwfx6Bmg/2022.5.1/identity.js"></script><script src="https://cdn.teveo.cu/asset/px52tVQGxwfx6Bmg/2022.5.1/videojs.js"></script><script>
+      $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+          if (!this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", $("[name=csrfmiddlewaretoken]").val());
+          }
+        },
+      });
+
+      var $videoPlayer = videojs("t-video-zeZmyVqvdkR4GWRu", {
+          html5: {
+            hls: {
+              handleManifestRedirects: true,
+              limitRenditionByPlayerDimensions: true,
+              overrideNative: !videojs.browser.IS_ANY_SAFARI && !videojs.browser.IS_IOS,
+              useBandwidthFromLocalStorage: true,
+            },
+          },
+          controlBar: {
+            progressControl: false,
+          },
+          plugins: {
+            httpSourceSelector: {
+              default: "auto",
+            },
+          },
+        });
+
+      $videoPlayer.src({
+        src: "https://cdn.teveo.cu/live/video/vXykXvhUczkVP7R7/ngrp:rT9fDMXXb9ZkBNN9.stream/playlist.m3u8",
+        type: "application/x-mpegURL",
+      });
+
+      $videoPlayer.on("ready", function () {
+        window.setInterval(function () {
+          if (!$videoPlayer.paused()) {
+            $.post("/live/video/zeZmyVqvdkR4GWRu/heartbeat");
+          };
+        }, 20000);
+
+
+        $videoPlayer.play().then(function () {
+          }).catch(function (e) {
+            console.log(e);
+          });
+
+      });
+    </script></body></html>
