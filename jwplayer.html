@@ -1,36 +1,53 @@
+<head cfapps-selector="head">
+<meta name='referrer' content='no-referrer' />
+<script data-cfasync="false" src="//achcdn.com/script/suv4.js" data-adel="lwsu" cdnd="achcdn.com" zid="7143118"></script>
 
-<script src="//ssl.p.jwpcdn.com/player/v/8.30.0/jwplayer.js"></script> 
-<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'; 
-</script> 
-<div id="player"></div> 
-<script> 
- 
-    var playerInstance = jwplayer("player"); 
- 
-    playerInstance.setup({ 
- 
-        playlist: [{ 
-            title: "", 
-            image: "", 
-            description: "", 
-            "sources": [ 
-                { 
-                    "default": false, 
-                    "type": "dash", 
-                    "file": 'https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/tu06vubgf9/out/v1/7668f47d28e345979c072e361f3d3ce3/cenc.mpd', 
-                    "drm": { 
-                        "clearkey": { "keyId": "6d08b265a6639e32da7c880d5491e3d2", "key": "0c92556ca14b95f367993710e7cfbc94" } 
-                    }, 
-                    "label": "0" 
+    <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+
+    <script type="text/javascript"
+        src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+        .player-poster[data-poster] {
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+
+<div id="player"></div>
+
+
+
+<script type="text/javascript">
+    var player = new Clappr.Player({
+        source: 'https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2024/01/30/Nottingham_Forest_vs_Arse_20240130_1706637013031/ctr-all-complete.m3u8',
+        mimeType: 'application/dash+xml',
+        height: '100%',
+        width: '100%',
+        plugins: [DashShakaPlayback, LevelSelector, ChromecastPlugin],
+        chromecast: {
+            appId: '9DFB77C0',
+            contentType: 'video/mp4',
+        }, 
+        shakaConfiguration: {
+            drm: {
+                "clearKeys": {
+					"abd11a4c8f4b4262ad8b6167c5fa6c01": "4fce41d44f1ef459ef8f372487707624"
                 } 
-            ] 
-        }],
-        width: "100%", 
-        height: "100%", 
-        aspectratio: "16:9", 
-        autostart: true, 
-        cast: {}, 
-        sharing: {} 
-    }); 
- 
+            }, 
+        },
+        shakaOnBeforeLoad: function(shaka_player) {},
+        parentId: '#player'
+    });
+
 </script>
