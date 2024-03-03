@@ -1,0 +1,84 @@
+<html lang="es"> 
+<head> 
+
+<script type='text/javascript' src='//pl22602814.profitablegatecpm.com/1b/82/27/1b82278e5e70a061a38e025028f3c03f.js'></script>
+
+</head>     
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta http-equiv="cache-control" content="max-age=0" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="expires" content="0" /> 
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> 
+<meta http-equiv="pragma" content="no-cache" /> 
+<meta name="robots" content="noindex" /> 
+<meta name="referrer" content="none"> 
+<script src="//cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script> 
+<script disable-devtool-auto src="//fastly.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script> 
+<script type="text/javascript"> 
+  function getParameterByName(name) { 
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); 
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), 
+      results = regex.exec(location.search); 
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
+} 
+var getHLS = getParameterByName('img'); 
+var getDATA = getParameterByName('id'); 
+if (getURL == "#") {alert('Vuelve a la pÃƒÂ¨Ã‚Â°Ã‚Â©gina anterior');} 
+if (getURL.length > 10) { 
+var container = document.getElementById('bitmovin-94527'); 
+} 
+</script>    
+<div id="player"></div> 
+<script type="text/javascript"> 
+  var container = document.getElementById('player'); 
+ 
+  function override(url) { 
+    if (url.indexOf("licensing.bitmovin.com/licensing") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; 
+    if (url.indexOf("licensing.bitmovin.com/impression") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; 
+    return url; 
+  } 
+ 
+  var opens = XMLHttpRequest.prototype.open; 
+  XMLHttpRequest.prototype.open = function() { 
+    var url = override(arguments[1]); 
+    arguments[1] = url; 
+    return opens.apply(this, arguments); 
+  } 
+ 
+  const config = { 
+    key: "11d3698c-efdf-42f1-8769-54663995de2b", 
+    analytics: false, 
+    cast: { 
+      enable: true 
+    }, 
+    playback: { 
+      autoplay: false, 
+      muted: false 
+    }, 
+    style: { 
+      width: '100%' 
+    }, 
+  } 
+ 
+  var source = { 
+  title: 'NBA League Pass | TuDeporte TVHD', 
+  description: 'Mira La NBA League Pass en tudeportetvhd.com', 
+  hls: 'https://nbalpng.akamaized.net/live/a/hls-wvpr/' + getHLS + '/index.m3u8?addUserInfo=1', 
+    poster: '', 
+  drm: { 
+    widevine: { 
+      LA_URL: 'https://ottapp-appgw-amp.nba.com/v1/client/get-widevine-license?ownerUid=azuki&mediaId=' + getHLS + '&sessionId=5e0b8a97-3d2e-4188-9590-f00f5f8629a2&is_dvr=false', 
+      headers: { 
+        'applicationtoken': getDATA, 
+    'authorizationtoken': 'AuthToken1jVHLbtswEPwa60aD78dBByFtEzdI26AOivZGUauYsSQKJOXE-frSRtICRVsEIJaL2ZndxWyzdB4mB_Uu5zmtWLOiH8qLMBz9dD_bmI_rOYbOrqfWrvOBuSEs3dqFsbCqTUoLxD-0Kaf_SE7c31S3g9Gm9dM4pGDndYj3BX1MJVCMRfnOwXcwZZ-PJXWD9eOpPtkR6iUhqRTXhBokmWkRt61BllqMeqst6S2WoGi1hclOedPVHfR2GXL1Dg7eQQGkO2RhWo7crAe03w8LCrLfIUYeAMC4vYH5hb09zlBvQtradoBcNcMQHqF7bZ1-9b5LEEvnt-7WOBeW83Lc8h5T41DfOYs4o4CMkxRpwESTVtJe6rLLecrLkDdJ_mr56F0MKfT55TCvpuuT6fIfpscwQJ2WNrnoW4hVs-RdiP7ZZh-mG5v2NRGGcMaZkIIQRhQVXBtFKSOGY2k0lVJrRgkXRmoqBBGESiM0NloKTAllhjKOCSu5UJRTLYgsia7eP80-Qvo81UQRYphgSlUXEWyG7gxiQ4U0BbyG4-Xiy7Gx0i3mvLjhAHFiBNJESdR2vHNcWtyptrq6aS6-XjVFWvdPzXVzu6L9t9vN5cOn7Q9lV7TN5Hh99M-89eoQv9x_3I965ndm-33Fup8', 
+    'azukiimc': 'IMC7.1.0_AN_D3.0.0_S0', 
+    'deviceprofile': 'eyJtb2RlbCI6IkRlc2t0b3AiLCJvc1ZlcnNpb24iOiIxMCIsInZlbmRvck5hbWUiOiJNaWNyb3NvZnQiLCJvc05hbWUiOiJIVE1MNSIsInd2TGV2ZWwiOiJMMyIsImRldmljZVVVSUQiOiI5NWQwMWNmYThiYWQ0ODE0OTc1YmMwMzYzYmY1M2Q3MSJ9', 
+        } 
+      } 
+    } 
+  } 
+      var player = new bitmovin.player.Player(container, config); 
+      player.load(source); 
+  </script>
+  <style>body{margin:0;}iframe{width:100%;height:100%;}.bmpui-ui-watermark{display:none;}.bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker{background-color: #1487fa;}.bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition, .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition{background-color: #1487fa;}.bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition-marker, .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker{border-color:#1487fa;background-color:#1487fa;}</style>
