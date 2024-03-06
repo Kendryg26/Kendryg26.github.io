@@ -10,6 +10,7 @@
 <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script> 
 <script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+
 <style>  
 .player-poster[data-poster] { 
   background-size: cover; 
@@ -24,7 +25,7 @@ body{
 <div id="player"></div> 
 <script> 
 var player = new Clappr.Player({ 
-        source: 'https://akm.live.latam.prd.media.max.com/live/lo/use1/746a0f7a-06a9-456c-83a1-5179ef49021a-dash-6hdvr-cenc/master.mpd', 
+        source: 'https://cf.live.latam.prd.media.max.com/live/lo/use1/2b6a84ce-c615-4bc9-92e9-d43ed9447f74-dash-6hdvr-cenc/master.mpd', 
         mimeType: 'application/dash+xml', 
         height: '100%', 
         width: '100%', 
@@ -50,10 +51,10 @@ var player = new Clappr.Player({
         shakaConfiguration: { 
             drm: { 
             clearKeys: { 
-  '01003328a0d4b59280b691c19937c6d8': '212356669130b23184223b357776bb28',
-  '01018d1f175fda0958af8d0816701ae6': '23bf7019db56661b8fd962ec5cd99627',
-  '0102cea66ce10c278359ac1a2b05489e': '1218404db3850a6685274fd36056306e',
-                    } 
+  '010079888d3e697e5134b0ea78708e47': 'faf89004bedaaa944d9454fea75a3cc4',
+  '0101ff36059bfb68e1b87386184ac2df': '48943b55b8c5cda413def5f72f06b0ef',
+  '010287e10ccce8207db6a1f8e15d74d7': 'cc072d755a6554eb7a0500a3d9d85c41',
+} 
             }, 
             preferredAudioLanguage: 'pt-BR', 
         }, 
