@@ -1,0 +1,61 @@
+<html>
+<head>
+  <script type='text/javascript' src='//desperateambient.com/37/b9/35/37b93537576e500d0368e88b69fb3024.js'></script>
+</head>
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<title>Player</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src='https://content.jwplatform.com/libraries/KB5zFt7A.js'></script>
+<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'; </script>
+<body style="padding: 0px; margin:0px;">
+<div id="player"></div>
+<script type="text/javascript">
+$(document).ready(function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const eventId = urlParams.get('id');
+  const eventImg = urlParams.get('img');
+
+  function setupPlayer() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/json/' + eventId + '.json?' + Math.random().toString(36).substring(7), true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        var playerInstance = jwplayer("player");
+
+        playerInstance.setup({
+          playlist : [{
+            //title : "Kerter+",
+            //description : "",
+            image : eventImg, 
+            sources : [{
+              default : false,
+              file : data.hls, 
+              label : "0",
+              type : "hls"
+            }],
+          }],
+          width : "100%",
+          height : "100%",
+          aspectratio : "16:9",
+          autostart : false,
+          cast:{},
+		  sharing: {}
+        });
+        
+        playerInstance.on('error', function(event) {
+          if (event.code === 232403) {
+            location.reload();
+          }
+        });
+      }
+    };
+    xhr.send();
+  }
+
+  setupPlayer(); 
+
+});
+</script>
+</html>
