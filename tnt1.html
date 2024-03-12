@@ -1,34 +1,39 @@
 <html lang="es"> 
-<head>
-<meta name="robots" content="noindex" /> 
-<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script> 
-<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script> 
-<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script> 
-<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script> 
-<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script> 
-<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script> 
-<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script> 
-<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
-<style>  
-.player-poster[data-poster] { 
-  background-size: cover; 
-} 
-body{ 
-  margin:0; 
-  padding:0; 
-} 
-</style> 
-</head> 
-<body>
-<div id="player"></div> 
+
+<script type="text/javascript" src="/z-8058418"></script>
+
+
+<meta name="robots" content="noindex" />
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+<style> 
+
+.player-poster[data-poster] {
+  background-size: cover;
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+</style>
+</head>
+<div id="player"></div>
 <script> 
 var player = new Clappr.Player({ 
-        source: 'https://akm.live.latam.prd.media.max.com/live/lo/use1/0b69298c-d96a-437b-8c22-ea023a64c0f1-dash-6hdvr-cenc/master.mpd?', 
+        source: 'https://cf.live.latam.prd.media.max.com/live/lo/use1/e3e14fe3-5ecd-413b-ba6a-2ca353203a46-dash-6hdvr-cenc/master.mpd', 
         mimeType: 'application/dash+xml', 
         height: '100%', 
         width: '100%', 
-        poster: 'https://images.cdn.prd.api.discomax.com/2024/03/01/db319ac2-9b75-300d-88ff-383ad1c6d548.jpeg?w=1280&f=webp',
+        poster: 'https://images.cdn.prd.api.discomax.com/2024/02/26/5017434c-5399-3ed6-852a-ba7bc181c9f0.jpeg?w=1280&f=webp',
         plugins: [
             LevelSelector, 
             DashShakaPlayback, 
@@ -50,10 +55,10 @@ var player = new Clappr.Player({
         shakaConfiguration: { 
             drm: { 
             clearKeys: { 
- '0100c683ccfaaeac44361e6dffcb4abe': 'a596951105bbf9082cc51a28c09df8e4',
-  '0101a938b72a1a560b787a711fe7df4e': '707c696daa6ab1d021ba65df0f28a1a2',
-  '0102f763d68ee7c2276d1e8f19d68d60': '4a3690614a3788dec0b2872772730732',
-} 
+ '010005d553866fd32950e138c773e9cd': '0d1cbef9b183b19cf9f3877046d7885b',
+  '01011004750bd3017771b398dfae544e': 'e3c7c4b98b269123a6c28c190f0a97ac',
+  '0102b2e8184b8980f4a07ab16039b625': '3b3f880be6d871fe1e4619cfc69a4e2a',
+                    } 
             }, 
             preferredAudioLanguage: 'pt-BR', 
         }, 
@@ -61,6 +66,4 @@ var player = new Clappr.Player({
         parentId: '#player' 
     }); 
 </script>
-</body>
-</html>
 
