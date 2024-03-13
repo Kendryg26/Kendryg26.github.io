@@ -1,8 +1,6 @@
-<html lang="es"> 
-
-<script type="text/javascript" src="/z-8058418"></script>
-
-
+<html lang="es">
+<head>
+<script type='text/javascript' src='//desperateambient.com/37/b9/35/37b93537576e500d0368e88b69fb3024.js'></script>
 <meta name="robots" content="noindex" />
 <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
@@ -27,42 +25,30 @@ body{
 </style>
 </head>
 <div id="player"></div>
-<script> 
-var player = new Clappr.Player({ 
-        source: 'https://gcp.live.latam.prd.media.max.com/live/lo/use1/c1c0081f-563a-4f46-b874-84231b8898e8-dash-6hdvr-cenc/master.mpd', 
-        mimeType: 'application/dash+xml', 
-        height: '100%', 
-        width: '100%', 
-        poster: 'https://images.cdn.prd.api.discomax.com/2024/02/26/775c6a8f-12d0-37af-aa2a-cce7f5a3e3a9.jpeg?w=1280&f=webp',
-        plugins: [
-            LevelSelector, 
-            DashShakaPlayback, 
-            ClapprPip.PipButton, 
-            ClapprPip.PipPlugin, 
-            Clappr.MediaControl,
-            Clappr.Poster
-        ], 
-        events: {
-            onReady: function() {
-                var plugin = this.getPlugin('click_to_pause'); 
-                plugin && plugin.disable();
+<script>
+var player = new Clappr.Player({
+        source: 'https://akm.live.latam.prd.media.max.com/live/lo/use1/9b832e7f-a802-4016-b04c-cb0753cc79b6-dash-6hdvr-cenc/master.mpd',
+        mimeType: 'application/dash+xml',
+        height: '100%',
+        width: '100%',
+        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
+        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
+        chromecast: {
+            appId: '9DFB77C0',
+            contentType: 'video/mp4',
+        },
+        shakaConfiguration: {
+            drm: {
+            clearKeys: {
+ '0100800344d9587398a8b350e287ab42': '88ddb9f10efcd43ef1090630b9fc61fd',
+  '0101300f5ca9dda3d7024054114608c6': 'aa749f08ca325df6af563c126dd40170',
+  '0102c976e6b5eb1ce41346ab9378b4ba': '218f7547e766bce3eac84e7f77d56ef4',
+                }
             },
-        }, 
-        chromecast: { 
-            appId: '#', 
-            contentType: 'video/mp4', 
-        }, 
-        shakaConfiguration: { 
-            drm: { 
-            clearKeys: { 
-  '0100491743569b5b021204ac260bcf59': '220dd42d6ac17c1cd8c724792b0ce9b9',
-  '010108a79082c79336bfcc59cc9ee9b8': '4f5931a8e48e19e112ffe090f2af8af4',
-  '0102884d4fc05e0bd4d45014f1b2e6b1': 'd2f45dcc65e057ebe647ffd432cd62c4',
-} 
-            }, 
-            preferredAudioLanguage: 'pt-BR', 
-        }, 
-        shakaOnBeforeLoad: function (shaka_player) {}, 
-        parentId: '#player' 
-    }); 
+            preferredAudioLanguage: 'pt-BR',
+        },
+        shakaOnBeforeLoad: function (shaka_player) {},
+        parentId: '#player'
+    });
 </script>
+
