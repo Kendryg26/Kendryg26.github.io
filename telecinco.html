@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+<script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
+<div class="container">
+<style> 
+
+.player-poster[data-poster] {
+  background-size: cover;
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+</style>
+</head>    
+<div id="player"></div>
+</div>
+
+<script>
+    let source = "Ly90dnVwLWxpdmUuYWthbWFpemVkLm5ldC90ZWxlY2luY29oZC90ZWxlY2luY29oZC5tcGQ=";
+    var player = new Clappr.Player({
+        source: atob(source),
+        parentId: "#player",
+        position: "top-left",
+        plugins: [LevelSelector, ClapprPip.PipButton, ClapprPip.PipPlugin, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin],
+        events: {
+            onReady: function () {
+                var plugin = this.getPlugin("click_to_pause");
+                plugin && plugin.disable();
+            },
+        },
+        chromecast: {
+            appId: "9DFB77C0",
+            contentType: "video/mp4",
+        },
+        gaAccount: "G-Z7958KV9CY",
+        gaTrackerName: "MyPlayerInstance",
+        height: "100%",
+        width: "100%",
+        autoPlay: true,
+        muted: false,
+        shakaConfiguration: {
+            preferredAudioLanguage: "es-MX",
+            drm: {
+                clearKeys: {'def5769eed6152d2b32aa1c75a624764':'ed06df900e0b84549a834c49997dc8ad','7ca93b77733454d3830c60996ad8929b':'8ab9809fc799015a41c39b8b9d6ab9a5','faebbb9b817459d2965625708666a114':'9a1aa94adb0b15b523836c6f41843726'},
+            },
+        },
+    });
+</script>
