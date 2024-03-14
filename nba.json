@@ -1,65 +1,44 @@
 [
     {
-        "title": "Pistons vs. Raptors",
+        "title": "Celtics vs. Suns",
         "league": "NBA",
-        "img": "tor-det",
+        "img": "phx-bos",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:30"
     },
     {
-        "title": "Magic vs. Nets",
+        "title": "Bucks vs. 76ers",
         "league": "NBA",
-        "img": "bkn-orl",
+        "img": "phi-mil",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "02:00"
     },
     {
-        "title": "Heat vs. Nuggets",
+        "title": "Bulls vs. Clippers",
         "league": "NBA",
-        "img": "den-mia",
+        "img": "lac-chi",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "02:00"
     },
     {
-        "title": "Pacers vs. Bulls",
+        "title": "Rockets vs. Wizards",
         "league": "NBA",
-        "img": "chi-ind",
+        "img": "was-hou",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "02:00"
     },
     {
-        "title": "Grizzlies vs. Hornets",
+        "title": "Thunder vs. Mavericks",
         "league": "NBA",
-        "img": "cha-mem",
+        "img": "dal-okc",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "04:00"
     },
     {
-        "title": "Pelicans vs. Cavaliers",
+        "title": "Trail Blazers vs. Knicks",
         "league": "NBA",
-        "img": "cle-nop",
+        "img": "nyk-por",
         "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Mavericks vs. Warriors",
-        "league": "NBA",
-        "img": "gsw-dal",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Kings vs. Lakers",
-        "league": "NBA",
-        "img": "lal-sac",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Blazers vs. Hawks",
-        "league": "NBA",
-        "img": "atl-por",
-        "url": "#",
-        "status": "FINALIZADO"
+        "status": "04:00"
     }
 ]
