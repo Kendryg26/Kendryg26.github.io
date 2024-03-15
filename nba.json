@@ -3,42 +3,42 @@
         "title": "Celtics vs. Suns",
         "league": "NBA",
         "img": "phx-bos",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NTVwaHgxMDAwNzgyYm9zJmlkPTU0MTU2",
+        "url": "#",
         "status": "FINALIZADO"
     },
     {
         "title": "Bucks vs. 76ers",
         "league": "NBA",
         "img": "phi-mil",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NThwaGkxMDAwNDY0bWlsJmlkPTQ1NDE1",
+        "url": "#",
         "status": "FINALIZADO"
     },
     {
         "title": "Bulls vs. Clippers",
         "league": "NBA",
         "img": "lac-chi",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NTZsYWMxMDAwNDUyY2hpJmlkPTQwOTcz",
+        "url": "#",
         "status": "FINALIZADO"
     },
     {
         "title": "Rockets vs. Wizards",
         "league": "NBA",
         "img": "was-hou",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NTd3YXMxMDAwNDU4aG91JmlkPTQ2MjQy",
+        "url": "#",
         "status": "FINALIZADO"
     },
     {
         "title": "Thunder vs. Mavericks",
         "league": "NBA",
         "img": "dal-okc",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NTlkYWwxMDAwNzgyb2tjJmlkPTU0MTYy",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Trail Blazers vs. Knicks",
         "league": "NBA",
         "img": "nyk-por",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NjBueWsxMDAwNDcycG9yJmlkPTQxOTI0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
