@@ -3,7 +3,7 @@
         "title": "Celtics vs. Suns",
         "league": "NBA",
         "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024\/02\/27\/65f3b473-fef7-3dd0-9867-eee24ea01c48.jpeg?w=1920&f=webp",
-        "url": "#",
+        "url": "Ly9hYmNncnUuYXNpYS9tYXgvdXMxLnBocA==",
         "status": "FINALIZADO"
     },
     {
@@ -11,13 +11,13 @@
         "league": "NBA",
         "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024\/02\/27\/a6123723-1ea0-3216-b767-4bff618b58ef.jpeg?w=1920&f=webp",
         "url": "Ly9hYmNncnUuYXNpYS9tYXgvdXMyLnBocA==",
-        "status": "EN VIVO"
+        "status": "FINALIZADO"
     },
     {
         "title": "Sorteo  de la UEFA Champions League",
         "league": "UEFA Champions League",
         "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024/03/14/9b5f1ec6-bd15-3d27-bb86-8033a5789ebd.jpeg?w=1920&f=webp",
         "url": "#",
-        "status": "12:00"
+        "status": "13:00"
     }
 ]
