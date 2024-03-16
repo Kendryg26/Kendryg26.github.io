@@ -1,44 +1,44 @@
 [
     {
-        "title": "Celtics vs. Suns",
+        "title": "Hornets vs. Suns",
         "league": "NBA",
-        "img": "phx-bos",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "phx-cha",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NjFwaHgxMDAwMzkwY2hhJmlkPTM2Nzcx",
+        "status": "EN VIVO"
     },
     {
-        "title": "Bucks vs. 76ers",
+        "title": "Pistons vs. Heat",
         "league": "NBA",
-        "img": "phi-mil",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "mia-det",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NjJtaWExMDAwNDU2ZGV0JmlkPTQ0MTY0",
+        "status": "EN VIVO"
     },
     {
-        "title": "Bulls vs. Clippers",
+        "title": "Raptors vs. Magic",
         "league": "NBA",
-        "img": "lac-chi",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "orl-tor",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NjNvcmwxMDAwNDc1dG9yJmlkPTUxNDA2",
+        "status": "EN VIVO"
     },
     {
-        "title": "Rockets vs. Wizards",
+        "title": "Pelicans vs. Clippers",
         "league": "NBA",
-        "img": "was-hou",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "lac-nop",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NjRsYWMxMDAwNDY2bm9wJmlkPTQyNjQ4",
+        "status": "EN VIVO"
     },
     {
-        "title": "Thunder vs. Mavericks",
+        "title": "Spurs vs. Nuggets",
         "league": "NBA",
-        "img": "dal-okc",
+        "img": "den-sas",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "02:30"
     },
     {
-        "title": "Trail Blazers vs. Knicks",
+        "title": "Jazz vs. Hawks",
         "league": "NBA",
-        "img": "nyk-por",
+        "img": "atl-uta",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "03:30"
     }
 ]
