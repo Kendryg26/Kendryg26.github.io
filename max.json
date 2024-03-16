@@ -1,16 +1,9 @@
 [
     {
-        "title": "Celtics vs. Suns",
-        "league": "NBA",
-        "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024\/02\/27\/65f3b473-fef7-3dd0-9867-eee24ea01c48.jpeg?w=1920&f=webp",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Thunder vs. Mavericks",
-        "league": "NBA",
-        "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024\/02\/27\/a6123723-1ea0-3216-b767-4bff618b58ef.jpeg?w=1920&f=webp",
-        "url": "#",
+        "title": "Sorteo de la UEFA Champions League",
+        "league": "UEFA Champions League",
+        "img": "https:\/\/images.cdn.prd.api.discomax.com\/2024/03/14/9b5f1ec6-bd15-3d27-bb86-8033a5789ebd.jpeg?w=1920&f=webp",
+        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9saXZlLWZ0Yy1uYS1zb3V0aC0yLm1lZGlhLnN0YXJvdHQuY29tL2dydTEvcWIwMS9zdGFycGx1cy9ldmVudC8yMDI0LzAzLzE1L1Nwb3J0c0NlbnRlcl9BTV9Tb3J0ZW9fVUVfMjAyNDAzMTVfMTcxMDQ5MTQzMDA5MC9jdHItYWxsLWNvbXBsZXRlLm0zdTgmaW1nPWh0dHBzOi8vcHJvZC1yaXBjdXQtZGVsaXZlcnkuZGlzbmV5LXBsdXMubmV0L3YxL3ZhcmlhbnQvc3Rhci8wM0JGQjE0NDQ4QjdDMTVFOENGNDU1OEEzNzQ5NEYwNkMyQUQ2QUJGQThDRkY5RUZEREE3OENDREJFNTU0MzQzL3NjYWxlP3dpZHRoPTE5MjAmYXNwZWN0UmF0aW89MS43OCZmb3JtYXQ9anBlZyZrZXk9NWM4ZDQ3ZTcxNjNiNGVhMmFkNTE4MDg3MjY5MjE2NjYma2V5Mj1jMjBhNjgzZmVkNDkzNzgxYmVmMzVlYmZlNjZjY2Q5Mg==",
         "status": "FINALIZADO"
     }
 ]
