@@ -3,43 +3,43 @@
         "title": "Bucks vs. Suns",
         "league": "NBA",
         "img": "phx-mil",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NzZwaHgxMDAwODM0bWlsJmlkPTYwODA4",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Pistons vs. Heat",
         "league": "NBA",
         "img": "mia-det",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NzdtaWExMDAwNDU2ZGV0JmlkPTQ0MTgx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Mavericks vs. Nuggets",
         "league": "NBA",
         "img": "den-dal",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5NzhkZW4xMDAwODM0ZGFsJmlkPTYwODA1",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Wizards vs. Celtics",
         "league": "NBA",
         "img": "bos-was",
-        "url": "#",
-        "status": "00:00"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODBib3MxMDAwNDc3d2FzJmlkPTQxODQx",
+        "status": "EN VIVO"
     },
     {
         "title": "Magic vs. Raptors",
         "league": "NBA",
         "img": "tor-orl",
-        "url": "#",
-        "status": "00:00"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5Nzl0b3IxMDAwNDY5b3JsJmlkPTQyNjQw",
+        "status": "EN VIVO"
     },
     {
         "title": "Spurs vs. Nets",
         "league": "NBA",
         "img": "bkn-sas",
-        "url": "#",
-        "status": "01:00"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODFia24xMDAwMzkwc2FzJmlkPTM2Nzg1",
+        "status": "EN VIVO"
     },
     {
         "title": "Clippers vs. Hawks",
