@@ -1,47 +1,52 @@
+<html lang="es">
+<head>
+<meta name="robots" content="noindex" />
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+<style> 
 
-<head cfapps-selector="head">
-<meta name="referrer" content="no-referrer" />
-<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<style>
-        .player-poster[data-poster] {
-            background-size: cover;
-        }
+.player-poster[data-poster] {
+  background-size: cover;
+}
+body{
+  margin:0;
+  padding:0;
+}
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+</style>
 </head>
 <div id="player"></div>
-<script type="text/javascript">
-    var player = new Clappr.Player({
-        source: 'https://tvup-live.akamaized.net/laligatv/laligatv.mpd',
+<script>
+var player = new Clappr.Player({
+        source: 'https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fpndxmzw6o/out/v1/70a50b1bda944628b8e7e66ab4069419/cenc.mpd',
         mimeType: 'application/dash+xml',
         height: '100%',
         width: '100%',
-        plugins: [DashShakaPlayback, LevelSelector, ChromecastPlugin],
+        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl],
+        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
         chromecast: {
             appId: '9DFB77C0',
             contentType: 'video/mp4',
         },
         shakaConfiguration: {
             drm: {
-                "clearKeys": {
-					"aa3de450728e50edbcd47ab039200f6e": "4b1b1b8eb7585295fc6c9ad054bac647",
-					"3884d18d872d50b59ceaf03530cddbcc": "45f5ad675bf4d9056042a90123302c0f",
-					"3896c18a4fcd54efabaf9b1bdb1830f5": "e3bf13c8d463af5e5bb567a1c3ea1725"
-			//Widevine v.12.GB - CMD		
-
-                } 
+            clearKeys: {
+                    'b770d5b4bb6b594daf985845aae9aa5f': 'b0cb46d2d31cf044bc73db71e9865f6f',
+                    'fc12a94c41e0885dbea8a8d94f0a277d':
+                    'fc045df077e7669666b1b230e9aa3901'
+                }
             },
+            preferredAudioLanguage: 'pt-BR',
         },
-        shakaOnBeforeLoad: function(shaka_player) {},
+        shakaOnBeforeLoad: function (shaka_player) {},
         parentId: '#player'
     });
-
 </script>
