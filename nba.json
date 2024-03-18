@@ -24,28 +24,28 @@
         "title": "Wizards vs. Celtics",
         "league": "NBA",
         "img": "bos-was",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODBib3MxMDAwNDc3d2FzJmlkPTQxODQx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Magic vs. Raptors",
         "league": "NBA",
         "img": "tor-orl",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5Nzl0b3IxMDAwNDY5b3JsJmlkPTQyNjQw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Spurs vs. Nets",
         "league": "NBA",
         "img": "bkn-sas",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODFia24xMDAwMzkwc2FzJmlkPTM2Nzg1",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Clippers vs. Hawks",
         "league": "NBA",
         "img": "atl-lac",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODJhdGwxMDAwMzkwbGFjJmlkPTM2NjI0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
