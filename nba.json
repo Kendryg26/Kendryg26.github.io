@@ -1,44 +1,16 @@
 [
- {
-  "img": "orl-cha",
-  "league": "NBA",
-  "status": "01:00",
-  "title": "Magic vs. Hornets",
-  "url": "/embed/eventos/?r="
- },
- {
-  "img": "was-hou",
-  "league": "NBA",
-  "status": "01:00",
-  "title": "Wizards vs. Rockets",
-  "url": "/embed/eventos/?r="
- },
- {
-  "img": "bkn-nop",
-  "league": "NBA",
-  "status": "02:00",
-  "title": "Nets vs. Pelicans",
-  "url": "/embed/eventos/?r="
- },
- {
-  "img": "sas-dal",
-  "league": "NBA",
-  "status": "02:00",
-  "title": "Spurs vs. Mavericks",
-  "url": "/embed/eventos/?r="
- },
- {
-  "img": "sas-dal",
-  "league": "NBA",
-  "status": "03:00",
-  "title": "Spurs vs. Mavericks",
-  "url": "/embed/eventos/?r="
- },
- {
-  "img": "min-den",
-  "league": "NBA",
-  "status": "03:00",
-  "title": "Timberwolves vs. Nuggets",
-  "url": "/embed/eventos/?r="
- }
+    {
+        "title": "Magic vs. Hornets",
+        "league": "NBA",
+        "img": "cha-orl",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTFjaGExMDAwNDY5b3JsJmlkPTQyNjYw",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Wizards vs. Rockets",
+        "league": "NBA",
+        "img": "hou-was",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTJob3UxMDAwNDc3d2FzJmlkPTQxODQ4",
+        "status": "EN VIVO"
+    }
 ]
