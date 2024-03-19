@@ -24,35 +24,35 @@
         "title": "Bulls vs. Blazers",
         "league": "NBA",
         "img": "por-chi",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODZwb3IxMDAwNzkxY2hpJmlkPTU0OTUy",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Jazz vs. Timberwolves",
         "league": "NBA",
         "img": "min-uta",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODdtaW4xMDAwNDc2dXRhJmlkPTQ2NzU3",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Warriors vs. Knicks",
         "league": "NBA",
         "img": "nyk-gsw",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODhueWsxMDAwNDQwZ3N3JmlkPTUxNTAw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Kings vs. Grizzlies",
         "league": "NBA",
         "img": "mem-sac",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODltZW0xMDAwNDczc2FjJmlkPTQyNDgw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Lakers vs. Hawks",
         "league": "NBA",
         "img": "atl-lal",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTBhdGwxMDAwNDYxbGFsJmlkPTM2ODY0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
