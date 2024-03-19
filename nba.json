@@ -3,22 +3,22 @@
         "title": "Pacers vs. Cavaliers",
         "league": "NBA",
         "img": "cle-ind",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODNjbGUxMDAwNDU5aW5kJmlkPTQ3NTIw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "76ers vs. Heat",
         "league": "NBA",
         "img": "mia-phi",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODVtaWExMDAwNzgzcGhpJmlkPTU0NDY3",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Celtics vs. Pistons",
         "league": "NBA",
         "img": "det-bos",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODRkZXQxMDAwNDQ5Ym9zJmlkPTQ1NzY2",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Bulls vs. Blazers",
@@ -38,21 +38,21 @@
         "title": "Warriors vs. Knicks",
         "league": "NBA",
         "img": "nyk-gsw",
-        "url": "#",
-        "status": "04:00"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODhueWsxMDAwNDQwZ3N3JmlkPTUxNTAw",
+        "status": "EN VIVO"
     },
     {
         "title": "Kings vs. Grizzlies",
         "league": "NBA",
         "img": "mem-sac",
-        "url": "#",
-        "status": "04:00"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5ODltZW0xMDAwNDczc2FjJmlkPTQyNDgw",
+        "status": "EN VIVO"
     },
     {
         "title": "Lakers vs. Hawks",
         "league": "NBA",
         "img": "atl-lal",
-        "url": "#",
-        "status": "04:30"
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTBhdGwxMDAwNDYxbGFsJmlkPTM2ODY0",
+        "status": "EN VIVO"
     }
 ]
