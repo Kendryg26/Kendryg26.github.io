@@ -1,58 +1,44 @@
 [
-    {
-        "title": "Pacers vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-ind",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "76ers vs. Heat",
-        "league": "NBA",
-        "img": "mia-phi",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Celtics vs. Pistons",
-        "league": "NBA",
-        "img": "det-bos",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Bulls vs. Blazers",
-        "league": "NBA",
-        "img": "por-chi",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Jazz vs. Timberwolves",
-        "league": "NBA",
-        "img": "min-uta",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Warriors vs. Knicks",
-        "league": "NBA",
-        "img": "nyk-gsw",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Kings vs. Grizzlies",
-        "league": "NBA",
-        "img": "mem-sac",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Lakers vs. Hawks",
-        "league": "NBA",
-        "img": "atl-lal",
-        "url": "#",
-        "status": "FINALIZADO"
-    }
+ {
+  "img": "orl-cha",
+  "league": "NBA",
+  "status": "01:00",
+  "title": "Magic vs. Hornets",
+  "url": "/embed/eventos/?r="
+ },
+ {
+  "img": "was-hou",
+  "league": "NBA",
+  "status": "01:00",
+  "title": "Wizards vs. Rockets",
+  "url": "/embed/eventos/?r="
+ },
+ {
+  "img": "bkn-nop",
+  "league": "NBA",
+  "status": "02:00",
+  "title": "Nets vs. Pelicans",
+  "url": "/embed/eventos/?r="
+ },
+ {
+  "img": "sas-dal",
+  "league": "NBA",
+  "status": "02:00",
+  "title": "Spurs vs. Mavericks",
+  "url": "/embed/eventos/?r="
+ },
+ {
+  "img": "sas-dal",
+  "league": "NBA",
+  "status": "03:00",
+  "title": "Spurs vs. Mavericks",
+  "url": "/embed/eventos/?r="
+ },
+ {
+  "img": "min-den",
+  "league": "NBA",
+  "status": "03:00",
+  "title": "Timberwolves vs. Nuggets",
+  "url": "/embed/eventos/?r="
+ }
 ]
