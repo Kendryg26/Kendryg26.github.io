@@ -12,5 +12,26 @@
         "img": "hou-was",
         "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTJob3UxMDAwNDc3d2FzJmlkPTQxODQ4",
         "status": "EN VIVO"
-    }
+    },
+    {
+        "title": "Nets vs. Pelicans",
+        "league": "NBA",
+        "img": "bkn-nop",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Spurs vs. Mavericks",
+        "league": "NBA",
+        "img": "sas-dal",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Timberwolves vs. Nuggets",
+        "league": "NBA",
+        "img": "min-den",
+        "url": "#",
+        "status": "03:00"
+    },
 ]
