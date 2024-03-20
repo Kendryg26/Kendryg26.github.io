@@ -16,21 +16,21 @@
     {
         "title": "Nets vs. Pelicans",
         "league": "NBA",
-        "img": "bkn-nop",
-        "url": "#",
-        "status": "02:00"
+        "img": "nop-bkn",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTNub3AxMDAwNzg3YmtuJmlkPTU0ODIw",
+        "status": "EN VIVO"
     },
     {
         "title": "Spurs vs. Mavericks",
         "league": "NBA",
-        "img": "sas-dal",
-        "url": "#",
-        "status": "02:00"
+        "img": "dal-sas",
+        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDA5OTRkYWwxMDAwNDc0c2FzJmlkPTUwNzQ0",
+        "status": "EN VIVO"
     },
     {
-        "title": "Timberwolves vs. Nuggets",
+        "title": "Wolves vs. Nuggets",
         "league": "NBA",
-        "img": "min-den",
+        "img": "den-min",
         "url": "#",
         "status": "03:00"
     }
