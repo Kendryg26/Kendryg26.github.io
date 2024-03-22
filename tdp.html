@@ -1,4 +1,5 @@
- <head>
+<html lang="es">
+  <head>
   <meta name="robots" content="noindex" />
   <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
@@ -25,8 +26,7 @@
   <div id="player"></div>
   <script>
   var player = new Clappr.Player({
-          source: 'https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:4_HD.smil/manifest.m3u8
-',
+          source: 'https://spa-ha-p004.cdn.masmediatv.es/SVoriginOperatorEdge/smil:4_HD.smil/manifest.m3u8',
           mimeType: 'application/hls+xml',
           height: '100%',
           width: '100%',
@@ -39,8 +39,9 @@
           shakaConfiguration: {
               drm: {
               clearKeys: {
-            '': '',
-            '': ''
+						'': '',
+						'': '',
+						'': ''
                   }
               },
           },
