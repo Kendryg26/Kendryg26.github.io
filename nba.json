@@ -1,11 +1,4 @@
 [
-   {
-        "title": "Knicks vs. Nets",
-        "league": "NBA",
-        "img": "bkn-nyk",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
     {
         "title": "Magic vs. Kings",
         "league": "NBA",
@@ -31,22 +24,22 @@
         "title": "Spurs vs. Suns",
         "league": "NBA",
         "img": "phx-sas",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjVwaHgxMDAwNDc0c2FzJmlkPTUwNzgz",
+        "status": "EN VIVO"
     },
     {
         "title": "Rockets vs. Jazz",
         "league": "NBA",
         "img": "uta-hou",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjR1dGExMDAwNzk3aG91JmlkPTU2NjAz",
+        "status": "EN VIVO"
     },
     {
         "title": "Wizards vs. Raptors",
         "league": "NBA",
         "img": "tor-was",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjJ0b3IxMDAwNDc3d2FzJmlkPTQxOTUy",
+        "status": "EN VIVO"
     },
     {
         "title": "Blazers vs. Nuggets",
