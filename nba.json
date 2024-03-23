@@ -1,21 +1,12 @@
 [
-    {
-        "title": "Knicks vs. Nets",
-        "league": "NBA",
-        "img": "bkn-nyk",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTlia24xMDAwNDY3bnlrJmlkPTM5MDQ3",
-        "status": "EN VIVO"
-    }
-]
-[
    {
         "title": "Knicks vs. Nets",
         "league": "NBA",
         "img": "bkn-nyk",
         "url": "#",
         "status": "FINALIZADO"
-    } 
-    {,
+    },
+    {
         "title": "Magic vs. Kings",
         "league": "NBA",
         "img": "sac-orl",
