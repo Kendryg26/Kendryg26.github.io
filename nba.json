@@ -1,58 +1,9 @@
 [
     {
-        "title": "Pistons vs. Celtics",
+        "title": "Knicks vs. Nets",
         "league": "NBA",
-        "img": "bos-det",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTFib3MxMDAwNDU2ZGV0JmlkPTQ0MjQz",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Raptors vs. Thunder",
-        "league": "NBA",
-        "img": "okc-tor",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTJva2MxMDAwNDc1dG9yJmlkPTUxMzM3",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Heat vs. Pelicans",
-        "league": "NBA",
-        "img": "nop-mia",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTNub3AxMDAwNDYzbWlhJmlkPTM4MDk1",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Spurs vs. Grizzlies",
-        "league": "NBA",
-        "img": "mem-sas",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTVtZW0xMDAwNDc0c2FzJmlkPTUwODAy",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Timberwolves vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-min",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTRjbGUxMDAwMzkwbWluJmlkPTY0MTQ2",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Warriors vs. Pacers",
-        "league": "NBA",
-        "img": "ind-gsw",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTZpbmQxMDAwNDU3Z3N3JmlkPTQwMTA4",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Blazzers vs. Clippers",
-        "league": "NBA",
-        "img": "lac-por",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTdsYWMxMDAwNDcycG9yJmlkPTQxOTU4",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Lakers vs. 76ers",
-        "league": "NBA",
-        "img": "phi-lal",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMThwaGkxMDAwMzkwbGFsJmlkPTM2NzY0",
+        "img": "bkn-nyk",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTlia24xMDAwNDY3bnlrJmlkPTM5MDQ3",
         "status": "EN VIVO"
     }
 ]
