@@ -1,93 +1,30 @@
 [
-  {
-    "title": "Red Sox (ss) vs. Pirates",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/134-111/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Orioles (ss) vs. Rays (ss)",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/139-110/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Rays (ss) vs. Braves",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/144-139/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Phillies vs. Yankees (ss)",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/147-143/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Tigers (ss) vs. Blue Jays (ss)",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/141-116/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Astros vs. Mets",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/121-117/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Angels vs. Athletics",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/133-108/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Rangers vs. Royals",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/118-140/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Rockies vs. Reds",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/113-115/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "D-backs (ss) vs. Giants",
-    "league": "MLB",
-    "status": "EN VIVO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/137-109/ar_16:9/1280",
-    "url": "/embed/embed02.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4MzU="
-  },
-  {
-    "title": "Brewers vs. Cubs",
-    "league": "MLB",
-    "status": "FINALIZADO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/112-158/ar_16:9/1280",
-    "url": "#"
-  },
-  {
-    "title": "Blue Jays (ss) vs. Orioles (ss)",
-    "league": "MLB",
-    "status": "EN VIVO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/110-141/ar_16:9/1280",
-    "url": "/embed/embed02.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4NDA="
-  },
-  {
-    "title": "Twins vs. Red Sox (ss)",
-    "league": "MLB",
-    "status": "EN VIVO",
-    "img": "https://midfield.mlbstatic.com/v1/teams-matchup/111-142/ar_16:9/1280",
-    "url": "/embed/embed02.html?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4NDE="
-  }
+    {
+        "title": "D-backs (ss) vs. Giants",
+        "league": "MLB",
+        "img": "https://midfield.mlbstatic.com/v1/teams-matchup/137-109/ar_16:9/1280",
+        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4MzU=",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Brewers vs. Cubs",
+        "league": "MLB",
+        "img": "https://midfield.mlbstatic.com/v1/teams-matchup/112-158/ar_16:9/1280",
+        "url": "#",
+        "status": "FINALIZADO"
+    },
+    {
+        "title": "Blue Jays (ss) vs. Orioles (ss)",
+        "league": "MLB",
+        "img": "https://midfield.mlbstatic.com/v1/teams-matchup/110-141/ar_16:9/1280",
+        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4NDA=",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Twins vs. Red Sox (ss)",
+        "league": "MLB",
+        "img": "https://midfield.mlbstatic.com/v1/teams-matchup/111-142/ar_16:9/1280",
+        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9kdW1wZXItdHJ1ZS5jb20vTUxCL2FwaV9tbGJfdjEucGhwP2dldD03NDc4NDE=",
+        "status": "EN VIVO"
+    }
 ]
