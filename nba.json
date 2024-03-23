@@ -7,3 +7,61 @@
         "status": "EN VIVO"
     }
 ]
+[
+   {
+        "title": "Knicks vs. Nets",
+        "league": "NBA",
+        "img": "bkn-nyk",
+        "url": "#",
+        "status": "FINALIZADO"
+    } 
+    {,
+        "title": "Magic vs. Kings",
+        "league": "NBA",
+        "img": "sac-orl",
+        "url": "#",
+        "status": "01:00"
+    },
+    {
+        "title": "Hawks vs. Hornets",
+        "league": "NBA",
+        "img": "cha-atl",
+        "url": "#",
+        "status": "01:30"
+    },
+    {
+        "title": "Bulls vs. Celtics",
+        "league": "NBA",
+        "img": "bos-chi",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Spurs vs. Suns",
+        "league": "NBA",
+        "img": "phx-sas",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Rockets vs. Jazz",
+        "league": "NBA",
+        "img": "uta-hou",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Wizards vs. Raptors",
+        "league": "NBA",
+        "img": "tor-was",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Blazers vs. Nuggets",
+        "league": "NBA",
+        "img": "den-por",
+        "url": "#",
+        "status": "04:00"
+    }
+]
