@@ -1,58 +1,37 @@
 [
     {
-        "title": "Pistons vs. Pacers",
+        "title": "Pistons vs. Celtics",
         "league": "NBA",
-        "img": "ind-det",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Cavaliers vs. Heat",
-        "league": "NBA",
-        "img": "mia-cle",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Celtics vs. Bucks",
-        "league": "NBA",
-        "img": "mil-bos",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Raptors vs. Kings",
-        "league": "NBA",
-        "img": "sac-tor",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Thunder vs. Jazz",
-        "league": "NBA",
-        "img": "uta-okc",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDEwMDB1dGExMDAwNDY4b2tjJmlkPTM3OTkx",
+        "img": "bos-det",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTFib3MxMDAwNDU2ZGV0JmlkPTQ0MjQz",
         "status": "EN VIVO"
     },
     {
-        "title": "Warriors vs. Grizzlies",
+        "title": "Raptors vs. Thunder",
         "league": "NBA",
-        "img": "mem-gsw",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDEwMDFtZW0xMDAwNzgzZ3N3JmlkPTU0Mzkx",
+        "img": "okc-tor",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTJva2MxMDAwNDc1dG9yJmlkPTUxMzM3",
         "status": "EN VIVO"
     },
     {
-        "title": "Suns vs. 76ers",
+        "title": "Heat vs. Pelicans",
         "league": "NBA",
-        "img": "phi-phx",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDEwMDJwaGkxMDAwNDcxcGh4JmlkPTQxOTE4",
+        "img": "nop-mia",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTNub3AxMDAwNDYzbWlhJmlkPTM4MDk1",
         "status": "EN VIVO"
     },
     {
-        "title": "Blazers vs. Clippers",
+        "title": "Spurs vs. Grizzlies",
         "league": "NBA",
-        "img": "lac-por",
-        "url": "\/embed\/eventos\/?r=Ly9vcmVwaXRoZS5iaW8vbHAuaHRtbD9pbWc9ZzAwMjIzMDEwMDNsYWMxMDAwNDcycG9yJmlkPTQxOTUw",
+        "img": "mem-sas",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTVtZW0xMDAwNDc0c2FzJmlkPTUwODAy",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Timberwolves vs. Cavaliers",
+        "league": "NBA",
+        "img": "cle-min",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMTRjbGUxMDAwMzkwbWluJmlkPTY0MTQ2",
         "status": "EN VIVO"
     }
 ]
