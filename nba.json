@@ -3,14 +3,41 @@
         "title": "Pistons vs. Pelicans",
         "league": "NBA",
         "img": "nop-det",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjdub3AxMDAwNDU2ZGV0JmlkPTQ0Mjgy",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Clippers vs. 76ers",
         "league": "NBA",
         "img": "phi-lac",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjhwaGkxMDAwNDYwbGFjJmlkPTM5NDA4",
+        "url": "#",
+        "status": "FINALIZADO"
+    },
+    {
+        "title": "Heat vs. Cavaliers",
+        "league": "NBA",
+        "img": "cle-mia",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjljbGUxMDAwNDYzbWlhJmlkPTM4MzM3",
         "status": "EN VIVO"
+    },
+    {
+        "title": "Timberwolves vs. Warriors",
+        "league": "NBA",
+        "img": "gsw-min",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMzFnc3cxMDAwNzk2bWluJmlkPTU2NTAz",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Bucks vs. Thunders",
+        "league": "NBA",
+        "img": "okc-mil",
+        "url": "#",
+        "status": "01:00"
+    },
+    {
+        "title": "Lakers vs. Pacers",
+        "league": "NBA",
+        "img": "ind-lal",
+        "url": "#",
+        "status": "04:00"
     }
-]
