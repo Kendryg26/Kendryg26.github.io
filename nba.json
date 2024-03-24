@@ -1,51 +1,16 @@
 [
     {
-        "title": "Magic vs. Kings",
+        "title": "Pistons vs. Pelicans",
         "league": "NBA",
-        "img": "sac-orl",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "nop-det",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjdub3AxMDAwNDU2ZGV0JmlkPTQ0Mjgy",
+        "status": "EN VIVO"
     },
     {
-        "title": "Hawks vs. Hornets",
+        "title": "Clippers vs. 76ers",
         "league": "NBA",
-        "img": "cha-atl",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Bulls vs. Celtics",
-        "league": "NBA",
-        "img": "bos-chi",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Spurs vs. Suns",
-        "league": "NBA",
-        "img": "phx-sas",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Rockets vs. Jazz",
-        "league": "NBA",
-        "img": "uta-hou",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Wizards vs. Raptors",
-        "league": "NBA",
-        "img": "tor-was",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Blazers vs. Nuggets",
-        "league": "NBA",
-        "img": "den-por",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "phi-lac",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjhwaGkxMDAwNDYwbGFjJmlkPTM5NDA4",
+        "status": "EN VIVO"
     }
 ]
