@@ -3,49 +3,49 @@
         "title": "Magic vs. Kings",
         "league": "NBA",
         "img": "sac-orl",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjBzYWMxMDAwNDY5b3JsJmlkPTQyNjY4",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Hawks vs. Hornets",
         "league": "NBA",
         "img": "cha-atl",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjFjaGExMDAwNDQ4YXRsJmlkPTQ1Njc3",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Bulls vs. Celtics",
         "league": "NBA",
         "img": "bos-chi",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjNib3MxMDAwNzg4Y2hpJmlkPTU0ODA1",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Spurs vs. Suns",
         "league": "NBA",
         "img": "phx-sas",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjVwaHgxMDAwNDc0c2FzJmlkPTUwNzgz",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Rockets vs. Jazz",
         "league": "NBA",
         "img": "uta-hou",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjR1dGExMDAwNzk3aG91JmlkPTU2NjAz",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Wizards vs. Raptors",
         "league": "NBA",
         "img": "tor-was",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjJ0b3IxMDAwNDc3d2FzJmlkPTQxOTUy",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Blazers vs. Nuggets",
         "league": "NBA",
         "img": "den-por",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjZkZW4xMDAwNDcycG9yJmlkPTQxOTM0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
