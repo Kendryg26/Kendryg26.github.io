@@ -1,5 +1,12 @@
 [
     {
+        "title": "Lakers vs. Pacers",
+        "league": "NBA",
+        "img": "ind-lal",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMzJpbmQxMDAwODAwbGFsJmlkPTU2NTQ0",
+        "status": "EN VIVO"
+    },
+    {
         "title": "Pistons vs. Pelicans",
         "league": "NBA",
         "img": "nop-det",
@@ -17,28 +24,21 @@
         "title": "Heat vs. Cavaliers",
         "league": "NBA",
         "img": "cle-mia",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMjljbGUxMDAwNDYzbWlhJmlkPTM4MzM3",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Timberwolves vs. Warriors",
         "league": "NBA",
         "img": "gsw-min",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMzFnc3cxMDAwNzk2bWluJmlkPTU2NTAz",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Bucks vs. Thunders",
         "league": "NBA",
         "img": "okc-mil",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwMzBva2MxMDAwODAzbWlsJmlkPTU2OTgy",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Lakers vs. Pacers",
-        "league": "NBA",
-        "img": "ind-lal",
         "url": "#",
-        "status": "04:00"
+        "status": "FINALIZADO"
     }
 ]
