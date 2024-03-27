@@ -1,30 +1,86 @@
 [
     {
-        "title": "Bucks vs. Lakers",
+        "title": "Magic vs. Warriors",
         "league": "NBA",
-        "img": "lal-mil",
+        "img": "gsw-orl",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
     },
     {
-        "title": "Heat vs. Warriors",
+        "title": "Wizards vs. Nets",
         "league": "NBA",
-        "img": "gsw-mia",
+        "img": "bkn-was",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
     },
     {
-        "title": "Pelicans vs. Thunders",
+        "title": "Hornets vs. Cavaliers",
         "league": "NBA",
-        "img": "okc-nop",
+        "img": "cle-cha",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
     },
     {
-        "title": "Kings vs. Mavericks",
+        "title": "76ers vs. Clippers",
         "league": "NBA",
-        "img": "dal-sac",
+        "img": "lac-phi",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:30"
+    },
+    {
+        "title": "Raptors vs. Knicks",
+        "league": "NBA",
+        "img": "nyk-tor",
+        "url": "#",
+        "status": "01:30"
+    },
+    {
+        "title": "Hawks vs. Blazers",
+        "league": "NBA",
+        "img": "por-atl",
+        "url": "#",
+        "status": "01:30"
+    },
+    {
+        "title": "Grizzlies vs. Lakers",
+        "league": "NBA",
+        "img": "lal-mem",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Bulls vs. Pacers",
+        "league": "NBA",
+        "img": "ind-chi",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Wolves vs. Pistons",
+        "league": "NBA",
+        "img": "det-min",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Thunder vs. Rockets",
+        "league": "NBA",
+        "img": "hou-okc",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Jazz vs. Spurs",
+        "league": "NBA",
+        "img": "sas-uta",
+        "url": "#",
+        "status": "03:00"
+    },
+    {
+        "title": "Nuggets vs. Suns",
+        "league": "NBA",
+        "img": "phx-den",
+        "url": "#",
+        "status": "04:00"
     }
 ]
