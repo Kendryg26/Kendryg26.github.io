@@ -3,8 +3,8 @@
         "title": "Bucks vs. Lakers",
         "league": "NBA",
         "img": "lal-mil",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNDVsYWwxMDAwODAwbWlsJmlkPTU2MTI0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Heat vs. Warriors",
@@ -17,14 +17,14 @@
         "title": "Pelicans vs. Thunders",
         "league": "NBA",
         "img": "okc-nop",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNDZva2MxMDAwNDY2bm9wJmlkPTQyNjAz",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Kings vs. Mavericks",
         "league": "NBA",
         "img": "dal-sac",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNDdkYWwxMDAwNDQ2c2FjJmlkPTY0MTgw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
