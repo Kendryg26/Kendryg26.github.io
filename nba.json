@@ -52,35 +52,35 @@
         "title": "Bulls vs. Pacers",
         "league": "NBA",
         "img": "ind-chi",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNTRpbmQxMDAwNDUyY2hpJmlkPTQxMTI3",
+        "status": "EN VIVO"
     },
     {
         "title": "Wolves vs. Pistons",
         "league": "NBA",
         "img": "det-min",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNTZkZXQxMDAwNDY1bWluJmlkPTQwMTk0",
+        "status": "EN VIVO"
     },
     {
         "title": "Thunder vs. Rockets",
         "league": "NBA",
         "img": "hou-okc",
-        "url": "#",
-        "status": "02:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNTdob3UxMDAwNDY4b2tjJmlkPTM3NzE4",
+        "status": "EN VIVO"
     },
     {
         "title": "Jazz vs. Spurs",
         "league": "NBA",
         "img": "sas-uta",
-        "url": "#",
-        "status": "03:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNThzYXMxMDAwNDc2dXRhJmlkPTQ2NzMw",
+        "status": "EN VIVO"
     },
     {
         "title": "Nuggets vs. Suns",
         "league": "NBA",
         "img": "phx-den",
-        "url": "#",
-        "status": "04:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNTlwaHgxMDAwNzgzZGVuJmlkPTU0Mzg3",
+        "status": "EN VIVO"
     }
 ]
