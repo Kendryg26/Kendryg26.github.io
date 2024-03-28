@@ -1,86 +1,16 @@
 [
     {
-        "title": "Magic vs. Warriors",
+        "title": "Hawks vs. Celtics",
         "league": "NBA",
-        "img": "gsw-orl",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "bos-atl",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNjBib3MxMDAwNDQ4YXRsJmlkPTQ1NzEx",
+        "status": "EN VIVO"
     },
     {
-        "title": "Wizards vs. Nets",
+        "title": "Pelicans vs. Bucks",
         "league": "NBA",
-        "img": "bkn-was",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Hornets vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-cha",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "76ers vs. Clippers",
-        "league": "NBA",
-        "img": "lac-phi",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Raptors vs. Knicks",
-        "league": "NBA",
-        "img": "nyk-tor",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Hawks vs. Blazers",
-        "league": "NBA",
-        "img": "por-atl",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Grizzlies vs. Lakers",
-        "league": "NBA",
-        "img": "lal-mem",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Bulls vs. Pacers",
-        "league": "NBA",
-        "img": "ind-chi",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Wolves vs. Pistons",
-        "league": "NBA",
-        "img": "det-min",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Thunder vs. Rockets",
-        "league": "NBA",
-        "img": "hou-okc",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Jazz vs. Spurs",
-        "league": "NBA",
-        "img": "sas-uta",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Nuggets vs. Suns",
-        "league": "NBA",
-        "img": "phx-den",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "mil-nop",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNjFtaWwxMDAwODA1bm9wJmlkPTU3MDk5",
+        "status": "EN VIVO"
     }
 ]
