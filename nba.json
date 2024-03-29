@@ -1,16 +1,86 @@
 [
     {
-        "title": "Hawks vs. Celtics",
+        "title": "Pacers vs. Lakers",
         "league": "NBA",
-        "img": "bos-atl",
+        "img": "lal-ind",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
     },
     {
-        "title": "Pelicans vs. Bucks",
+        "title": "Hornets vs. Warriors",
         "league": "NBA",
-        "img": "mil-nop",
+        "img": "gsw-cha",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
+    },
+    {
+        "title": "Magic vs. Clippers",
+        "league": "NBA",
+        "img": "det-was",
+        "url": "#",
+        "status": "01:00"
+    },
+    {
+        "title": "Wizards vs. Pistons",
+        "league": "NBA",
+        "img": "lac-orl",
+        "url": "#",
+        "status": "01:00"
+    },
+    {
+        "title": "Cavaliers vs. 76ers",
+        "league": "NBA",
+        "img": "phi-cle",
+        "url": "#",
+        "status": "01:30"
+    },
+    {
+        "title": "Nets vs. Bulls",
+        "league": "NBA",
+        "img": "chi-bkn",
+        "url": "#",
+        "status": "01:30"
+    },
+    {
+        "title": "Heat vs. Blazers",
+        "league": "NBA",
+        "img": "por-mia",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Thunder vs. Suns",
+        "league": "NBA",
+        "img": "phx-okc",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Spurs vs. Knicks",
+        "league": "NBA",
+        "img": "nyk-sas",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Nuggets vs. Timberwolves",
+        "league": "NBA",
+        "img": "min-den",
+        "url": "#",
+        "status": "03:00"
+    },
+    {
+        "title": "Jazz vs. Rockets",
+        "league": "NBA",
+        "img": "hou-uta",
+        "url": "#",
+        "status": "03:30"
+    },
+    {
+        "title": "Kings vs. Mavericks",
+        "league": "NBA",
+        "img": "dal-sac",
+        "url": "#",
+        "status": "04:30"
     }
 ]
