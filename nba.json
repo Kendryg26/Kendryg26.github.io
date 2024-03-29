@@ -3,14 +3,14 @@
         "title": "Hawks vs. Celtics",
         "league": "NBA",
         "img": "bos-atl",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNjBib3MxMDAwNDQ4YXRsJmlkPTQ1NzEx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Pelicans vs. Bucks",
         "league": "NBA",
         "img": "mil-nop",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNjFtaWwxMDAwODA1bm9wJmlkPTU3MDk5",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
