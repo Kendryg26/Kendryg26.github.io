@@ -73,14 +73,14 @@
         "title": "Jazz vs. Rockets",
         "league": "NBA",
         "img": "hou-uta",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzJob3UxMDAwNDc2dXRhJmlkPTQ2ODEx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Kings vs. Mavericks",
         "league": "NBA",
         "img": "dal-sac",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzNkYWwxMDAwMzkwc2FjJmlkPTM2NjIx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
