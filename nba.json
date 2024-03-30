@@ -3,8 +3,8 @@
         "title": "Pelicans vs. Celtics",
         "league": "NBA",
         "img": "bos-nop",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzRib3MxMDAwMzkwbm9wJmlkPTM2NTg0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Magic vs. Grizzlies",
@@ -17,7 +17,7 @@
         "title": "Hawks vs. Bucks",
         "league": "NBA",
         "img": "mil-atl",
-        "url": "#",
-        "status": "01:30"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzZtaWwxMDAwMzkwYXRsJmlkPTM2NTg1",
+        "status": "EN VIVO"
     }
 ]
