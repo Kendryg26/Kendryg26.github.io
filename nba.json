@@ -1,86 +1,23 @@
 [
     {
-        "title": "Pacers vs. Lakers",
+        "title": "New Orleans Pelicans vs. Boston Celtics",
         "league": "NBA",
-        "img": "lal-ind",
+        "img": "bos-nop",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "11:00"
     },
     {
-        "title": "Hornets vs. Warriors",
+        "title": "Orlando Magic vs. Memphis Grizzlies",
         "league": "NBA",
-        "img": "gsw-cha",
+        "img": "orl-mem",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:00"
     },
     {
-        "title": "Magic vs. Clippers",
+        "title": "Atlanta Hawks vs. Milwaukee Bucks",
         "league": "NBA",
-        "img": "det-was",
+        "img": "atl-mil",
         "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Wizards vs. Pistons",
-        "league": "NBA",
-        "img": "lac-orl",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Cavaliers vs. 76ers",
-        "league": "NBA",
-        "img": "phi-cle",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Nets vs. Bulls",
-        "league": "NBA",
-        "img": "chi-bkn",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Heat vs. Blazers",
-        "league": "NBA",
-        "img": "por-mia",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Thunder vs. Suns",
-        "league": "NBA",
-        "img": "phx-okc",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Spurs vs. Knicks",
-        "league": "NBA",
-        "img": "nyk-sas",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Nuggets vs. Timberwolves",
-        "league": "NBA",
-        "img": "min-den",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Jazz vs. Rockets",
-        "league": "NBA",
-        "img": "hou-uta",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Kings vs. Mavericks",
-        "league": "NBA",
-        "img": "dal-sac",
-        "url": "#",
-        "status": "FINALIZADO"
+        "status": "01:30"
     }
 ]
