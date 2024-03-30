@@ -1,20 +1,20 @@
 [
     {
-        "title": "New Orleans Pelicans vs. Boston Celtics",
+        "title": "Pelicans vs. Celtics",
         "league": "NBA",
         "img": "bos-nop",
         "url": "#",
         "status": "23:00"
     },
     {
-        "title": "Orlando Magic vs. Memphis Grizzlies",
+        "title": "Magic vs. Grizzlies",
         "league": "NBA",
         "img": "orl-mem",
         "url": "#",
         "status": "01:00"
     },
     {
-        "title": "Atlanta Hawks vs. Milwaukee Bucks",
+        "title": "Hawks vs. Bucks",
         "league": "NBA",
         "img": "atl-mil",
         "url": "#",
