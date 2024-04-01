@@ -1,40 +1,5 @@
 [
     {
-        "title": "Nuggets vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-den",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Nets vs. Lakers",
-        "league": "NBA",
-        "img": "lal-bkn",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzhsYWwxMDAwNDUwYmtuJmlkPTQwMzM5",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Raptors vs. 76ers",
-        "league": "NBA",
-        "img": "phi-tor",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODBwaGkxMDAwNDc1dG9yJmlkPTUxNDM3",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Wizards vs. Heat",
-        "league": "NBA",
-        "img": "mia-was",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODFtaWExMDAwNDc3d2FzJmlkPTQxOTQ5",
-        "status": "EN VIVO"
-    },
-    {
-        "title": "Hornets vs. Clippers",
-        "league": "NBA",
-        "img": "lac-cha",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwNzlsYWMxMDAwNDUxY2hhJmlkPTM3ODY0",
-        "status": "EN VIVO"
-    },
-    {
         "title": "Spurs vs. Warriors",
         "league": "NBA",
         "img": "gsw-sas",
@@ -66,7 +31,7 @@
         "title": "Kings vs. Jazz",
         "league": "NBA",
         "img": "uta-sac",
-        "url": "#",
-        "status": "03:00"
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODZ1dGExMDAwNDczc2FjJmlkPTQyNjMz",
+        "status": "EN VIVO"
     }
 ]
