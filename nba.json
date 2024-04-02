@@ -3,42 +3,42 @@
         "title": "Hornets vs. Celtics",
         "league": "NBA",
         "img": "bos-cha",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODdib3MxMDAwNzg4Y2hhJmlkPTU0NzYw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Pacers vs. Nets",
         "league": "NBA",
         "img": "bkn-ind",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODlia24xMDAwNDU5aW5kJmlkPTQ3NTE4",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Magic vs. Blazers",
         "league": "NBA",
         "img": "por-orl",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTBwb3IxMDAwNDY5b3JsJmlkPTQyNDEw",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Pistons vs. Grizzlies",
         "league": "NBA",
         "img": "mem-det",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwODhtZW0xMDAwNDU2ZGV0JmlkPTY0NjMy",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Pelicans vs. Suns",
         "league": "NBA",
         "img": "phx-nop",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTJwaHgxMDAwMzkwbm9wJmlkPTY0MTQx",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Bulls vs. Hawks",
         "league": "NBA",
         "img": "atl-chi",
-        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTFhdGwxMDAwNDUyY2hpJmlkPTQwOTk0",
-        "status": "EN VIVO"
+        "url": "#",
+        "status": "FINALIZADO"
     }
 ]
