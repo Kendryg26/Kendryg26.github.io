@@ -1,44 +1,65 @@
 [
     {
-        "title": "Hornets vs. Celtics",
+        "title": "Raptors vs. Lakers",
         "league": "NBA",
-        "img": "bos-cha",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "lal-tor",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTRsYWwxMDAwNDc1dG9yJmlkPTUxNDQw",
+        "status": "EN VIVO"
     },
     {
-        "title": "Pacers vs. Nets",
+        "title": "Wizards vs. Bucks",
         "league": "NBA",
-        "img": "bkn-ind",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "mil-was",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTVtaWwxMDAwNDc3d2FzJmlkPTQxODUz",
+        "status": "EN VIVO"
     },
     {
-        "title": "Magic vs. Blazers",
+        "title": "Heat vs. Knicks",
         "league": "NBA",
-        "img": "por-orl",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "nyk-mia",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTZueWsxMDAwNDYzbWlhJmlkPTM4Mjg5",
+        "status": "EN VIVO"
     },
     {
-        "title": "Pistons vs. Grizzlies",
+        "title": "76ers vs. Thunder",
         "league": "NBA",
-        "img": "mem-det",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "okc-phi",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTNva2MxMDAwNzgycGhpJmlkPTYyNzc0",
+        "status": "EN VIVO"
     },
     {
-        "title": "Pelicans vs. Suns",
+        "title": "Timberwolves vs. Rockets",
         "league": "NBA",
-        "img": "phx-nop",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "hou-min",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOThob3UxMDAwNDY1bWluJmlkPTQwMTg0",
+        "status": "EN VIVO"
     },
     {
-        "title": "Bulls vs. Hawks",
+        "title": "Nuggets vs. Spurs",
         "league": "NBA",
-        "img": "atl-chi",
+        "img": "sas-den",
+        "url": "\/embed\/eventos?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDEwOTlzYXMxMDAwNzk0ZGVuJmlkPTU2MTA1",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Jazz vs. Cavaliers",
+        "league": "NBA",
+        "img": "cle-uta",
+        "url": "\/embed\/eventos?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMDBjbGUxMDAwODMwdXRhJmlkPTU4NjU3",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Warriors vs. Mavericks",
+        "league": "NBA",
+        "img": "dal-gsw",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "04:00"
+    },
+    {
+        "title": "Kings vs. Clippers",
+        "league": "NBA",
+        "img": "lac-sac",
+        "url": "#",
+        "status": "04:00"
     }
 ]
