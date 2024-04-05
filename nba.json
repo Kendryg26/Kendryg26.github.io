@@ -1,37 +1,86 @@
 [
     {
-        "title": "Mavericks vs. Hawks",
+        "title": "Hornets vs. Magic",
         "league": "NBA",
-        "img": "atl-dal",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "orl-cha",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTVvcmwxMDAwNDUxY2hhJmlkPTM3NjI0",
+        "status": "EN VIVO"
     },
     {
-        "title": "Heat vs. 76ers",
+        "title": "Pacers vs. Thunder",
         "league": "NBA",
-        "img": "phi-mia",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "okc-ind",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTZva2MxMDAwNDU5aW5kJmlkPTQ3NTE1",
+        "status": "EN VIVO"
     },
     {
-        "title": "Knicks vs. Kings",
+        "title": "Wizards vs. Blazers",
         "league": "NBA",
-        "img": "sac-nyk",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "por-was",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTdwb3IxMDAwNDc3d2FzJmlkPTQxNTcx",
+        "status": "EN VIVO"
     },
     {
-        "title": "Rockets vs. Warriors",
+        "title": "Celtics vs. Kings",
         "league": "NBA",
-        "img": "gsw-hou",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "sac-bos",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMThzYWMxMDAwNzg4Ym9zJmlkPTU0NzYx",
+        "status": "EN VIVO"
     },
     {
-        "title": "Clippers vs. Nuggets",
+        "title": "Bulls vs. Knicks",
         "league": "NBA",
-        "img": "den-lac",
+        "img": "nyk-chi",
         "url": "#",
-        "status": "FINALIZADO"
+        "status": "02:00"
+    },
+    {
+        "title": "Rockets vs. Heat",
+        "league": "NBA",
+        "img": "mia-hou",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Grizzlies vs. Pistons",
+        "league": "NBA",
+        "img": "det-mem",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Bucks vs. Raptors",
+        "league": "NBA",
+        "img": "tor-mil",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Pelicans vs. Spurs",
+        "league": "NBA",
+        "img": "sas-nop",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Mavericks vs. Warriors",
+        "league": "NBA",
+        "img": "gsw-dal",
+        "url": "#",
+        "status": "02:30"
+    },
+    {
+        "title": "Suns vs. Timberwolves",
+        "league": "NBA",
+        "img": "min-phx",
+        "url": "#",
+        "status": "04:00"
+    },
+    {
+        "title": "Clipper vs. Jazz",
+        "league": "NBA",
+        "img": "uta-lac",
+        "url": "#",
+        "status": "04:00"
     }
 ]
