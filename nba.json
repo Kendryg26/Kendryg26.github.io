@@ -1,65 +1,37 @@
 [
     {
-        "title": "Raptors vs. Lakers",
+        "title": "Mavericks vs. Hawks",
         "league": "NBA",
-        "img": "lal-tor",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "atl-dal",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMjRhdGwxMDAwNDU0ZGFsJmlkPTQzNjQy",
+        "status": "EN VIVO"
     },
     {
-        "title": "Wizards vs. Bucks",
+        "title": "Heat vs. 76ers",
         "league": "NBA",
-        "img": "mil-was",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "phi-mia",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTFwaGkxMDAwNDYzbWlhJmlkPTYzNTM5",
+        "status": "EN VIVO"
     },
     {
-        "title": "Heat vs. Knicks",
+        "title": "Knicks vs. Kings",
         "league": "NBA",
-        "img": "nyk-mia",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "sac-nyk",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTJzYWMxMDAwNzgybnlrJmlkPTY0NDc0",
+        "status": "EN VIVO"
     },
     {
-        "title": "76ers vs. Thunder",
+        "title": "Rockets vs. Warriors",
         "league": "NBA",
-        "img": "okc-phi",
-        "url": "#",
-        "status": "FINALIZADO"
+        "img": "gsw-hou",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMTNnc3cxMDAwNDU4aG91JmlkPTQ2MjQw",
+        "status": "EN VIVO"
     },
     {
-        "title": "Timberwolves vs. Rockets",
+        "title": "Clippers vs. Nuggets",
         "league": "NBA",
-        "img": "hou-min",
+        "img": "den-lac",
         "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Nuggets vs. Spurs",
-        "league": "NBA",
-        "img": "sas-den",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Jazz vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-uta",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Warriors vs. Mavericks",
-        "league": "NBA",
-        "img": "dal-gsw",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
-        "title": "Kings vs. Clippers",
-        "league": "NBA",
-        "img": "lac-sac",
-        "url": "#",
-        "status": "FINALIZADO"
+        "status": "04:00"
     }
 ]
