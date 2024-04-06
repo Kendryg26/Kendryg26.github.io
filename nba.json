@@ -1,86 +1,30 @@
 [
-  {
-    "title": "Hornets vs. Magic",
-    "league": "NBA",
-    "img": "orl-cha",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Pacers vs. Thunder",
-    "league": "NBA",
-    "img": "okc-ind",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Wizards vs. Blazers",
-    "league": "NBA",
-    "img": "por-was",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Celtics vs. Kings",
-    "league": "NBA",
-    "img": "sac-bos",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Bulls vs. Knicks",
-    "league": "NBA",
-    "img": "nyk-chi",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Rockets vs. Heat",
-    "league": "NBA",
-    "img": "mia-hou",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Grizzlies vs. Pistons",
-    "league": "NBA",
-    "img": "det-mem",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Bucks vs. Raptors",
-    "league": "NBA",
-    "img": "tor-mil",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Pelicans vs. Spurs",
-    "league": "NBA",
-    "img": "sas-nop",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Mavericks vs. Warriors",
-    "league": "NBA",
-    "img": "gsw-dal",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Suns vs. Timberwolves",
-    "league": "NBA",
-    "img": "min-phx",
-    "url": "#",
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Clipper vs. Jazz",
-    "league": "NBA",
-    "img": "uta-lac",
-    "url": "#",
-    "status": "FINALIZADO"
-  }
+    {
+        "title": "Lakers vs. Cavaliers",
+        "league": "NBA",
+        "img": "cle-lal",
+        "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMjdjbGUxMDAwODAwbGFsJmlkPTU2MTkw",
+        "status": "EN VIVO"
+    },
+    {
+        "title": "Nets vs. Pistons",
+        "league": "NBA",
+        "img": "det-bkn",
+        "url": "#",
+        "status": "01:00"
+    },
+    {
+        "title": "Grizzlies vs. 76ers",
+        "league": "NBA",
+        "img": "phi-mem",
+        "url": "#",
+        "status": "02:00"
+    },
+    {
+        "title": "Nuggets vs. Hawks",
+        "league": "NBA",
+        "img": "atl-den",
+        "url": "#",
+        "status": "03:00"
+    }
 ]
