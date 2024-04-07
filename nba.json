@@ -1,12 +1,5 @@
 [
     {
-        "title": "Lakers vs. Cavaliers",
-        "league": "NBA",
-        "img": "cle-lal",
-        "url": "#",
-        "status": "FINALIZADO"
-    },
-    {
         "title": "Nets vs. Pistons",
         "league": "NBA",
         "img": "det-bkn",
@@ -19,6 +12,13 @@
         "img": "phi-mem",
         "url": "\/embed\/eventos\/?r=Ly9hbmNlcHJvdi5iZXN0L2xwLnBocD9pbWc9ZzAwMjIzMDExMjlwaGkxMDAwNDYybWVtJmlkPTQ0MDk3",
         "status": "EN VIVO"
+    },
+    {
+        "title": "Lakers vs. Cavaliers",
+        "league": "NBA",
+        "img": "cle-lal",
+        "url": "#",
+        "status": "FINALIZADO"
     },
     {
         "title": "Nuggets vs. Hawks",
