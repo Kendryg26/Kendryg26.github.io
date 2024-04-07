@@ -1,8 +1,17 @@
+<script type='text/javascript'>
+    document.oncontextmenu = function(){return false}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+<script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+</script>
 <html lang="es"> 
 <head> 
-
-
-
 </head>     
 <meta charset="utf-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
@@ -62,7 +71,7 @@ var container = document.getElementById('bitmovin-94527');
   } 
  
   var source = { 
-  title: 'Kerter+ | NBA League Pass', 
+  title: 'Kerter+ | NBA League Pass',
   description: '', 
   hls: 'https://nbalpng.akamaized.net/live/a/hls-wvpr/' + getHLS + '/index.m3u8?addUserInfo=1', 
     poster: '', 
@@ -71,14 +80,37 @@ var container = document.getElementById('bitmovin-94527');
       LA_URL: 'https://ottapp-appgw-amp.nba.com/v1/client/get-widevine-license?ownerUid=azuki&mediaId=' + getHLS + '&sessionId=5e0b8a97-3d2e-4188-9590-f00f5f8629a2&is_dvr=false', 
       headers: { 
         'applicationtoken': getDATA, 
-    'authorizationtoken': 'AuthToken1jVHLbtswEPwa60aD78dBByFtEzdI26AOivZGUauYsSQKJOXE-frSRtICRVsEIJaL2ZndxWyzdB4mB_Uu5zmtWLOiH8qLMBz9dD_bmI_rOYbOrqfWrvOBuSEs3dqFsbCqTUoLxD-0Kaf_SE7c31S3g9Gm9dM4pGDndYj3BX1MJVCMRfnOwXcwZZ-PJXWD9eOpPtkR6iUhqRTXhBokmWkRt61BllqMeqst6S2WoGi1hclOedPVHfR2GXL1Dg7eQQGkO2RhWo7crAe03w8LCrLfIUYeAMC4vYH5hb09zlBvQtradoBcNcMQHqF7bZ1-9b5LEEvnt-7WOBeW83Lc8h5T41DfOYs4o4CMkxRpwESTVtJe6rLLecrLkDdJ_mr56F0MKfT55TCvpuuT6fIfpscwQJ2WNrnoW4hVs-RdiP7ZZh-mG5v2NRGGcMaZkIIQRhQVXBtFKSOGY2k0lVJrRgkXRmoqBBGESiM0NloKTAllhjKOCSu5UJRTLYgsia7eP80-Qvo81UQRYphgSlUXEWyG7gxiQ4U0BbyG4-Xiy7Gx0i3mvLjhAHFiBNJESdR2vHNcWtyptrq6aS6-XjVFWvdPzXVzu6L9t9vN5cOn7Q9lV7TN5Hh99M-89eoQv9x_3I965ndm-33Fup8', 
+    'authorizationtoken': 'AuthToken1pVHbTt0wEPyak7cc2ev7Qx4iyrVFRS2o6qNjbziBJA62Axy-voZCK1VtVamStZ5dz45Gnnb1A84Om13OS9qwdgNH5UQc98N8vdiY99slBm-3c2e3-Z65Max-68JUWNVpSivGX3ZTTn9Zeeb-pLodTjZtH6cxBbtsQ7wu04dUChAiyvVSBo9zHvK-QDfaYXp-n-2EzZrq3gBAp_uao-I156SvjSeqltb1wlDimYbqEmc751PfeOztOubqHd4PDstgEVOYpIn1rK5DvYzzUt8xg_UYJvTTsJoozSv7cr9gcxrSpe1GzFU7juEB_Zt0-qF9lTAW5X_11joX1hdzClB6DT3RRhtEb13HPCdSCSKBa9drJYlCSnVvvFTInEFtBCVd6S11xeeLg1cD_y3326imwcWQQp9fA30LSz-HJf8QVgwjNmntkotDh7Fq17wLcXiyeQjzuU23DS3_wRlnQgpKGVUguDYKgFFTLBsNUmrNgHJhpAYhqKAgjdDEaCkIUGAGGCeUFSwUcNCCygJ0dfi4DBHTx7mhinIjOAioDiLajP77EEAJXYbvcX-8Dr5xqL2hytZEUFZzYKzWVtpaahSdw15LpaqT8_bg80kLQjZ-T8N0JDTdXZwFF-wG-qdPN1-ejslVgbd3-4ezD19TnHPpjm7w4nDD_Dc', 
     'azukiimc': 'IMC7.1.0_AN_D3.0.0_S0', 
-    'deviceprofile': 'eyJtb2RlbCI6IkRlc2t0b3AiLCJvc1ZlcnNpb24iOiIxMCIsInZlbmRvck5hbWUiOiJNaWNyb3NvZnQiLCJvc05hbWUiOiJIVE1MNSIsInd2TGV2ZWwiOiJMMyIsImRldmljZVVVSUQiOiI5NWQwMWNmYThiYWQ0ODE0OTc1YmMwMzYzYmY1M2Q3MSJ9', 
+    'deviceprofile': 'eyJtb2RlbCI6IkRlc2t0b3AiLCJvc1ZlcnNpb24iOiIxMCIsInZlbmRvck5hbWUiOiJNaWNyb3NvZnQiLCJvc05hbWUiOiJIVE1MNSIsInd2TGV2ZWwiOiJMMyIsImRldmljZVVVSUQiOiI2ZDQ5ODhiYzg2MGU0MDZiOGRiZDgzY2RhMWZkYTY0OCJ9', 
         } 
-      } 
+      }  
     } 
   } 
       var player = new bitmovin.player.Player(container, config); 
       player.load(source); 
   </script>
   <style>body{margin:0;}iframe{width:100%;height:100%;}.bmpui-ui-watermark{display:none;}.bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker{background-color: #fff;}.bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition, .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition{background-color: #fff;}.bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition-marker, .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker{border-color:#fff;background-color:#fff;}</style>
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'eca8f3881f95ecd799b45db649415400',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//berriesstring.com/eca8f3881f95ecd799b45db649415400/invoke.js"></scr' + 'ipt>');
+</script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'b97d4dd6f71fbdda5bec207c30d677dc',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//berriesstring.com/b97d4dd6f71fbdda5bec207c30d677dc/invoke.js"></scr' + 'ipt>');
+</script>
+<script type='text/javascript' src='//berriesstring.com/aa/71/02/aa7102238055345c9084d06bbb424c3b.js'></script>
+<script async="async" data-cfasync="false" src="//berriesstring.com/2dda9a1d25d98dd7d23175f0b1a4fc19/invoke.js"></script>
+<div id="container-2dda9a1d25d98dd7d23175f0b1a4fc19"></div><script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'870b814b191adad5',t:'MTcxMjUwODUwNS4wMzAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script>
