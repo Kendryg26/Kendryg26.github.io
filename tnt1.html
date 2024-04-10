@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-<title>test API MAX/USA/MX/BR</title>
+<title>200! API MAX/USA/MX/BR</title>
 <meta name="robots" content="noindex" /> 
 <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script> 
 <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script> 
@@ -11,6 +11,7 @@
 <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script> 
 <script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+
 
 <style>  
 .player-poster[data-poster] { 
@@ -26,11 +27,11 @@ body{
 <div id="player"></div> 
 <script> 
 var player = new Clappr.Player({ 
-        source: 'https://cf.live.latam.prd.media.max.com/live/lo/use1/f8843d7c-8506-47d7-bb17-29a82460d019-dash-6hdvr-cenc/master.mpd', 
+        source: 'https://gcp.live.latam.prd.media.max.com/live/lo/use1/34b6e82a-b9da-469b-8793-30a1fadcf36f-dash-6hdvr-cenc/master.mpd', 
         mimeType: 'application/dash+xml', 
         height: '100%', 
         width: '100%', 
-        poster: 'https://images.cdn.prd.api.discomax.com/2024/04/04/dfa70259-5d68-3f94-8387-5a0bd3a0879a.jpeg',
+        poster: 'https://images.cdn.prd.api.discomax.com/2024/04/04/ad15adb9-830b-3057-8246-a6a81ab3201e.jpeg',
         plugins: [
             LevelSelector, 
             DashShakaPlayback, 
@@ -52,9 +53,9 @@ var player = new Clappr.Player({
         shakaConfiguration: { 
             drm: { 
              clearKeys: { 
-              "0100c8d88c8d97cc258af107971ed036": "d2a4e4c10c911a49e5cb8aca422cd305",
-              "010174cedc0fbf62cce622e0f2438207": "dc0c4a8d3d8ad1105e21943b2941edb1",
-              "01026969e2f6f50f49c08581948a04cc": "65df2723cdb3dd250163e36447b7dc0f"
+              "0100bd1a7d6f07a0f1dad9d0f82d02e7": "8ab969c545109faf2adfe77287ef02c0",
+              "010103a7985dbdf81dfbcb4f5819c2f8": "8f43953da50db93997e9315b9ff9797d",
+              "01027620e13a1129e08e68a22728a592": "623375fce0412db396c219723327632a"
                     } 
             }, 
             preferredAudioLanguage: 'pt-BR', 
