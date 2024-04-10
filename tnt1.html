@@ -27,8 +27,8 @@ body{
 <div id="player"></div> 
 <script> 
 var player = new Clappr.Player({ 
-        source: 'https://eac3cb760b1e.us-west-2.playback.live-video.net/api/video/v1/us-west-2.654654566691.channel.NcgMzKlOIMYR.m3u8', 
-        mimeType: 'application/hls+xml', 
+        source: 'https://gcp.live.latam.prd.media.max.com/live/lo/use1/34b6e82a-b9da-469b-8793-30a1fadcf36f-dash-6hdvr-cenc/master.mpd', 
+        mimeType: 'application/dash+xml', 
         height: '100%', 
         width: '100%', 
         poster: 'https://images.cdn.prd.api.discomax.com/2024/04/04/ad15adb9-830b-3057-8246-a6a81ab3201e.jpeg',
@@ -53,9 +53,9 @@ var player = new Clappr.Player({
         shakaConfiguration: { 
             drm: { 
              clearKeys: { 
-              "": "",
-              "": "",
-              "": ""
+              "0100bd1a7d6f07a0f1dad9d0f82d02e7": "8ab969c545109faf2adfe77287ef02c0",
+              "010103a7985dbdf81dfbcb4f5819c2f8": "8f43953da50db93997e9315b9ff9797d",
+              "01027620e13a1129e08e68a22728a592": "623375fce0412db396c219723327632a"
                     } 
             }, 
             preferredAudioLanguage: 'pt-BR', 
