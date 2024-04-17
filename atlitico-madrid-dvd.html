@@ -1,0 +1,67 @@
+<html lang="es">
+<head>
+<title>200! API MAX/USA/MX/BR</title>
+<meta name="robots" content="noindex" /> 
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script> 
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script> 
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script> 
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script> 
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script> 
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script> 
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script> 
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+
+<style>  
+.player-poster[data-poster] { 
+  background-size: cover; 
+} 
+body{ 
+  margin:0; 
+  padding:0; 
+} 
+</style> 
+</head> 
+<body>
+<div id="player"></div> 
+<script> 
+var player = new Clappr.Player({ 
+        source: 'https://akm.live.latam.prd.media.max.com/live/lo/use1/23008a06-9324-46d7-8038-dcd7b997e6ba-dash-6hdvr-cenc/master.mpd', 
+        mimeType: 'application/dash+xml', 
+        height: '100%', 
+        width: '100%', 
+        poster: 'https://images.cdn.prd.api.discomax.com/2024/04/04/8137b6be-e469-331f-a88a-911d5b3ed4a1.jpeg',
+        plugins: [
+            LevelSelector, 
+            DashShakaPlayback, 
+            ClapprPip.PipButton, 
+            ClapprPip.PipPlugin, 
+            Clappr.MediaControl,
+            Clappr.Poster
+        ], 
+        events: {
+            onReady: function() {
+                var plugin = this.getPlugin('click_to_pause'); 
+                plugin && plugin.disable();
+            },
+        }, 
+        chromecast: { 
+            appId: '#', 
+            contentType: 'video/mp4', 
+        }, 
+        shakaConfiguration: { 
+            drm: { 
+             clearKeys: { 
+              "01000947e48f78a79c1fd232d50b9541": "cfec02cbf6896de6829d1a59bcd6ef00",
+              "0101f888664fc1b6b3d3dd99529f26df": "c184abf2a406dbaa1cc48a70fd174cbb",
+              "010278afb9ca1fab85de25f7122e56f8": "5c8a6570defcad49ed3285d7ca2feab7"
+                    } 
+            }, 
+            preferredAudioLanguage: 'pt-BR', 
+        }, 
+        shakaOnBeforeLoad: function (shaka_player) {}, 
+        parentId: '#player' 
+    }); 
+</script>
+</body>
+</html>
