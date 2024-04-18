@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+ <!-- Player -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/clappr/0.2.86/clappr.min.js"></script>
+  <!-- Video resolution switcher -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <!-- Dash -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/dash-shaka-playback@2.2.1/dist/dash-shaka-playback.min.js"></script>
+<style>
+  body {
+    margin: 0px
+  }
+</style>
+
+</head>
+ 
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://unidfp-nlds164.global.ssl.fastly.net/nlds/univisionnow/unimas_east2/as/live/unimas_east2_hd_800_pc.m3u8?hdnea=st=1713403163~exp=1713489563~acl=*~hmac=ca58d683f8d0ff71e85f7085b3b579516aeffaa4627ff0f4124945a53b941de4&fdvr=dvr",    
+        watermark: "", position: 'top-right',
+        poster: "",
+            shakaConfiguration: {
+            drm: {
+                "clearKeys": {
+                     '':'','':''
+                }
+            },
+            preferredAudioLanguage: 'pt-BR',
+        },
+         width: "100%",
+        height: "100%",
+      parentId: "#player",
+      plugins: {
+        core: [LevelSelector],
+        playback:[DashShakaPlayback]
+      },
+    });
+  </script>
+</body>
