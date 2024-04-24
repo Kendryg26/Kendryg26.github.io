@@ -1,0 +1,138 @@
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://eventos.scxsb.com/EventosMLB/css/skin.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div id="player"></div>
+
+    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
+        var playerInstance = jwplayer("player");
+
+        playerInstance.setup({
+            playlist: [{
+                title: "Kerter+ | MLB TV", ///CAMBIASSSS
+                description: "Mirar MLB TV en Kerter+",
+                image: "",
+                file: "",
+                tracks: null, 
+                autostart: false 
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: false, // Evitar que el video principal se reproduzca automáticamente
+            cast: {},
+            logo: {
+                file: "https://kerterplus.com/wp-content/uploads/2024/01/Watching-TV.png",
+                link: "https://kerterplus.com/",
+                position: "top-right"
+            },
+            advertising: {
+                client: "vast",
+                schedule: [
+                    {
+                        offset: "pre",
+                        tag: "https://player.reproductorstreamxus.online/ad.xml"
+                    }
+                ]
+            },
+            skin: {
+                name: "netflix"
+            },
+            sharing: {
+                link: "https://playcanales.online",
+            }
+        });
+        (function(open) {
+            XMLHttpRequest.prototype.open = function (
+                method,
+                url
+            ) {
+                if (-1 !== url.indexOf('https://playback.svcs.mlb.com/silk/events/')) {
+                    url = url.replace('playback.svcs.mlb.com', 'edge.svcs.mlb.com');
+                }
+                this.addEventListener('readystatechange', function () {}, false);
+                open.call(this, method, url);
+                if (-1 !== url.indexOf('edge.svcs.mlb.com')) {
+                    this.setRequestHeader('authorization', "eyJraWQiOiI5NDljZjE1ZS1mMTYwLTRlMzctYTRhOS1jYWMxYWFmMjk3ZWEiLCJhbGciOiJFZERTQSJ9.eyJuYmYiOjE3MTM5OTEyODksImp0aSI6IjhlNTNjZGE5LTNhMWMtNGM4Ny1iN2Q5LWIzM2U4YzliY2NiMyIsImV4cCI6MTcxNDAwNTY4OSwiaWF0IjoxNzEzOTkxMjg5LCJzdWIiOiIwMHU4aTQ4YjkzSVRmdnZhOTM1NiIsImNvbnRleHQiOnsiZXhwaXJlc19vbiI6IjIwMjQtMDQtMjVUMDA6NDE6MjkuMjMwKzAwMDAiLCJleHBlcmltZW50cyI6e30sInVwZGF0ZWRfb24iOiIyMDI0LTA0LTI0VDIwOjQxOjI5LjIzMCswMDAwIiwiZ2xvYmFsX3RpbWVfb3ZlcnJpZGUiOiIiLCJtZWRpYV9wZXJtaXNzaW9ucyI6eyJlbnRpdGxlbWVudHMiOlsiTWlMQkFMTCIsIk1MQkFMTCIsIlNVQlNDUklCRVJWT0QiXSwicnVsZXMiOnsicGFzc2VkIjpbXX0sImRhdGEiOnt9fSwiYWN0aXZlX3Byb2ZpbGVfaWQiOiIiLCJ2ZXJzaW9uIjoiVjIuMC4wIiwiaWQiOiIwNmVkNDI2MS0wMjdiLTExZWYtODdjMi0wMjQyYWMxMTAwMDciLCJ0eXBlIjoiUkVHSVNURVJFRCIsImFjY2VzcyI6eyJpc19zdWJzY3JpYmVyIjp0cnVlLCJlbnRpdGxlbWVudHMiOnsiY29udGVudCI6WyJNaUxCQUxMIiwiTUxCQUxMIiwiU1VCU0NSSUJFUlZPRCJdfX0sImdlbmVyYXRlZF9vbiI6IjIwMjQtMDQtMjRUMjA6NDE6MjkuMjMwKzAwMDAiLCJsb2NhdGlvbiI6eyJ6aXBfY29kZSI6IjE1MDAwIiwicmVnaW9uX25hbWUiOiIiLCJjYXJyaWVyIjoicHNpbmV0IGluYy4iLCJjb25uZWN0aW9uX3R5cGUiOiJicm9hZGJhbmQiLCJjb3VudHJ5X2NvZGUiOiJQRSIsImRpc3RyaWJ1dGlvbl9hcmVhcyI6WzIzMDMyLDI0MjgyLDI0MzYyXSwiY2l0eV9uYW1lIjoibGltYSIsInR5cGUiOiJaSVBfQ09ERSIsInN0YXRlX25hbWUiOiJsbWEiLCJkbWEiOjAsImFzbiI6IjI2NTY5MSJ9LCJwYXJ0bmVyIjp7Im5hbWUiOiJtbGJ0diJ9LCJsb2NhdGlvbl92MiI6eyJwaHlzaWNhbCI6eyJ6aXBfY29kZSI6IjE1MDAwIiwicmVnaW9uX25hbWUiOiIiLCJjYXJyaWVyIjoicHNpbmV0IGluYy4iLCJjb25uZWN0aW9uX3R5cGUiOiJicm9hZGJhbmQiLCJjb3VudHJ5X2NvZGUiOiJQRSIsImRpc3RyaWJ1dGlvbl9hcmVhcyI6WzIzMDMyLDI0MjgyLDI0MzYyXSwiY2l0eV9uYW1lIjoibGltYSIsInR5cGUiOiJaSVBfQ09ERSIsInN0YXRlX25hbWUiOiJsbWEiLCJ0aW1lX3pvbmUiOnsiaWQiOiJBbWVyaWNhL0xpbWEiLCJ1dGNfb2Zmc2V0IjoiLTA1OjAwIiwiaW5fZHN0IjpmYWxzZX0sImRtYSI6MCwiYXNuIjoiMjY1NjkxIn19LCJibGFja291dHMiOnsiZW50aXRsZW1lbnRzIjpbXSwicnVsZXMiOnsidmlvbGF0ZWQiOltdfSwiZGF0YSI6e319LCJpcF9hZGRyZXNzIjoiMzguMjUuMTYuNTIiLCJhY2NvdW50Ijp7InR5cGUiOiJ1cm46YmFtdGVjaDphY2NvdW50IiwiaWQiOiIwMHU4aTQ4YjkzSVRmdnZhOTM1NiIsImRhdGEiOnt9fSwic3VwcG9ydGVkIjp0cnVlLCJkZXZpY2UiOnsibW9kZWwiOiIiLCJwcm9maWxlIjoiIiwidHlwZSI6InVybjpkc3M6ZGV2aWNlOmV4dGVybmFsIiwicGxhdGZvcm0iOiJicm93c2VyIiwiZmFtaWx5IjoiIiwiYXBwX3J1bnRpbWUiOiIiLCJpZCI6IjY1ZjVjZTQxLWMzNGEtNGFjYS04MWExLWE3ODU0MzQ0OGQ4NCJ9LCJwcm9maWxlcyI6W119LCJwYXJ0bmVyTmFtZSI6Im1sYnR2IiwiaXNzIjoidXJuOnR3ZGM6c2VydmljZTp0b2tlbjpzZXJ2aWNlIiwiZW52IjoicHJvZCJ9.EZDKqycjUs20zjfLE_XwDJRgxy9OJ2Md9P9vXzcGlK04yZQi4jaDRbhy2Xps-Cs5Xaa44MslVqv9yLyiidTBCg");
+                }
+            };
+        })(XMLHttpRequest.prototype.open);
+
+        playerInstance.on("ready", function () {
+            const buttonId = "download-video-button";
+            const iconPath = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTcyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==";
+            const tooltipText = "Descargar App";
+
+            // Call the player's `addButton` API method to add the custom button
+            playerInstance.addButton(iconPath, tooltipText, buttonClickAction, buttonId);
+
+            // This function is executed when the button is clicked
+            function buttonClickAction() {
+                const playlistItem = playerInstance.getPlaylistItem();
+                const anchor = document.createElement("a");
+                const fileUrl = playlistItem.file;
+                anchor.setAttribute("href", fileUrl);
+                const downloadName = playlistItem.file.split("/").pop();
+                anchor.setAttribute("download", downloadName);
+                anchor.style.display = "none";
+                document.body.appendChild(anchor);
+                anchor.click();
+                document.body.removeChild(anchor);
+
+                // Redirigir a la URL deseada después de descargar
+                window.location.href = "https://playcanales.online";
+            }
+
+            // Move the timeslider in-line with other controls
+            const playerContainer = playerInstance.getContainer();
+            const buttonContainer = playerContainer.querySelector(".jw-button-container");
+            const spacer = buttonContainer.querySelector(".jw-spacer");
+            const timeSlider = playerContainer.querySelector(".jw-slider-time");
+            buttonContainer.replaceChild(timeSlider, spacer);
+
+            // Detect adblock
+            playerInstance.on("adBlock", () => {
+                const modal = document.querySelector("div.modal");
+                modal.style.display = "flex";
+
+                document.getElementById("close").addEventListener("click", () => location.reload());
+            });
+
+            // Forward 10 seconds
+            const rewindContainer = playerContainer.querySelector(".jw-display-icon-rewind");
+            const forwardContainer = rewindContainer.cloneNode(true);
+            const forwardDisplayButton = forwardContainer.querySelector(".jw-icon-rewind");
+            forwardDisplayButton.style.transform = "scaleX(-1)";
+            forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
+            const nextContainer = playerContainer.querySelector(".jw-display-icon-next");
+            nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+
+            // control bar icon
+            playerContainer.querySelector(".jw-display-icon-next").style.display = "none"; // hide next button
+            const rewindControlBarButton = buttonContainer.querySelector(".jw-icon-rewind");
+            const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
+            forwardControlBarButton.style.transform = "scaleX(-1)";
+            forwardControlBarButton.ariaLabel = "Forward 10 Seconds";
+            rewindControlBarButton.parentNode.insertBefore(forwardControlBarButton, rewindControlBarButton.nextElementSibling);
+
+            // add onclick handlers
+            [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
+                button.onclick = () => {
+                    playerInstance.seek(playerInstance.getPosition() + 10);
+                };
+            });
+        });
+    </script>
+</body>
+</html>
