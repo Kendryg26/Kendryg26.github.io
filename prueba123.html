@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor Eventos MLB</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-gfdkjb7zr7b7gjh9e6z9z6j5btxxj934/cz4xbof4tk1hgiyaziz7irhd28/diih" crossorigin="anonymous">
+
+    <style>
+        .player-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .player-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-container {
+            margin-bottom: 20px;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media screen and (max-width: 639px) {
+            .telegram-button {
+                font-size: 0.75rem;
+                /* Reducir el tamaño de la fuente del botón */
+                padding: 0.5rem 1rem;
+                /* Ajustar el padding del botón */
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <nav class="flex items-center justify-between bg-gray-900 p-4">
+        <div class="flex items-center space-x-4">
+            <a href="/">
+                <img src="https://eventos.scxsb.com/wp-content/uploads/2023/12/eventosppvs-333x71.png" alt="Logo" class="h-10">
+            </a>
+        </div>
+        <a href="https://t.me/playcanales" class="telegram-button text-white font-bold bg-blue-500 px-8 py-3 rounded-lg flex items-center space-x-2 hover:bg-blue-600 transition-colors duration-300 text-xl">
+            <i class="fab fa-telegram text-2xl"></i>
+            <span class="font-semibold">Telegram</span>
+        </a>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+        <div class="bg-gray-900 rounded-lg overflow-hidden player-container" style="height: 0; padding-bottom: 56.25%;">
+            <iframe id="iframe" src="" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="bg-gray-900 p-4 rounded-lg text-center sm:text-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png" alt="MLB Logo" class="h-12 mx-auto mb-4 sm:float-left sm:mr-4">
+            <div id="title" class="text-white font-bold mb-2 title-lg sm:text-lg"></div>
+            <div class="text-gray-400 mb-2 disfruta-lg sm:text-sm">Disfruta de MLB En Eventos PPV Gratis y en HD</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        // Función para recargar la página
+        function reloadPage() {
+            location.reload();
+        }
+
+        // Función para obtener parámetros de la URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Obtener el parámetro "baj?=" de la URL
+        var parametroBaj = getParameterByName('baj?');
+
+        // Decodificar el base64 del parámetro "baj?="
+        var urlDesencriptada = atob(parametroBaj);
+
+        // Obtener el valor del parámetro "?get=" de la URL desencriptada
+        var parametroGet = getParameterByName('get', urlDesencriptada);
+
+        // Concatenar el valor del parámetro "?get=" con la URL base del iframe
+        var urlIframe = 'https://eventos.scxsb.com/EventosMLB/MLB-moradix.php?id=' + parametroGet;
+
+        // Asignar la URL al iframe
+        document.getElementById('iframe').src = urlIframe;
+
+        // Obtener el título de la URL
+        var title = getParameterByName('title');
+
+        // Asignar el título al elemento h2
+        document.getElementById('title').innerText = title;
+    </script>
+</body>
+
+</html>
