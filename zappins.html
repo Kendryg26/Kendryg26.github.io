@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        box-sizing: border-box;
+        transition: all ease .2s;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bgbtn {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    .zapping-add{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: linear-gradient(180deg, rgba(22, 24, 28, 0.67) 21.17%, #16181C 65.72%);
+        color: white;
+    }
+    .zapping-add__container{
+        max-width: 800px;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: table;
+    }
+    .zapping-add__content{
+        display: table-cell;
+        height: inherit;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .zapping-add__logo img{
+            height: 80px;
+            width: auto;
+            text-align: center;
+        }
+    .zapping-add__title{
+        font-size: 24px;
+    }
+    .zapping-add__description{
+        font-size: 16px;
+        margin: 24px 0;
+        opacity: .5;
+    }
+    .zapping-add__counter{
+        width: 0%;
+        height: 4px;
+        background-color: #EFF178;
+        animation: countdown 12.2s linear forwards;
+        position: absolute;
+        bottom: 0;
+    }
+    .zapping-add__price{
+        margin: 24px 0;
+    }
+    .zapping-add__price .price{
+        font-size: 32px;
+    }
+    .zapping-add__price .price.price--promo{
+        color: #EFF178;
+    }
+    .zapping-add__price  .price span{
+        font-size: 16px;
+    }
+    .zapping-add .description{
+        font-size: 12px;
+        opacity: .5;
+    }
+    .zapping-add__action{
+        margin: 48px 0;
+    }
+
+    .zapping-add__btn{
+        border: none;
+        padding: 12px 18px;
+        font-size: 16px;
+        background-color: #EF426F;
+        color: white;
+        text-decoration: none;
+        border-radius: 64px;
+    }
+    .zapping-add__btn:hover{
+        background-color: #c5395f;
+
+    }
+
+    @media (max-width:992px){
+        .zapping-add__logo img{
+            height: 64px;
+            width: auto;
+            text-align: center;
+        }
+        .zapping-add__content{
+            padding: 16px;
+
+        }
+        .zapping-add__title{
+            font-size: 20px;
+            font-weight: 500;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .zapping-add__description{
+            /* display: none; */
+            font-size: 14px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .zapping-add__price{
+            margin: 32px 0;
+        }
+        .zapping-add__price .price{
+            font-size: 32px;
+        }
+        .zapping-add__action{
+            margin: 16px 0;
+        }
+    }
+
+    @media (max-width:480px) {
+        .zapping-add__logo img{
+            height: 32px;
+            width: auto;
+            text-align: center;
+        }
+        .zapping-add__content{
+            padding: 16px;
+
+        }
+        .zapping-add__title{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .zapping-add__description{
+            display: none;
+        }
+        .zapping-add__price{
+            margin: 16px 0;
+        }
+        .zapping-add__price .price{
+            font-size: 18px;
+        }
+        .zapping-add__action{
+            margin: 16px 0;
+        }
+        .zapping-add__btn{
+            padding: 10px 18px;
+        }
+    }
+    @keyframes countdown {
+        to{
+            width: 100%;
+            transform-origin: right;
+        }
+    }
+
+
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L7RLQB8QJJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L7RLQB8QJJ');
+</script>
+
+<title>espn</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+    <div id="player_container" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+
+        <div id="video_container" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+            <video id="video_ads" style="position: absolute; width: 100%; height:100%; top: 0; left: 0;"
+                class="video-js vjs-tech" preload="auto"  playsinline tabindex="-1">
+                <source src="https://bond-v.zappingtv.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTQ0NTI2NTksImV4cCI6MTcxNDQ1MjY4OSwibmJmIjoxNzE0NDUyNjU5LCJrZXkiOiI5ODU1YWEyNGEwM2E3YzMxNTVmNzRhNDAxYTFmMDU1ODA1YTc1ZTRhYzZhNzJiYTE3MDdkZmE0Zjg5MDI0ZjgyIn0.bp3uMduwqqbXANouDPnsvlcZWRBKwjb3eDR3bDWihRg/playlist.m3u8" type="application/x-mpegURL" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+
+        <div id="audio_options_on" style="position: absolute; margin:auto; width: 100%; height: 100%;">
+
+        </div>
+
+        <div id="audio_options_off" style="position: absolute; margin:auto; width: 100%; height: 100%; display:none ">
+            <span class="center bgbtn" style="margin:auto;"> Activar Audio 🔊</span>
+        </div>
+
+        <div id="video_playing_off" style="position: absolute; margin:auto; width: 100%; height: 100%;  ">
+            <div style="position:relative; width: 100%; height: 100%; background-color:#000000;">
+                
+                <div style="position:absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 50%; height: 10%; margin:auto" >
+                    <img src="/img/play-btn.png" alt="" style="position:relative; left:40%; width: 20%; top:30%; margin:auto">
+                    <div style="position: relative; top:35%; width:100%; margin-left: auto; text-align: center;"> Ver ESPN en vivo</div>
+                    <img src="/img/logotipo.png" alt="" style="position:relative; width:60%; margin-left:20%; top:60%; display:none">
+                </div>
+            </div>
+        </div>
+
+        
+            <div id="zcounter"></div>
+
+<div id="zapping"  class="zapping-add" style="display:none;">
+    <div class="zapping-add__container">
+        <div class="zapping-add__content">
+            <div class="zapping-add__logo">
+                <!--<img src="https://cdn-gato.zapping.live/media/450/canales/white/espn.png" style="width:200px !important; height:auto">-->
+                <img src="https://davinci.zappingtv.com/gato/media/450/canales/white/espn.png" style="width:26% !important; height:auto">
+            </div>
+            <div class="zapping-add__title" style="margin-top:10px !important;">
+                Sigue viendo este canal suscribiéndote ahora a Zapping
+            </div>
+            <!-- <div class="zapping-add__description">
+                <p>Más de 100 canales en vivo en todos tus dispositivos, incluyendo tu Smart TV 🙂</p>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+
+<!-- <div id="zapping" style="display:none; position: relative; width: 100%; height: 100%; background-color: #EF426F; text-align: center;">
+    <a id="zanchor" href="http://www.zapping.com" target="_blank">
+        <span id="zspan" class="center" style="font-size: 2em; cursor:pointer; color:#EFF178; font-weight: bold; margin: auto;">ZAPPING.COM</span>
+    </a>
+</div> -->
+
+<!-- /BANNER -->
+
+<script type="text/javascript">
+    var zspan = document.getElementById('zspan')
+    var zanchor = document.getElementById('zanchor')
+
+    function trackClick(){
+        //alert("click")
+        // redirect
+        //window.open("http://www.zapping.com",'_blank');
+
+        gtag('event','go-zapping',{
+            'event_category':'click_channel',
+            'event_label':'espn'
+        });
+    }
+
+    zanchor.addEventListener('click', function () { trackClick() }, false)
+</script>
+
+          
+
+
+
+    </div>
+    <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+
+    <script type="text/javascript">
+        var videojs = videojs('video_ads',{
+            errorDisplay : false
+        })
+        var video_container = document.getElementById('video_container')
+        var audio_options_off = document.getElementById('audio_options_off')
+        var audio_options_on = document.getElementById('audio_options_on')
+        var video_playing_off = document.getElementById('video_playing_off')
+
+        var zapping = document.getElementById('zapping')
+
+        function toggleMute() {
+            if (videojs.muted()) {
+                activeAudioPlayer()
+            }
+            else {
+                muteAudio()
+            }
+        }
+        function activeAudioPlayer() {
+            videojs.muted(false)
+            audio_options_off.style.display = "none"
+        }
+
+        function muteAudio() {
+            videojs.muted(true)
+            audio_options_off.style.display = "block"
+        }
+
+        function videoEnded() {
+            videojs.pause()
+            zapping.style.display = "block"
+        }
+
+        function videoStart(){
+            document.getElementById('zcounter').classList.add('zapping-add__counter')
+        }
+
+        function playVideo(){
+            // apagar layer play
+            video_playing_off.style.display = "none"
+            // apagar layer mute
+            audio_options_off.style.display = "none"
+            // iniciar video
+            videojs.play()
+        }
+
+        // tomar evento end player para poner en pausa y traer banner al frente
+        videojs.ready(function () {
+            this.on('play', function(){
+                videoStart()
+            })
+            this.on('ended', function () {
+                videoEnded()
+            })
+
+            this.on('error', function () {
+                videoEnded()
+            })
+        })
+
+        // container invisible sobre player para evitar clicks
+
+
+        audio_options_off.addEventListener('click', function () { toggleMute() }, false)
+        audio_options_on.addEventListener('click', function () { toggleMute() }, false)
+        video_playing_off.addEventListener('click', function () { playVideo() }, false)
+
+    </script>
+</body>
+
+</html>
