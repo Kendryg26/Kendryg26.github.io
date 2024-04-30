@@ -335,26 +335,6 @@
             videojs.play()
         }
 
-        // tomar evento end player para poner en pausa y traer banner al frente
-        videojs.ready(function () {
-            this.on('play', function(){
-                videoStart()
-            })
-            this.on('ended', function () {
-                videoEnded()
-            })
-
-            this.on('error', function () {
-                videoEnded()
-            })
-        })
-
-        // container invisible sobre player para evitar clicks
-
-
-        audio_options_off.addEventListener('click', function () { toggleMute() }, false)
-        audio_options_on.addEventListener('click', function () { toggleMute() }, false)
-        video_playing_off.addEventListener('click', function () { playVideo() }, false)
 
     </script>
 </body>
