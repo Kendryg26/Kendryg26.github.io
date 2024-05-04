@@ -30,7 +30,7 @@ body {
 hr {
     height: 0;
     color: inherit;
-    border-top-width: 1px
+    border-top-width: 2px
 }
 
 abbr:where([title]) {
@@ -654,7 +654,7 @@ img,video {
 }
 
 .rounded {
-    border-radius: .25rem
+    border-radius: .55rem
 }
 
 .rounded-lg {
