@@ -751,7 +751,7 @@ img,video {
     --tw-bg-opacity: 1;
     background-color: #0d141e;
     /* background-color: rgb(241 245 249/var(--tw-bg-opacity)); */
-    border-bottom: solid 1px #ffffff4f;
+    border-bottom: solid 2px #0800f2;
 }
 
 .bg-gray-900 {
