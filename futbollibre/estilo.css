@@ -662,7 +662,7 @@ img,video {
 }
 
 .border {
-    border: solid 1px #FF0000;
+    border: solid 1px #4d39d5;
 }
 
 .border-r {
@@ -725,7 +725,7 @@ img,video {
 
 .bg-cyan-700 {
     --tw-bg-opacity: 1;
-    background-color: #FF0000;
+    background-color: #4d39d5;
     /* background-color: rgb(14 116 144/var(--tw-bg-opacity)); */
 }
 
@@ -1339,10 +1339,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF0000; 
+  background: #4d39d5; 
 }
 
  /* firefox */
 
 scrollbar-width: thin; 
-scrollbar-color: #141d26 #FF0000 ;
+scrollbar-color: #141d26 #4d39d5 ;
