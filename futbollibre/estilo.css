@@ -662,11 +662,11 @@ img,video {
 }
 
 .border {
-    border: solid 1px #4d39d5;
+    border: solid 2px #4d39d5;
 }
 
 .border-r {
-    border-right-width: 1px
+    border-right-width: 2px
 }
 
 .border-slate-500 {
