@@ -289,20 +289,6 @@ playerInstance.setup({
         link: "",
         position: "bottom-right"
     }
-  var currentQualityIndex = -1;
-var qualityLevels = [];
-
-playerInstance.on('levelsChanged', function() {
-  qualityLevels = playerInstance.getPlaylistItem().sources[0].levels;
-  currentQualityIndex = qualityLevels.length - 1; // Índice de la calidad más baja
-  playerInstance.setCurrentQuality(currentQualityIndex); // Establecer la calidad más baja como la actual
-});
-
-playerInstance.on('firstFrame', function() {
-  if (currentQualityIndex > 0) {
-    currentQualityIndex--;
-    playerInstance.setCurrentQuality(currentQualityIndex); // Cambiar a la siguiente calidad más alta
-  }
 });
 </script>
 
