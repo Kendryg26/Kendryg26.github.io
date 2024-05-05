@@ -53,7 +53,7 @@
 
             function setupPlayer() {
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'https://candler.beauty/hls/star.json?' + Math.random().toString(36).substring(7), true);
+                xhr.open('GET', 'https://candler.beauty/hls/star.json?7kmu6' + Math.random().toString(36).substring(7), true);
                 xhr.onload = function() {
                     if (xhr.status === 200) {
                         var data = JSON.parse(xhr.responseText);
