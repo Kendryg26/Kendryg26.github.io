@@ -1,0 +1,36 @@
+<script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script> 
+<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'; 
+</script> 
+<div id="player"></div> 
+<script> 
+ 
+    var playerInstance = jwplayer("player"); 
+ 
+    playerInstance.setup({ 
+ 
+        playlist: [{ 
+            title: "", 
+            image: "", 
+            description: "", 
+            "sources": [ 
+                { 
+                    "default": false, 
+                    "type": "dash", 
+                    "file": 'https://ssc4-ak.akamaized.net/out/v1/5267ea5772874b0db24559d643eaad93/index.mpd', 
+                    "drm": { 
+                        "clearkey": { "keyId": "5c672f6b85a94638872d0214f7806ed4", "key": "bf8756fbb866ee2d5c701c2289dd8de3" } 
+                    }, 
+                    "label": "0" 
+                } 
+            ] 
+        }],
+        logo: { file: "http://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png", position: 'bottom-right' },
+        width: "100%", 
+        height: "100%", 
+        aspectratio: "16:9", 
+        autostart: true, 
+        cast: {}, 
+        sharing: {} 
+    }); 
+ 
+</script>
