@@ -1,33 +1,34 @@
 <html lang="es">
+
 <head>
+    <meta name="robots" content="noindex" />
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+    <script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+    <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+    <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+    <script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'>
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+        .player-poster[data-poster] {
+            background-size: cover;
+        }
 
-<meta name="robots" content="noindex" />
-<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
-<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
-<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
-<style> 
-
-.player-poster[data-poster] {
-  background-size: cover;
-}
-body{
-  margin:0;
-  padding:0;
-}
-
-</style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <div id="player"></div>
 <script>
-var player = new Clappr.Player({
-        source: 'https://cdn-live.mundogo.cl/espn/espn.mpd',
+    var player = new Clappr.Player({
+        source: '//cdn-live.mundogo.cl/espn/espn.mpd',
         mimeType: 'application/dash+xml',
         height: '100%',
         width: '100%',
@@ -40,9 +41,9 @@ var player = new Clappr.Player({
         shakaConfiguration: {
             drm: {
             clearKeys: {
-                    '90671184dd82541a9d1786eaa025e345': '74f8eab46c1e43fd8f7b64c21a96fc5b',
-                    'b87d7da884bd5f3496015f9c2e53c896': '4451447bdf55fe4451f4a3bf177da59a',
-                    'b6989ba0aa0f5e8a817ecdfd9c385994': '75c6e6d57308f34ca482802a5e796a05'
+                '90671184dd82541a9d1786eaa025e345': '74f8eab46c1e43fd8f7b64c21a96fc5b',
+                'b87d7da884bd5f3496015f9c2e53c896': '4451447bdf55fe4451f4a3bf177da59a',
+                'b6989ba0aa0f5e8a817ecdfd9c385994': '75c6e6d57308f34ca482802a5e796a05'
                 }
             },
             preferredAudioLanguage: 'pt-BR',
