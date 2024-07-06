@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ver Star Plus online en VIVO y en directo. Futbol Libre TV</title>
+
+<link rel="apple-touch-icon" sizes="57x57" href="../../favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../../favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+<link rel="manifest" href="../../favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../../favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name='referrer' content='no-referrer' />
+<script type="text/javascript" src="horario.js?v"></script>
+
+<link href="../../css/bootstrap.css?v3" rel="stylesheet">
+
+<link href="../../css/portada.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+<link href="../../css/starp.css" rel="stylesheet">
+</head>
+<body>
+<div id="navbar"><div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+<a class="my-0 mr-md-auto font-weight-normal fl" rel="home" href="https://librefutbol.futbol/">
+Fútbol Libre TV
+</a>
+
+<a class="btn btn-outline-fl" rel="home" href="https://librefutbol.futbol/">
+<img src="https://librefutbol.futbol/img/logo-futbolLibre.webp" alt="Logo de Fútbol Libre TV" width="25" height="25">
+</a>
+</div></div>
+<script>
+            $(document).ready(function() {
+                $("#navbar").load("../../html/navbar.html");
+            });
+         </script>
+<div class="w3-main w3-content w3-padding" style="max-width:1200px">
+<div class="w3-card-5"><center>
+<img src="/img/logo-star.jpg" alt="Star+" width="220" height="120"> 
+</center><br><center><p><b>Star+</b> es el lugar perfecto para disfrutar de la mejor televisión en vivo y en demanda. Con una amplia selección de programas de televisión, películas, documentales y deportes, Star+ ofrece entretenimiento para todos los gustos. Los suscriptores pueden acceder a su contenido desde cualquier lugar y en cualquier momento en sus dispositivos compatibles. <b>Aqui podras disfrutar EVENTOS STAR PLUS GRATIS</b></p></div></center>
+<center>
+<h2 class="has-text-align-center has-white-color has-text-color"><strong>ELIGE TU EVENTO DEPORTIVO</strong></h2>
+	
+<div id="eventos"></div>
+
+<br>
+
+<div class="sharethis-inline-share-buttons"></div>
+
+<script>
+function eventos()
+{
+	var x = Math.random().toString(36).substring(7);
+
+	$.ajax({
+		url : "https://librefutboltv.net/star-plus/eventos.json?"+x,
+		type : "get",
+		success: function (arr) {
+			var content = '';
+			
+			for (var i = 0; i < arr.length; i++)
+			{
+				if (i%4==0)
+				{
+					if (i != 0)
+						content += '</div>';
+					
+					content += '<div class="w3-row-padding w3-padding-16 w3-center" id="copa">';
+				}
+					
+				var obj = arr[i];
+		
+				if (obj['status'] == "FINALIZADO" || obj['status'] == "EN VIVO")
+					status = obj['status'];
+				else
+					status = 'HOY | <span class="t">' + obj['status'] + '</span> hs';
+			
+				if (status == "EN VIVO")
+					color = "danger";
+				else
+					color = "dark";
+					
+				content += '<div class="w3-quarter"><a href="' + obj['url'] + '"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/' + obj['img'] + '/scale?width=500&aspectRatio=1.78&format=jpeg" alt="Star+" style="width:100%" class="w3-hover-opacity"></a><a class="btn btn-block btn-' + color + '" href="' + obj['url'] + '">' + status + '</a> <div class="w3-card-4"><p><b>' + obj['league'] + '</b></p><p>' + obj['title'] + '</p></div></div>';
+				
+				if (i == arr.length-1)
+					content += '</div>';
+			}
+			
+			$("#eventos").html(content);
+			
+			guardaHorario();
+			dT();
+		}
+	})
+}
+
+eventos();
+
+window.setInterval(function() {
+	eventos();
+}, 60000);
+</script>
+
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+<div class="row">
+<div class="col-6 col-md">
+<h5>Social</h5>
+<ul class="list-unstyled text-small">
+<li><a class="text-muted" href="https://twitter.com/LibreFutbolTV1">Twitter</a></li>
+<li><a class="text-muted" href="https://instagram.com/librefutbolweb/">Instagram</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h5>Fútbol Libre</h5>
+<ul class="list-unstyled text-small">
+<li><a class="text-muted" href="https://futbollibre.vip/DMCA.html">DMCA</a></li>
+<br>
+<div style="text-align:center;">
+<small class="d-block mb-3 text-muted">Fútbol Libre TV 2022 © Todos los derechos reservados.</small>
+</div></ul>
+</div>
+</div>
+</footer>
+</div>
+<script data-cfasync="false" async type="text/javascript" src="//bn.dhobybailli.com/rJwiVtRV23NhN/59321"></script>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab9c9531fff98001395a59a&product=inline-share-buttons"></script>
+<div style="display:none;"><script id="_wauksa">var _wau = _wau || []; _wau.push(["small", "zj30bel9ei", "ksa"]);</script></div><script async src="//waust.at/s.js"></script>
+</body>
+</html>
