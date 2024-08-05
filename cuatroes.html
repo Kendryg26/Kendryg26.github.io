@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+<script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
+<div class="container">
+<style> 
+
+.player-poster[data-poster] {
+  background-size: cover;
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+</style>
+</head>    
+<div id="player"></div>
+</div>
+
+<script>
+    let source = "Ly90dnVwLWxpdmUuYWthbWFpemVkLm5ldC9jdWF0cm8vY3VhdHJvLm1wZA==";
+    var player = new Clappr.Player({
+        source: atob(source),
+        parentId: "#player",
+        position: "top-left",
+        plugins: [LevelSelector, ClapprPip.PipButton, ClapprPip.PipPlugin, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin],
+        events: {
+            onReady: function () {
+                var plugin = this.getPlugin("click_to_pause");
+                plugin && plugin.disable();
+            },
+        },
+        chromecast: {
+            appId: "9DFB77C0",
+            contentType: "video/mp4",
+        },
+        gaAccount: "G-Z7958KV9CY",
+        gaTrackerName: "MyPlayerInstance",
+        height: "100%",
+        width: "100%",
+        autoPlay: true,
+        muted: false,
+        shakaConfiguration: {
+            preferredAudioLanguage: "es-MX",
+            drm: {
+                clearKeys: {'8708aa66d18858fbb0a9876bf0cc7878':'9148f9a909f41429e7f3070913e8fa8d','38483b5bc206535c94dbd29d73a2a90b':'c7024c92716b0a7ea853a0881ce01315','78fecad5e0145b71916e132f1bc293b2':'24f2ca53927a5134fb702e6121f1aea3'},
+            },
+        },
+    });
+</script>
