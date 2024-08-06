@@ -1,0 +1,24 @@
+<style>.bitmovinplayer-ad-container, .bitmovinplayer-container{direction:ltr;}.bmpui-ui-watermark,#bmpui-id-184,#bmpui-id-132{display: none; !important}#bmpui-id-185{margin:9px 20px 0 10px}.bmpui-ui-buffering-overlay{background-color:#000000b3}.notloaded .bmpui-ui-buffering-overlay-indicator{display:inline-block!important}#playerdiv .bmpui-ui-buffering-overlay .bmpui-ui-buffering-overlay-indicator{background:#fff;height:1em;margin:.5em;width:1em;border-radius:10px</style>
+<script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+<div id="playerdiv"></div>
+<script type="text/javascript">
+function override(url){ if (url.indexOf("licensing.bitmovin.com/licensing") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; if (url.indexOf("licensing.bitmovin.com/impression") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; return url;}
+var opens = XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open = function() {var url = override(arguments[1]);arguments[1] = url;return opens.apply(this, arguments);}
+var config = {key: "11d3698c-efdf-42f1-8769-54663995de2b",playback: {autoplay:true,muted: false,}};
+var source = {'hls':'https://jeinz01-usea.streaming.media.azure.net/2834cf3a-29b2-4710-aa0d-abbbf17ddc26/1df857c3-7943-4429-9d94-09ae7f36fcc5.ism/manifest(format=m3u8-cmaf)'};
+var playerContainer = document.getElementById('playerdiv');
+var player = new bitmovin.player.Player(playerContainer, config);
+player.load(source).then(function() {player.play();console.log();});
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@4.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+  </script>
