@@ -5,7 +5,7 @@
 function override(url){ if (url.indexOf("licensing.bitmovin.com/licensing") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; if (url.indexOf("licensing.bitmovin.com/impression") > -1) return "data:text/plain;charset=utf-8;base64,eyJzdGF0dXMiOiJncmFudGVkIiwibWVzc2FnZSI6IlRoZXJlIHlvdSBnby4ifQ=="; return url;}
 var opens = XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open = function() {var url = override(arguments[1]);arguments[1] = url;return opens.apply(this, arguments);}
 var config = {key: "11d3698c-efdf-42f1-8769-54663995de2b",playback: {autoplay:true,muted: false,}};
-var source = {'hls':'https://jeinz01-usea.streaming.media.azure.net/2834cf3a-29b2-4710-aa0d-abbbf17ddc26/1df857c3-7943-4429-9d94-09ae7f36fcc5.ism/manifest(format=m3u8-cmaf)'};
+var source = {'hls':'https://api.playcubano.com/live-oven/app/Uao1mkb50OjCKTTJNGpzJUPJNkditoyd/llhls.m3u8?probando=holamundo'};
 var playerContainer = document.getElementById('playerdiv');
 var player = new bitmovin.player.Player(playerContainer, config);
 player.load(source).then(function() {player.play();console.log();});
