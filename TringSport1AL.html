@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+ <!-- Player -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/clappr/0.2.86/clappr.min.js"></script>
+  <!-- Video resolution switcher -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <!-- Dash -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/dash-shaka-playback@2.2.1/dist/dash-shaka-playback.min.js"></script>
+<style>
+  body {
+    margin: 0px
+  }
+</style>
+
+</head>
+ 
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://fe.tring.al/delta/101/out/u/sportnjeottencryption.mpd",    
+        watermark: "", position: 'top-right',
+        poster: "",
+            shakaConfiguration: {
+            drm: {
+                "clearKeys": {
+                     '6d3b3c741ba34dcaa1a4c13f644797f1':'5291a8de88aade07c19bc515ea93c3c7','02f3babe6e814e399ce5f66a2fa9eaf5':'4ed8c640ecb709df5ed136e016695e45'
+                }
+            },
+            preferredAudioLanguage: 'pt-BR',
+        },
+         width: "100%",
+        height: "100%",
+      parentId: "#player",
+      plugins: {
+        core: [LevelSelector],
+        playback:[DashShakaPlayback]
+      },
+    });
+  </script>
+</body>
