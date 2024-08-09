@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="robots" content="noindex" />
+    <meta charset="UTF-8">
+    <title>Reproductor de Video</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>
+    <link rel="stylesheet" href="playerstyle.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            background-color: black;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #options-container {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .m3u8-button, .reload-button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .m3u8-button:hover, .reload-button:hover {
+            background-color: #0056b3;
+        }
+
+        #player-container {
+            width: 100%;
+            height: calc(100% - 60px);
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #player {
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #quality-selector {
+            display: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header img {
+            height: 50px;
+        }
+
+        .modal-header strong {
+            flex: 1;
+            font-size: 18px;
+        }
+
+        .modal-body {
+            margin-top: 20px;
+        }
+
+        .modal-body span {
+            font-size: 16px;
+        }
+
+        .modal-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="options-container">
+            <button class="reload-button" onclick="location.reload()">Recargar</button>
+            <!-- Los botones de opciones serán añadidos dinámicamente -->
+        </div>
+        <div id="player-container">
+            <div id="player"></div>
+        </div>
+    </div>
+    <div id="quality-selector"></div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <img src="https://studio.blender.org/static-studio/films/images/sprite-fright/story.22d84f0a3410.png" alt="backdrop" class="backdrop" />
+                <strong>⚠️ ADBlock Detected! ⚠️</strong>
+                <button type="button" aria-label="Close" id="close">
+                    <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTd6IiBmaWxsPSJyZ2JhKDI0NywyNDcsMjQ3LDEpIi8+PC9zdmc+' alt="close" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <span>Ads do help us to keep website running, so please support us by whitelisting our site in your Adblocking software. Apart from your browser adblocker, you may have to whitelist us in your VPN/Security software's adblockers as well. Once done, just refresh this web page.</span>
+            </div>
+        </div>
+    </div>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
+        var secretKey = "MoradixTvIncreible27110711";
+        var optionsContainer = document.getElementById("options-container");
+        var playerContainer = document.getElementById("player-container");
+
+        function loadPlayer(m3u8Link) {
+            console.log("Loading player with URL: " + m3u8Link);
+            jwplayer("player").setup({
+                controls: true,
+                sharing: true,
+                displaytitle: true,
+                displaydescription: true,
+                abouttext: "Buy Me a Coffee",
+                aboutlink: "https://www.buymeacoffee.com/pingo",
+                skin: {
+                    name: "netflix"
+                },
+                logo: {
+                    file: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+                    link: "https://www.buymeacoffee.com/pingo"
+                },
+                captions: {
+                    color: "#FFF",
+                    fontSize: 14,
+                    backgroundOpacity: 0,
+                    edgeStyle: "raised"
+                },
+                playlist: [{
+                    sources: [{
+                        default: true,
+                        type: "hls",
+                        file: m3u8Link,
+                        label: "Calidad Predeterminada"
+                    }],
+                    title: "Eventos PPV",
+                    description: "Disfruta de los eventos totalmente gratis en:"
+                }],
+                width: "100%",
+                height: "100%",
+                aspectratio: "16:9",
+                autostart: false,
+                cast: {},
+                sharing: {
+                    link: "https://t.me/+sW6hANyItTo1YTAx",
+                    sites: ["PaginaWeb"]
+                },
+                logo: {
+                    file: "https://eventos.scxsb.com/wp-content/uploads/2023/12/eventosppvs-333x71.png",
+                    link: "https://eventos.scxsb.com",
+                    position: "top-right"
+                },
+                captions: {
+                    default: "Spanish"
+                },
+                playsinline: true,
+                advertising: {
+                    client: "vast",
+                    schedule: [{
+                        offset: "pre",
+                        tag: ""
+                    }]
+                },
+                buffering: {
+                    bufferlength: 30,
+                    maxbufferlength: 60,
+                    backbufferlength: 10
+                },
+                preload: 'auto'
+            });
+
+            jwplayer("player").on('error', function(error) {
+                console.error("Error del player:", error);
+                alert("Hubo un problema al reproducir el video.");
+            });
+
+            window.addEventListener("orientationchange", function() {
+                if (window.innerWidth < window.innerHeight) {
+                    alert("Gire su teléfono para ver el video en formato horizontal.");
+                }
+            });
+
+            jwplayer("player").on('shareClicked', function(event) {
+                window.location.href = event.link;
+            });
+
+            jwplayer("player").on("adBlock", () => {
+                const modal = document.querySelector("div.modal");
+                modal.style.display = "flex";
+
+                document.getElementById("close").addEventListener("click", () => location.reload());
+            });
+
+            const playerContainer = jwplayer("player").getContainer();
+            const buttonContainer = playerContainer.querySelector(".jw-button-container");
+            const spacer = buttonContainer.querySelector(".jw-spacer");
+            const timeSlider = playerContainer.querySelector(".jw-slider-time");
+            buttonContainer.replaceChild(timeSlider, spacer);
+
+            const rewindContainer = playerContainer.querySelector(".jw-display-icon-rewind");
+            const forwardContainer = rewindContainer.cloneNode(true);
+            const forwardDisplayButton = forwardContainer.querySelector(".jw-icon-rewind");
+            forwardDisplayButton.style.transform = "scaleX(-1)";
+            forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
+            const nextContainer = playerContainer.querySelector(".jw-display-icon-next");
+            nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+
+            playerContainer.querySelector(".jw-display-icon-next").style.display = "none";
+            const rewindControlBarButton = buttonContainer.querySelector(".jw-icon-rewind");
+            const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
+            forwardControlBarButton.style.transform = "scaleX(-1)";
+            forwardControlBarButton.ariaLabel = "Forward 10 Seconds";
+            rewindControlBarButton.parentNode.insertBefore(forwardControlBarButton, rewindControlBarButton.nextElementSibling);
+
+            [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
+                button.onclick = () => {
+                    jwplayer("player").seek(jwplayer("player").getPosition() + 10);
+                };
+            });
+        }
+
+        function loadIframe(iframeCode) {
+            playerContainer.innerHTML = iframeCode;
+        }
+
+        function parseOptionsFromUrl() {
+            var params = new URLSearchParams(window.location.search);
+            params.forEach(function(value, key) {
+                if (key.startsWith('option')) {
+                    var [name, encryptedUrl, type] = value.split(',');
+                    try {
+                        var decryptedUrl = CryptoJS.AES.decrypt(atob(encryptedUrl), secretKey).toString(CryptoJS.enc.Utf8);
+                        console.log("Decrypted URL: " + decryptedUrl);
+                        var button = document.createElement("button");
+                        button.className = "m3u8-button";
+                        button.innerText = name;
+                        button.addEventListener("click", function() {
+                            if (type === 'm3u8') {
+                                playerContainer.innerHTML = '<div id="player"></div>';
+                                loadPlayer(decryptedUrl);
+                            } else if (type === 'iframe') {
+                                loadIframe(decryptedUrl);
+                            }
+                        });
+                        optionsContainer.appendChild(button);
+                    } catch (e) {
+                        console.error("Error descifrando URL: " + e);
+                    }
+                }
+            });
+
+            if (optionsContainer.children.length > 1) {
+                var firstButton = optionsContainer.children[1];
+                firstButton.click();
+            }
+        }
+
+        parseOptionsFromUrl();
+    </script>
+</body>
+</html>
