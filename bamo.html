@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+
+  .jw-settings-sharing, .jw-icon-rewind, .jw-icon-pip, .jw-rightclick {
+            display: none !important;
+        }
+        </style>
+		</head>
+<script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script> 
+<script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'; 
+</script> 
+<div id="player"></div> 
+<script> 
+ 
+    var playerInstance = jwplayer("player"); 
+ 
+    playerInstance.setup({ 
+ 
+        playlist: [{ 
+            title: "", 
+            image: "", 
+            description: "", 
+            "sources": [ 
+                { 
+                    "default": false, 
+                    "type": "dash", 
+                    "file": 'https://proxyhttpdeport2.glitch.me/https://live-oneapp-prd.akamaized.net/Content/CMAF_OL1-CTR-4s/Live/channel(WNJU)/master.mpd?audio=all&subtitle=all&forcedNarrative=true', 
+                    "drm": { 
+                        "clearkey": { "keyId": "e1f756cffcc838e28a3da6541c00ee8b", "key": "1444b1c17a5c1f78435de12dcff47c8e" } 
+                    }, 
+                    "label": "0" 
+                } 
+            ] 
+        }],
+        logo: { file: "http://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png", position: 'bottom-right' },
+        width: "100%", 
+        height: "100%", 
+        aspectratio: "16:9", 
+        autostart: true, 
+        cast: {}, 
+        sharing: {} 
+    }); 
+ 
+</script>
