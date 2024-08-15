@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+ <!-- Player -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/clappr/0.2.86/clappr.min.js"></script>
+  <!-- Video resolution switcher -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+  <!-- Dash -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/dash-shaka-playback@2.2.1/dist/dash-shaka-playback.min.js"></script>
+<style>
+  body {
+    margin: 0px
+  }
+</style>
+
+</head>
+ 
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({
+      source: "https://tring.s.llnwi.net/delta/101/out/u/rtshsportottencryption.mpd",    
+        watermark: "", position: 'top-right',
+        poster: "",
+            shakaConfiguration: {
+            drm: {
+                "clearKeys": {
+                     '87c154e8e6934177b428a2a0fa5ac800':'2c036503c395aa3046956bd1eafe21e1','faad00102fbe44b39dd1c630aebf6500':'bdd28f4dc9f55f73fda58d80b1a35548'
+            preferredAudioLanguage: 'pt-BR',
+        },
+         width: "100%",
+        height: "100%",
+      parentId: "#player",
+      plugins: {
+        core: [LevelSelector],
+        playback:[DashShakaPlayback]
+      },
+    });
+  </script>
+</body>
