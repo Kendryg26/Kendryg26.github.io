@@ -1,10 +1,17 @@
 [
  {
-        "title": "Panamá vs. Estados Unidos 27/6/2024",
-        "img": "https://lh3.googleusercontent.com/Syonbyl1ya1-YQCgrZ6Mk0NzDyW4tPnuO4_nTi3soHkI-CnU1uF8GNDVrWxOeUwey88inrdQfAg8Sg=w1280-h720",
-        "status": "FINALIZADO",
+        "title": "Ipswich Town vs Liverpool 17/8/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/08/image-1-9-780x470.png",
+        "status": "Segunda Mitad",
         "league": "Copa América 2024",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc3OTA3NTE1ODI4MzY="
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQyODE2NTk4NjQ0"
+    },
+ {
+        "title": "Ipswich Town vs Liverpool 17/8/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/08/image-1-9-780x470.png",
+        "status": "Primera Mitad",
+        "league": "Copa América 2024",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQyNjM5MTkyNjky"
     },
  {
         "title": "Panamá vs. Estados Unidos 27/6/2024",
