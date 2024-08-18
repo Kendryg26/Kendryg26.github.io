@@ -1,41 +1,55 @@
 [ 
  {
-        "title": "Génova vs Inter de Milán  17/8/2024 (2T)",
+        "title": "Valencia vs FC Barcelona (2T) 17/8/2024",
+        "img": "https://pbs.twimg.com/media/GMWcbxnWkAAezLo.png:large",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzOTg3ODU4MDM2"
+    },
+ {
+        "title": "Valencia vs FC Barcelona (1T) 17/8/2024",
+        "img": "https://pbs.twimg.com/media/GMWcbxnWkAAezLo.png:large",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzODY2NzQ3NTA4"
+    },
+ {
+        "title": "Génova vs Inter de Milán (2T) 17/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cj5ukakyjroyoshol0ep8f9c_image-header_pEs_1723222669000&quality=70",
         "status": "FINALIZADO",
         "league": "Serie A",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzNzQwMzI4NTY0"
     },
  {
-        "title": "Génova vs Inter de Milán  17/8/2024 (1T)",
+        "title": "Génova vs Inter de Milán (1T) 17/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cj5ukakyjroyoshol0ep8f9c_image-header_pEs_1723222669000&quality=70",
         "status": "FINALIZADO",
         "league": "Serie A",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzNDg4NjcwMzI0"
     },
  {
-        "title": "Arsenal vs Wolverhampton 17/8/2024 (2T)",
+        "title": "Arsenal vs Wolverhampton (2T) 17/8/2024",
         "img": "https://images.daznservices.com/di/library/DAZN_News/ea/f6/arsenal-vs-wolves-premier-league-202122_1s0wszfbhuohh1ds0qrk8zhdv4.png?t=-378147203",
         "status": "FINALIZADO",
         "league": "Premier League inglesa",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzMjg4MTk1NzAw"
     },
  {
-        "title": "Arsenal vs Wolverhampton 17/8/2024(1T)",
+        "title": "Arsenal vs Wolverhampton (1T) 17/8/2024",
         "img": "https://images.daznservices.com/di/library/DAZN_News/ea/f6/arsenal-vs-wolves-premier-league-202122_1s0wszfbhuohh1ds0qrk8zhdv4.png?t=-378147203",
         "status": "FINALIZADO",
         "league": "Premier League inglesa",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzMDEyMTU4MDY4"
     },
  {
-        "title": "Ipswich Town vs Liverpool 17/8/2024(2T)",
+        "title": "Ipswich Town vs Liverpool (2T) 17/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=16q8nuftgdkan1ctzltrqqmys2_image-header_pEs_1720434654000&quality=70",
         "status": "FINALIZADO",
         "league": "Premier League inglesa",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQyODE2NTk4NjQ0"
     },
  {
-        "title": "Ipswich Town vs Liverpool 17/8/2024(1T)",
+        "title": "Ipswich Town vs Liverpool (1T) 17/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=16q8nuftgdkan1ctzltrqqmys2_image-header_pEs_1720434654000&quality=70",
         "status": "FINALIZADO",
         "league": "Premier League inglesa",
