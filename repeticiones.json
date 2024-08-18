@@ -1,5 +1,19 @@
 [ 
  {
+        "title": "Bayer Leverkusen vs Stuttgart 17/8/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP6CJRO-cqFdH7UnrP57EWonMlSa_AeIH0-Q&s",
+        "status": "FINALIZADO",
+        "league": "DFL-SuperCup",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQ0MDQ3NDk1Nzk2"
+    },
+ {
+        "title": "Phönix Lübeck vs Borussia Dortmund 17/8/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-mUDl7kxsySefxWYSe83mGE5HC_CQ2y81og&s",
+        "status": "FINALIZADO",
+        "league": "DFB-Pokal",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlby83OTQzODY4NjQ4MDUy"
+    },
+ {
         "title": "Valencia vs FC Barcelona (2T) 17/8/2024",
         "img": "https://pbs.twimg.com/media/GMWcbxnWkAAezLo.png:large",
         "status": "FINALIZADO",
