@@ -1,11 +1,19 @@
 [ 
     {
+        "title": "Sorteo  29/8/2024",
+        "img": "https://i.ytimg.com/vi/PpJaSoYoeXE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVletft0MJxpJs9R-SkSxey3BhEw",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZXJ0ZXJwbHVzLmNvbS9obHMuaHRtbC8_Z2V0PWFIUjBjSE02THk5c2FYWmxMWFZsWm1FdFkyOXRMbUZyWVcxaGFYcGxaQzV1WlhRdmFHeHpMMnhwZG1Vdk1qQXpOamt6TkM4eU9UQTRNalJmVlVOTVIxTXZiV0Z6ZEdWeUxtMHpkVGc"
+    }, 
+    
+    {
         "title": "Rayo Vallecano vs Barcelona  27/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9evfllof227t8w1sf9na1eog9_image-header_pDach_1723620901000&quality=70",
         "status": "FINALIZADO",
         "league": "LaLiga",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgyNDkwODg2MDg4MTg="
-    }    
+    },    
 {
         "title": "Villarreal vs Celta de Vigo (2T) 25/8/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=828js87k8md2erhivawtvuxhi_image-header_pRow_1720780613000&quality=70",
