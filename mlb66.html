@@ -1,129 +1,41 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Thetvapp.to - The easiest way to watch all MLB Games.">
-    <meta name="keywords" content="MLB streams, MLB schedule, reddit MLB streams, Live Stream Baseball Games">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="drPVSXyuIKFq9Kevt50qIZsJ0dzb2j4ZuDptCI1c">
-        <title>MLB Streams - Thetvapp.to</title>
-    <!-- Scripts -->
-    <link rel="preload" as="style" href="https://thetvapp.to/build/assets/app-24fac727.css" /><link rel="modulepreload" href="https://thetvapp.to/build/assets/app-756efb94.js" /><link rel="stylesheet" href="https://thetvapp.to/build/assets/app-24fac727.css" /><script type="module" src="https://thetvapp.to/build/assets/app-756efb94.js"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    </head>
-
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.8/dist/clappr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/cssm.css">
+    <style>body, html {margin: 0;padding: 0;width: 100%;height: 100%;overflow: hidden;}#player {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}</style>
+</head>
 <body>
-    <!-- navbar -->
-    <header class="p-3 text-bg-dark">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a class="navbar-brand" href="/">
-                    <img src="" width="80%" class="d-inline-block align-top"
-                        alt="">
-                </a>
-
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="https://thetvapp.to/tv" class="nav-link px-2 text-white">Live TV</a></li>
-                    <li><a href="https://thetvapp.to/nba" class="nav-link px-2 text-white">NBA</a></li>
-                    <li><a href="https://thetvapp.to/mlb" class="nav-link px-2 text-white">MLB</a></li>
-                    <li><a href="https://thetvapp.to/nhl" class="nav-link px-2 text-white">NHL</a></li>
-                    <li><a href="https://thetvapp.to/nfl" class="nav-link px-2 text-white">NFL</a></li>
-                    <li><a href="https://thetvapp.to/ncaaf" class="nav-link px-2 text-white">NCAAF</a></li>
-                    <li><a href="https://thetvapp.to/ncaab" class="nav-link px-2 text-white">NCAAB</a>
-                    </li>
-                    <li><a href="https://thetvapp.to/soccer" class="nav-link px-2 text-white">Soccer</a></li>
-                    <li><a href="https://thetvapp.to/ppv" class="nav-link px-2 text-white">PPV</a></li>
-                </ul>
-
-                
-
-                <div class="text-end">
-                    <a href="https://thetvapp.to/contact"><button type="button"
-                            class="btn btn-outline-light me-2">Contact Us</button></a>
-                    
-                    
-                </div>
-                <a href="/premium"><button type="button" class="btn btn-warning">Premium
-                        Service</button></a>
-            </div>
-        </div>
-    </header>
-    <!-- navbar -->
-
-    <div class="container my-4">
-            <div class="row">
-        <h3>MLB Streams</h3>
-        <div class="col-lg-8 mt-5">
-            <ol class="list-group list-group-numbered">
-                                                            <a href="https://thetvapp.to/event/milwaukee-brewers-vs-cincinnati-reds-edd4eebe2976fcfadca2b92987cead86/" class="list-group-item">Milwaukee Brewers vs. Cincinnati Reds
-                            <span>2024-08-30T16:41:00Z</span></a>
-                                            <a href="https://thetvapp.to/event/atlanta-braves-vs-philadelphia-phillies-b5b20918314d95ea0d34ea75f534f3b4/" class="list-group-item">Atlanta Braves vs. Philadelphia Phillies
-                            <span>2024-08-30T22:41:00Z</span></a>
-                                            <a href="/event/boston-red-sox-vs-detroit-tigers-3e9e606de663405f319fce97c9ec90bf/" class="list-group-item">Boston Red Sox vs. Detroit Tigers
-                            <span>2024-08-30T22:41:00Z</span></a>
-                                            <a href="/event/milwaukee-brewers-vs-cincinnati-reds-69851784aec11598b4a9132d593b0c0a/" class="list-group-item">Milwaukee Brewers vs. Cincinnati Reds
-                            <span>2024-08-30T22:41:00Z</span></a>
-                                            <a href="/event/chicago-cubs-vs-washington-nationals-d05efb5074aa48682a02d9f8d2733203/" class="list-group-item">Chicago Cubs vs. Washington Nationals
-                            <span>2024-08-30T22:46:00Z</span></a>
-                                            <a href="/event/san-diego-padres-vs-tampa-bay-rays-3e9d3b81f3c731bcf8bd9db476228fdb/" class="list-group-item">San Diego Padres vs. Tampa Bay Rays
-                            <span>2024-08-30T22:51:00Z</span></a>
-                                            <a href="/event/st-louis-cardinals-vs-new-york-yankees-2c823ae299338aea83938a1021f95923/" class="list-group-item">St. Louis Cardinals vs. New York Yankees
-                            <span>2024-08-30T23:06:00Z</span></a>
-                                            <a href="/event/pittsburgh-pirates-vs-cleveland-guardians-3fec2930056e0878d73cccb86e83607f/" class="list-group-item">Pittsburgh Pirates vs. Cleveland Guardians
-                            <span>2024-08-30T23:11:00Z</span></a>
-                                            <a href="/event/oakland-athletics-vs-texas-rangers-5f604a440c928e97a8c7887e1db4f57c/" class="list-group-item">Oakland Athletics vs. Texas Rangers
-                            <span>2024-08-31T00:06:00Z</span></a>
-                                            <a href="/event/new-york-mets-vs-chicago-white-sox-e380cffc0532d7ab03f8da4bb1784c73/" class="list-group-item">New York Mets vs. Chicago White Sox
-                            <span>2024-08-31T00:11:00Z</span></a>
-                                            <a href="/event/kansas-city-royals-vs-houston-astros-028a36fbd205cfd7d8518c4d41ab8f9e/" class="list-group-item">Kansas City Royals vs. Houston Astros
-                            <span>2024-08-31T00:11:00Z</span></a>
-                                            <a href="/event/toronto-blue-jays-vs-minnesota-twins-ed9d6a6a41069680417f14c9980d221f/" class="list-group-item">Toronto Blue Jays vs. Minnesota Twins
-                            <span>2024-08-31T00:11:00Z</span></a>
-                                            <a href="/event/baltimore-orioles-vs-colorado-rockies-2f7c701be3cf69fca0d89c3d0a1c4ac5/" class="list-group-item">Baltimore Orioles vs. Colorado Rockies
-                            <span>2024-08-31T00:41:00Z</span></a>
-                                            <a href="/event/seattle-mariners-vs-los-angeles-angels-eef976d399943bb20440e78d645d44bb/" class="list-group-item">Seattle Mariners vs. Los Angeles Angels
-                            <span>2024-08-31T01:39:00Z</span></a>
-                                            <a href="/event/los-angeles-dodgers-vs-arizona-diamondbacks-f3856c23fcaed25901c545db08d50f4c/" class="list-group-item">Los Angeles Dodgers vs. Arizona Diamondbacks
-                            <span>2024-08-31T01:41:00Z</span></a>
-                                            <a href="/event/miami-marlins-vs-san-francisco-giants-c3517ba696e234137f56b3239e4baf11/" class="list-group-item">Miami Marlins vs. San Francisco Giants
-                            <span>2024-08-31T02:16:00Z</span></a>
-                                    
-            </ol>
-        </div>
-    </div>
-    </div>
-    <script>
-        $("span").each(function() {
-            var startTime = new Date($(this).text());
-            if (startTime) {
-                $(this).text(startTime.toLocaleString("en-US", {
-                    dateStyle: "short",
-                    timeStyle: "long",
-                    hour12: true
-                })).css({
-                    "background-color": "lightblue",
-                    "font-size": "100%",
-                    "color": "black",
-                    "font-weight": "400"
-                });
-            }
+<div id="player"></div>
+<script>
+    var playbackURL = "https://cale.pricesaskeloadsc.com:443/global/fox_deportes_usa/index.m3u8?token=fb05b2e171b74a8fa24b1f392e88088496134b8a-bf-1725143255-1725107255";
+    var p2pConfig = {
+        live: true,
+        trackerZone: 'us',    
+    }
+    P2PEngineHls.tryRegisterServiceWorker(p2pConfig).then(() => {
+        var player = new Clappr.Player({
+            source: playbackURL,
+            parentId: "#player",
+            poster: '',
+            width: '100%',
+            height: '100%',
+            autoPlay: false,
+            plugins: [],
         });
-    </script>
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDJRXWJ0P0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-KDJRXWJ0P0');
-    </script>
-
+        p2pConfig.hlsjsInstance = player.core.getCurrentPlayback()?._hls;
+        var engine = new P2PEngineHls(p2pConfig);
+    });
+</script>
+<script id="aclib" type="text/javascript" src="https://alwaysdomain01.online/ads/lib7.js"></script>
+<script type="text/javascript">
+    aclib.runPop({
+        zoneId: '7440630',
+    });
+</script>
+<script type="text/javascript">
+!function(){try{var t=["sandbox","hasAttribute","frameElement","data","indexOf","href","domain","","plugins","undefined","namedItem","object","createElement","onerror","type","application/pdf","setAttribute","style","visibility:hidden;width:0;height:0;position:absolute;top:-99px;","appendChild","body","removeChild","parentElement","https://streamtp.live/blocked.html?referer=","substring","referrer"];function e(){try{if(config.ampallow){var e=window.location.ancestorOrigins;if(e[e.length-1].endsWith("google.com"))return}}catch(n){}setTimeout(function(){location[t[5]]="https://streamtp.live/blocked.html"},500)}!function e(n){try{if(window[t[2]][t[1]](t[0])){n();return}}catch(r){}if(0!=location[t[5]][t[4]](t[3])&&document[t[6]]==t[7]){n();return}if(typeof navigator[t[8]]!=t[9]&&typeof navigator[t[8]][t[10]]!=t[9]&&null!=navigator[t[8]][t[10]](t[11])){var i=document[t[13]](t[12]);i[t[14]]=function(){n()},i[t[17]](t[15],t[16]),i[t[17]](t[18],t[19]),i[t[17]](t[3],t[20]),document[t[22]][t[21]](i),setTimeout(function(){i[t[24]][t[23]](i)},150)}}(e),function t(){try{document.domain=document.domain}catch(e){try{if(-1!=e.toString().toLowerCase().indexOf("sandbox"))return!0}catch(n){}}return!1}()&&e(),function t(){if(window.parent===window)return!1;try{var e=window.frameElement}catch(n){e=null}return null===e?""===document.domain&&"data:"!==location.protocol:e.hasAttribute("sandbox")}()&&e()}catch(n){}}();
+</script>
 </body>
-
 </html>
