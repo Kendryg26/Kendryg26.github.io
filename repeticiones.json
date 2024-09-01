@@ -1,10 +1,45 @@
 [ 
   {
-        "title": "Bayern München vs. Freiburg (1T)  01/9/2024",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t8POsRlwp9nqZe2J_gAc6P0ef8Ncojf3Pg&s",
+        "title": "Real Madrid vs Real Betis (1T) 01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPFz1tSZoQ6wIIWnZl1T_k0rJ8CUkasEWQA&s",
         "status": "FINALIZADO",
-        "league": "Bundesliga",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTA5ODYxNDg0Njg"
+        "league": "La liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE1MTA1Njc1NDA"
+    },
+  {
+        "title": "Real Madrid vs Real Betis (2T) 01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSPFz1tSZoQ6wIIWnZl1T_k0rJ8CUkasEWQA&s",
+        "status": "FINALIZADO",
+        "league": "La liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE2MDQ0MTUwOTI"
+    },
+  {
+        "title": "Lille vs PSG (1T) 01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuViSWZ-bO6fYzkTXRDtpVMh_PyW87-mgs6w&s",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE1Nzg0NjI4MzY"
+    },
+{
+        "title": "Lille vs PSG (2T) 01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuViSWZ-bO6fYzkTXRDtpVMh_PyW87-mgs6w&s",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE1NzgzOTczMDA"
+    },
+  {
+        "title": "Juventus vs AS Roma  01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_UqPCDmiRQ8vtudOP3guXvVzcoBGxlpA4A&s",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE1NDcxMzY2Mjg"
+    },
+  {
+        "title": "Sevilla vs Girona  01/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmsesrpH1BFvNVxbJBHW8sh9eDcsmsCriTmw&s",
+        "status": "FINALIZADO",
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5OTE0MTkyMTAzNTY"
     },
   {
         "title": "Bayern München vs. Freiburg (2T)  01/9/2024",
