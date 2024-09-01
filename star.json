@@ -1,17 +1,38 @@
-[
+[ 
   {
-    "title": "Serie A",
-    "league": "CONMEBOL Sudamericana",
-    "img": "7a70e989-733f-4c8f-be9d-3eff0c9ea14b",
-    "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/08/31/Lazio_vs_Milan_20240831_1725125631113/ctr-all-complete.m3u8?&ck=eyJhZmE4NTRjMjYyZmM0YzcyYTM0ZWI0MmJlOTBlOGE1MyI6ImYwMDMwZDRkNDAxM2JlMDc1MzQ1YjBmYjMwMjFkMmQyIn0=",
-    "img": "7a70e989-733f-4c8f-be9d-3eff0c9ea14b",
-    "status": "EN VIVO"
-  },
+        "title": "Manchester United vs. Liverpool",
+        "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/686936f5-c879-4cab-b81f-d8a58f2c1e87/scale?width=500&aspectRatio=1.78&format=jpeg",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "hrome-extension:\/\/opmeopcambhfimffbomjgemehjkbbmji\/pages\/player.html#https:\/\/live-akc-sa-west-2.media.dssott.com\/gru1\/va01\/disneyplus\/event\/2024\/09\/01\/Manchester_United_vs_Live_20240901_1725195145676\/ctr-all-complete.m3u8?&ck=eyI4OWMyMTEyNGVlZWI0YTRmODRkYjNhNTU0YjBmY2NlYiI6IjlmMDlhZjYwZjA2ZjNmMTgxYzFhZmY5N2Q4ZGMxY2QwIn0="
+    },
   {
-    "title": "Napoli vs. Parma",
-    "league": "Serie A",
-    "img": "3d5f414e-f454-4e0c-b016-8797090a7981",
-    "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/08/31/Napoli_vs_Parma__20240831_1725121811024/ctr-all-complete.m3u8?&ck=eyIyZjAwZjExNTlhNjc0N2Y5OTEwZDVjNWYxMjBjMWI3YSI6IjEzOGQ0YmU0MjAzNTcwNDhkMmQ3MThhNzA4ZThkNzllIn0=",
-    "status": "EN VIVO"
-  }
-]
+        "title": "Bayern Munich vs. Freiburg",
+        "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/5485b7ae-5341-4854-bd58-e6e7a471e978/scale?width=500&aspectRatio=1.78&format=jpeg",
+        "status": "FINALIZADO",
+        "league": "LALIGA",
+        "url": "chrome-extension:\/\/opmeopcambhfimffbomjgemehjkbbmji\/pages\/player.html#https:\/\/live-akc-sa-west-2.media.dssott.com\/gru1\/va01\/disneyplus\/event\/2024\/09\/01\/Bayern_Munich_vs_Freiburg_20240901_1725197152013\/ctr-all-complete.m3u8?&ck=eyI5MTdmY2JiMzE5ZTU0MzYxODlkZWMyZmMxNTFjYTUyMSI6ImQwODIzZDhhYzJhZWU4ZTcyNGFjOWIzNWVmZjA4MGE4In0="
+    },
+  {
+        "title": "Getafe vs. Real Sociedad",
+        "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/a3d22dae-8d0f-4880-a4d8-0affb75cd5ea/scale?width=500&aspectRatio=1.78&format=jpeg",
+        "status": "FINALIZADO",
+        "league": "LALIGA",
+        "url": "chrome-extension:\/\/opmeopcambhfimffbomjgemehjkbbmji\/pages\/player.html#https:\/\/live-akc-sa-west-2.media.dssott.com\/gru1\/va01\/disneyplus\/event\/2024\/09\/01\/Getafe_vs_Real_Sociedad_20240901_1725202852018\/ctr-all-complete.m3u8?&ck=eyI1MjRkZDMxY2RhNDI0NmEzYTM1MTExMjI4ZGE0N2JkNSI6ImNjYjI0ODE2NjdlZmJlMTk5YWYyYjA4NjkzZjIwNmQyIn0="
+    },
+  {
+        "title": "Chelsea vs. Crystal Palace",
+        "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/21504e99-a7b3-454a-ad66-2b6747010ff7/scale?width=500&aspectRatio=1.78&format=jpeg",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "chrome-extension:\/\/opmeopcambhfimffbomjgemehjkbbmji\/pages\/player.html#https:\/\/live-akc-sa-west-2.media.dssott.com\/gru1\/va01\/disneyplus\/event\/2024\/09\/01\/Chelsea_vs_Crystal_Palace_20240901_1725186013011\/ctr-all-complete.m3u8?&ck=eyJiYzMyOWRlYWU4YzE0Y2U4ODI1ZThmYTM4NjgxMzk5YiI6IjJhNTBjNTRkMWY3MzkyY2VhOWY2MDhhYzc5MTY1YjViIn0="
+    },
+  {
+        "title": "Newcastle vs. Tottenham",
+        "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/27cbb27c-59b4-44e7-b2a2-99088527b503/scale?width=500&aspectRatio=1.78&format=jpeg",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "chrome-extension:\/\/opmeopcambhfimffbomjgemehjkbbmji\/pages\/player.html#https:\/\/live-akc-sa-west-2.media.dssott.com\/gru1\/va01\/disneyplus\/event\/2024\/09\/01\/Newcastle_United_vs_Totte_20240901_1725185971939\/ctr-all-complete.m3u8?&ck=eyI1MWNmZTVlZjljNTA0MTFmYTUzNmY2NTljYWQzOTlhNiI6IjJhZjNkNjVhYjYzNmI0NGMyN2Q1MTQ1NTcyNjkyMDMyIn0="
+    }
+
+  ]
