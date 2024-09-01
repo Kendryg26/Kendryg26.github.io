@@ -1,10 +1,24 @@
 [ 
-   {
-        "title": "Sorteo  29/8/2024",
-        "img": "https://i.ytimg.com/vi/PpJaSoYoeXE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVletft0MJxpJs9R-SkSxey3BhEw",
+  {
+        "title": "Las Palmas vs Real Madrid  29/8/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8vn53bj9pn1qyt2r8uic87st6_image-header_pJp_1721860165000&quality=70",
         "status": "FINALIZADO",
-        "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZXJ0ZXJwbHVzLmNvbS9obHMuaHRtbC8_Z2V0PWFIUjBjSE02THk5c2FYWmxMWFZsWm1FdFkyOXRMbUZyWVcxaGFYcGxaQzV1WlhRdmFHeHpMMnhwZG1Vdk1qQXpOamt6TkM4eU9UQTRNalJmVlVOTVIxTXZiV0Z6ZEdWeUxtMHpkVGc"
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4NjM2OTI4ODg2Mjg="
+    },  
+    {
+        "title": "Servette vs Chelsea",
+        "img": "https://www.ceroacero.es/img/noticias/552/imgS620I661552T20240821200114.png",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa Conference League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTI3MTUwNzQwOTQ="
+    },
+    {
+        "title": "Atletico Madrid vs Espanyol  29/8/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6wzc7d7hmy5cngxvfhrmna0l2_image-header_pRow_1721431381000&quality=70",
+        "status": "FINALIZADO",
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgyMjgwNDUxOTU3ODk="
     }, 
    {
         "title": "Rayo Vallecano vs Barcelona  27/8/2024",
