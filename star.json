@@ -1,20 +1,5 @@
 [
-  {
-    "title": "Lille vs. PSG",
-    "league": "Ligue 1",
-    "img": "ace1ba53-433f-4ffb-aff7-fd9773ccdfc1",
-    "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL0xpbGxlX3ZzX1BTR18yMDI0MDkwMV8xNzI1MjA4MjI3MDI0XC9jdHItYWxsLWNvbXBsZXRlLm0zdTg_JmNrPWV5SmhNR00zWkdVME4yTTNNR1UwTnprd1lXRmtZVFExWVdNMlpUSmpNakZtT0NJNkltVTRORE01TkRReVlUSmpNV0ZtTkRWbU1Ua3pNREppWVdGa016Y3lZbVU1SW4wPQ",
-    "id": 27,
-    "status": "FINALIZADO"
-  },
-  {
-    "title": "Juventus vs. Roma",
-    "league": "Serie A",
-    "img": "a7866dc-aef0-4f8f-9f8d-db4fd0e179ef",
-    "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL0p1dmVudHVzX3ZzX1JvbWFfMjAyNDA5MDFfMTcyNTIwODI4NDE2MlwvY3RyLWFsbC1jb21wbGV0ZS5tM3U4PyZjaz1leUppTkRsa05tRTFOR1ZoTlRnMFlXSm1PREJqTlRWbFpUVXdNVEF4TXpjeVlpSTZJamMwTURkbFptSTJPVGcwWm1NNU5tUXdOemN3WldWaU1HTTNZVGcwTURsakluMD0",
-    "id": 27,
-    "status": "FINALIZADO"
-  },
+
   {
     "title": "Manchester United vs. Liverpool",
     "league": "Premier League",
