@@ -5,7 +5,7 @@
     "img": "ace1ba53-433f-4ffb-aff7-fd9773ccdfc1",
     "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL0xpbGxlX3ZzX1BTR18yMDI0MDkwMV8xNzI1MjA4MjI3MDI0XC9jdHItYWxsLWNvbXBsZXRlLm0zdTg_JmNrPWV5SmhNR00zWkdVME4yTTNNR1UwTnprd1lXRmtZVFExWVdNMlpUSmpNakZtT0NJNkltVTRORE01TkRReVlUSmpNV0ZtTkRWbU1Ua3pNREppWVdGa016Y3lZbVU1SW4wPQ",
     "id": 27,
-    "status": "EN VIVO"
+    "status": "FINALIZADO"
   },
   {
     "title": "Juventus vs. Roma",
@@ -13,7 +13,23 @@
     "img": "a7866dc-aef0-4f8f-9f8d-db4fd0e179ef",
     "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL0p1dmVudHVzX3ZzX1JvbWFfMjAyNDA5MDFfMTcyNTIwODI4NDE2MlwvY3RyLWFsbC1jb21wbGV0ZS5tM3U4PyZjaz1leUppTkRsa05tRTFOR1ZoTlRnMFlXSm1PREJqTlRWbFpUVXdNVEF4TXpjeVlpSTZJamMwTURkbFptSTJPVGcwWm1NNU5tUXdOemN3WldWaU1HTTNZVGcwTURsakluMD0",
     "id": 27,
-    "status": "EN VIVO"
+    "status": "FINALIZADO"
+  },
+  {
+    "title": "Manchester United vs. Liverpool",
+    "league": "Premier League",
+    "img": "686936f5-c879-4cab-b81f-d8a58f2c1e87",
+    "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL01hbmNoZXN0ZXJfVW5pdGVkX3ZzX0xpdmVfMjAyNDA5MDFfMTcyNTE5NTE0NTY3NlwvY3RyLWFsbC1jb21wbGV0ZS5tM3U4PyZjaz1leUk0T1dNeU1URXlOR1ZsWldJMFlUUm1PRFJrWWpOaE5UVTBZakJtWTJObFlpSTZJamxtTURsaFpqWXdaakEyWmpObU1UZ3hZekZoWm1ZNU4yUTRaR014WTJRd0luMD0",
+    "id": 27,
+    "status": "FINALIZADO"
+  },
+  {
+    "title": "Getafe vs. Real Sociedad",
+    "league": "LALIGA",
+    "img": "a3d22dae-8d0f-4880-a4d8-0affb75cd5ea",
+    "url": "Y2hyb21lLWV4dGVuc2lvbjpcL1wvb3BtZW9wY2FtYmhmaW1mZmJvbWpnZW1laGprYmJtamlcL3BhZ2VzXC9wbGF5ZXIuaHRtbCNodHRwczpcL1wvbGl2ZS1ha2Mtc2Etd2VzdC0yLm1lZGlhLmRzc290dC5jb21cL2dydTFcL3ZhMDFcL2Rpc25leXBsdXNcL2V2ZW50XC8yMDI0XC8wOVwvMDFcL0dldGFmZV92c19SZWFsX1NvY2llZGFkXzIwMjQwOTAxXzE3MjUyMDI4NTIwMThcL2N0ci1hbGwtY29tcGxldGUubTN1OD8mY2s9ZXlJMU1qUmtaRE14WTJSaE5ESTBObUV6WVRNMU1URXhNakk0WkdFME4ySmtOU0k2SW1OallqSTBPREUyTmpkbFptSmxNVGs1WVdZeVlqQTROamt6WmpJd05tUXlJbjA9",
+    "id": 27,
+    "status": "FINALIZADO"
   },
   {
     "title": "Chelsea vs. Crystal Palace",
