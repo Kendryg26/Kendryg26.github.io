@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Extensión e Inclusión de Reproductor</title>
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #player {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Ajustes generales */
+.alert-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;  /* Se ajusta mejor a diferentes tamaños de pantalla */
+    max-width: 350px;  /* Máximo ancho en pantallas grandes */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.alert-card h3 {
+    font-size: 20px;  /* Tamaño de texto más pequeño */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.alert-card .boxicon {
+    font-size: 36px;  /* Tamaño de icono reducido */
+    color: #ffeb3b;
+}
+
+.alert-card p {
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 14px;  /* Tamaño de texto más pequeño */
+}
+
+.alert-card a {
+    color: #03a9f4;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;  /* Tamaño de texto más pequeño */
+}
+
+.alert-card a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .alert-card {
+        width: 100%;  /* Ocupa todo el ancho en pantallas pequeñas */
+        max-width: none;
+        padding: 10px;
+    }
+
+    .alert-card h3 {
+        font-size: 18px;
+    }
+
+    .alert-card .boxicon {
+        font-size: 28px;
+    }
+
+    .alert-card p {
+        font-size: 13px;
+    }
+
+    .alert-card a {
+        font-size: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="player" class="hidden"></div>
+        <div id="alerta-extension" class="hidden alert-card">
+            <i class='bx bx-error-circle boxicon'></i>
+            <h2>Instala la Extensión VideoPlayer</h2>
+            <p>Para ver este canal, necesitas instalar la extensión VideoPlayer.</p>
+            <p>Una vez instalada la extensión, recarga la página de Kerter+.</p>
+            <a href="https://chrome.google.com/webstore/detail/opmeopcambhfimffbomjgemehjkbbmji" target="_blank">Instalar ahora</a>
+        </div>
+        <div id="alerta-android" class="hidden alert-card">
+            <i class='bx bx-error-circle boxicon'></i>
+            <h3>Esta transmisión es Compatible solo con PC</h3>
+        </div>
+    </div>
+    <script>
+        // Función para verificar si es Windows y PC
+        function isWindowsPC() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return /windows/.test(userAgent) && !/windows phone/.test(userAgent);
+        }
+
+        // Función para verificar si es Android
+        function isAndroid() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return /android/.test(userAgent);
+        }
+
+        // Función para mostrar el mensaje de dispositivo no compatible
+        function showUnsupportedDeviceMessage() {
+            const unsupportedMessage = document.createElement('div');
+            unsupportedMessage.classList.add('alert-card');
+            unsupportedMessage.innerHTML = `
+                <i class='bx bx-error-circle boxicon'></i>
+                <h2>Dispositivo no compatible</h2>
+                <p>Este sitio es compatible solo con PC con Windows o Android. Por favor, usa un dispositivo compatible para acceder.</p>
+            `;
+            document.body.appendChild(unsupportedMessage);
+        }
+
+        
+        // Verificar el dispositivo y mostrar el mensaje o el reproductor adecuado
+        if (isWindowsPC()) {
+            // Función para obtener el valor del parámetro "r" en la URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Función para verificar si la extensión está instalada
+            function isExtensionInstalled(installedCallback, notInstalledCallback) {
+                const img = document.createElement('img');
+                img.onload = installedCallback;
+                img.onerror = notInstalledCallback;
+                img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+            }
+
+            // Obtener el parámetro "r" de la URL
+            const rParam = getQueryParam('r');
+            const playerDiv = document.getElementById("player");
+            const alertaDiv = document.getElementById("alerta-extension");
+
+            // Verificar si el parámetro "r" está presente en la URL
+            if (rParam) {
+                // Verificar si la extensión está instalada
+                isExtensionInstalled(
+                    () => {
+                        playerDiv.classList.remove("hidden");
+                        // Decodificar la URL del parámetro "r"
+                        const decodedRParam = decodeURIComponent(rParam);
+                        // Construir la URL del iframe con el parámetro "r" decodificado
+                        const extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${decodedRParam}`;
+                        // Insertar el iframe en la página
+                        playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                    },
+                    () => {
+                        alertaDiv.classList.remove("hidden");
+                    }
+                );
+            } else {
+                alert('No se ha proporcionado el parámetro "r" en la URL.');
+            }
+        } else if (isAndroid()) {
+            document.getElementById('alerta-android').classList.remove('hidden');
+        } else {
+            showUnsupportedDeviceMessage();
+        }
+    </script>
+</body>
+</html>
