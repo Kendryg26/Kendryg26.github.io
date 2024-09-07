@@ -1,6 +1,6 @@
 [ 
 
-
+  
 
   {
         "title": "Bélgica vs Israel 06/9/2024",
@@ -22,6 +22,35 @@
         "status": "FINALIZADO",
         "league": "UEFA Nations League",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxNTU1MjkxNTMwNzI="
+    },
+  {
+        "title": "Argentina vs Chile (1T) 06/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=zxafpofoin8wsveb0xi6ortu_image-header_pRow_1724767929000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMDQ1NjkyMDUzNjQ"
+    },
+  {
+        "title": "Argentina vs Chile (2T) 06/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=zxafpofoin8wsveb0xi6ortu_image-header_pRow_1724767929000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMDQ1NjkyNzA5MDA"
+    },
+
+  {
+        "title": "Portugal vs Croacia (1T) 06/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aByTTEkv0uBcLHor3YUWBHpSRxTjsTy5CA&s",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMDQzNTA3NzM4NzY"
+    },
+{
+        "title": "Portugal vs Croacia (2T) 06/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aByTTEkv0uBcLHor3YUWBHpSRxTjsTy5CA&s",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMDQzNTA5NzA0ODQ"
     },
   {
         "title": "Real Madrid vs Real Betis (1T) 01/9/2024",
