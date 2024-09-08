@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+    <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Verificación de Extensión e Inclusión de Reproductor</title>
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #player {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            background: #000;
+        }
+
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .alert-card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .alert-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .alert-card .boxicon {
+            font-size: 48px;
+            color: #ff0;
+        }
+
+        .alert-card p {
+            margin: 10px 0;
+            color: #ebebeb;
+        }
+
+        a {
+            color: #0f0;
+            text-decoration: underline;
+        }
+
+        .event-not-started {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div id="player" class="hidden"></div>
+    <div id="alerta-extension" class="hidden alert">
+        <i class='bx bx-error-circle boxicon'></i>
+        <center>
+        <div id="jb" class="jumbotron">
+        <div class="image"><img src="https://deportestvhd4.com/img/play-on.png" width="10%"></div>
+        <h1>Reproductor MPD/M3U8/M3U/EPG</h1>
+        </div>        
+            <p><i style="color:red">NOTA</i>: Para reproducir este canal necesitas instalar la extension: <strong>Reproductor MPD/M3U8/M3U/EPG</strong></p>
+            <h2>Instalacion</h2>
+            <p>Para instalar la extension debes ingresar a <a target="_blank" href="https://chromewebstore.google.com/detail/reproductor-mpdm3u8m3uepg/opmeopcambhfimffbomjgemehjkbbmji">Reproductor MPD/M3U8/M3U/EPG</a> o buscarla en <b>Chrome Web Store o Brave</b></p>
+            <img src="https://deportestvhd4.com/img/instrucciones.png" width="40%">
+            <p>Una vez instalada la extension recarga la pagina y disfruta del canal.</p>
+            </center>
+    </div>
+        <div id="event-not-started" class="hidden event-not-started">
+        <h2>El evento aun no empieza</h2>
+        <p>Si es la hora del evento y aún no ha comenzado, recargue la página.</p>
+        </div>
+</div>
+
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    var getURL = getParameterByName('get');
+    var getIMG = getParameterByName('img');
+    var getKEY = getParameterByName('key');
+    var getKEY2 = getParameterByName('key2');
+    if (getURL == "") {alert('Vuelve a la página anterior');}
+
+    var number;
+
+    // Función para verificar si es Windows y PC
+    function isWindowsPC() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /windows/.test(userAgent) && !/windows phone/.test(userAgent);
+    }
+
+    // Función para mostrar el mensaje de dispositivo no compatible
+    function showUnsupportedDeviceMessage() {
+        const unsupportedMessage = document.createElement('div');
+        unsupportedMessage.classList.add('alert-card');
+        unsupportedMessage.innerHTML = `
+            <i class='bx bx-error-circle boxicon'></i>
+            <h2>Dispositivo no compatible</h2>
+            <p>Este canal es compatible solo en PC con Windows. Por favor utiliza una PC para ver el contenido.</p>
+        `;
+        document.body.appendChild(unsupportedMessage);
+    }
+
+    // Verificar si es un dispositivo compatible antes de ejecutar el código principal
+    if (!isWindowsPC()) {
+        showUnsupportedDeviceMessage();
+    } else {
+        // Función para verificar si la extensión está instalada
+        function isExtensionInstalled(installedCallback, notInstalledCallback) {
+            const img = document.createElement('img');
+            img.onload = installedCallback;
+            img.onerror = notInstalledCallback;
+            img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+        }
+
+        // Mostrar el reproductor o el mensaje de extensión según corresponda
+        const playerDiv = document.getElementById("player");
+        const alertaDiv = document.getElementById("alerta-extension");
+        const eventNotStartedDiv = document.getElementById("event-not-started");
+
+        isExtensionInstalled(
+            () => {
+                // Si la extensión está instalada, verificar si el evento ha comenzado
+                if (getURL === "EVENTO1") {
+                    keyId = "7864659725b74350b74c2329908f4550";
+                    key = "3daee329b58dc6024dd5309829bf4b11";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/08/Portugal_vs_Escocia_20240908_1725813031023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO2") {
+                    keyId = "a4ff13451ad944eebb77ace04cd264a9";
+                    key = "bd79f98eea0b1e1165c87cf8830a214c";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/08/Suiza_vs_Espaa_20240908_1725812739023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO3") {
+                    keyId = "23accc7b18fb4f8684e1fc1e47148db9";
+                    key = "c5eef9b256c9cbff05ce660794d359d9";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/08/Sweden_vs_Estonia_20240908_1725814851728/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO4") {
+                    keyId = "2c38d026d78f41ab9a2098533bf265fd";
+                    key = "e73b4300eb7e276eefe78d5e04bed793";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/08/Croatia_vs_Poland_20240908_1725812729023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO5") {
+                    keyId = "469f870179ea42419d6b7031cbd38b43";
+                    key = "234c4815ec9e2ed94de15cc0bac3e048";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/08/Gibraltar_vs_Liechtenstei_20240908_1725803770683/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO6") {
+                    keyId = "772522b3fca64c83a0d286045a479a11";
+                    key = "0df3e9e04ede83d3216ad015af65e509";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/07/Moldova_vs_Malta_20240907_1725719331156/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO7") {
+                    keyId = "8f8124457ffa4646ab2b2a2b5ee0725d";
+                    key = "63d0c2c268aafd74c48d012c4d96594f";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/07/Gilbert_Burns_vs_Sean_Bra_20240907_1725732046019/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO8") {
+                    keyId = "821f9ef152ef44308d14c0b422117772";
+                    key = "462ed2342dfe5fee046b944cb941218a";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/05/Belarus_vs_Bulgaria_20240905_1725554810310/ctr-all-complete.m3u8";  
+                    
+                } else if (getURL === "EVENTO9") {
+                    keyId = "a2fa5b6ed5774f11a6de0457dbf1f1f5";
+                    key = "118dedd31941794d48b47fb940661c77";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/05/Scotland_vs_Poland_20240905_1725553502025/ctr-all-complete.m3u8";  
+                    
+                } else if (getURL === "EVENTO10") {
+                    keyId = "fc3876841381498dbbc07f81f1cfdd4b";
+                    key = "a5dd00c4d8c0836fc965092776cd9cd6";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/05/Dinamarca_vs_Suiza_20240905_1725553828026/ctr-all-complete.m3u8";  
+                    
+                } else if (getURL === "ESPN2AR") {
+                    keyId = "65a5bfa3c7a72dde60be9b0c7406c8fc";
+                    key = "0b40ae9f78a7bac3b57ecbf72d3c081e";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c6eds/ESPN2_Arg/SA_Live_dash_enc_wl/ESPN2_Arg.mpd";    
+                
+                } else if (getURL === "ESPN4AR") {
+                    keyId = "cc8d44406ed6bf1898ad9f7a2d64f29e";
+                    key = "fb85d059687ab0fc67805806204edbdf";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c3eds/ESPNHD/SA_Live_dash_enc_wl/ESPNHD.mpd";
+                    
+                } else if (getURL === "ESPN5") {
+                    keyId = "24f2b3e741f0d9e9a8d516faff38bddc";
+                    key = "bbd3fd02fb104e1463ac528a13f67e4a";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c7eds/ESPN4/SA_Live_dash_enc_wl/ESPN4.mpd";
+                    
+                } else if (getURL === "ESPN6") {
+                    keyId = "5fc7b662e69c0fbf8d39691166b1c919";
+                    key = "89157cdd25df25d56f1ecccee3850888";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c7eds/FoxSports3_UY/SA_Live_dash_enc_wl/FoxSports3_UY.mpd"; 
+                    
+                } else if (getURL === "LATINAPE") {
+                    keyId = "57ad785322e04cc3ba1c0ee5028cb9ff";
+                    key = "2e465a9a43cc7d3038cd423d24d5d25e";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3LAT1NA/dash/manifest.mpd";    
+                    
+                } else if (getURL === "AMERICATVPE") {
+                    keyId = "0c44d6d5d32546af8db72d2fec1c52d4";
+                    key = "9225a237222dd8be8432b2f001992295";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/QE4M3R1CA/dash/manifest.mpd";   
+                    
+                } else if (getURL === "ATV") {
+                    keyId = "30558a5ae2a0a96e5c3e9f731a71ee90";
+                    key = "09f8bd751242f3896ca8aa77aaf80c36";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ATV3Q/dash/manifest.mpd";     
+                    
+                } else if (getURL === "ESPNPE") {
+                    keyId = "7a05100cf840c1b06497842a7cf63da8";
+                    key = "5165fe404f62b779193fb2d1d59422fc";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNUN03Q/dash/manifest.mpd";   
+                    
+                } else if (getURL === "ESPN2PE") {
+                    keyId = "bb61b5891e3c4901b64e2c2ecb625856";
+                    key = "8634fa31f047d8a532e49091110b2fc5";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNDOS3Q/dash/manifest.mpd";  
+                    
+                } else if (getURL === "ESPN3PE") {
+                    keyId = "47ee13c211e24dadb58990b6d09c1352";
+                    key = "ab0ec44e6b08d9fd205e92a668c76237";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNTHREE/dash/manifest.mpd";  
+                    
+                } else if (getURL === "ESPN3AR") {
+                    keyId = "f4c9f97e2a36feab0e5077f2b44cbc4e";
+                    key = "1743cd03dfe3736b2c95da91a783af38";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c3eds/ESPN3/SA_Live_dash_enc_wl/ESPN3.mpd";      
+                    
+                }
+
+                // Mostrar mensaje si keyId, key y mpd están vacíos
+                if (!keyId && !key && !mpd) {
+                    eventNotStartedDiv.classList.remove("hidden");
+                } else {
+                    // Convertir keyId y key a una cadena JSON
+                    var keyObj = {};
+                    keyObj[keyId] = key;
+                    var keyJson = JSON.stringify(keyObj);
+                    // Codificar en base64
+                    var base64Key = btoa(keyJson);
+
+                    // Construir la URL con el key ofuscado en base64
+                    var extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${mpd}?&ck=${encodeURIComponent(base64Key)}`;
+
+                    playerDiv.classList.remove("hidden");
+                    playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                }
+            },
+            () => {
+                // Si la extensión no está instalada, mostrar el mensaje de instalación
+                alertaDiv.classList.remove("hidden");
+            }
+        );
+    }
+</script>
+
+</body>
+</html>
