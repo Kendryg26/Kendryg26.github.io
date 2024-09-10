@@ -2,12 +2,48 @@
 
   
 
-{
-        "title": "Alemania vs Hungría (2T) 07/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=71cfbe72b6hwovh23lhpzkfaf_image-header_pDach_1723057043000&quality=70",
+
+  {
+        "title": "Israel vs Italia (2T) 09/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=e6jv3fk938lcf62inn6qzvwvk_image-header_pDach_1723057044000&quality=70",
         "status": "FINALIZADO",
         "league": "UEFA Nations League",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc2MTYyODQ0NjE2MDY="
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvZzdqbzU1OWZzMTRlP2F1dG9wbGF5PTEmYW1wO2F1dG9fcGxheT0xJmFtcDtyZWw9MA=="
+    },
+  {
+        "title": "Israel vs Italia (1T) 09/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=e6jv3fk938lcf62inn6qzvwvk_image-header_pDach_1723057044000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvN3d6ZzZ5OGhpM3RrP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
+    },
+  {
+        "title": "Francia vs Bélgica (2T) 09/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1bxfd7d7ak6k412vmsf4mf69x0_image-header_pCa_1721827533000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvbGNzNWtnd2t3eWhyP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
+    },   
+{
+        "title": "Francia vs Bélgica (1T) 09/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1bxfd7d7ak6k412vmsf4mf69x0_image-header_pCa_1721827533000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvdG9kczR0bjZ4eWtzP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
+    }, 
+  {
+        "title": "Suiza vs España (2T) 08/9/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/09/image-23-1-780x470.png",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMTE5MjQ1MDcyNTI="
+    }, 
+  {
+        "title": "Suiza vs España (1T) 08/9/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/09/image-23-1-780x470.png",
+        "status": "FINALIZADO",
+        "league": "UEFA Nations League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMTE5MjQ1NzI3ODg="
     }, 
  {
         "title": "Alemania vs Hungría (1T) 07/9/2024",
