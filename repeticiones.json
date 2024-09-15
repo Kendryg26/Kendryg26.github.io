@@ -4,62 +4,7 @@
 
 
 
-{
-        "title": " Real Sociedad vs Real Madrid  14/9/2024",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwKjR_Erj6mQ9NBsq0-8YQVJSlfm0s7qmHJA&s",
-        "status": "FINALIZADO",
-        "league": "LaLiga",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc1NjM0ODEzODU0OTc="
-    },  
-{
-        "title": "Bournemouth vs Chelsea (2T)  14/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=dyfse8un6a77zy8a9ryiaobrq_image-header_pRow_1723228127000",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvOTBlbG5tdHcybnkxP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
-{
-        "title": "Bournemouth vs Chelsea (1T)  14/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=dyfse8un6a77zy8a9ryiaobrq_image-header_pRow_1723228127000",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvYTdkemRlYnBkYjN2P2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
-  {
-        "title": "Holstein Kiel vs Bayern Munich  14/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ajou38q2vz2qrtrh1jem8kmq9_image-header_pCa_1722500147000&quality=70",
-        "status": "FINALIZADO",
-        "league": "Bundesliga",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvaGZ1YnR6OHVrczgxP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
-{
-        "title": "Manchester City vs Brentford (2T)  14/9/2024",
-        "img": "https://images.daznservices.com/di/library/DAZN_News/d6/dd/brentford-vs-manchester-city-premier-league-202122_1h1cf4hhwbj6jzrisnna80i0d.png?t=-363188787&w=800",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvbjlyMnBzY3Jld3VjP2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
-{
-        "title": "Manchester City vs Brentford (1T)  14/9/2024",
-        "img": "https://images.daznservices.com/di/library/DAZN_News/d6/dd/brentford-vs-manchester-city-premier-league-202122_1h1cf4hhwbj6jzrisnna80i0d.png?t=-363188787&w=800",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvaTZkaWtqNXRvMWQ0P2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
-{
-        "title": "Liverpool vs Nottingham (2T)  14/9/2024",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIoO81NzSPvHiVdq_O1TFaoF5B9e11uNz9jg&s",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2Uvc3B4bXNqZXR5OG10P2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA=="
-    },
-  {
-        "title": "Liverpool vs Nottingham (1T)  14/9/2024",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIoO81NzSPvHiVdq_O1TFaoF5B9e11uNz9jg&s",
-        "status": "FINALIZADO",
-        "league": "Premier League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9kb29kLmxpL2UvMm5ta2wyMGxkeDB0P2F1dG9wbGF5PTEmYXV0b19wbGF5PTEmcmVsPTA="
-    },
+
   {
         "title": "Real Betis vs Leganés  13/9/2024",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpkaJ9C6idzqlEBXJf814iXGNqP3pjEqacVA&s",
