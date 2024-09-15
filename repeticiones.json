@@ -1,6 +1,17 @@
 [ 
 
-{
+
+       
+       
+       
+      {
+        "title": " Girona vs Barcelona  15/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1iftnhe0chrau2xrn02ueufdw_image-header_pRow_1725059090000&quality=70",
+        "status": "FINALIZADO",
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc1NjM0ODEzODU0OTc="
+    }, 
+       {
        "title": " Holstein Kiel vs Bayern Munich  14/9/2024",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zs9ONdU10nY5XL8pVEwituUO6eHsxWVOEw&s",
         "status": "FINALIZADO",
