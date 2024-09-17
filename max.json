@@ -1,50 +1,35 @@
-[
-    {
-        "id": 2,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/08/40710b52-70e3-352a-8c62-53a754fc2f9b.jpeg",
-        "league": "SheBelieves Cup",
+[ 
+
+
+       
+       {
+        "title": "Real Madrid vs. VfB Stuttgart",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/ac1eb742-552c-38ec-bb24-3102c9f3bd2e.jpeg?w=350&f=webp",
         "status": "EN VIVO",
-        "title": "USWNT vs. Canada",
-        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly90dWRlcG9ydGV0dmhkLmNvbS9tYXgvZXZlbnRvMS5waHA="
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r="
+    }, 
+
+       
+      {
+        "title": "AC Milan vs. Liverpool",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/a08e6ca3-8d54-32d6-b096-8fce55b45299.jpeg?w=350&f=webp",
+        "status": "FINALIZADO",
+        "league": "EN VIVO",
+        "url": "/embed/eventos/?r="
     },
     {
-        "id": 3,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/02/52fc1c80-9475-3b2d-805e-9c2784d0cd0d.jpeg",
-        "league": "NBA",
+        "title": "Bayern Munich vs. Dinamo Zagreb",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/2ba023de-7220-3e9d-8720-2a7c1dc5ef19.jpeg?w=350&f=webp",
         "status": "EN VIVO",
-        "title": "Celtics vs. Bucks",
-        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9hbHdheXNkb21haW4wMS5vbmxpbmUvbWF4LWFwaS1zaGFrYS12OC5waHA/aWQ9YmNhZTczNzItNDM0YS01OTE0LWE4NjItYTdmMzllMTIxZDMz"
-    },
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r="
+    }, 
     {
-        "id": 5,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/02/e5612be6-2c33-3439-9564-86c689035b01.jpeg",
-        "league": "NBA",
-        "status": "04:00",
-        "title": "Warriors vs. Lakers",
-        "url": "\/embed\/eventos\/?r=aHR0cHM6Ly9jbGFyb3ZpZGVvLnRlbGV2aXNpb24tbGlicmVoZC5jb20vbWF4L3BsYXkucGhwP2lkPTk"
-    },
-    {
-        "id": 6,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/04/1eb513ad-48b3-3d28-a333-cc14e5e95fba.jpeg",
-        "league": "EUFA Champions League",
-        "status": "19:30",
-        "title": "Atltico vs Dortmund (10/04)",
-        "url": "#"
-    },
-    {
-        "id": 7,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/04/ad15adb9-830b-3057-8246-a6a81ab3201e.jpeg",
-        "league": "EUFA Champions League",
-        "status": "19:30",
-        "title": "PSG vs Barcelona (10/04)",
-        "url": "#"
-    },
-    {
-        "id": 8,
-        "img": "https://images.cdn.prd.api.discomax.com/2024/04/02/67237bd3-e209-3c9f-aa63-d8db61ea41e3.jpeg",
-        "league": "NHL",
-        "status": "02:00",
-        "title": "Knights vs Oilers (10/04)",
-        "url": "#"
+        "title": "Sporting CP vs. Lille",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/ffe3fb4e-e2bb-38d3-85f6-947a5a9b7443.jpeg?w=350&f=webp",
+        "status": "EN VIVO",
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r="
     }
 ]
