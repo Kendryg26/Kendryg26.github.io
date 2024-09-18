@@ -4,36 +4,9 @@
     "img": "0b6a415f-345c-470a-8310-56d63f2d7ba5",
     "key": "",
     "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "Real Madrid vs. VfB Stuttgart",
-    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPNg=="
-  },
-   {
-    "hora": "00:00",
-    "img": "0ef73275-64d1-4192-a4e0-20bf5d3b0f8b",
-    "key": "",
-    "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "AC Milan vs. Liverpool",
-    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPOQ=="
-  },
-   {
-    "hora": "00:00",
-    "img": "029b2ff5-d175-4677-825f-c41820c3ab7f",
-    "key": "",
-    "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "Bayern Munich vs. Dinamo Zagreb",
-    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPNw=="
-  },
-   {
-    "hora": "00:00",
-    "img": "2e9ebdf0-4fa2-423f-948e-7881926b66ea",
-    "key": "",
-    "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "Sporting CP vs. Lille",
-    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPOA=="
+    "status": "EN VIVO",
+    "title": "Sparta Praha vs. Salzburg",
+    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPMg=="
   },
    
   {
@@ -41,17 +14,10 @@
     "img": "0befe24c-1900-40cb-86a7-74657bdd5e12",
     "key": "",
     "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "Juventus vs. PSV",
-    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPMw=="
-  },
-  {
-    "hora": "02:00",
-    "img": "7fed63be-8ff4-4bde-89dd-06f44abc2652",
-    "key": "#",
-    "league": "UEFA Champions League",
-    "status": "FINALIZADO",
-    "title": "Young Boys vs. Aston Villa",
-    "url": "/eventos.html?r=Y2hyb21lLWV4dGVuc2lvbjovL29wbWVvcGNhbWJoZmltZmZib21qZ2VtZWhqa2JibWppL3BhZ2VzL3BsYXllci5odG1sIyM/JmNrPWUzMD0="
+    "status": "EN VIVO",
+    "title": "Bologna vs. Shakhtar Donetsk",
+    "url": "/eventos.html?r=Ly9hbnRhZy54eXovZXh0ZW5zaW9uLnBocD9nZXQ9RVZFTlRPMQ=="
+
+
   }
 ]
