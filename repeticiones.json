@@ -1,11 +1,115 @@
 [ 
-
- {
-        "title": " Atalanta vs Arsenal 19/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=c9gwd8ktp7eyobkg1j3uzomph_image-header_pRow_1725869929000&quality=70",
+{
+        "title": "Real Madrid vs Espanyol (2T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8oqo7b9xdb135hyh1gg7ymxa7_image-header_pRow_1725974783000",
         "status": "FINALIZADO",
-        "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MjI4MjA3MjQ="
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTEyNTYzMzA4Njg"
+    },
+ {
+        "title": "Real Madrid vs Espanyol (1T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8oqo7b9xdb135hyh1gg7ymxa7_image-header_pRow_1725974783000",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTEyNTYyNjUzMzI"
+    },
+ {
+        "title": "Stade de Reims vs PSG 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=gqzxgfr2gr2vavf659jwbc3l_image-header_pRow_1726653818000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTEyNTU4MDY1ODA"
+    },
+ {
+        "title": "Eintracht Frankfurt vs Borussia Mönchengladbach 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=jjpehqtqm60buzkjkizcq91m_image-header_pEs_1725965963000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTEyMjE2NjIzMjQ"
+    },
+ {
+        "title": "Valencia vs Girona 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=pjpjy4joj0crvoc94i0y0ts9_image-header_pRow_1725974783000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA5MzE1MzQ0NTI"
+    },
+ {
+        "title": "Crystal Palace vs Manchester United 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5nxbphwj3s8l8l1jjbgq1ksqv_image-header_pRow_1723575197000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTExMzg3NTkyODQ"
+    },
+ {
+        "title": "Juventus vs Napoli 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=mmrqkwgi4grcx9npjjhp2l9r_image-header_pRow_1725552385000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA4MTI3MTc2ODQ"
+    },
+  {
+        "title": "Tottenham Hotspur vs Brentford (2T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2jvcift3o7h6udluewkgey8aa_image-header_pRow_1723575197000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA0OTE5ODQ1MDA"
+    },
+  {
+        "title": "Tottenham Hotspur vs Brentford (1T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2jvcift3o7h6udluewkgey8aa_image-header_pRow_1723575197000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA1OTI0NTExODg"
+    },
+   {
+        "title": "Leicester City vs Everton (2T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9pf0wb3y3gkod885y7x5nb553_image-header_pRow_1723575196000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA0OTIxMTU1NzI"
+    }, 
+  {
+        "title": "Leicester City vs Everton (1T) 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9pf0wb3y3gkod885y7x5nb553_image-header_pRow_1723575196000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTAzNjA4NDY5NjQ"
+    }, 
+ {
+        "title": "Liverpool vs AFC Bournemouth 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=3u6j5cysw4kvixwyi1qx502s_image-header_pRow_1723575196000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTA0OTIwNTAwMzY"
+    }, 
+  {
+        "title": "Werder Bremen vs Bayern München 21/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7usvrh417746rggddzgb6maev_image-header_pRow_1723101071000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTExOTAyNzA1ODA"
+    }, 
+ {
+        "title": "West Ham United vs Chelsea 21/9/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/09/image-68-780x470.png",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNTAwMTg0MjEzNjQ"
+    }, 
+ {
+        "title": "Deportivo Alavés vs Sevilla 20/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4sfdxdkj2sonm4su2c8neqc93_image-header_pDach_1726081955000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDcwODg1MDM0MTI"
+    }, 
+ {
+        "title": "Al Ettifaq vs Al Nassr 20/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cj1t2rjlbdxh5jdxo466e0g5l_image-header_pCa_1725919040000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Liga Profesional Saudí",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MzM1MDMwOTI"
     }, 
         {
         "title": " AS Monaco vs FC Barcelona (2T) 19/9/2024",
@@ -21,26 +125,133 @@
         "league": "UEFA Champions League",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MTA4Mjc2MzY="
     }, 
-       {
+ {
+        "title": "Atlético Madrid vs RB Leipzig (2T) 19/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7ho1u49r7woyxv06dcb9hygdd_image-header_pDach_1725534108000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MjE1NzU1NDA"
+    },
+ {
+        "title": "Atlético Madrid vs RB Leipzig (1T) 19/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7ho1u49r7woyxv06dcb9hygdd_image-header_pDach_1725534108000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MjE2NDEwNzY"
+    },
+ {
+        "title": "Atalanta vs Arsenal 19/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=410ex4u51is9b2u0frls9ecxo_image-header_pCa_1725369825000",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MjI4MjA3MjQ"
+    },
+ {
+        "title": "Feyenoord vs Bayer Leverkusen 19/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9i5r85xd7bvl8gr0hrrgzvmjt_image-header_pDach_1725367314000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MDk3MTM1MjQ"
+    }, 
+ {
+        "title": "Crvena Zvezda vs Benfica 19/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2ofytb0ji9c8f71o0e04mr7we_image-header_pRow_1726416913000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDM1MDk2NDc5ODg"
+    }, 
+ {
+        "title": "PSG vs Girona 18/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8tsstuaxqca07qpxs749vbes2_image-header_pCa_1725368525000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDA0ODkzNTU4OTI"
+    },
+  {
         "title": " Manchester City vs Inter Milan (2T) 18/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8ptxd97h8o008ph5ui4ll2ex7_image-header_pRow_1725367319000&quality=70",
         "status": "FINALIZADO",
         "league": "UEFA Champions League",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDA1MDg1NTc5NDA="
     }, 
-       {
+  {
         "title": " Manchester City vs Inter Milan (1T) 18/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8ptxd97h8o008ph5ui4ll2ex7_image-header_pRow_1725367319000&quality=70",
         "status": "FINALIZADO",
         "league": "UEFA Champions League",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDA0ODg4MzE2MDQ="
+    },
+      
+ {
+        "title": "Club Brugge vs Borussia Dortmund 18/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=187k8eggcwq9uk79ecjkf2erl_image-header_pDach_1725361803000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDA0ODkwOTM3NDg"
+    }, 
+ {
+        "title": "Celtic vs Slovan Bratislava 18/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=152j3jbwahmrufu2py9myvog1_image-header_pCa_1726416406000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDA0ODg3MDA1MzI"
+    }, 
+       
+ {
+        "title": "Manchester United vs Barnsley 17/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=du96rwtjeavgqng1yalnkdiq6_image-header_pJp_1725615739000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc4NjQ3MDQ2Mjg"
+    }, 
+ {
+        "title": "Sporting Lisbon vs Lille (1T) 17/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb3VK57fnmvXRN9YrYEipaEl80cw3E7sNlIw&s",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc3MzQyODc5ODg"
+    }, 
+ {
+        "title": "Sporting Lisbon vs Lille (2T) 17/9/2024",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb3VK57fnmvXRN9YrYEipaEl80cw3E7sNlIw&s",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc4MjAyNzEyMjA"
+    }, 
+ {
+        "title": "Bayern Munich vs Dinamo Zagreb 17/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7he98uidlk4pj21xm7n2hwphq_image-header_pDach_1725533496000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc4NDMyMDg4MjA"
+    }, 
+ {
+        "title": "AC Milan vs Liverpool 17/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=c2xu0ztwgxa2oe5ahqlirpxdl_image-header_pDach_1725352064000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc4NDMxNDMyODQ"
     }, 
        {
+        "title": "Juventus vs PSV Eindhoven 17/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9t6q8cz56btbr58rjlx6h728h_image-header_pRow_1725353561000",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc2NjQzNjEwNzY"
+    }, 
+ {
         "title": " Real Madrid vs VfB Stuttgart 17/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=dmonydalw6hapyqi3pptfdkkg_image-header_pRow_1725356234000&quality=70",
         "status": "FINALIZADO",
         "league": "UEFA Champions League",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzc4NDExNzcyMDQ"
+    }, 
+  {
+        "title": "Atlético Madrid vs Valencia 15/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7envgkvshkkm876jeyb9wfkfq_image-header_pJp_1725059090000&quality=70",
+        "status": "FINALIZADO",
+        "league": "LaLiga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwMzIxNzM0OTI4NTI"
     }, 
        {
         "title": " Girona vs Barcelona (1T) 15/9/2024",
