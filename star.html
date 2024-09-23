@@ -3,16 +3,16 @@
 
 <head>
 
-    <meta http-equiv="refresh" content="1000" />
+    <meta http-equiv="refresh" content="1000000000000" />
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     
     
     
     
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://deportestvhd2.com/hora2.js"></script>
-    <meta charset="UTF-4">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://deportestvhd3.com/hora2.js"></script>
+
    
     <script type='text/javascript'>
         document.oncontextmenu = function(){return false}
@@ -26,7 +26,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <style type="text/css">
-    @charset "UTF-8";
+    @charset "UTF-4";
 @import url("src/bootstrap/bootstrap.min.css");
 @import url("src/splide/splide.min.css");
 @import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
@@ -427,7 +427,7 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-  color: rgba(0,0,0);
+  color: rgba(0,.,0);
 }
 
 h1 .badge,
@@ -482,32 +482,29 @@ h6 {
 
 
 .card .card-img-top {
-  border-radius:12px 12px 0 0;
+  border-radius: 12px 12px 0 0;
 }
-
 
 
 
 .btn {
-  height: 36px;
-  padding: 3px 18px;
-  font-size: 13px;
-  line-height: 1.2em;
-  font-weight: 500;
-  box-shadow: none !important;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s all;
-  text-decoration: none !important;
-  border-radius: 100px;
-  border-width: 2px;
+    height: 36px;
+    padding: 3px 18px;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-weight: 500;
+    box-shadow: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all;
+    text-decoration: none !important;
+    border-radius: 12px;
+    border-width: 2px;
 }
 
 
-
-
-
+}
 .bg-primary {
   background: #0008ff !important;
   color: #FFF;
@@ -522,7 +519,7 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -595,31 +592,6 @@ body.dark-mode .card {
     opacity: 0.5;
   }
 }
-/* Logo */
-/* Estilos del logo */
-img[src="/img/logo-starplus.png"] {
-  /* Añade estilos aquí */
-  transition: filter 0.3s ease-in-out;
-  position: relative;
-} 
-
-img[src="/img/logo-starplus.png"]:hover {
-  filter: brightness(150%);
-}
-
-img[src="/img/logo-starplus.png"]:hover::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  background-color: white;
-  opacity: 0.8;
-  z-index: -1;
-  border-radius: 50%;
-  animation: shine 1s forwards;
-}
 
 @keyframes shine {
   from { 
@@ -652,44 +624,61 @@ function eventos() {
                     var x = Math.random().toString(36).substring(7);
 
                     $.ajax({
-                        url: "https://api.codetabs.com/v1/proxy/?quest=https://apish.television-librehd.com/now/nba/sfndeportes.json?" + x,
+                        url: "https://api.codetabs.com/v1/proxy/?quest=https://deportestvhd3.com/disneyplus.json?" + x,
                         type: "get",
                         success: function (arr) {
-                            var content = '';
+                // Ordenar los eventos: primero EN VIVO, luego los demás
+                arr.sort(function(a, b) {
+                    if (a.status === "EN VIVO") return -1;
+                    if (b.status === "EN VIVO") return 1;
+                    if (a.status === "FINALIZADO") return 1;
+                    if (b.status === "FINALIZADO") return -1;
+                    return 0;
+                });
+                
+                var content = '<div class="row">'; // Agregamos una fila alrededor de las tarjetas
+                            
+                            
                             for (var i = 0; i < arr.length; i++) {
-                                var obj = arr[i];
-                                url = obj['url'];
-                                if (url !== "#") {
-                                    let nurl =  url.replace("/embed/eventos/?r=", "");
-                                    nurl = atob(nurl);
-                                    let wurl = nurl.replace("//conywhan.bar/lp.php?img=", "");
-                                    wurl = "https://kendryg26.github.io/nbapassrepro.html?get=" + wurl;
-                                    let furl = btoa(wurl);
-                                     console.log(furl);
-                                    //console.log('Link está listo: ' + furl);
-                                    // Concatenamos link ya tratado
-                                    url = "/eventos.html?r=" + furl;
-                                } else {
-                                    //console.log('Link no está listo: ' + url);
-                                }
-                                status = obj['status'];
-                                if (status == "EN VIVO") {    
-                                 hora = '<button type="button" class="btn btn-danger me-1 mb-1">En Vivo</button>';
-                                 
-                                } else if (status == "FINALIZADO") {
-                                    hora = '<button type="button" class="btn btn-white me-1 mb-1">Finalizado</button>';
-                                } else {
-                                    hora = '<button type="button" class="btn btn-white me-1 mb-1">Hoy |   <span class="t">' + status + '</span> hs</button>';
-                                }
-                                //console.log(status);
-                                content += '<div class="col-md-3 col-lg-4 mycard"><div class="no-section no-mt-2"><a href="' + url + '"><div class="card"><img src="https://cdn.nba.com/davinci/images/team-matchups/nba/latest/web/' + obj['img'] + '/1920x1080.png" class="card-img-top" alt="image" /><div class="card-body">' + hora + '<h3>' + obj['title'] + '</h3><h5 class="card-subtitle">' + obj['league'] + '</h5></div></div></a></div></div>';
-                            }
-                            $("#eventos").html(content);
-                            guardaHorario();
-                            dT();
-                        }
-                    })
+                    var obj = arr[i];
+                    var url = obj['url'];
+                    var hora = '';
+
+                    if (url !== "#") {
+                        url = url; // La URL ya está en Base64 y no necesita decodificación
+                    }
+
+                    if (obj['status'] == "EN VIVO") {
+                        hora = '<button type="button" class="btn btn-danger btn-md me-1 mb-1">EN VIVO</button>';
+                    } else if (obj['status'] == "FINALIZADO") {
+                        hora = '<button type="button" class="btn btn-dark btn-md me-1 mb-1">FINALIZADO</button>';
+                    } else {
+                        hora = '<button type="button" class="btn btn-dark me-1 mb-1">HOY |  <span class="t">' + obj['status'] + '</span> hs</button>';
+                    }
+                    content += '<div class="col-md-3 mycard mb-3">';
+                    content += '<div class="no-section no-mt-2">';
+                    content += '<a href="' + url + '" class="text-decoration-none event-card">';
+                    content += '<div class="card">';
+                    content += '<img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/' + obj['img'] + '/compose?format=webp&label=standard_regular_prompt_espn_178&width=720" class="card-img-top" alt="image" style="margin-bottom: 10px;">';
+                    content += '<div class="card-body">';
+                    content += hora;
+                    content += '<h5 class="card-title mt-2" style="font-size: 1rem;">' + obj['title'] + '</h5>';
+                    content += '<h6 class="card-title mt-2">' + obj['league'] + '</h6>';
+                    content += '</div></div></a></div></div>';
+                    
                 }
+
+                content += '</div>'; // Cerramos la fila
+
+                $("#eventos").html(content);
+                guardaHorario();
+                dT();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error al cargar el JSON:", status, error);
+            }
+        });
+    }
 
                 eventos();
  
