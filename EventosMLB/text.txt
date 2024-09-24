@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script type='text/javascript' src='//sillinesswoollen.com/b1/53/71/b15371e85315262ab6cb9e60002fc023.js'></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+    <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Verificación de Extensión e Inclusión de Reproductor</title>
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #player {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            background: #000;
+        }
+
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .alert-card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .alert-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .alert-card .boxicon {
+            font-size: 48px;
+            color: #ff0;
+        }
+
+        .alert-card p {
+            margin: 10px 0;
+            color: #ebebeb;
+        }
+
+        a {
+            color: #0f0;
+            text-decoration: underline;
+        }
+
+        .event-not-started {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div id="player" class="hidden"></div>
+    <div id="alerta-extension" class="hidden alert">
+        <i class='bx bx-error-circle boxicon'></i>
+        <center>
+        <div id="jb" class="jumbotron">
+        <div class="image"><img src="https://deportestvhd4.com/img/play-on.png" width="10%"></div>
+        <h1>Reproductor MPD/M3U8/M3U/EPG</h1>
+        </div>        
+            <p><i style="color:red">NOTA</i>: Para reproducir este canal necesitas instalar la extension: <strong>Reproductor MPD/M3U8/M3U/EPG</strong></p>
+            <h2>Instalacion</h2>
+            <p>Para instalar la extension debes ingresar a <a target="_blank" href="https://chromewebstore.google.com/detail/reproductor-mpdm3u8m3uepg/opmeopcambhfimffbomjgemehjkbbmji">Reproductor MPD/M3U8/M3U/EPG</a> o buscarla en <b>Chrome Web Store o Brave</b></p>
+            <img src="https://deportestvhd4.com/img/instrucciones.png" width="40%">
+            <p>Una vez instalada la extension recarga la pagina y disfruta del canal.</p>
+            </center>
+    </div>
+        <div id="event-not-started" class="hidden event-not-started">
+        <h2>El evento aun no empieza</h2>
+        <p>Si es la hora del evento y aún no ha comenzado, recargue la página.</p>
+        </div>
+</div>
+
+<script type="text/javascript">
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    var getURL = getParameterByName('get');
+    var getIMG = getParameterByName('img');
+    var getKEY = getParameterByName('key');
+    var getKEY2 = getParameterByName('key2');
+    if (getURL == "") {alert('Vuelve a la página anterior');}
+
+    var number;
+
+    // Función para verificar si es Windows y PC
+    function isWindowsPC() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /windows/.test(userAgent) && !/windows phone/.test(userAgent);
+    }
+
+    // Función para mostrar el mensaje de dispositivo no compatible
+    function showUnsupportedDeviceMessage() {
+        const unsupportedMessage = document.createElement('div');
+        unsupportedMessage.classList.add('alert-card');
+        unsupportedMessage.innerHTML = `
+            <i class='bx bx-error-circle boxicon'></i>
+            <h2>Dispositivo no compatible</h2>
+            <p>Este canal es compatible solo en PC con Windows. Por favor utiliza una PC para ver el contenido.</p>
+        `;
+        document.body.appendChild(unsupportedMessage);
+    }
+
+    // Verificar si es un dispositivo compatible antes de ejecutar el código principal
+    if (!isWindowsPC()) {
+        showUnsupportedDeviceMessage();
+    } else {
+        // Función para verificar si la extensión está instalada
+        function isExtensionInstalled(installedCallback, notInstalledCallback) {
+            const img = document.createElement('img');
+            img.onload = installedCallback;
+            img.onerror = notInstalledCallback;
+            img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+        }
+
+        // Mostrar el reproductor o el mensaje de extensión según corresponda
+        const playerDiv = document.getElementById("player");
+        const alertaDiv = document.getElementById("alerta-extension");
+        const eventNotStartedDiv = document.getElementById("event-not-started");
+
+        isExtensionInstalled(
+            () => {
+                // Si la extensión está instalada, verificar si el evento ha comenzado
+                if (getURL === "EVENTO1") {
+                    keyId = "d6d835dd3c974325bf269ae3e48b2fda";
+                    key = "eed02e27f27be5d27e45dd9db9513aef";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Bologna_vs_Shakhtar_Donet_20240918_1726669853023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO2") {
+                    keyId = "3897373aab6c4b4d9eed8e2d1966d3c8";
+                    key = "dc11f3ef3881f2aea9ce34cf54f2200b";
+                    mpd = "https://linear-ftc-sa-west-1.media.dssott.com/clt2/va01/disneyplus/channel/921e1311-bb26-43dd-84a6-9e2284959712-1723483454553/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO3") {
+                    keyId = "131258a46ebc4484b7730333d27d402b";
+                    key = "4d45ab7d9022ca2849ff645b583d16e3";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Betis_vs_Getafe_20240918_1726671023020/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO4") {
+                    keyId = "21d4645c822d434db7623ec8dd62ca29";
+                    key = "2fc76ca865b4b1bed0737dd36f431ef3";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/18/Samsunspor_vs_Istanbul_Ba_20240918_1726671338783/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO5") {
+                    keyId = "2ef75d8ced4740c095582bfc4cd8331f";
+                    key = "abc259f7fa91b3395891e003c68e7bea";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Ajax_vs_Fortuna_Sittard_20240918_1726674647023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO6") {
+                    keyId = "65ff0cbd14b244fba84dbfc3e98dbda8";
+                    key = "ffa231dfd2356e8f2f9c1bbd0606ee15";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Brighton_Hove_Albion_vs_W_20240918_1726677635048/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO7") {
+                    keyId = "4200dbb6ad344a59a2cb589a58f7e69d";
+                    key = "5d8775f783045ba3ec5932b5ae5e43c8";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Coventry_City_vs_Tottenha_20240918_1726677607019/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO8") {
+                    keyId = "1f232d2c8c624bc88a2dd525b2b6206d";
+                    key = "2bbb93d61a488774bebc03d2be38c819";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Fluminense_BRA_vs_Atltico_20240918_1726688742025/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO9") {
+                    keyId = "c295b56d39344e5495a415a5d717de32";
+                    key = "c7e58cc6c98d249a55f72756e8a5224c";
+                    mpd = "https://live-akc-sa-east-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/19/Botafogo_BRA_vs_Sao_Paulo_20240919_1726696821025/ctr-all-complete.m3u8";  
+                    
+                } else if (getURL === "EVENTO10") {
+                    keyId = "9e2fa55e398f461c92b19446b0642c9d";
+                    key = "769633e6a29b80f15f1b3ab0e19cbdbd";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/18/Club_Brugge_vs_Borussia_D_20240918_1726677656022/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO11") {
+                    keyId = "6b149a4d8c3f4fb69f59a4e64ed9da51";
+                    key = "c773e45df9d038b8d56501427f6698a7";
+                    mpd = "https://linear-ftc-sa-west-1.media.dssott.com/clt2/va01/disneyplus/channel/47873700-1b85-4497-8f84-d6f321fbb196-1723568945691/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO12") {
+                    keyId = "bb8e4a8e63e04470b4900429d2d99c46";
+                    key = "b17e5e25ffa3ee56037a1d405acec572";
+                    mpd = "https://linear-akc-na-south-3.media.dssott.com/clt2/va01/disneyplus/channel/bfa28cc1-50fe-4503-9fe4-0862f29e7f80-1723567792947/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO13") {
+                    keyId = "dac687eaac9f45ec824f4a06b2d12b4b";
+                    key = "4e6ef1f92fc5477c258bdca841051568";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/15/Toulouse_vs_Le_Havre_AC__20240915_1726404932280/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO14") {
+                    keyId = "8338104794c24e5fbd31e972adb28a35";
+                    key = "2ace206f7b2bb0d09f135320bfb9f65c";
+                    mpd = "https://live-ftc-sa-east-2.media.dssott.com/clt2/va01/disneyplus/event/2024/09/15/Cagliari_vs_Napoli__20240915_1726408201047/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO15") {
+                    keyId = "d4192f9d06ad494b8805cb9aa855a44b";
+                    key = "4a577455554370fa95c80a630c765824";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/las1/va01/disneyplus/event/2024/09/14/Brighton_vs_Ipswich_Town__20240914_1726314928028/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO16") {
+                    keyId = "df5d532fcce241ae9548bcbdbbc84cbb";
+                    key = "783329105d9776d44d2a5d1777fa14cf";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/Watford_vs_Coventry_City_20240914_1726314629020/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO17") {
+                    keyId = "cd0f2367e75e4fb1b94f3c17ab78a539";
+                    key = "f68f4a81ec3e67c1859ca14f90bcbb52";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/San_Lorenzo_vs_Vlez_Sarsf_20240914_1726329022018/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO18") {
+                    keyId = "aa8039368a73466d843b15487d4ba770";
+                    key = "ded8ae853f5436822b9719592c87f181";
+                    mpd = "https://linear-ftc-sa-west-1.media.dssott.com/clt2/va01/disneyplus/channel/7f9052ce-8143-43a6-9656-a8c00c4a3e56-1723741932452/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO19") {
+                    keyId = "12683915382548a59eff32c78e97f51f";
+                    key = "a39cf982d8d6e2d1d5a9f3f3006f0c54";
+                    mpd = "https://linear-akc-sa-west-1.media.dssott.com/clt2/va01/disneyplus/channel/47873700-1b85-4497-8f84-d6f321fbb196-1723568945691/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO20") {
+                    keyId = "ea459437692b4d2e9f92bdb40e4d259f";
+                    key = "f57b3f624c1c917a2c98960c1a1e4b9a";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/Racing_Club_vs_Boca_Junio_20240914_1726337709023/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO21") {
+                    keyId = "0e458bb2e7c04c8aab39f3bfba8617f7";
+                    key = "f90d9030df34dba33a77a3fd31420efc";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/Canelo_lvarez_vs_Edgar_Be_20240914_1726344043019/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO22") {
+                    keyId = "086518407f8040aa96c2afd2ad11c33d";
+                    key = "d9bda91f4bea570cae9940d4ced4515c";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/Pearol_vs_Rampla_Juniors_20240914_1726344001020/ctr-all-complete.m3u8";
+                    
+                } else if (getURL === "EVENTO23") {
+                    keyId = "5e7d6e7620dd43f68a510ce684474681";
+                    key = "866f803e1b9767b21c82656a847d0b03";
+                    mpd = "https://live-akc-sa-west-2.media.dssott.com/gru1/va01/disneyplus/event/2024/09/14/Sean_OMalley_vs_Merab_Dva_20240914_1726349408029/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "EVENTO24") {
+                    keyId = "b4b87267b5ff48069fc28a72394e53ab";
+                    key = "858127e86eaac6613bb440ba2eb953fd";
+                    mpd = "https://linear-ftc-sa-west-1.media.dssott.com/clt2/va01/disneyplus/channel/f25bdf06-81c9-4a7c-b128-3128d610ad17-1724444532124/ctr-all-sliding.m3u8";
+                    
+                } else if (getURL === "ESPN2AR") {
+                    keyId = "65a5bfa3c7a72dde60be9b0c7406c8fc";
+                    key = "0b40ae9f78a7bac3b57ecbf72d3c081e";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c6eds/ESPN2_Arg/SA_Live_dash_enc_wl/ESPN2_Arg.mpd";    
+                
+                } else if (getURL === "ESPN4AR") {
+                    keyId = "cc8d44406ed6bf1898ad9f7a2d64f29e";
+                    key = "fb85d059687ab0fc67805806204edbdf";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c3eds/ESPNHD/SA_Live_dash_enc_wl/ESPNHD.mpd";
+                    
+                } else if (getURL === "ESPN5") {
+                    keyId = "24f2b3e741f0d9e9a8d516faff38bddc";
+                    key = "bbd3fd02fb104e1463ac528a13f67e4a";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c7eds/ESPN4/SA_Live_dash_enc_wl/ESPN4.mpd";
+                    
+                } else if (getURL === "ESPN6") {
+                    keyId = "5fc7b662e69c0fbf8d39691166b1c919";
+                    key = "89157cdd25df25d56f1ecccee3850888";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c7eds/FoxSports3_UY/SA_Live_dash_enc_wl/FoxSports3_UY.mpd"; 
+                    
+                } else if (getURL === "LATINAPE") {
+                    keyId = "57ad785322e04cc3ba1c0ee5028cb9ff";
+                    key = "2e465a9a43cc7d3038cd423d24d5d25e";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3LAT1NA/dash/manifest.mpd";    
+                    
+                } else if (getURL === "AMERICATVPE") {
+                    keyId = "0c44d6d5d32546af8db72d2fec1c52d4";
+                    key = "9225a237222dd8be8432b2f001992295";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/QE4M3R1CA/dash/manifest.mpd";   
+                    
+                } else if (getURL === "ATV") {
+                    keyId = "30558a5ae2a0a96e5c3e9f731a71ee90";
+                    key = "09f8bd751242f3896ca8aa77aaf80c36";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ATV3Q/dash/manifest.mpd";     
+                    
+                } else if (getURL === "ESPNPE") {
+                    keyId = "7a05100cf840c1b06497842a7cf63da8";
+                    key = "5165fe404f62b779193fb2d1d59422fc";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNUN03Q/dash/manifest.mpd";   
+                    
+                } else if (getURL === "ESPN2PE") {
+                    keyId = "bb61b5891e3c4901b64e2c2ecb625856";
+                    key = "8634fa31f047d8a532e49091110b2fc5";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNDOS3Q/dash/manifest.mpd";  
+                    
+                } else if (getURL === "ESPN3PE") {
+                    keyId = "47ee13c211e24dadb58990b6d09c1352";
+                    key = "ab0ec44e6b08d9fd205e92a668c76237";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNTHREE/dash/manifest.mpd";  
+                    
+                } else if (getURL === "ESPN3AR") {
+                    keyId = "f4c9f97e2a36feab0e5077f2b44cbc4e";
+                    key = "1743cd03dfe3736b2c95da91a783af38";
+                    mpd = "https://edge-mix01-bua.cvattv.com.ar/live/c3eds/ESPN3/SA_Live_dash_enc_wl/ESPN3.mpd";
+                    
+                } else if (getURL === "ESPN5PE") {
+                    keyId = "73a332a722a32d68db9f63f21cb073c1";
+                    key = "1cd1404cfe6a0375353f10127eb1e113";
+                    mpd = "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNF1VE/dash/manifest.mpd";
+                    
+                } else if (getURL === "LIGA1MAX") {
+                    keyId = "bb6c1e99086464733d3bf1bea8482059";
+                    key = "9518a94bd81f8cb8210baa319def2699";
+                    mpd = "https://pelivechannelsdash-3.clarovideo.com/bpk-tv/LIGA1MAX/dash_fk/index.mpd";    
+                    
+                }
+
+                // Mostrar mensaje si keyId, key y mpd están vacíos
+                if (!keyId && !key && !mpd) {
+                    eventNotStartedDiv.classList.remove("hidden");
+                } else {
+                    // Convertir keyId y key a una cadena JSON
+                    var keyObj = {};
+                    keyObj[keyId] = key;
+                    var keyJson = JSON.stringify(keyObj);
+                    // Codificar en base64
+                    var base64Key = btoa(keyJson);
+
+                    // Construir la URL con el key ofuscado en base64
+                    var extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${mpd}?&ck=${encodeURIComponent(base64Key)}`;
+
+                    playerDiv.classList.remove("hidden");
+                    playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                }
+            },
+            () => {
+                // Si la extensión no está instalada, mostrar el mensaje de instalación
+                alertaDiv.classList.remove("hidden");
+            }
+        );
+    }
+</script>
+
+</body>
+</html>
