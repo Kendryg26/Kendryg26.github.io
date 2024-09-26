@@ -1,0 +1,36 @@
+                <!--
+Ver html de la extensión: abre cualquier m3u8. Está delante del inicio del enlace
+Ver icon de la extensión: %LocalAppData%\Google\Chrome\User Data\Default\Extensions
+-->
+<body bgcolor="black">
+<script>
+function PlayE(d1, d2, m3u8) {
+    location.href =	d1 ? 'chrome-extension://eakdijdofmnclopcffkkgmndadhbjgka/player.html#' + m3u8 : //HLS Player - m3u8 Streaming Player
+					d2 ? 'chrome-extension://lcipembjfkmeggpihdpdgnjildgniffl/player.html#' + m3u8 : //Reproductor M3U8 - HLS + DASH Player
+//					d3 ? 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#' + m3u8 : //Reproductor MPD/M3U8/M3U/EPG
+//					d4 ? 'chrome-extension://emnphkkblegpebimobpbekeedfgemhof/player.html#' + m3u8 : //Native HLS Playback
+//					d5 ? 'chrome-extension://cjfbmleiaobegagekpmlhmaadepdeedn/index.html#' + m3u8 : //Native MPEG-Dash + HLS Playback
+					(alert('Para ver este contenido, es necesario instalar HLS Player para Chrome o Edge desde el menú INFO de esta página web.\n\nTo watch this content, you need to install HLS Player for Chrome or Edge from the INFO menu on this website.'), top.close());
+}
+function detectExtension(id, icon, cb) {
+    let img = new Image();
+    img.onload = () => cb(true);
+    img.onerror = () => cb(false);
+    img.src = 'chrome-extension://' + id + icon;
+}
+function checkExtensions(m3u8) {
+    const exts = ['eakdijdofmnclopcffkkgmndadhbjgka/icon128.png', 'lcipembjfkmeggpihdpdgnjildgniffl/icon128.png'];
+    let res = [false, false], chk = [false, false];
+    exts.forEach((e, i) => detectExtension(e.split('/')[0], '/' + e.split('/')[1], r => {
+        res[i] = r; chk[i] = true;
+        if (chk[0] && chk[1]) PlayE(...res, m3u8);
+    }));
+}
+const m3u8 = "https://dcs-live.mp.lura.live/server/play/A6gYgJsl13QdFlwj/manifest.m3u8?encp=oemxXjtYdnuWjpfmQVJ47g:MKVslgldshvJq2jkRgWG3f7FOPTV-Bh9tQEt1ZjE9JHYjsGvMsbqgTFvbeRB_hzW7IcDa_I53AxtqMxoulOcjKnpWxltD0O9XfU8j5zb6i6u23ZYRgTk1BXH3i7-fwgiCYlMToNROj33WVYilhotEvV75ZVDx9HCsAurqZD2WQwiF7VkkiIbDfYa2Arw2V5SGK-pPMN19FJqvGaDTYtJcP5_rrf4XXvDTnTSZA7VlY_sFdeFo7Sg4YvJNbJTxWgRVbjXgb4VucVmMzZwHUvIy-NlJHCfFaiJj_qAtE0FoOM9mYBztWvXcB7vEEL1kBUT8WfE5U1NmgKH8Q2dLptdsT8jGwvOuGkABkO3-_vVQMhi2zzfl8HTlNqkhpaTXQ9tjms8DGxBGy2W3acHxWOsPbPXr9Z1296A2AYxD2lGLQJ50naG02Ei0iFp_ckEE5av9KOinvQOU4BsIIfjMfY9uTqQzqvzvXWkNFqjzVdapvAU7Q7MHqDMLk6WQdoRra1UmrADnvwpjIVI_bpc-rP9VU_a-vB73RMxXRBq5RDVmhOnqLGPPMt4gbc8BWKtLuwj2cdrJ5Pn_JJq2RjewmavsbhRNegN2ahCqIWh7D4nWK303DVP2GEAkbYpYOUiob3kPvrx_f3OL20ikJLdSIqz4aNgCLpUjSkdthjO1aGJ1viSsj1nsFxSrgWkfb-KqY3eQczHljEVwZlxfdjB5trbE_mna-1kQbaPgmzm8ceZ7LnS91Y8YmHELsOcOQd1HcLOVr4k_0pK8G8_z2nPgeYexg&anvtrid=62d64637eb9482b6168df0a5ff6148ac&anvauth=tb=0~te=1727371248~sgn=cc0002edf096546170264be1fb781ea27ad0cdb63b667c00b742ed727730fc88&t=1727371158", ua = navigator.userAgent;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|CriOS/i.test(ua)) location.href = m3u8;
+else if (/Chrome|Edg/.test(ua) && /Google Inc/.test(navigator.vendor)) checkExtensions(m3u8);
+else {
+    if (ua.includes('Firefox')) alert('Este contenido solo funciona en Chrome o Edge.\n\nThis content only works in Chrome or Edge.');
+    top.close();
+}
+</script>   
