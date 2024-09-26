@@ -1,5 +1,82 @@
 [ 
         {
+        "title": "Barcelona vs Getafe 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6eu65rjfswqsoeapium5d1l7l_image-header_pRow_1725975676000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjgwNDAyMzE1NDA"
+    },
+        {
+        "title": "Dynamo Kyiv vs Lazio 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=25zdombknfub7xqyvoroz8gsu_image-header_pRow_1725348469000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjgwMzY2OTI1OTY"
+    },
+        {
+        "title": "Nice vs Real Sociedad 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=do1w877pxz0zk9v1oxwq1ssoa_image-header_pRow_1725968886000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjc5ODY0OTIwMjA"
+    },
+        {
+        "title": "Manchester United vs Twente 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=e7bkcfa0ro1nf75uryrbpxc4n_image-header_pCa_1725346010000",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjc5ODU3NzExMjQ"
+    },
+        {
+        "title": "Manchester United vs Twente 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=e7bkcfa0ro1nf75uryrbpxc4n_image-header_pCa_1725346010000",
+        "status": "FINALIZADO",
+        "league": "EFL Cup",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjc5ODU3NzExMjQ"
+    },
+        {
+        "title": "Liverpool vs West Ham United 25/9/2024",
+        "img": "https://fullmatch.info/wp-content/uploads/2024/09/image-93-390x220.png",
+        "status": "FINALIZADO",
+        "league": "EFL Cup",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjgxMDUyNDMyNTI"
+    },
+        {
+        "title": "Arsenal vs Bolton Wanderers 25/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=am2oo7avle3f9amqby8z48qal_image-header_pCa_1725978923000&quality=70",
+        "status": "FINALIZADO",
+        "league": "EFL Cup",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjgxMDUwNDY2NDQ"
+    },
+        {
+        "title": "Real Madrid vs Deportivo Alavés (2T)24/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6dyp8khqf9mwlpz3o55ptv016_image-header_pIt_1725972348000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjMzNDIwMjEyMzY"
+    },
+        {
+        "title": "Real Madrid vs Deportivo Alavés (1T)24/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6dyp8khqf9mwlpz3o55ptv016_image-header_pIt_1725972348000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjMzNDIxNTIzMDg"
+    },
+        {
+        "title": "Manchester City vs Watford 24/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=dnhxc101wvr3sesjjzfk2yxwb_image-header_pCa_1725889556000&quality=70",
+        "status": "FINALIZADO",
+        "league": "EFL Cup",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjMyODgyODE3MTY"
+    },
+        {
+        "title": "Chelsea vs Barrow 24/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9ryqaou8adx7746e6pftt46mb_image-header_pCa_1725888776000&quality=70",
+        "status": "FINALIZADO",
+        "league": "EFL Cup",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNjMyODgyMTYxODA"
+    },
+        {
         "title": "Inter vs AC Milan 22/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=bgrhzx6zxjxf7lzs5gxyn4pze_image-header_pEs_1726043907000&quality=70",
         "status": "FINALIZADO",
