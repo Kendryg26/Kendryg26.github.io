@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="refresh" content="100" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <body oncontextmenu="return false;">
+            <body class="dark-mode container">
+                <div class="elementor-element elementor-element-4fe5825 e-flex e-con-boxed e-con e-parent e-lazyloaded">
+                    <!-- App Header -->
+                </div>
+
+                <script>
+                    function eventos() {
+                        var x = Math.random().toString(36).substring(7);
+
+                        $.ajax({
+                            url: "https://corsproxy.io/?url=https://futbolhonduras24.com/json/disney.json?" + x,
+                            type: "get",
+                            success: function (arr) {
+                                // Ordenar los eventos: primero EN VIVO, luego los demás
+                                arr.sort(function (a, b) {
+                                    if (a.status === "EN VIVO") return -1;
+                                    if (b.status === "EN VIVO") return 1;
+                                    if (a.status === "FINALIZADO") return 1;
+                                    if (b.status === "FINALIZADO") return -1;
+                                    return 0;
+                                });
+
+                                var content = '<div class="e-con-inner">'; // Contenedor de tarjetas
+
+                                for (var i = 0; i < arr.length; i++) {
+                                    var obj = arr[i];
+                                    var url = obj["url"] !== "#" ? obj["url"] : "#";
+                                    var statusClass = "";
+                                    var statusText = "";
+
+                                    if (obj["status"] == "EN VIVO") {
+                                        statusText = "EN VIVO";
+                                        statusClass = "btn btn-danger";
+                                    } else if (obj["status"] == "FINALIZADO") {
+                                        statusText = "FINALIZADO";
+                                        statusClass = "btn btn-dark";
+                                    } else {
+                                        statusText = "HOY | " + obj["status"] + " hs";
+                                        statusClass = "btn btn-dark";
+                                    }
+
+                                    // Generamos la tarjeta en el nuevo formato
+                                    content += `
+                                    <div data-particle_enable="false" class="elementor-element e-con-full e-flex e-con e-child">
+                                        <div class="elementor-element elementor-widget elementor-widget-heading">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">${obj["status"] === "EN VIVO" ? 'EN VIVO' : obj["hora"]}</h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-widget elementor-widget-heading">
+                                            <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">${obj["title"]}</h2>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element e-con-full e-flex e-con e-child">
+                                            <div class="elementor-element elementor-widget elementor-widget-heading">
+                                                <div class="elementor-widget-container">
+                                                    <h2 class="elementor-heading-title elementor-size-default">
+                                                        <a href="${url}">${obj["league"]}</a>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                                }
+
+                                content += "</div>"; // Cerramos el contenedor
+
+                                $("#eventos").html(content);
+                            },
+                            error: function (xhr, status, error) {
+                                console.error("Error al cargar el JSON:", status, error);
+                            },
+                        });
+                    }
+
+                    eventos();
+
+                    window.setInterval(function () {
+                        eventos();
+                    }, 60000);
+                </script>
+
+                <div class="row" id="eventos"></div>
+                <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=641f722cfbfd84001b9fbfe8&product=inline-share-buttons&source=platform" async="async"></script>
+                <hr />
+            </body>
+        </body>
+    </head>
+</html>
