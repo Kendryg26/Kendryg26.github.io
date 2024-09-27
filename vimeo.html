@@ -1,86 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>CH05 - Jeinz Macias</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <script src='https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="noindex" />
+    <meta name="referrer" content="none">
+    <script src="//cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
+    <script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+    <script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+    <script src="//ewwink.github.io/clappr-youtube-plugin/clappr-youtube-plugin.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
+    <script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+    <script src="//cdn.jsdelivr.net/npm/console-ban@5.0.0/dist/console-ban.min.js"></script>
+    <script> //ConsoleBan.init({ redirect: '../../?p=401'}); </script>
+    <style>
+    body {
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+    #player,
+    #iframe {
+        height: 100% !important;
+        width: 100% !important;
+        border: none;
+    }
+
+    .bmpui-ui-watermark {
+        background-image: url("https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png");
+        top: 0;
+        left: 0;
+        min-width: 5em;
+    }
+
+    .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker {
+        background-color: #6366f1;
+    }
+
+    .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition,
+    .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition {
+        background-color: #6366f1;
+    }
+
+    .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition-marker,
+    .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition-marker {
+        border-color: #6366f1;
+        background-color: #6366f1;
+    }
+
+    .bmpui-ui-selectbox,
+    .bmpui-on {
+        color: #6366f1;
+    }
+    </style>
 </head>
+<body>
+    <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://arvigorothan.com/tag.min.js',7512906,document.body||document.documentElement)</script>    <div id="player"></div>
 
-<body style='margin:0' oncontextmenu='return false' onkeydown='return false'>
-    <div id="player"></div>
     <script>
-        function setupPlayer() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'https://kemiras.one/vimeo/api/1.json?');
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    var data = JSON.parse(xhr.responseText);
-                    var hlsUrl = atob(data.hls); // Decodificar la URL HLS
+        // URL del API JSON
+        var apiUrl = "https://futbolhonduras24.com/embed/vimeo/api3.php";
 
-                    var playerElement = document.getElementById("player");
-                    var player = new Clappr.Player({
-                        source: hlsUrl,
-                        parentId: "#player",
-                        plugins: [LevelSelector, ChromecastPlugin],
-                        mediacontrol: {
-                            seekbar: "#32c5ff",
-                            buttons: "#32c5ff"
-                        },
-                        loop: "true",
-                        preload: "metadata",
-                        autoPlay: true, // Reproducción automática
-                        width: "100%",
-                        height: "100%",
-                        strings: {
-                            "en": {
-                                "live": "EN VIVO - Jeinz Macias"
-                            }
-                        }
-                    });
+        // Función para realizar la solicitud AJAX
+        function fetchJSON(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.responseType = "json";
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    callback(null, xhr.response);
+                } else {
+                    callback(new Error("Error al obtener el JSON desde la URL proporcionada"));
                 }
+            };
+            xhr.onerror = function() {
+                callback(new Error("Error de red"));
             };
             xhr.send();
         }
 
-        setupPlayer();
+        // Obtener el JSON y configurar JW Player
+        fetchJSON(apiUrl, function(error, data) {
+            if (error) {
+                console.error(error.message);
+                return;
+            }
+
+            // Obtener la URL codificada en Base64
+            var encodedUrl = data.hls;
+
+            // Descodificar la URL
+            var decodedUrl = atob(encodedUrl);
+
+            // Configurar JW Player
+            var playerInstance = jwplayer("player");
+            playerInstance.setup({
+                playlist: [
+                    {
+                        sources: [
+                            {
+                                default: false,
+                                type: "hls",
+                                file: decodedUrl,
+                                label: "0",
+                            },
+                        ],
+                    },
+                ],
+                height: "100vh",
+                width: "100%",
+                aspectratio: "16:9",
+                stretching: "bestfit",
+                mediaid: "player",
+                mute: false,
+                autostart: false,
+                language: "es",
+                logo: {
+                    file: "https://eduveel1.github.io/baleada/img/iRTVW_PLAYER.png",
+                    hide: "false",
+                    position: "top-left"
+                }
+            });
+        });
     </script>
 </body>
-<style>
-#tme { font-family: "Cairo",tahoma; position: fixed; z-index: 99999999;  right: 25px; width: 0px; height: 0px; text-align: center; border-radius: 50%; background-color: #0088cc; cursor: pointer; } #tme_message { position: absolute; bottom: 62px; right: -10px; width: 300px; padding: 10px;  } #tme_message:after, #tme_message:before { content: ''; position: absolute; bottom: -21px; right: 23px; border-style: solid; height: 0; width: 0; border-width: 10px; border-color: transparent; }  #tme_message p { margin: 0px 0; font-size: 12px; color: #8e8e8e; text-align: right; } .clossalert { position: absolute; right: 10px;font-size: 14px; }#tme_message a {    margin: 6px 4px; font-weight: bold; color: #FFF; background: #20910a; border-radius: 10px; display: inline-block; padding: 10px; text-decoration: none; }
-.fxr {position: fixed;cursor: pointer;right: 5px;top: 10px;z-index: 999;background:#552a86;padding:0px 10px 0px !important;font-size:14px;font-family:Tajawal;color:#fff;height:33px;line-height:30px;border:0px solid #e7e7e7;border-radius:1px;}
-</style>
-
-<button class='fxr' onclick='window.location.reload();' type='button'>ACTUALIZAR</button>
-
-<div id='tme'><div id='tme_message'>
-<button class='clossalert' onclick='document.getElementById("tme").style.display="none";'>X</button>
-<p><a href='https://t.me/jeinzmaciastv' rel='nofollow' role='button' target='_blank'>UNETE AL GRUPO DE TELEGRAM !!</a></p>
-</div>
-<div class='adblcr hidden' id='superadblocker' style='text-align: center; font-family: Arial, sans-serif;'>
-    <div class='textsshow'>
-        <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-            <circle cx='12' cy='12' r='10' />
-            <line x1='12' x2='12' y1='8' y2='12' />
-            <line x1='12' x2='12.01' y1='16' y2='16' />
-        </svg>
-        <h2>HEMOS DETECTADO UN BLOQUEADOR DE ANUNCIOS!</h2>
-        <p>POR FAVOR DESACTIVE EL ADBLOCK O SALGA DE BRAVE Y VAYA a GOOGLE CHROME, YA QUE GRACIAS A LOS ANUNCIOS PODEMOS TRASMITIR LOS EVENTOS DEPORTIVOS.</p>
-        <br/>
-        
-        <a class="watermark"  style='text-decoration: none; color: #000; font-weight: bold;'></a>
-    </div>
-</div>
-
-<style>
-.adblcr{position:fixed;z-index:99999;top:0;bottom:0;left:0;right:0;padding:20px;background-color: #000000; display:flex;justify-content:center;align-items:center}
-.adblcr.hidden{display:none}
-.adblcr .textsshow{position:relative;background-color: #1e1e1e;max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:40px}
-.adblcr .textsshow svg{display:block;width:50px;height:50px;fill:none !important;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
-.adblcr .textsshow h2{margin:10px 0 15px 0;font-size:1.2rem;font-weight:800; color: #ffffff}
-.adblcr .textsshow p{margin:0;line-height:1.7em;font-size:0.9rem;color: #ffffff}
-.watermark{ position: absolute; top: 0%; font-size: 7px; color: #333;}
-</style>
-
-	</script>
+</html>
