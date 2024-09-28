@@ -21,6 +21,105 @@
         "id": 1
         
     },
+    {
+        "title": "Stuttgart vs. Sparta Praga",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/66e2d1b3-2519-3b01-8463-a60295674fbd.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "RB Salzburg vs. Stade Brestois",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/8101092f-86f3-3843-aefb-7fd3127d5591.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Arsenal vs. PSG",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/b597753d-832c-39df-b91e-35b023d13fa3.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Inter de Milán vs. Estrella Roja",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/575d7dd3-7cdb-329d-a08c-8c30bc30ae4c.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "PSV vs. Sporting",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/e9cbe0f9-8509-381f-b6bd-76e1cdb31578.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Leverkusen vs. Milan",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/0278fa4b-14c4-3277-92e1-a0759f7a4b2c.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Slovan Bratislava vs. Manchester City",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/63f92f58-7024-3900-8cbc-7dc56a259af5.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Barcelona vs. Young Boys",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/a6167382-c5ce-36ff-861a-c2fd4ac8f87a.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Borussia Dortmund vs. Celtic",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/882a74f7-08d9-3a64-b423-3f5d6f96539f.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
     
     {
         "title": "Brentford vs. West Ham United",
