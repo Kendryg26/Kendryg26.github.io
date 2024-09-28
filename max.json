@@ -1,35 +1,38 @@
-[ 
-
-
-       
-       {
-        "title": "Real Madrid vs. VfB Stuttgart",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/ac1eb742-552c-38ec-bb24-3102c9f3bd2e.jpeg?w=350&f=webp",
+[
+    
+    {
+        "title": "Brentford vs. West Ham United",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/24/8b0ed812-abd1-3d9b-aa7b-07204279e355.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9MQ==",
         "status": "EN VIVO",
-        "league": "UEFA Champions League",
-        "url": "https://kerterplus.com/tnt-sports/"
-    }, 
-
-       
-      {
-        "title": "AC Milan vs. Liverpool",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/a08e6ca3-8d54-32d6-b096-8fce55b45299.jpeg?w=350&f=webp",
-        "status": "EN VIVO",
-        "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r="
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
     },
     {
-        "title": "Bayern Munich vs. Dinamo Zagreb",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/2ba023de-7220-3e9d-8720-2a7c1dc5ef19.jpeg?w=350&f=webp",
+        "title": "Chelsea vs Brighton & Hove Albion",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/24/f8533a29-ba20-3248-9158-8408ffcac21d.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9Mg==",
         "status": "EN VIVO",
-        "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r="
-    }, 
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
     {
-        "title": "Sporting CP vs. Lille",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/ffe3fb4e-e2bb-38d3-85f6-947a5a9b7443.jpeg?w=350&f=webp",
+        "title": "Nottingham Forest vs Fulham",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/24/4d139ce8-8b83-35b6-a9aa-bbd0f96331d8.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9Mw==",
         "status": "EN VIVO",
-        "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r="
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
     }
+    
+    
 ]
