@@ -1,5 +1,19 @@
 [ 
         {
+        "title": "AC Milan vs Lecce 27/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=96eh18owlz1h9zh8mbl68uowt_image-header_pDach_1726564104000",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzcxMjIxNDQ4ODQ"
+    },
+        {
+        "title": "Borussia Dortmund vs Bochum 27/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=b9gg9apfadkwjo00osdzdyxgn_image-header_pRow_1724659600000",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzcxMjIwNzkzNDg"
+    },
+        {
         "title": "Celta Vigo vs Atletico Madrid 26/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5u56kp1eh4owosl06elop3emk_image-header_pRow_1725975677000&quality=70",
         "status": "FINALIZADO",
@@ -7,18 +21,25 @@
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4MTEwMTI1NjE1MTE"
     },
         {
-        "title": "AS Roma vs Athletic Bilbao (2T) 26/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6sh77ibg2za5rzhdtto6s6ouf_image-header_pCa_1725352576000&quality=70",
+        "title": "Tottenham Hotspur vs Qarabağ 26/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=acxgy6b5m5uummw3wyj2nv8j1_image-header_pRow_1725554278000",
         "status": "FINALIZADO",
         "league": "UEFA Europa League",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4MTA3Nzg1OTc5OTE"
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzM4Mzc5MzkzMTY"
     },
         {
-        "title": "AS Roma vs Athletic Bilbao (1T) 26/9/2024",
+        "title": "AS Roma vs Athletic Bilbao 26/9/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6sh77ibg2za5rzhdtto6s6ouf_image-header_pCa_1725352576000&quality=70",
         "status": "FINALIZADO",
         "league": "UEFA Europa League",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4MTA3ODE4NzQ3OTE"
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzM4Mzc4NzM3ODA"
+    },
+        {
+        "title": "Napoli vs Palermo 26/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=10n5sh58nrw06f00ff9hvt8cc_image-header_pEs_1725863911000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzM3NzQyMzgzMjQ"
     },
         {
         "title": "Barcelona vs Getafe 25/9/2024",
