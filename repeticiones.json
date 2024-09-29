@@ -1,10 +1,59 @@
 [ 
         {
-        "title": "AC Milan vs Lecce 27/9/2024",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=96eh18owlz1h9zh8mbl68uowt_image-header_pDach_1726564104000",
+        "title": "Osasuna vs Barcelona 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=7y3gxniegp7ephkvrjx1qd6mv_image-header_pDach_1726944135000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODM3ODk2NjkwNTY"
+    },
+        {
+        "title": "Bayern Munich vs Bayer Leverkusen 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6zzdudxj2ir5qleljelz8810k_image-header_pCa_1723112894000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODM2Mzk3ODgyMjQ"
+    },
+        {
+        "title": "Wolves vs Liverpool 28/9/2024",
+        "img": "https://img.btolat.com/2024/9/28/news/353910/large.jpg",
         "status": "FINALIZADO",
         "league": "Serie A",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzcxMjIxNDQ4ODQ"
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODM2NzE4MzUzMjg"
+    },
+        {
+        "title": "Chelsea vs Brighton & Hove Albion 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8q84mbeozsw62kc9l2oqg7jc6_image-header_pEs_1723575197000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODI4OTg4MzgyMDg"
+    },
+        {
+        "title": "Newcastle United vs Manchester City 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ex81ei5l09rjv6elks6act4re_image-header_pEs_1723575197000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODI4OTg3NzI2NzI"
+    },
+        {
+        "title": "Udinese vs Inter Milan 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=d381zey10g30cy1xzms0s27bd_image-header_pEs_1725551098000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczODI5NzA1MzQ1OTIU"
+    },
+        {
+        "title": "Newcastle United vs Manchester City 28/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1x44u9n66lvscx8imwvbdz4me_image-header_pEs_1724963197000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMzE5NzIyMzgwMzU"
+    },
+        {
+        "title": "PSG vs Stade Rennes 27/9/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1hihr2nqgrktx1vnqiy90g3sty_image-header_pDach_1726566574000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNzk1NzY5MjY4MzY"
     },
         {
         "title": "Borussia Dortmund vs Bochum 27/9/2024",
