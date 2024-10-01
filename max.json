@@ -4,7 +4,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/66e2d1b3-2519-3b01-8463-a60295674fbd.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -15,7 +15,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/8101092f-86f3-3843-aefb-7fd3127d5591.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -26,7 +26,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/b597753d-832c-39df-b91e-35b023d13fa3.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -37,7 +37,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/575d7dd3-7cdb-329d-a08c-8c30bc30ae4c.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -48,7 +48,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/e9cbe0f9-8509-381f-b6bd-76e1cdb31578.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -59,7 +59,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/0278fa4b-14c4-3277-92e1-a0759f7a4b2c.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -70,7 +70,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/63f92f58-7024-3900-8cbc-7dc56a259af5.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -81,7 +81,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/a6167382-c5ce-36ff-861a-c2fd4ac8f87a.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -92,18 +92,7 @@
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/882a74f7-08d9-3a64-b423-3f5d6f96539f.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-        {
-        "title": "Manchester United vs Tottenham",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/24/a01b4a5b-b90a-3d67-92ba-43e7873534d9.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "FINALIZADO",
+        "status": "MAÑANA",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
