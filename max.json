@@ -132,9 +132,53 @@
         
     },
     {
+        "title": "ALDS | Serie 1, Juego 1",
+        "league": "Postemporada de la MLB en TBS",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "ALDS | Serie 2, Juego 1",
+        "league": "Postemporada de la MLB en TBS",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
         "title": "Brighton vs. Tottenham",
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/77554768-0dbe-3674-a235-22151899725d.png?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "ALDS | Serie 1, Juego 2",
+        "league": "Postemporada de la MLB en TBS",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "ALDS | Serie 2, Juego 2",
+        "league": "Postemporada de la MLB en TBS",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
         "statusstart": "6:30 p. m.",
