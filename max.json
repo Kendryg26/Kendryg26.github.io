@@ -1,26 +1,5 @@
 [
-    {
-        "title": "Stuttgart vs. Sparta Praga",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/66e2d1b3-2519-3b01-8463-a60295674fbd.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9Mg==",
-        "status": "EN VIVO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "RB Salzburg vs. Stade Brestois",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/8101092f-86f3-3843-aefb-7fd3127d5591.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9MQ==",
-        "status": "EN VIVO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
+   
     {
         "title": "Arsenal vs. PSG",
         "league": "UEFA Champions League",
@@ -93,6 +72,28 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/882a74f7-08d9-3a64-b423-3f5d6f96539f.jpeg?w=450&f=webp",
         "url": "#",
         "status": "20:00",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Stuttgart vs. Sparta Praga",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/66e2d1b3-2519-3b01-8463-a60295674fbd.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9Mg==",
+        "status": "FINALIZADO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "RB Salzburg vs. Stade Brestois",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/8101092f-86f3-3843-aefb-7fd3127d5591.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=Ly9hbnRhZy54eXovYXBwL21heHBsYXllci5waHA/aWQ9MQ==",
+        "status": "FINALIZADO",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
