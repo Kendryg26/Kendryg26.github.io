@@ -1,5 +1,53 @@
 [ 
-
+        {
+        "title": "Slovan Bratislava vs Manchester City 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=3iqai3h2zexpv4gteo9qtujee_image-header_pRow_1725974481000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTkzNDE2MDEzOTY"
+    }, 
+        {
+        "title": "PSV Eindhoven v Sporting CP 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ej01ertozclaybmpmvhhqktdf_image-header_pRow_1726825488000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTkzNDE1MzU4NjA"
+    }, 
+        {
+        "title": "Inter Milan vs Red Star Belgrade 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=jr9c0ttmevg72l3rmbj8zi3j_image-header_pRow_1725973556000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTk0NTg4NDUzMDA"
+    }, 
+        {
+        "title": "Borussia Dortmund vs Celtic 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2140bb933sdzva32sz7ek7hxn_image-header_pRow_1725973041000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTkzNDgwODk0NjA"
+    }, 
+         {
+        "title": "Bayer Leverkusen vs AC Milan 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ck3m3ipadgc9zoinjkuzom4f2_image-header_pRow_1725533257000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTkzNDI2NDk5NzI"
+    }, 
+        {
+        "title": "Barcelona vs Young Boys 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5wkutp2nahtomauyznji4hnhm_image-header_pRow_1725972136000",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTkzNDE2NjY5MzI"
+    }, 
+{
+        "title": "Arsenal vs PSG 1/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=29jeb6wsptmus2038egkqlrra_image-header_pRow_1725971635000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwOTk0NTQ2NTA5OTY"
+    }, 
 
         {
         "title": "Atlético Madrid vs Real Madrid (2T) 29/9/2024",
