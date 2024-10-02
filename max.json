@@ -1,33 +1,10 @@
 [
-     {
-        "title": "Girona vs. Feyenoord (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/791c0dd1-76dc-3d3e-ae94-a91fa73f1d14.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "EN VIVO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Shakhtar Donetsk vs. Atalanta (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/880db519-dbb3-30b6-967f-e78f7ad59968.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
-        "status": "EN VIVO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-
     {
         "title": "Lille vs. Real Madrid (BR)",
         "league": "UEFA Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/59646c20-0968-3093-bd10-de04aa53f525.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "20:00",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
+        "status": "EN VIVO",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -99,6 +76,29 @@
         "id": 1
         
     },
+      {
+        "title": "Girona vs. Feyenoord (BR)",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/791c0dd1-76dc-3d3e-ae94-a91fa73f1d14.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
+        "status": "FINALIZADO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Shakhtar Donetsk vs. Atalanta (BR)",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/880db519-dbb3-30b6-967f-e78f7ad59968.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
+        "status": "FINALIZADO",
+        "statusstart": "6:30 p. m.",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+
     {
         "title": "Arsenal vs. Southampton",
         "league": "Premier League",
