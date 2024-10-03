@@ -6,7 +6,18 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/ff775a31-fffc-3c29-b314-d86795e5c5e2.png?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "5 oct. 09:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "West Ham United vs. Ipswich Town",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/01/55664219-731d-30cd-b854-4c7c09377d7f.png?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "5 oct. 09:45",
         "statusfin": "08:30 p. m.",
         "id": 1
         
@@ -17,7 +28,7 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/3a9e9668-99a0-3efb-af08-36f0d0cb1a12.png?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "5 oct. 09:45",
         "statusfin": "08:30 p. m.",
         "id": 1
         
@@ -28,29 +39,29 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/43518af0-25e0-3e23-ab0c-f49065f7b7be.png?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "5 oct. 12:10",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
     {
-        "title": "ALDS | Serie 1, Juego 1",
+        "title": "Tigers vs. Guardians Juego 1",
         "league": "Postemporada de la MLB en TBS",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/02/1d3f984d-d6bb-340f-947a-34e490bf4a8d.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "5 oct. 12:00",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
     {
-        "title": "ALDS | Serie 2, Juego 1",
+        "title": "Royals vs. Yankees Juego 1",
         "league": "Postemporada de la MLB en TBS",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/9bedb1e2-aee5-3f1b-8166-d629ac5030af.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "5 oct. 18:30",
         "statusfin": "08:30 p. m.",
         "id": 1
         
@@ -61,29 +72,51 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/77554768-0dbe-3674-a235-22151899725d.png?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "6 oct. 11:00",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
     {
-        "title": "ALDS | Serie 1, Juego 2",
+        "title": "Tigers vs. Guardians Juego 2",
         "league": "Postemporada de la MLB en TBS",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/26269952-5adf-3094-817e-0b7df631520f.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "7 oct. 15:00",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
     {
-        "title": "ALDS | Serie 2, Juego 2",
+        "title": "Royals vs. Yankees Juego 2",
         "league": "Postemporada de la MLB en TBS",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/9fd1141f-f2ea-34c7-91fa-66edf9c53506.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
+        "statusstart": "7 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Chelsea vs. Real Madrid",
+        "league": "UEFA Women's Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/9206f41a-f1b4-30fa-a9b5-cdcc7bdd99ff.jpeg?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "8 oct. 14:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Manchester City vs. Barcelona",
+        "league": "UEFA Women's Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/0caf6dc0-ccc4-3c45-a4f2-e1004381c539.png?w=450&f=webp",
+        "url": "#",
+        "status": "PRO",
+        "statusstart": "8 oct. 14:30",
         "statusfin": "08:30 p. m.",
         "id": 1
         
