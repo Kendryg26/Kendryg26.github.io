@@ -1,41 +1,6 @@
 [
 
     {
-        "title": "Liverpool vs. Bologna (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/8895746b-2624-38eb-9efc-1205145a6d89.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDUuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Dínamo de Zagreb vs. Mónaco (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/686f3c1f-5f21-3144-bee5-2eda704d338d.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDYuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Sturm Graz vs. Club Brujas (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/b64485ce-b59a-30e2-a9d5-3be89f6a6ea9.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDcuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-      
-
-    {
         "title": "Arsenal vs. Southampton",
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/ff775a31-fffc-3c29-b314-d86795e5c5e2.png?w=450&f=webp",
@@ -118,72 +83,6 @@
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/26/40e3adab-9b91-3b4f-a55e-ab87d43a2bd2.jpeg?w=450&f=webp",
         "url": "#",
         "status": "PRO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Girona vs. Feyenoord (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/791c0dd1-76dc-3d3e-ae94-a91fa73f1d14.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Shakhtar Donetsk vs. Atalanta (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/880db519-dbb3-30b6-967f-e78f7ad59968.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Lille vs. Real Madrid (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/59646c20-0968-3093-bd10-de04aa53f525.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Aston Villa vs. Bayern Múnich (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/7e6a8765-d147-3448-b15d-d56f64d44c77.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDMuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "RB Leipzig vs. Juventus (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/4942d679-ecad-39eb-937d-1fc5633c2e2a.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDQuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "6:30 p. m.",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Benfica vs. Atlético de Madrid (BR)",
-        "league": "UEFA Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/09/10/bd7bf51f-8c19-3d67-847c-6fe797e5ebbe.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
-        "status": "FINALIZADO",
         "statusstart": "6:30 p. m.",
         "statusfin": "08:30 p. m.",
         "id": 1
