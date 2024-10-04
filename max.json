@@ -5,7 +5,7 @@
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/ff775a31-fffc-3c29-b314-d86795e5c5e2.png?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 09:30",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -16,7 +16,7 @@
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/10/01/55664219-731d-30cd-b854-4c7c09377d7f.png?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 09:45",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -27,7 +27,7 @@
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/3a9e9668-99a0-3efb-af08-36f0d0cb1a12.png?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 09:45",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -38,7 +38,7 @@
         "league": "Premier League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/09/30/43518af0-25e0-3e23-ab0c-f49065f7b7be.png?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 12:10",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -49,7 +49,7 @@
         "league": "Postemporada de la MLB",
         "img": "https://images.cdn.prd.api.discomax.com/2024/10/02/1d3f984d-d6bb-340f-947a-34e490bf4a8d.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 12:00",
         "statusfin": "08:30 p. m.",
         "id": 1
@@ -60,7 +60,7 @@
         "league": "Postemporada de la MLB",
         "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/9bedb1e2-aee5-3f1b-8166-d629ac5030af.jpeg?w=450&f=webp",
         "url": "#",
-        "status": "PRO",
+        "status": "MAÑANA",
         "statusstart": "5 oct. 18:30",
         "statusfin": "08:30 p. m.",
         "id": 1
