@@ -1,10 +1,158 @@
 [ 
         {
-        "title": "Real Madrid vs Villarreal 5/10/2024",
+        "title": "Real Sociedad vs Atlético Madrid (2T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9o8r0qy6zzp7sqjt2lvvihr3r_image-header_pRow_1725469469000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQyMzkzODMxNTY"
+    }, 
+        {
+        "title": "Real Sociedad vs Atlético Madrid (1T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9o8r0qy6zzp7sqjt2lvvihr3r_image-header_pRow_1725469469000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQyMzk0NDg2OTI"
+    }, 
+         {
+        "title": "FC Porto vs Sporting Braga 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=n9j7t8m3waa8e2amhwtsi2bm_image-header_pDach_1725473548000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Liga Portugal",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQzNTc2MTAxMDA"
+    }, 
+        {
+        "title": "Fiorentina vs AC Milan 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=at8ly8jpkd0aio0k6bg9plpr3_image-header_pJp_1725555269000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQyNzg2MzkyMjA"
+    }, 
+        {
+        "title": "OGC Nice vs PSG 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=3btfkxu9psbh1izc6wq1dro5r_image-header_pDach_1726651746000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQ0MTQxMDIxMzI"
+    }, 
+        {
+        "title": "Sevilla vs Real Betis (2T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1mwm4pt7oql9fdkpuh9b2laco_image-header_pRow_1725469469000",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQxNzgzNjkxNDA"
+    }, 
+         {
+        "title": "Sevilla vs Real Betis (1T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1mwm4pt7oql9fdkpuh9b2laco_image-header_pRow_1725469469000",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQxNzg1MDAyMTI"
+    }, 
+         {
+        "title": "AC Monza vs AS Roma 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=26gj2kvie78zwxymix4zl26mi_image-header_pJp_1727889627000",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQyOTYzMzM5NDA"
+    }, 
+        {
+        "title": "Eintracht Frankfurt vs Bayern München 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=agtrgnud5ny8n1tpiope2v0fi_image-header_pEs_1727269956000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQ0NTQzNDEyMzY"
+    }, 
+{
+        "title": "Brighton & Hove Albion vs Tottenham Hotspur (2T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=202vx0oafzt0mog6ty12nzij0_image-header_pEs_1726835118000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM3OTE5Njg4ODQ"
+    }, 
+        {
+        "title": "Brighton & Hove Albion vs Tottenham Hotspur (1T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=202vx0oafzt0mog6ty12nzij0_image-header_pEs_1726835118000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM3OTIwMzQ0MjA"
+    }, 
+         {
+        "title": "Deportivo Alavés vs FC Barcelona (2T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=84re3pb1vtktpd656yn0v910k_image-header_pRow_1725469468000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM3MDQwODUxMDg"
+    }, 
+        {
+        "title": "Deportivo Alavés vs FC Barcelona (1T) 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=84re3pb1vtktpd656yn0v910k_image-header_pRow_1725469468000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM3MDQxNTA2NDQ"
+    }, 
+        {
+        "title": "Olympique Lyonnais vs FC Nantes 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=abidy3gt14bjw93g3jrvvj2o6_image-header_pRow_1726825189000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQ0NTYxNzYyNDQ"
+    }, 
+         {
+        "title": "Olympique Lyonnais vs FC Nantes 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=abidy3gt14bjw93g3jrvvj2o6_image-header_pRow_1726825189000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQ0NTYxNzYyNDQ"
+    }, 
+        
+        {
+        "title": "Chelsea vs Nottingham Forest 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=707pjnzb2kn7k1s2j70xsqdqn_image-header_pEs_1727254497000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM2NjUzNTMzMzI"
+    }, 
+        {
+        "title": "Aston Villa vs Manchester United 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2s960ixg9lozesekg5slm24mz_image-header_pEs_1727196492000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MzEyMDQ1MzY5Nzk"
+    }, 
+        {
+        "title": "Girona vs Athletic Bilbao 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=eqsaagei3y0mxdvxwr6xu2i2k_image-header_pRow_1725469468000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjM4MDE5MzAzNTY"
+    }, 
+        {
+        "title": "Juventus vs Cagliari 6/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9gw49655ee70fmicn819o30qa_image-header_pDach_1726651746000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMjQyOTYyNjg0MDQ"
+    }, 
+        {
+        "title": "Rennes vs AS Monaco 5/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1hpc7vr2r26xd19lqaifxeo92w_image-header_pDach_1726651746000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTkyMTI1MDk4MTI"
+    }, 
+        {
+        "title": "Real Madrid vs Villarreal (2T) 5/10/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cu0eyalyxob6fsvh68x220shu_image-header_pRow_1725469468000&quality=70",
         "status": "FINALIZADO",
         "league": "La Liga",
-        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzczMzQ0MTE4OTc0NzM"
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTkwMDg3NTgzODg"
+    }, 
+        {
+        "title": "Real Madrid vs Villarreal (1T) 5/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cu0eyalyxob6fsvh68x220shu_image-header_pRow_1725469468000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTkwMDg4MjM5MjQ"
     }, 
         {
         "title": "Inter Milan vs Torino 5/10/2024",
@@ -12,6 +160,13 @@
         "status": "FINALIZADO",
         "league": "Serie A",
         "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTg5NjU3NjY3NzI"
+    }, 
+        {
+        "title": "Lille vs Toulouse 5/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1uc0tw2y5vtcw111w553d3h0qh_image-header_pDach_1726651746000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxMTkyMTI0NDQyNzY"
     }, 
          {
         "title": "Everton vs Newcastle United 5/10/2024",
