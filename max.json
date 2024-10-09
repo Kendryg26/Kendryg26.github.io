@@ -1,27 +1,27 @@
 [
-    {
-        "title": "Guardians vs. Tigers Juego 3",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/05/324abdb9-2f91-39fd-96ff-0b25ad09535d.jpeg?w=450&f=webp",
-        "url": "#",
-        "status": "19:30",
-        "statusstart": "9 oct. 14:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
+    
     {
         "title": "Manchester City vs. Barcelona",
         "league": "UEFA Women's Champions League",
         "img": "https://images.cdn.prd.api.discomax.com/2024/10/03/0caf6dc0-ccc4-3c45-a4f2-e1004381c539.png?w=450&f=webp",
-        "url": "#",
-        "status": "20:00",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
+        "status": "EN VIVO",
         "statusstart": "8 oct. 14:30",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
-    
+    {
+        "title": "Guardians vs. Tigers Juego 3",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/05/324abdb9-2f91-39fd-96ff-0b25ad09535d.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
+        "status": "EN VIVO",
+        "statusstart": "9 oct. 14:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
     {
         "title": "Yankees vs. Royals Juego 3",
         "league": "Postemporada de la MLB",
