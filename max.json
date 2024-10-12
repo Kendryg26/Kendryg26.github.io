@@ -1,15 +1,4 @@
 [
-   {
-        "title": "Tigers vs. Guardians Juego 5",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/05/86837805-d1cc-3b9d-a67d-3f684919d0b6.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "EN VIVO",
-        "statusstart": "12 oct. 01:08",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
     {
         "title": "Estados Unidos vs. Panamá",
         "league": "Amistoso Internacional",
@@ -17,6 +6,17 @@
         "url": "/embed/eventos/?r=",
         "status": "01:00",
         "statusstart": "10 oct. 17:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+   {
+        "title": "Tigers vs. Guardians Juego 5",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/05/86837805-d1cc-3b9d-a67d-3f684919d0b6.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
+        "status": "FINALIZADO",
+        "statusstart": "12 oct. 01:08",
         "statusfin": "08:30 p. m.",
         "id": 1
         
