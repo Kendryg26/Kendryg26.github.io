@@ -1,280 +1,66 @@
-      <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PhotocallTV! - Canales en Vivo Online </title>
-<meta name="description" content="Ver Television en Vivo Online gratis las 24 Horas..">
-<meta property="og:title" content="Television en Vivo Gratis - PhotocallTV!" />
-<meta property="og:description" content="Ver Canales de Television en Vivo y en Directo" />
-<meta property="og:url" content="https://www.photocalltv.me/stream/geo/?ch=la1" />
-
-<script>
-  var resultado = window.confirm('Este Canal se encuentra geo-restringido pero puedes usar una VPN para verlo en cualquier parte del mundo!');
-if (resultado === true) {
-    window.alert('Si usas Android puedes usar la App VPN Lat.');
-} else { 
-    window.alert('Pareces indeciso');
-}  
-    
+<html lang="es"> 
+<head>
+<meta name="robots" content="noindex" /> 
+<script src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/mux.js@latest/dist/mux.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.compiled.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>  
+.player-poster[data-poster] { 
+  background-size: cover; 
+} 
+body{ 
+  margin:0; 
+  padding:0; 
+} 
+</style> 
+</head> 
+<body>
+<div id="player"></div> 
+<script> 
+var player = new Clappr.Player({ 
+        source: 'https://tvup01.edge.milloh-cs.com/la1-neutral/la1-neutral.mpd', 
+        mimeType: 'application/dash+xml', 
+        height: '100%', 
+        width: '100%', 
+        poster: '',
+        plugins: [
+            LevelSelector, 
+            DashShakaPlayback, 
+            ClapprPip.PipButton, 
+            ClapprPip.PipPlugin, 
+            Clappr.MediaControl,
+            Clappr.Poster
+        ], 
+        events: {
+            onReady: function() {
+                var plugin = this.getPlugin('click_to_pause'); 
+                plugin && plugin.disable();
+            },
+        }, 
+        chromecast: { 
+            appId: '#', 
+            contentType: 'video/mp4', 
+        }, 
+        shakaConfiguration: { 
+            drm: { 
+             clearKeys: { 
+              "562f81a1d0c3508a92272bb2d1a1ff68": "689317e107f46e168c72a495203eefec",
+              "282ada04f991565d9eea39e675d843ef": "fdeb35eaa846c3b4ecacb86547045c25",
+              "e080cf6f71365721a531637e02231a7a": "461cf77fac8985df81510ab8dbf5f81e"
+                    } 
+            }, 
+            preferredAudioLanguage: 'pt-BR', 
+        }, 
+        shakaOnBeforeLoad: function (shaka_player) {}, 
+        parentId: '#player' 
+    }); 
 </script>
-
-           <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
-        <meta name="author" content="Photocalltv">
-        <meta property="og:locale" content="es_ES" />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="PhotocallTV" />
-        <meta property="og:image" content="https://www.photocalltv.me/img/logo.png" />
-        <meta name="viewport" content="width=device-width,initial-scale=0.7">
-        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=650bce971ce1b90012e5d869&product=sop' async='async'></script>
-        <meta name="robots" content="index,follow">
-
-         <link rel="stylesheet" href="/css/_country_.CAmKo96m.css?6757">
-                <link rel="stylesheet" href="/css/app.css?p">
-                <link rel="stylesheet" href="/css/card.css">
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://kit.fontawesome.com/ccee9ace0a.js" crossorigin="anonymous"></script>
-        <script disable-devtool-auto src="//fastly.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
-       
- <script async="async" data-cfasync="false" src="//thubanoa.com/1?z=7978517"></script>
-      
-<script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-<script type="text/javascript">
-    aclib.runInPagePush({
-        zoneId: '8803658',
-        refreshRate: 30,
-        maxAds: 5,
-    });
-</script>
-
-
-<div id="127724-44"><script src="//ads.themoneytizer.com/s/gen.js?type=44"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=127724&formatId=44"></script></div>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DDMZ7E6MFF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DDMZ7E6MFF');
-</script>
-<style>
-body{background-color:black;}
-.resp{font-family: roboto; font-size:1 em; color: #ededed;}
-.click{font-family: roboto; font-size:1em; color: green;}
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-</style>
-        <script>
-            // default options
-            ConsoleBan.init()
-            // custom options
-            ConsoleBan.init({
-                redirect: '//photocalltv.live'
-            })
-        </script>
-
-    </head>
-    <style>
-        .button-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .md-link {
-            margin-right: 8px;
-        }    
-        .btn-md{background-color:#eef8fc!important;border:none;color:#141d26;padding:10px 26px;border-radius:12px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;cursor:pointer}    
-        .clean-gray{border:solid 1px #dedede;background:#efefef;color:#222;padding:4px;text-align:center}
-        .my-0{margin-top:0!important;margin-bottom:0!important}
-        .mr-md-auto{margin-right:auto!important}
-        .btn-warning{color:#fff;background-color:#f0ad4e;border-color:#f0ad4e}.btn-warning:hover{color:#fff;background-color:#ec971f;border-color:#eb9316}.btn-warning:focus,.btn-warning.focus{-webkit-box-shadow:0 0 0 2px rgba(240,173,78,0.5);box-shadow:0 0 0 2px rgba(240,173,78,0.5)}.btn-warning.disabled,.btn-warning:disabled{background-color:#f0ad4e;border-color:#f0ad4e}.btn-warning:active,.btn-warning.active,.show > .btn-warning.dropdown-toggle{color:#fff;background-color:#ec971f;background-image:none;border-color:#eb9316}
-    </style>    
-    <body class="flex flex-col h-screen justify-between dark:bg-slate-800 dark:text-slate-300 font-sans" ondragstart="return false" ondrop="return false" onselectstart="return false" oncontextmenu="return false">
-        <div id="navbar"></div>
-        
-     
-<nav class="bg-slate-100 shadow dark:bg-slate-700">
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-<div class="relative flex h-16 items-center justify-between">
-<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-<div class="flex flex-shrink-0 items-center">
-
-</div>
-</div>
-<div class="button-container">
-</button>
-</div>
-</div>
-</nav>
-        
-    <header class="astro-7a7bzblm"> <a class="back astro-7a7bzblm" href="/es"> <img src="/img/E24D.Dz08rX1B.svg" alt="Navigation back" class="astro-7a7bzblm"> </a> 
-<a class="back astro-7a7bzblm" href="/es">  <p style="font-size: 30px">PHOTOCALLTV.ME </p>
-
-</a>
-</header>  
-
-
-        <main class="container mx-auto px-4  max-w-7xl mb-auto">  
-
-            <div class="my-4">
-                         <center>  <br>
-     
-<script type="text/javascript">
-	atOptions = {
-		'key' : '1b6b7fda16a15c79931b19e82c7849ae',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//ushermassacrecranny.com/1b6b7fda16a15c79931b19e82c7849ae/invoke.js"></script>
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'db1d3e73f4b39407bc1469ab7634d56c',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//accountantflowerrespiration.com/db1d3e73f4b39407bc1469ab7634d56c/invoke.js"></script>
-
-</center>
-         <div>  </div>
-                <div class="grid md:grid-cols-8 gap-3">
-                    <div class="md:col-span-3 player w-full mx-auto">
-                        
-
-<iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://www.photocalltv.me/embed/geo/?ch=la1" scrolling="no" frameBorder="0" allowfullscreen></iframe>
-
-
-                
-
-                        <p><strong></strong></p>
-<a class="btn btn-md" href="https://www.photocalltv.me/stream/geo/?ch=la1&title=&title2="> <i class="fa fa-repeat" aria-hidden="true"  style="font-size:15px;color:green"></i> Recargar</a>
-<a class="btn btn-md" href="/"><i class="fa fa-tv" aria-hidden="true"  style="font-size:15px;color:green"></i> Mas Canales</a>
-<a class="btn btn-md" href="/"><i class="fa fa-tv" style="font-size:15px;color:green" aria-hidden="true"></i>  Mas Opciones</a>
-<a target="iframes" class="btn btn-md" href="https://televisionlibrehd.net/blog/reportar-tv/"><i class="fa fa-exclamation-circle" style="font-size:15px;color:green" aria-hidden="true"></i>  Reportar</a>
-
-  
-      </br>
-  <center>         
-<div>
-<script type="text/javascript">
-        aclib.runBanner({
-            zoneId: '8803622',
-        });
-    </script>
-    </div>               
-</center>        
-                    </div>
-
-
-<div class="md:col-span-2 flex flex-col items-end">
-                        
-                        
-         <div class="sharethis-inline-share-buttons"></div>
-
-
-                        
-                        
-                        <div id="alert"></div>
-                        
-                        
-                        <div style="display: flex; flex-direction: column-reverse; align-items: flex-end;">
-      <div class="card card-center"><div class="card-body"><div class="row"><div class="col"><h3 class="mb-3">Atención</h3></div><div class="col-auto logoContenedor"></div></div>
-     <p class="card-text">
-         
-Este Canal funciona unicamente en su pais de origen, o con una aplicacion VPN. Puedes usar VPN LAT.
-</p></div></div>
-                        </div>
-                      
-                        
-                               <center><br>
-                       
-                         <script type="text/javascript">
-	atOptions = {
-		'key' : 'ad3ba11771e451148c2a445abfc6b404',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/ad3ba11771e451148c2a445abfc6b404/invoke.js"></script>
-
- </center>
-                        
-                    </div>
-                </div>
-            </div>
-        
-        </main>
-        
-          
-        
-
-        <footer class="mt-4 bg-slate-200 text-zinc-600 py-4 dark:bg-slate-700">
-<div class="container mx-auto px-4 text-center">
-<p class="text-gray-800 dark:text-slate-300">PhotocallTV! © Todos los derechos reservados.</p>
-<a href="/dmca.html" rel="nofollow"> DMCA </a> </a> <br>
-
-<script id="_waul0h">var _wau = _wau || []; _wau.push(["dynamic", "cgf05l7wcv", "l0h", "666666ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
-
-</center>
-
-</div>
-</footer>
-<script>$(document).ready(function() {
-    $('#buscar').on('input', function() {
-        var value = $(this).val().toLowerCase();
-        $('.channels > div').each(function() {
-            var imageAlt = $(this).find('img').attr('alt').toLowerCase();
-            var cardVisible = imageAlt.indexOf(value) > -1;
-
-        
-            if (cardVisible) {
-                $(this).removeClass('d-none'); 
-            } else {
-                $(this).addClass('d-none'); 
-            }
-        });
-    });
-});
-
-</script>
-<script> $(".carousel").owlCarousel({
-  margin: 20,
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 4500,
-  autoplayHoverPause: true,
-  responsive: {
-      0: { items: 1, nav: false },
-      600: { items: 2, nav: false },
-      1000: { items: 3, nav: false },
-  },
-});
- </script>
 
 </body>
 </html>
-        
-
-        
-    </body>
-</html>
-
-   
