@@ -1,22 +1,154 @@
 [
     {
-        "title": "Estados Unidos vs. Panamá",
-        "league": "Amistoso Internacional",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/09/4e0c3cca-56f7-393d-ae92-68719ffd2d68.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDIuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "10 oct. 17:30",
+        "title": "Guardians vs. Yankees, Juego 1",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/29717dbc-7d20-3fd1-b3d1-dcc0fba54253.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "14 oct. 19:00",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     },
-   {
-        "title": "Tigers vs. Guardians Juego 5",
+    {
+        "title": "Guardians vs. Yankees, Juego 2",
         "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/05/86837805-d1cc-3b9d-a67d-3f684919d0b6.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "FINALIZADO",
-        "statusstart": "12 oct. 01:08",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/29717dbc-7d20-3fd1-b3d1-dcc0fba54253.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "15 oct. 18:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+  {
+        "title": "México vs. Estados Unidos",
+        "league": "Amistoso Internacional",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/11/d38396c9-e8fb-35e6-9015-57b9f7977ed8.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "15 oct. 21:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Barcelona vs. Hammarby IF",
+        "league": "UEFA Women's Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/0a37ec40-5fdf-3c93-a0b4-ed761ddcbe60.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "16 oct. 14:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Wolfsburgo vs. Olympique Lyonnais",
+        "league": "UEFA Women's Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/09/7b6c1fba-4a82-3da0-93b9-deb2e2774e58.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "17 oct. 14:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Yankees vs. Guardians, Juego 3",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "17 oct. 16:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Yankees vs. Guardians, Juego 4",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "18 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Newcastle United vs Brighton",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/96ab8cf8-ce2f-3d54-a03d-01354b8d09c5.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "19 oct. 09:45",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Manchester United vs. Brentford",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/c246ab2d-23f7-3495-a871-b7f44732264c.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "19 oct. 09:45",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Ipswich Town vs. Everton",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/e4115b37-1e9f-31de-8656-dd650e12d685.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "19 oct. 09:45",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Bournemouth vs. Arsenal",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/74573810-2739-3007-91c1-8ac8e63a439a.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "19 oct. 12:00",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+    {
+        "title": "Yankees vs. Guardians, Juego 5",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "19 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Liverpool vs. Chelsea",
+        "league": "Premier League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/b444ec53-248b-35e8-ad92-e96ee229583c.png?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "20 oct. 11:00",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Guardians vs. Yankees, Juego 6",
+        "league": "Postemporada de la MLB",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/29717dbc-7d20-3fd1-b3d1-dcc0fba54253.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "PRO",
+        "statusstart": "21 oct. 19:30",
         "statusfin": "08:30 p. m.",
         "id": 1
         
