@@ -1,37 +1,5 @@
 [
-    {
-        "title": "Guardians vs. Yankees, Juego 2",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/29717dbc-7d20-3fd1-b3d1-dcc0fba54253.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL3RudDEuaHRtbA",
-        "status": "EN VIVO",
-        "statusstart": "15 oct. 18:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Barcelona vs. Hammarby IF",
-        "league": "UEFA Women's Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/0a37ec40-5fdf-3c93-a0b4-ed761ddcbe60.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "MAÑANA",
-        "statusstart": "16 oct. 14:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Wolfsburgo vs. Olympique Lyonnais",
-        "league": "UEFA Women's Champions League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/09/7b6c1fba-4a82-3da0-93b9-deb2e2774e58.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "17 oct. 14:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
+
     {
         "title": "Yankees vs. Guardians, Juego 3",
         "league": "Postemporada de la MLB",
