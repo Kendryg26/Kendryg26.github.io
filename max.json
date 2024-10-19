@@ -1,66 +1,11 @@
 [
 
     {
-        "title": "Yankees vs. Guardians, Juego 4",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "18 oct. 19:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Newcastle United vs Brighton",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/96ab8cf8-ce2f-3d54-a03d-01354b8d09c5.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "19 oct. 09:45",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Manchester United vs. Brentford",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/c246ab2d-23f7-3495-a871-b7f44732264c.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "19 oct. 09:45",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Ipswich Town vs. Everton",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/e4115b37-1e9f-31de-8656-dd650e12d685.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "19 oct. 09:45",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
-        "title": "Bournemouth vs. Arsenal",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/74573810-2739-3007-91c1-8ac8e63a439a.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "PRO",
-        "statusstart": "19 oct. 12:00",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-    {
         "title": "Yankees vs. Guardians, Juego 5",
         "league": "Postemporada de la MLB",
         "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
         "url": "/embed/eventos/?r=",
-        "status": "PRO",
+        "status": "01:08",
         "statusstart": "19 oct. 19:30",
         "statusfin": "08:30 p. m.",
         "id": 1
