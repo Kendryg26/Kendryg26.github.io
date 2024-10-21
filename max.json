@@ -1,14 +1,102 @@
 [
-
      {
-        "title": "Guardians vs. Yankees, Juego 6",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/29717dbc-7d20-3fd1-b3d1-dcc0fba54253.jpeg?w=450&f=webp",
+        "title": "Milan vs. Club Brujas",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/07/fbb199d7-feae-34fa-aba7-c737282ad986.jpeg?w=450&f=webp",
         "url": "/embed/eventos/?r=",
-        "status": "PRO",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Mónaco vs. Estrella Roja",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/87c12ac7-55c1-3b28-8db0-f14724790fbb.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Real Madrid vs. Borussia Dortmund",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/07/eeb0bd97-515c-39fa-b57c-b304586200da.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "PSG vs. PSV",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/07/68a7f390-eeea-37d9-8e3c-3dca96862336.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+      {
+        "title": "Arsenal vs. Shakhtar Donetsk",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/07/09b8feca-a63c-3318-ab18-d2af4eb1febc.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+      {
+        "title": "Juventus vs. Stuttgart",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/0e337c7c-729b-3ec4-a026-04530c477feb.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Aston Villa vs. Bologna",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/a35926d7-94ae-3136-9866-ad1a2c9b323c.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Girona vs. Slovan Bratislava",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/b7b0c210-8fff-3021-b4a9-f74547a98b53.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Sturm Graz vs. Sporting CP",
+        "league": "UEFA Champions League",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/9f3f1d72-e59f-331e-9979-f15c98121c4a.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
         "statusstart": "21 oct. 19:30",
         "statusfin": "08:30 p. m.",
         "id": 1
         
     }
+     
 ]
