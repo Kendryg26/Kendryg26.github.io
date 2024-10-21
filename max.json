@@ -97,6 +97,28 @@
         "statusfin": "08:30 p. m.",
         "id": 1
         
+    },
+     {
+        "title": "Boston Celtics vs. New York Knicks",
+        "league": "NBA",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/08/01244172-e481-3201-bd8f-39deeda4f299.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
+    },
+     {
+        "title": "Los Angeles Lakers vs. Minnesota Timberwolves",
+        "league": "NBA",
+        "img": "https://images.cdn.prd.api.discomax.com/2024/10/08/6c60f46a-5e9a-3120-af99-0b44b2ae1e22.jpeg?w=450&f=webp",
+        "url": "/embed/eventos/?r=",
+        "status": "MAÑANA",
+        "statusstart": "21 oct. 19:30",
+        "statusfin": "08:30 p. m.",
+        "id": 1
+        
     }
      
 ]
