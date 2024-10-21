@@ -1,27 +1,5 @@
 [
 
-    {
-        "title": "Yankees vs. Guardians, Juego 5",
-        "league": "Postemporada de la MLB",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/12/6be44fd5-b27c-35ce-8945-e8b4b7a55196.jpeg?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "01:08",
-        "statusstart": "19 oct. 19:30",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
-     {
-        "title": "Liverpool vs. Chelsea",
-        "league": "Premier League",
-        "img": "https://images.cdn.prd.api.discomax.com/2024/10/04/b444ec53-248b-35e8-ad92-e96ee229583c.png?w=450&f=webp",
-        "url": "/embed/eventos/?r=",
-        "status": "MAÑANA",
-        "statusstart": "20 oct. 11:00",
-        "statusfin": "08:30 p. m.",
-        "id": 1
-        
-    },
      {
         "title": "Guardians vs. Yankees, Juego 6",
         "league": "Postemporada de la MLB",
