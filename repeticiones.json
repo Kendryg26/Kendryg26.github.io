@@ -1,4 +1,116 @@
-[ 
+[
+        {
+        "title": "Barcelona vs Sevilla (2T) 20/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8v7f1maz2oy0q8lfz4te1z3zn_image-header_pRow_1725905446000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxNzA3MTU5NDE1MTE="
+    },
+        {
+        "title": "Barcelona vs Sevilla (1T) 20/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8v7f1maz2oy0q8lfz4te1z3zn_image-header_pRow_1725905446000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxNzA3MTIxNDA0MjM="
+    },
+        {
+        "title": "AS Roma vs Inter (2T) 20/10/2024",
+        "img": "https://i.ytimg.com/vi/6l2R8rK8New/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjDFMfV_9QedpcxjWkQ87zocS-kw",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDg0MTQzNjIxODY="
+    },
+        {
+        "title": "AS Roma vs Inter (1T) 20/10/2024",
+        "img": "https://i.ytimg.com/vi/6l2R8rK8New/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjDFMfV_9QedpcxjWkQ87zocS-kw",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgwNDg0MTQyOTY2NTA="
+    },
+        {
+        "title": "Atletico Madrid vs Leganes 20/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=3yqtb7xvo45drd9tc218kaz5a_image-header_pDach_1726489852000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxNzAxNDgzOTk3NTE="
+    },
+        {
+        "title": "Inter Miami vs New England Revolution 19/10/2024",
+        "img": "https://i.okcdn.ru/i?r=BUFdgnrloWV447DxrbcgGLJlSSVO28QfomJSYl6uayFEVZi98NXptjdJxqUiP5-9G2uwJWW41Jz5vR1vjzhqTvKL&fn=external_8",
+        "status": "FINALIZADO",
+        "league": "MLS",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MDIwNTI4Nzg4NjY="
+    },
+        {
+        "title": "PSG vs Strasbourg 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5qwsyp5hivyhsqlf6lk4v8vhj_image-header_pDach_1728394304000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MDAyODMxNDQ3MjI="
+    },
+        {
+        "title": "Celta Vigo vs Real Madrid 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cw14t1y33gdcpcxinkzma88th_image-header_pJp_1725655251000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MDAzMDU2ODkxMDY="
+    },
+        {
+        "title": "Juventus vs Lazio 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=a6tglnlavdk0mjvvrf7bk5jkj_image-header_pEs_1728043002000",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MDExOTAxNjI5NjI="
+    },
+        {
+        "title": "Bayern Munich vs Stuttgart 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=113rx37j9if16a4da6giihvce_image-header_pCa_1727254668000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgyOTM2Nzg3MTM1NTI="
+    },
+        {
+        "title": "Bournemouth vs Arsenal 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4fyedslhovqir7fdxu0uiseaq_image-header_pRow_1728251930000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgyOTM0ODg1OTM2MTY="
+    },
+        {
+        "title": "AC Milan vs Udinese 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=boeic6wlf55mg2dsdek9lpgm1_image-header_pEs_1727885403000",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc5MDAwNjg2NDUzOTQ="
+    },
+        {
+        "title": "Newcastle vs Brighton 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=aj77mm2bbo1zb2ses74ug8n50_image-header_pEs_1728103678000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgyOTI5ODU4NjY5NjA="
+    },
+        {
+        "title": "Manchester United vs Brentford 19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=71tinwuvwakfwz0a62oy4ert5_image-header_pRow_1728252470000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzgxNzAyNDI1MDk0NDc="
+    },
+        {
+        "title": "Bayer Leverkusen vs Eintracht Frankfurt  19/10/2024",
+        "img": "https://i.ytimg.com/vi/pGzEj7r059A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC1edGJc8pwMkD3xywqor1BHyG7Pg",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4OTk1NzM2NTE5ODY="
+    },
+        {
+        "title": "Tottenham vs West Ham  19/10/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1qx0q7bw5nltonug7a8p9q7kr_image-header_pRow_1728252771000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=Ly9vay5ydS92aWRlb2VtYmVkLzc4OTkyNDgzMzEyODI="
+    },
         {
         "title": "Al Shabab vs Al Nassr (2T)  18/10/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=48lqoruhfp6vt3k12kq93oe8v_image-header_pRow_1727702699000&quality=70",
