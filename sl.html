@@ -15,14 +15,20 @@ var _0x18f498=_0x1761;function _0x1761(_0x3e4d4f,_0x4eb311){var _0x12eebb=_0x12e
     color: #fff;
     font-weight: 300;
   }
-  .bmpui-seekbar-markers {
-    background-color: #fff;
-    height: 4px;
-  }
+ 
   .bmpui-seekbar-playbackposition-marker {
     border-color:#de961a;
   }
 
+.bmpui-ui-skin-modern .bmpui-ui-seekbar .bmpui-seekbar .bmpui-seekbar-playbackposition, .bmpui-ui-skin-modern .bmpui-ui-volumeslider .bmpui-seekbar .bmpui-seekbar-playbackposition {
+    background-color: #fff;
+    margin: auto 0;
+    transition: .1s linear, .1s linear;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+
+  
   .bmpui-ui-watermark {  
   display: none !important;
   }
