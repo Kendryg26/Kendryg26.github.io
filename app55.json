@@ -1,0 +1,276 @@
+[ 
+    
+    {"nombre": "espn",
+        "url": "https://nowomi.quest/canales/ESPN.png",
+         "options": [
+            {"text": "ESPN CO", "url": "https://nowomi.quest/exo.php?Id=ESPNBO"},
+            {"text": "ESPN CO OP.2", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO"},
+            {"text": "ESPN AR", "url": "https://nowomi.quest/exo.php?Id=ESPNAR"},
+            {"text": "ESPN PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPNPE"}
+            
+            ]
+    },
+    {"nombre": "espn 2",
+        "url": "https://nowomi.quest/canales/ESPN_2.png",
+        "options": [
+            {"text": "ESPN 2 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN2BO"},
+            {"text": "ESPN 2 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN2AR"},
+            {"text": "ESPN 2 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN2PE"}
+        ]
+    },
+    {"nombre": "espn 3",
+        "url": "https://nowomi.quest/canales/ESPN_3.png",
+        "options": [
+            
+            {"text": "ESPN 3 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN3BO"},
+            {"text": "ESPN 3 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN3AR"},
+            {"text": "ESPN 3 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN3PE"}
+        ]
+    },
+    {"nombre": "espn 4",
+        "url": "https://nowomi.quest/canales/ESPN4.png",
+        "options": [
+            {"text": "ESPN 4 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN4BO"},
+            {"text": "ESPN 4 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN4AR"},
+            {"text": "ESPN 4 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN4PE"}
+        ]
+    },
+    {"nombre": "espn 5",
+        "url": "https://nowomi.quest/canales/ESPN5.png",
+        "options": [
+            {"text": "ESPN 5 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN5BO"},
+            {"text": "ESPN 5 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN5PE"}
+        ]
+    },
+    {"nombre": "espn 6",
+        "url": "https://nowomi.quest/canales/espn6.png",
+        "options": [
+            {"text": "ESPN 6 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN6BO"},
+            {"text": "ESPN 6 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN6PE"}
+        ]
+    },
+    {"nombre": "espn 7",
+        "url": "https://nowomi.quest/canales/espn7.png",
+        "options": [
+            {"text": "ESPN 7 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN7BO"},
+            {"text": "ESPN 7 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN7PE"}
+        ]
+    },
+    
+    {"nombre": "espn deportes",
+        "url": "https://nowomi.quest/canales/Espn_deportes.png?x",
+        "options": [
+            {"text": "ESPN Deportes", "url": "https://streamtp1.com/global1.php?stream=espn_deportes"}
+        ]
+    },
+
+    {"nombre": "espn premium",
+        "url": "https://nowomi.quest/canales/ESPN_Premium.png",
+         "options": [
+            {"text": "ESPN Premium", "url": "https://nowomi.quest/exo.php?Id=ESPNPREMIUM"},
+            {"text": "ESPN Premium OP.2", "url": "https://nowomi.quest/exo.php?Id=ESPNPREMIUM2"}
+            
+            
+            ]
+    },
+    {"nombre": "tnt sports ar",
+        "url": "https://nowomi.quest/canales/tnts.png",
+         "options": [
+            {"text": "TNT Sports AR", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTSARG"},
+            {"text": "TNT Sports AR (VPN/AR/UY/PY)", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTSAR"}
+            
+            
+            ]
+    },
+    {"nombre": "fox sports ar",
+        "url": "https://nowomi.quest/canales/Fox-Sports.png",
+        "options": [
+            {"text": "FOX Sports AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR"},
+            {"text": "FOX Sports MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX"}
+        ]
+    },
+    {"nombre": "fox sports 2 ar",
+        "url": "https://nowomi.quest/canales/Fox-Sports-2.png",
+        "options": [
+            {"text": "FOX Sports 2 AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR2"},
+            {"text": "FOX Sports 2 MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX2"}
+        ]
+    },
+    {"nombre": "fox sports 3 ar",
+        "url": "https://nowomi.quest/canales/Fox-Sports-3.png",
+        "options": [
+            {"text": "FOX Sports 3 AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR3"},
+            {"text": "FOX Sports 3 MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX3"}
+        ]
+    },
+    {"nombre": "fox sports premium",
+        "url": "https://nowomi.quest/canales/fspmx.png",
+        "options": [
+            {"text": "Fox Sports Premium MX", "url": "https://nowomi.quest/exo.php?Id=FSP"}
+
+        ]
+    },
+    {"nombre": "liga 1 perú",
+        "url": "https://nowomi.quest/canales/l1max.png?qs",
+        "options": [
+            {"text": "Liga 1 MAX", "url": "https://streamtp1.com/global1.php?stream=l1max"},
+            {"text": "Liga 1 MAX (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=LIGA1MAX"}
+
+        ]
+    },
+    {"nombre": "tyc sports ar",
+        "url": "https://nowomi.quest/canales/tycsportsw.png",
+        "options": [
+            {"text": "TyC Sports", "url": "https://nowomi.quest/exo.php?Id=TYCSPORTS"},
+            {"text": "TyC Sports 2", "url": "https://nowomi.quest/exo.php?Id=TYCSPORTS2"}
+        ]
+    },
+    {"nombre": "sky sports",
+        "url": "https://nowomi.quest/canales/skysports.png",
+        "options": [
+            {"text": "Sky Sports LaLiga (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYLALIGA"},
+            {"text": "Sky Sports Bundesliga", "url": "https://nowomi.quest/exo.php?Id=SKYBUNDESLIGA"},
+            {"text": "Sky Sports Event 1 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT1"},
+            {"text": "Sky Sports Event 2 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT2"},
+            {"text": "Sky Sports Event 3 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT3"},
+            {"text": "Sky Sports Event 4 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT4"},
+            {"text": "Sky Sports Event 5 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT5"},
+            {"text": "Sky Sports Event 6 (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=SKYEVENT6"}
+            
+        ]
+    },
+    {"nombre": "tudn",
+        "url": "https://nowomi.quest/canales/tudn.png?xs",
+        "options": [
+            {"text": "TUDN México", "url": "https://antag.xyz/vix/vix.php?id=TUDNMX"},
+            {"text": "TUDN México (VPN/México)", "url": "https://nowomi.quest/exo.php?Id=TUDNMX"},
+            {"text": "TUDN USA", "url": "https://antag.xyz/vix/vix.php?id=TUDNUS"}
+        ]
+    },
+    {"nombre": "premiere br",
+        "url": "https://nowomi.quest/canales/premiere.png",
+        "options": [
+             {"text": "Premiere BR 1", "url": "https://nowomi.quest/exo.php?Id=PREMIERE1"},
+             {"text": "Premiere BR 2", "url": "https://nowomi.quest/exo.php?Id=PREMIERE2"},
+             {"text": "Premiere BR 3", "url": "https://nowomi.quest/exo.php?Id=PREMIERE3"},
+             {"text": "Premiere BR 4", "url": "https://nowomi.quest/exo.php?Id=PREMIERE4"},
+             {"text": "Premiere BR 5", "url": "https://nowomi.quest/exo.php?Id=PREMIERE5"},
+             {"text": "Premiere BR 6", "url": "https://nowomi.quest/exo.php?Id=PREMIERE6"},
+             {"text": "Premiere BR 7", "url": "https://nowomi.quest/exo.php?Id=PREMIERE7"},
+             {"text": "Premiere BR 8", "url": "https://nowomi.quest/exo.php?Id=PREMIERE8"}
+        ]
+    },
+    {"nombre": "sportv br",
+        "url": "https://nowomi.quest/canales/sportv.png",
+        "options": [
+             {"text": "SporTV1", "url": "https://nowomi.quest/exo.php?Id=SPORTV1"},
+             {"text": "SporTV2", "url": "https://nowomi.quest/exo.php?Id=SPORTV2"},
+             {"text": "SporTV3", "url": "https://nowomi.quest/exo.php?Id=SPORTV3"}
+        ]
+    },
+    {"nombre": "dazn laliga",
+        "url": "https://nowomi.quest/canales/DAZN_LaLiga.png?up24",
+        "options": [
+             {"text": "DAZN LaLiga", "url": "https://nowomi.quest/exo.php?Id=DZLALIGA"},
+             {"text": "DAZN LaLiga OP.2", "url": "https://nowomi.quest/exo.php?Id=DZLALIGAOP2"}
+        ]
+    },
+    {"nombre": "dazn",
+        "url": "https://nowomi.quest/canales/DAZN.png?up23",
+        "options": [
+             {"text": "DAZN 1 ES", "url": "https://nowomi.quest/exo.php?Id=DZ1ES"},
+             {"text": "DAZN 2 ES", "url": "https://nowomi.quest/exo.php?Id=DZ2ES"},
+             {"text": "DAZN 3 ES", "url": "https://nowomi.quest/exo.php?Id=DZ3ES"},
+             {"text": "DAZN 4 ES", "url": "https://nowomi.quest/exo.php?Id=DZ4ES"},
+             {"text": "DAZN 1 DE", "url": "https://nowomi.quest/exo.php?Id=DZ1DE"},
+             {"text": "DAZN 2 DE", "url": "https://nowomi.quest/exo.php?Id=DZ2DE"},
+             {"text": "DAZN NFL Network", "url": "https://nowomi.quest/exo.php?Id=DZNFL"},
+             {"text": "ZONA DAZN IT", "url": "https://nowomi.quest/exo.php?Id=DZZONA"},
+             {"text": "Eurosport 1 ES", "url": "https://nowomi.quest/exo.php?Id=EURO1ES"},
+             {"text": "Eurosport 2 ES", "url": "https://nowomi.quest/exo.php?Id=EURO2ES"}
+            
+        ]
+    },
+    {"nombre": "dazn f1",
+        "url": "https://nowomi.quest/canales/DAZN_F1.png?up23",
+        "options": [
+             {"text": "DAZN F1 ES", "url": "https://nowomi.quest/exo.php?Id=DZF1"}
+        ]
+    },
+    {"nombre": "dazn eleven pt",
+        "url": "https://nowomi.quest/canales/DAZNELEVEN.png?up23",
+        "options": [
+             
+             {"text": "DAZN Eleven 1 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT"},
+             {"text": "DAZN Eleven 2 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT2"},
+             {"text": "DAZN Eleven 3 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT3"},
+             {"text": "DAZN Eleven 4 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT4"},
+             {"text": "DAZN Eleven 5 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT5"},
+             {"text": "DAZN Eleven 6 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT6"}
+         
+            
+        ]
+    },
+    {"nombre": "M+ LALIGA",
+        "url": "https://nowomi.quest/canales/mpluspng.png?up24",
+        "options": [
+             {"text": "M+ LaLiga", "url": "https://nowomi.quest/exo.php?Id=MLALIGA"}
+        ]
+    },
+    {"nombre": "la liga hypermotion",
+        "url": "https://nowomi.quest/canales/hypermotion.png?up24",
+        "options": [
+             {"text": "Hypermotion 1", "url": "https://nowomi.quest/exo.php?Id=DZLALIGAHYPER1"},
+             {"text": "Hypermotion 1 OP.2", "url": "https://nowomi.quest/exo.php?Id=HYPER1"},
+             {"text": "Hypermotion 2", "url": "https://nowomi.quest/exo.php?Id=HYPER2"},
+             {"text": "Hypermotion 3", "url": "https://nowomi.quest/exo.php?Id=HYPER3"}
+        ]
+    },
+    {"nombre": "tnt sports uk",
+        "url": "https://nowomi.quest/canales/TNT_SportsUK.png?up25",
+        "options": [
+             {"text": "TNT Sports 1 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS1UK"},
+             {"text": "TNT Sports 2 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS2UK"},
+             {"text": "TNT Sports 3 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS3UK"},
+             {"text": "TNT Sports 4 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
+             {"text": "TNT Sports 5 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS5UK"}
+        ]
+    },
+    {"nombre": "DSports",
+        "url": "https://nowomi.quest/canales/DSports.png?up29",
+        "options": [
+             {"text": "DSports", "url": "https://streamtp1.com/global1.php?stream=dsports"}
+        ]
+    },
+    {"nombre": "DSports 2",
+        "url": "https://nowomi.quest/canales/DSports_2.png?up29",
+        "options": [
+             {"text": "DSports 2", "url": "https://streamtp1.com/global1.php?stream=dsports_2"}
+        ]
+    },
+    {"nombre": "DSports+",
+        "url": "https://nowomi.quest/canales/DSports_Plus.png?up29",
+        "options": [
+             {"text": "DSports+", "url": "https://streamtp1.com/global1.php?stream=dsports_plus"}
+        ]
+    },
+    {"nombre": "ecdf el canal del futbol",
+        "url": "https://nowomi.quest/canales/ecdf.png?up29",
+        "options": [
+             {"text": "ECDF (VPN/Ecuador)", "url": "https://nowomi.quest/exo.php?Id=ECDF"}
+        ]
+    },
+    {"nombre": "win futbol+",
+        "url": "https://nowomi.quest/canales/winplus.png?up29",
+        "options": [
+             {"text": "Win Fútbol+", "url": "https://streamtp1.com/global1.php?stream=winplus"},
+             {"text": "Win Fútbol+ OP.2", "url": "https://streamtp1.com/global1.php?stream=winplus2"}
+        ]
+    },
+    {"nombre": "bym sport venezuela",
+        "url": "https://nowomi.quest/canales/bym.png?up29",
+        "options": [
+             {"text": "ByM Sport (VPN/Venezuela)", "url": "https://st.nowomi.quest/v3/embed/bym.php"}
+        ]
+    }
+]
