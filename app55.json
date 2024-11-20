@@ -4,7 +4,7 @@
         "url": "https://nowomi.quest/canales/ESPN.png",
          "options": [
             {"text": "ESPN CO", "url": "https://nowomi.quest/exo.php?Id=ESPNBO"},
-            {"text": "ESPN CO OP.2", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO"},
+            {"text": "ESPN CO (Extensión - PC)", "url": "/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2V4dGVuY2lvbi5odG1sP3I9aHR0cHMlM0ElMkYlMkZjZG4uc2Vuc2EuY29tLmFyJTJGbGl2ZSUyRmVkcyUyRkVTUE4tQm9saXZpYSUyRmxpdmVfZGFzaF9jbGQlMkZFU1BOLUJvbGl2aWEubXBkJTNGY2slM0RleUpsTVdWbU5XTTRNalZrWVRRNFptSmxaV0ZoTXpCbE9HWTJNR05sTkRSaVpDSTZJams0TW1ReE1qY3pZelJoTVdObU5tUmtZamhpTWpNd05tRXdNalZrTW1ZM0luMCUzRCUyNnRpdGxlJTNERGVwb3J0ZXNUVkhEJTI2aGVhZGVycyUzRGV5SnZjbWxuYVc0aU9pSm9kSFJ3Y3pvdkwzQnNZWGxsY2k1elpXNXpZUzVqYjIwdVlYSWlMQ0p5WldabGNtVnlJam9pYUhSMGNITTZMeTl3YkdGNVpYSXVjMlZ1YzJFdVkyOXRMbUZ5THlKOQ=="},
             {"text": "ESPN AR", "url": "https://nowomi.quest/exo.php?Id=ESPNAR"},
             {"text": "ESPN PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPNPE"}
             
