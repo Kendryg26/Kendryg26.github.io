@@ -219,14 +219,14 @@
     {"nombre": "movistar",
         "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/1280px-Movistar_Liga_de_Campeones.svg.png",
         "options": [
-             {"text": "M+ Liga de Campeones 1", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS1UK"},
-             {"text": "M+ Liga de Campeones 2", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS2UK"},
-             {"text": "M+ Liga de Campeones 3", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS3UK"},
-             {"text": "M+ Liga de Campeones 4", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
-             {"text": "M+ Liga de Campeones 5", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS5UK"},
-            {"text": "M+ Liga de Campeones 6", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
-            {"text": "M+ Liga de Campeones 7", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
-            {"text": "M+ Liga de Campeones 8", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"}
+             {"text": "M+ Liga de Campeones 1", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjE="},
+             {"text": "M+ Liga de Campeones 2", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjI="},
+             {"text": "M+ Liga de Campeones 3", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjM="},
+             {"text": "M+ Liga de Campeones 4", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjQ="},
+             {"text": "M+ Liga de Campeones 5", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjU="},
+             {"text": "M+ Liga de Campeones 6", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjY="},
+             {"text": "M+ Liga de Campeones 7", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjc="},
+             {"text": "M+ Liga de Campeones 8", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly90YXJqZXRhcm9qYWVudml2by5sYXQvcGxheWVyLzEvNjg="}
         ]
     },
     {"nombre": "DSports",
