@@ -4,9 +4,7 @@
         "url": "https://nowomi.quest/canales/ESPN.png",
          "options": [
             {"text": "ESPN CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO"},
-            {"text": "ESPN CO (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2V4dGVuY2lvbi5odG1sP3I9aHR0cHMlM0ElMkYlMkZjZG4uc2Vuc2EuY29tLmFyJTJGbGl2ZSUyRmVkcyUyRkVTUE4tQm9saXZpYSUyRmxpdmVfZGFzaF9jbGQlMkZFU1BOLUJvbGl2aWEubXBkJTNGY2slM0RleUpsTVdWbU5XTTRNalZrWVRRNFptSmxaV0ZoTXpCbE9HWTJNR05sTkRSaVpDSTZJams0TW1ReE1qY3pZelJoTVdObU5tUmtZamhpTWpNd05tRXdNalZrTW1ZM0luMCUzRCUyNnRpdGxlJTNERGVwb3J0ZXNUVkhEJTI2aGVhZGVycyUzRGV5SnZjbWxuYVc0aU9pSm9kSFJ3Y3pvdkwzQnNZWGxsY2k1elpXNXpZUzVqYjIwdVlYSWlMQ0p5WldabGNtVnlJam9pYUhSMGNITTZMeTl3YkdGNVpYSXVjMlZ1YzJFdVkyOXRMbUZ5THlKOQ=="},
-            {"text": "ESPN BR", "url": "https://nowomi.quest/exo.php?Id=ESPNBR"},
-            {"text": "ESPN PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPNPE"}
+            {"text": "ESPN CO (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2V4dGVuY2lvbi5odG1sP3I9aHR0cHMlM0ElMkYlMkZjZG4uc2Vuc2EuY29tLmFyJTJGbGl2ZSUyRmVkcyUyRkVTUE4tQm9saXZpYSUyRmxpdmVfZGFzaF9jbGQlMkZFU1BOLUJvbGl2aWEubXBkJTNGY2slM0RleUpsTVdWbU5XTTRNalZrWVRRNFptSmxaV0ZoTXpCbE9HWTJNR05sTkRSaVpDSTZJams0TW1ReE1qY3pZelJoTVdObU5tUmtZamhpTWpNd05tRXdNalZrTW1ZM0luMCUzRCUyNnRpdGxlJTNERGVwb3J0ZXNUVkhEJTI2aGVhZGVycyUzRGV5SnZjbWxuYVc0aU9pSm9kSFJ3Y3pvdkwzQnNZWGxsY2k1elpXNXpZUzVqYjIwdVlYSWlMQ0p5WldabGNtVnlJam9pYUhSMGNITTZMeTl3YkdGNVpYSXVjMlZ1YzJFdVkyOXRMbUZ5THlKOQ=="}
             
             ]
     },
@@ -14,9 +12,7 @@
         "url": "https://nowomi.quest/canales/ESPN_2.png",
         "options": [
             {"text": "ESPN 2 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO2"},
-            {"text": "ESPN 2 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN2AR"},
-            {"text": "ESPN 2 BR", "url": "https://nowomi.quest/exo.php?Id=ESPN2BR"},
-            {"text": "ESPN 2 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN2PE"}
+            {"text": "ESPN 2 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN2AR"}
         ]
     },
     {"nombre": "espn 3",
@@ -24,40 +20,32 @@
         "options": [
             
             {"text": "ESPN 3 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO3"},
-            {"text": "ESPN 3 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN3AR"},
-            {"text": "ESPN 3 BR", "url": "https://nowomi.quest/exo.php?Id=ESPN3BR"},
-            {"text": "ESPN 3 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN3PE"}
+            {"text": "ESPN 3 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN3AR"}
         ]
     },
     {"nombre": "espn 4",
         "url": "https://nowomi.quest/canales/ESPN4.png",
         "options": [
             {"text": "ESPN 4 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO4"},
-            {"text": "ESPN 4 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN4AR"},
-            {"text": "ESPN 4 BR", "url": "https://nowomi.quest/exo.php?Id=ESPN4BR"},
-            {"text": "ESPN 4 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN4PE"}
+            {"text": "ESPN 4 AR", "url": "https://nowomi.quest/exo.php?Id=ESPN4AR"}
         ]
     },
     {"nombre": "espn 5",
         "url": "https://nowomi.quest/canales/ESPN5.png",
         "options": [
-            {"text": "ESPN 5 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO5"},
-            {"text": "ESPN 5 BR", "url": "https://nowomi.quest/exo.php?Id=ESPN5BR"},
-            {"text": "ESPN 5 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN5PE"}
+            {"text": "ESPN 5 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO5"}
         ]
     },
     {"nombre": "espn 6",
         "url": "https://nowomi.quest/canales/espn6.png",
         "options": [
-            {"text": "ESPN 6 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO6"},
-            {"text": "ESPN 6 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN6PE"}
+            {"text": "ESPN 6 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO6"}
         ]
     },
     {"nombre": "espn 7",
         "url": "https://nowomi.quest/canales/espn7.png",
         "options": [
-            {"text": "ESPN 7 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO7"},
-            {"text": "ESPN 7 PE (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=ESPN7PE"}
+            {"text": "ESPN 7 CO", "url": "https://nowomi.quest/exo.php?Id=ESPN_BO7"}
         ]
     },
     
@@ -226,6 +214,19 @@
              {"text": "TNT Sports 3 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS3UK"},
              {"text": "TNT Sports 4 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
              {"text": "TNT Sports 5 UK", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS5UK"}
+        ]
+    },
+    {"nombre": "movistar",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Movistar_Liga_de_Campeones.svg/1280px-Movistar_Liga_de_Campeones.svg.png",
+        "options": [
+             {"text": "M+ Liga de Campeones 1", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS1UK"},
+             {"text": "M+ Liga de Campeones 2", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS2UK"},
+             {"text": "M+ Liga de Campeones 3", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS3UK"},
+             {"text": "M+ Liga de Campeones 4", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
+             {"text": "M+ Liga de Campeones 5", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS5UK"},
+            {"text": "M+ Liga de Campeones 6", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
+            {"text": "M+ Liga de Campeones 7", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"},
+            {"text": "M+ Liga de Campeones 8", "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"}
         ]
     },
     {"nombre": "DSports",
