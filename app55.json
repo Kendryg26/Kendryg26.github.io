@@ -74,39 +74,31 @@
             
             ]
     },
-    {"nombre": "fox sports ar",
+    {"nombre": "fox sports",
         "url": "https://nowomi.quest/canales/Fox-Sports.png",
         "options": [
-            {"text": "FOX Sports AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR"},
-            {"text": "FOX Sports MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX"}
+            {"text": "FOX Sports AR", "url": "https://prueb.kerterplus.com/eventos/?r="},
+            {"text": "FOX Sports MX", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1GUzFNWA=="}
         ]
     },
-    {"nombre": "fox sports 2 ar",
+    {"nombre": "fox sports 2",
         "url": "https://nowomi.quest/canales/Fox-Sports-2.png",
         "options": [
-            {"text": "FOX Sports 2 AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR2"},
-            {"text": "FOX Sports 2 MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX2"}
+            {"text": "FOX Sports 2 AR", "url": "https://prueb.kerterplus.com/eventos/?r="},
+            {"text": "FOX Sports 2 MX", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1GUzJNWA=="}
         ]
     },
-    {"nombre": "fox sports 3 ar",
+    {"nombre": "fox sports 3",
         "url": "https://nowomi.quest/canales/Fox-Sports-3.png",
         "options": [
-            {"text": "FOX Sports 3 AR", "url": "https://nowomi.quest/exo.php?Id=FOXAR3"},
-            {"text": "FOX Sports 3 MX", "url": "https://nowomi.quest/exo.php?Id=FOXMX3"}
+            {"text": "FOX Sports 3 AR", "url": "https://prueb.kerterplus.com/eventos/?r="},
+            {"text": "FOX Sports 3 MX", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1GUzNNWA=="}
         ]
     },
     {"nombre": "fox sports premium",
         "url": "https://nowomi.quest/canales/fspmx.png",
         "options": [
-            {"text": "Fox Sports Premium MX", "url": "https://nowomi.quest/exo.php?Id=FSP"}
-
-        ]
-    },
-    {"nombre": "liga 1 perú",
-        "url": "https://nowomi.quest/canales/l1max.png?qs",
-        "options": [
-            {"text": "Liga 1 MAX", "url": "https://streamtp1.com/global1.php?stream=l1max"},
-            {"text": "Liga 1 MAX (VPN/Perú)", "url": "https://nowomi.quest/exo.php?Id=LIGA1MAX"}
+            {"text": "Fox Sports Premium MX", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1GU1BNWA=="}
 
         ]
     },
@@ -155,24 +147,25 @@
     {"nombre": "dazn laliga",
         "url": "https://nowomi.quest/canales/DAZN_LaLiga.png?up24",
         "options": [
-             {"text": "DAZN LaLiga", "url": "https://nowomi.quest/exo.php?Id=DZLALIGA"},
+             {"text": "DAZN LaLiga", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpOTEFMSUdB"},
              {"text": "DAZN LaLiga OP.2", "url": "https://nowomi.quest/exo.php?Id=DZLALIGAOP2"}
         ]
     },
     {"nombre": "dazn",
         "url": "https://nowomi.quest/canales/DAZN.png?up23",
         "options": [
-             {"text": "DAZN 1 ES", "url": "https://nowomi.quest/exo.php?Id=DZ1ES"},
-             {"text": "DAZN 2 ES", "url": "https://nowomi.quest/exo.php?Id=DZ2ES"},
-             {"text": "DAZN 3 ES", "url": "https://nowomi.quest/exo.php?Id=DZ3ES"},
-             {"text": "DAZN 4 ES", "url": "https://nowomi.quest/exo.php?Id=DZ4ES"},
-             {"text": "DAZN 1 DE", "url": "https://nowomi.quest/exo.php?Id=DZ1DE"},
-             {"text": "DAZN 2 DE", "url": "https://nowomi.quest/exo.php?Id=DZ2DE"},
-             {"text": "Sportdigital FUSSBALL DE", "url": "https://nowomi.quest/exo.php?Id=DIGITALDE"},
-             {"text": "DAZN NFL Network", "url": "https://nowomi.quest/exo.php?Id=DZNFL"},
-             {"text": "ZONA DAZN IT", "url": "https://nowomi.quest/exo.php?Id=DZZONA"},
-             {"text": "Eurosport 1 ES", "url": "https://nowomi.quest/exo.php?Id=EURO1ES"},
-             {"text": "Eurosport 2 ES", "url": "https://nowomi.quest/exo.php?Id=EURO2ES"}
+             {"text": "DAZN 1 ES", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpOXzFfRVM="},
+             {"text": "DAZN 2 ES", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpOXzJfRVM="},
+             {"text": "DAZN 3 ES", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpOXzNfRVM="},
+             {"text": "DAZN 4 ES", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpOXzRfRVM="},
+             {"text": "DAZN 1 DE", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjFERQ=="},
+             {"text": "DAZN 2 DE", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjJERQ=="},
+             {"text": "Sportdigital FUSSBALL DE", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1ESUdJVEFMTERF"},
+             {"text": "DAZN NFL Network", "url": "https://prueb.kerterplus.com/eventos/?r="},
+             {"text": "DAZN F1", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EQVpORjE="},
+             {"text": "ZONA DAZN IT", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1aT05BREFaTg=="},
+             {"text": "Eurosport 1 ES", "url": "https://prueb.kerterplus.com/eventos/?r="},
+             {"text": "Eurosport 2 ES", "url": "https://prueb.kerterplus.com/eventos/?r="}
             
         ]
     },
@@ -186,12 +179,12 @@
         "url": "https://nowomi.quest/canales/DAZNELEVEN.png?up23",
         "options": [
              
-             {"text": "DAZN Eleven 1 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT"},
-             {"text": "DAZN Eleven 2 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT2"},
-             {"text": "DAZN Eleven 3 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT3"},
-             {"text": "DAZN Eleven 4 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT4"},
-             {"text": "DAZN Eleven 5 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT5"},
-             {"text": "DAZN Eleven 6 PT", "url": "https://nowomi.quest/exo.php?Id=DZPT6"}
+             {"text": "DAZN Eleven 1 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjFQVA=="},
+             {"text": "DAZN Eleven 2 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjJQVA=="},
+             {"text": "DAZN Eleven 3 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjNQVA=="},
+             {"text": "DAZN Eleven 4 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjRQVA=="},
+             {"text": "DAZN Eleven 5 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjVQVA=="},
+             {"text": "DAZN Eleven 6 PT (Extensión - PC)", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1EWjZQVA=="}
          
             
         ]
@@ -200,10 +193,9 @@
     {"nombre": "la liga hypermotion",
         "url": "https://nowomi.quest/canales/hypermotion.png?up24",
         "options": [
-             {"text": "Hypermotion 1", "url": "https://nowomi.quest/exo.php?Id=DZLALIGAHYPER1"},
-             {"text": "Hypermotion 1 OP.2", "url": "https://nowomi.quest/exo.php?Id=HYPER1"},
-             {"text": "Hypermotion 2", "url": "https://nowomi.quest/exo.php?Id=HYPER2"},
-             {"text": "Hypermotion 3", "url": "https://nowomi.quest/exo.php?Id=HYPER3"}
+             {"text": "Hypermotion 1", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1IWVBFUjE="},
+             {"text": "Hypermotion 2", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1IWVBFUjI="},
+             {"text": "Hypermotion 3", "url": "https://prueb.kerterplus.com/eventos/?r=aHR0cHM6Ly9rZW5kcnlnMjYuZ2l0aHViLmlvL2Rhem5leHQuaHRtbD9pZD1IWVBFUjM="}
         ]
     },
     {"nombre": "tnt sports uk",
