@@ -18,14 +18,14 @@ body {
 }
 
 a {
-  color: #404b83;
+  color: #ffffff;
   outline: 0 !important;
   text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
   outline: 0 !important;
-  color: #404b83;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -36,8 +36,8 @@ a:hover, a:active, a:focus {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #191826;
-    background-color: #555
+    -webkit-box-shadow: inset 0 0 6px #33ed0e;
+    background-color: #171ed8;
 }
 
 .appHeader {
@@ -209,11 +209,11 @@ a:hover, a:active, a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #212529;
+  background: #e5b814;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #0d6efd;
+  border-top: 1px solid #f91629;
   border-radius: 12px;
   padding-left: 4px;
   padding-right: 4px;
@@ -262,7 +262,7 @@ a:hover, a:active, a:focus {
   margin: 1px auto 3px auto;
   font-size: 24px;
   line-height: 1em;
-  color: #27173E;
+  color: #cf20d8;
   display: block;
   margin-top: 1px;
   margin-bottom: 3px;
@@ -277,7 +277,7 @@ a:hover, a:active, a:focus {
   align-items: center;
   justify-content: center;
   border-radius: 200px;
-  background: #028f49;
+  background: #10ccb2;
 }
 
 .appBottomMenu .item .action-button.large {
