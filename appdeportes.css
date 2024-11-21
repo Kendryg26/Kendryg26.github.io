@@ -209,11 +209,12 @@ a:hover, a:active, a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #0b0f19;
+  background: #212529;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #191b27;
+  border-top: 1px solid #0d6efd;
+  border-radius: 12px;
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: env(safe-area-inset-bottom);
