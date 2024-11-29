@@ -1,10 +1,94 @@
 [
         {
+        "title": "Tottenham Hotspur vs Roma 28/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=euvukx9i69etn7uf5us4wsof6_image-header_pCa_1727250883000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwODEzMzA0MDM5ODg/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Real Sociedad vs Ajax 28/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cgpu3ojrvsj5xsy7uzgnd58ci_image-header_pRow_1727180594000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNDM5MTUxODY3MzQ/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Heidenheim vs Chelsea (2T) 28/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=zfmmtjnzrbaqbsrkp8qo44mt_image-header_pCa_1732548252000",
+        "status": "FINALIZADO",
+        "league": "UEFA Conference League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwODE0Njk5OTU2Njg/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Heidenheim vs Chelsea (1T) 28/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=zfmmtjnzrbaqbsrkp8qo44mt_image-header_pCa_1732548252000",
+        "status": "FINALIZADO",
+        "league": "UEFA Conference League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwODE0Njk5MzAxMzI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Lazio vs Ludogorets 28/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2xop07ma1yj04hlkjb7oyig5v_image-header_pRow_1727173718000",
+        "status": "FINALIZADO",
+        "league": "UEFA Europa League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg4MDA4MTIyNzIzNTk/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
         "title": "Liverpool vs Real Madrid 27/11/2024",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=c9xp9barov6jkvrk5uw19mj10_image-header_pCa_1725440510000",
         "status": "FINALIZADO",
         "league": "UEFA Champions League",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg3NzYyMTg5NzA4NTU/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "PSV vs Shakhtar Donetsk 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6tow08rnqzjib2xydhtyiga8f_image-header_pCa_1725441769000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwNTY1NjkzOTU4NjA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Monaco vs Benfica 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=a6z064f1b47wqc6kssuax321t_image-header_pRow_1725441739000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg4NjI0NTU4MjY5OTY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Dinamo Zagreb vs Borussia Dortmund 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2hzaxvga2rjdzacygrdbedwcp_image-header_pRow_1725440467000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwNTY0NDA2ODMxNTY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Bologna vs Lille 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5a0814k79i1vixs0dprv0q07e_image-header_pRow_1726137950000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg3NzQ1NDY2MjMyMDc/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Aston Villa vs Juventus 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5l6n9j8snb9jzp3en4g39s4d9_image-header_pRow_1726136330000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg3Nzg1MTI3OTYzOTE/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Sturm Graz vs Girona 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=vv5twenucbrkawfy4a36qdny_image-header_pRow_1726126195000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkwNTY2OTQxMTA4Njg/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+        {
+        "title": "Red Star Belgrade vs Stuttgart 27/11/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6afmi15hh6g8kfndm9fszawi5_image-header_pRow_1726124920000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg3Nzg1MTUzNTIyOTU/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
     }, 
          
          {
