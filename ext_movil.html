@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificacion de Extension e Inclusion de Reproductor</title>
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #player {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            background: #000;
+        }
+
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .alert-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+        .alert-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .alert-card .boxicon {
+            font-size: 48px;
+            color: #ff0;
+        }
+
+        .alert-card p {
+            margin: 10px 0;
+            color: #ebebeb;
+        }
+
+        a {
+            color: #0f0;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="player" class="hidden"></div>
+        <div id="alerta-extension" class="hidden alert">
+            <i class='bx bx-error-circle boxicon'></i>
+            <center>
+            <p>Instala el navegador Kiwi Browser en tu Celular, ingresando a <a target="_blank" href="https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=es_PE">Kiwi Browser - Fast & Quiet</a> o buscandolo en la <b>Play Store</b></p>
+            <p>Luego instala la extension <a target="_blank" href="https://chromewebstore.google.com/detail/reproductor-mpdm3u8m3uepg/opmeopcambhfimffbomjgemehjkbbmji">Reproductor M3U8 - HLS + DASH Player</a> en dicho navegador.</p>
+            <p>Una vez instalada la extension recarga la opcion y disfruta del canal.</p>
+            </center>
+        </div>
+    </div>
+<script>
+
+    function isAndroid() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        return /android/.test(userAgent) && !/android phone/.test(userAgent);
+    }
+
+    function showUnsupportedDeviceMessage() {
+        const unsupportedMessage = document.createElement('div');
+        unsupportedMessage.classList.add('alert-card');
+        unsupportedMessage.innerHTML = `
+            <i class='bx bx-error-circle boxicon'></i>
+            <h2>Dispositivo no compatible</h2>
+            <p>Esta opcion solo es compatible en SmartPhone con sistema Android. Por favor, usa un Celular y sigue las instrucciones para ver el contenido.</p>
+        `;
+        document.body.appendChild(unsupportedMessage);
+       
+    }
+
+    if (!isAndroid()) {
+        showUnsupportedDeviceMessage();
+    } else {
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function isExtensionInstalled(installedCallback, notInstalledCallback) {
+            const img = document.createElement('img');
+            img.onload = installedCallback;
+            img.onerror = notInstalledCallback;
+            img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+        }
+
+        const rParam = getQueryParam('r');
+        const playerDiv = document.getElementById("player");
+        const alertaDiv = document.getElementById("alerta-extension");
+
+        if (rParam) {
+            isExtensionInstalled(
+                () => {
+                    playerDiv.classList.remove("hidden");
+                    const decodedRParam = decodeURIComponent(rParam);
+                    const extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${decodedRParam}`;
+                    playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                },
+                () => {
+                    alertaDiv.classList.remove("hidden");
+                }
+            );
+        } else {
+            alert('No se ha proporcionado el par¨¢metro "r" en la URL.');
+        }
+    }
+  
+</script>
+
+
+</body>
+</html>
