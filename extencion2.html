@@ -73,18 +73,6 @@
 .alert-card .boxicon {
     font-size: 36px;  /* Tamaño de icono reducido */
     color: #ffeb3b;
-}
-
-.alert-card p {
-    margin: 10px 0;
-    color: #ccc;
-    font-size: 14px;  /* Tamaño de texto más pequeño */
-}
-
-.alert-card a {
-    color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -114,11 +102,59 @@
 
     .alert-card p {
         font-size: 13px;
-        
+    }
+
+    .alert-card a {
+        font-size: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="player" class="hidden"></div>
+        <div id="alerta-extension" class="hidden alert-card">
+            <i class='bx bx-error-circle boxicon'></i>
+            <h2>Instala la Extensión VideoPlayer</h2>
+            <p>Para ver este canal, necesitas instalar la extensión VideoPlayer.</p>
+            <p>Una vez instalada la extensión, recarga la página de Kerter+.</p>
+            <a href="https://chrome.google.com/webstore/detail/opmeopcambhfimffbomjgemehjkbbmji" target="_blank">Instalar ahora</a>
+        </div>
+        <div id="alerta-android" class="hidden alert-card">
+            <i class='bx bx-error-circle boxicon'></i>
+            <h3>Esta transmisión es Compatible solo con PC</h3>
+        </div>
+    </div>
+    <script>
+        // Función para verificar si es Windows y PC
+        function isWindowsPC() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return /windows/.test(userAgent) && !/windows phone/.test(userAgent);
+        }
 
         
 
+        // Función para mostrar el mensaje de dispositivo no compatible
+        function showUnsupportedDeviceMessage() {
+            const unsupportedMessage = document.createElement('div');
+            unsupportedMessage.classList.add('alert-card');
+            unsupportedMessage.innerHTML = `
+                <i class='bx bx-error-circle boxicon'></i>
+                <h2>Dispositivo no compatible</h2>
+                <p>Este sitio es compatible solo con PC con Windows o Android. Por favor, usa un dispositivo compatible para acceder.</p>
+            `;
+            document.body.appendChild(unsupportedMessage);
+        }
+
         
+        // Verificar el dispositivo y mostrar el mensaje o el reproductor adecuado
+        if (isWindowsPC()) {
+            // Función para obtener el valor del parámetro "r" en la URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
 
             // Función para verificar si la extensión está instalada
             function isExtensionInstalled(installedCallback, notInstalledCallback) {
