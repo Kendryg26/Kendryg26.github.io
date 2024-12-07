@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Extensión e Inclusión de Reproductor</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-color: #0c161c;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        #player {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Ajustes generales */
+.alert-card {
+    background-color: #242d33;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;  /* Se ajusta mejor a diferentes tamaños de pantalla */
+    max-width: 350px;  /* Máximo ancho en pantallas grandes */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.alert-card h3 {
+    font-size: 20px;  /* Tamaño de texto más pequeño */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.alert-card .boxicon {
+    font-size: 36px;  /* Tamaño de icono reducido */
+    color: #ffeb3b;
+}
+
+.alert-card p {
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 14px;  /* Tamaño de texto más pequeño */
+}
+
+.alert-card a {
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;  /* Tamaño de texto más pequeño */
+}
+
+.alert-card a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .alert-card {
+        width: 100%;  /* Ocupa todo el ancho en pantallas pequeñas */
+        max-width: none;
+        padding: 10px;
+    }
+
+    .alert-card h3 {
+        font-size: 18px;
+    }
+
+    .alert-card .boxicon {
+        font-size: 28px;
+    }
+
+    .alert-card p {
+        font-size: 13px;
+        
+
+        
+
+        
+
+            // Función para verificar si la extensión está instalada
+            function isExtensionInstalled(installedCallback, notInstalledCallback) {
+                const img = document.createElement('img');
+                img.onload = installedCallback;
+                img.onerror = notInstalledCallback;
+                img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+            }
+
+            // Obtener el parámetro "r" de la URL
+            const rParam = getQueryParam('r');
+            const playerDiv = document.getElementById("player");
+            const alertaDiv = document.getElementById("alerta-extension");
+
+            // Verificar si el parámetro "r" está presente en la URL
+            if (rParam) {
+                // Verificar si la extensión está instalada
+                isExtensionInstalled(
+                    () => {
+                        playerDiv.classList.remove("hidden");
+                        // Decodificar la URL del parámetro "r"
+                        const decodedRParam = decodeURIComponent(rParam);
+                        // Construir la URL del iframe con el parámetro "r" decodificado
+                        const extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${decodedRParam}`;
+                        // Insertar el iframe en la página
+                        playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                    },
+                    () => {
+                        alertaDiv.classList.remove("hidden");
+                    }
+                );
+            } else {
+                alert('No se ha proporcionado el parámetro "r" en la URL.');
+            }
+        } else if (isAndroid()) {
+            document.getElementById('alerta-android').classList.remove('hidden');
+        } else {
+            showUnsupportedDeviceMessage();
+        }
+    </script>
+</body>
+</html>
