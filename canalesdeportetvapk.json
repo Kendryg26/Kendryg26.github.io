@@ -1,562 +1,1191 @@
-[
-  {
-    "nombre": "espn",
-    "url": "https://nowomi.quest/canales/ESPN.png",
-    "options": [
-      {
-        "text": "ESPN CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO"
-      },
-      {
-        "text": "ESPN AR",
-        "url": "https://nowomi.quest/exo.php?Id=ESPNAR"
-      },
-      {
-        "text": "ESPN PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPNPE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 2",
-    "url": "https://nowomi.quest/canales/ESPN_2.png",
-    "options": [
-      {
-        "text": "ESPN 2 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO2"
-      },
-      {
-        "text": "ESPN 2 AR",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN2AR"
-      },
-      {
-        "text": "ESPN 2 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN2PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 3",
-    "url": "https://nowomi.quest/canales/ESPN_3.png",
-    "options": [
-      {
-        "text": "ESPN 3 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO3"
-      },
-      {
-        "text": "ESPN 3 AR",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN3AR"
-      },
-      {
-        "text": "ESPN 3 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN3PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 4",
-    "url": "https://nowomi.quest/canales/ESPN4.png",
-    "options": [
-      {
-        "text": "ESPN 4 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO4"
-      },
-      {
-        "text": "ESPN 4 AR",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN4AR"
-      },
-      {
-        "text": "ESPN 4 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN4PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 5",
-    "url": "https://nowomi.quest/canales/ESPN5.png",
-    "options": [
-      {
-        "text": "ESPN 5 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO5"
-      },
-      {
-        "text": "ESPN 5 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN5PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 6",
-    "url": "https://nowomi.quest/canales/espn6.png",
-    "options": [
-      {
-        "text": "ESPN 6 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN_BO6"
-      },
-      {
-        "text": "ESPN 6 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN6PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn 7",
-    "url": "https://nowomi.quest/canales/espn7.png",
-    "options": [
-      {
-        "text": "ESPN 7 CO",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN7BO"
-      },
-      {
-        "text": "ESPN 7 PE (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=ESPN7PE"
-      }
-    ]
-  },
-  {
-    "nombre": "espn deportes",
-    "url": "https://nowomi.quest/canales/Espn_deportes.png?x",
-    "options": [
-      {
-        "text": "ESPN Deportes",
-        "url": "https://streamtp1.com/global1.php?stream=espn_deportes"
-      }
-    ]
-  },
-  {
-    "nombre": "espn premium",
-    "url": "https://nowomi.quest/canales/ESPN_Premium.png",
-    "options": [
-      {
-        "text": "ESPN Premium",
-        "url": "https://nowomi.quest/exo.php?Id=ESPNPREMIUM"
-      },
-      {
-        "text": "ESPN Premium OP.2",
-        "url": "https://nowomi.quest/exo.php?Id=ESPNPREMIUM2"
-      },
-      {
-        "text": "ESPN Premium OP.3",
-        "url": "https://nowomi.quest/exo.php?Id=ESPNPREMIUM3"
-      },
-      {
-        "text": "ESPN Premium CL (VPN/Chile)",
-        "url": "https://st.nowomi.quest/v3/embed/espnpcl.php"
-      }
-    ]
-  },
-  {
-    "nombre": "tnt sports ar",
-    "url": "https://nowomi.quest/canales/tnts.png",
-    "options": [
-      {
-        "text": "TNT Sports AR",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTSARG"
-      },
-      {
-        "text": "TNT Sports AR OP.2",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTSAR"
-      }
-    ]
-  },
-  {
-    "nombre": "fox sports ar",
-    "url": "https://nowomi.quest/canales/Fox-Sports.png",
-    "options": [
-      {
-        "text": "FOX Sports AR",
-        "url": "https://nowomi.quest/exo.php?Id=FOXAR"
-      },
-      {
-        "text": "FOX Sports MX",
-        "url": "https://nowomi.quest/exo.php?Id=FOXMX"
-      }
-    ]
-  },
-  {
-    "nombre": "fox sports 2 ar",
-    "url": "https://nowomi.quest/canales/Fox-Sports-2.png",
-    "options": [
-      {
-        "text": "FOX Sports 2 AR",
-        "url": "https://nowomi.quest/exo.php?Id=FOXAR2"
-      },
-      {
-        "text": "FOX Sports 2 MX",
-        "url": "https://nowomi.quest/exo.php?Id=FOXMX2"
-      }
-    ]
-  },
-  {
-    "nombre": "fox sports 3 ar",
-    "url": "https://nowomi.quest/canales/Fox-Sports-3.png",
-    "options": [
-      {
-        "text": "FOX Sports 3 AR",
-        "url": "https://nowomi.quest/exo.php?Id=FOXAR3"
-      },
-      {
-        "text": "FOX Sports 3 MX",
-        "url": "https://nowomi.quest/exo.php?Id=FOXMX3"
-      }
-    ]
-  },
-  {
-    "nombre": "fox sports premium",
-    "url": "https://nowomi.quest/canales/fspmx.png",
-    "options": [
-      {
-        "text": "Fox Sports Premium MX",
-        "url": "https://nowomi.quest/exo.php?Id=FSP"
-      }
-    ]
-  },
-  {
-    "nombre": "liga 1 perú",
-    "url": "https://nowomi.quest/canales/l1max.png?qs",
-    "options": [
-      {
-        "text": "Liga 1 MAX",
-        "url": "https://streamtp1.com/global1.php?stream=l1max"
-      },
-      {
-        "text": "Liga 1 MAX (VPN/Perú)",
-        "url": "https://nowomi.quest/exo.php?Id=LIGA1MAX"
-      }
-    ]
-  },
-  {
-    "nombre": "tyc sports ar",
-    "url": "https://nowomi.quest/canales/tycsportsw.png",
-    "options": [
-      {
-        "text": "TyC Sports",
-        "url": "https://nowomi.quest/exo.php?Id=TYCSPORTS"
-      },
-      {
-        "text": "TyC Sports 2",
-        "url": "https://nowomi.quest/exo.php?Id=TYCSPORTS2"
-      }
-    ]
-  },
-  {
-    "nombre": "sky sports",
-    "url": "https://nowomi.quest/canales/skysports.png",
-    "options": [
-      {
-        "text": "Sky Sports LaLiga (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYLALIGA"
-      },
-      {
-        "text": "Sky Sports Bundesliga",
-        "url": "https://nowomi.quest/exo.php?Id=SKYBUNDESLIGA"
-      },
-      {
-        "text": "Sky Sports Event 1 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT1"
-      },
-      {
-        "text": "Sky Sports Event 2 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT2"
-      },
-      {
-        "text": "Sky Sports Event 3 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT3"
-      },
-      {
-        "text": "Sky Sports Event 4 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT4"
-      },
-      {
-        "text": "Sky Sports Event 5 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT5"
-      },
-      {
-        "text": "Sky Sports Event 6 (Solo Centroamérica)",
-        "url": "https://nowomi.quest/exo.php?Id=SKYEVENT6"
-      }
-    ]
-  },
-  {
-    "nombre": "tudn",
-    "url": "https://nowomi.quest/canales/tudn.png?xs",
-    "options": [
-      {
-        "text": "TUDN México",
-        "url": "https://antag.xyz/vix/vix.php?id=TUDNMX"
-      },
-      {
-        "text": "TUDN México (VPN/México)",
-        "url": "https://nowomi.quest/exo.php?Id=TUDNMX"
-      },
-      {
-        "text": "TUDN USA",
-        "url": "https://antag.xyz/vix/vix.php?id=TUDNUS"
-      }
-    ]
-  },
-  {
-    "nombre": "premiere br",
-    "url": "https://nowomi.quest/canales/premiere.png",
-    "options": [
-      {
-        "text": "Premiere BR 1",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE1"
-      },
-      {
-        "text": "Premiere BR 2",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE2"
-      },
-      {
-        "text": "Premiere BR 3",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE3"
-      },
-      {
-        "text": "Premiere BR 4",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE4"
-      },
-      {
-        "text": "Premiere BR 5",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE5"
-      },
-      {
-        "text": "Premiere BR 6",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE6"
-      },
-      {
-        "text": "Premiere BR 7",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE7"
-      },
-      {
-        "text": "Premiere BR 8",
-        "url": "https://nowomi.quest/exo.php?Id=PREMIERE8"
-      }
-    ]
-  },
-  {
-    "nombre": "dazn laliga",
-    "url": "https://nowomi.quest/canales/DAZN_LaLiga.png?up24",
-    "options": [
-      {
-        "text": "DAZN LaLiga",
-        "url": "https://nowomi.quest/exo.php?Id=DZLALIGA"
-      },
-      {
-        "text": "DAZN LaLiga OP.2",
-        "url": "https://nowomi.quest/exo.php?Id=DZLALIGAOP2"
-      }
-    ]
-  },
-  {
-    "nombre": "laliga tv bar",
-    "url": "https://i.postimg.cc/X7T8fDk6/laligatvbar.png",
-    "options": [
-      {
-        "text": "LaLiga TVBAR (VPN/España)",
-        "url": "https://nowomi.quest/exo.php?Id=LALIGATVBAR"
-      }
-    ]
-  },
-  {
-    "nombre": "dazn",
-    "url": "https://nowomi.quest/canales/DAZN.png?up23",
-    "options": [
-      {
-        "text": "DAZN 1 ES",
-        "url": "https://nowomi.quest/exo.php?Id=DZ1ES"
-      },
-      {
-        "text": "DAZN 2 ES",
-        "url": "https://nowomi.quest/exo.php?Id=DZ2ES"
-      },
-      {
-        "text": "DAZN 3 ES",
-        "url": "https://nowomi.quest/exo.php?Id=DZ3ES"
-      },
-      {
-        "text": "DAZN 4 ES",
-        "url": "https://nowomi.quest/exo.php?Id=DZ4ES"
-      },
-      {
-        "text": "DAZN 1 DE",
-        "url": "https://nowomi.quest/exo.php?Id=DZ1DE"
-      },
-      {
-        "text": "DAZN 2 DE",
-        "url": "https://nowomi.quest/exo.php?Id=DZ2DE"
-      },
-      {
-        "text": "Sportdigital FUSSBALL DE",
-        "url": "https://nowomi.quest/exo.php?Id=DIGITALDE"
-      },
-      {
-        "text": "DAZN NFL Network",
-        "url": "https://nowomi.quest/exo.php?Id=DZNFL"
-      },
-      {
-        "text": "ZONA DAZN IT",
-        "url": "https://nowomi.quest/exo.php?Id=DZZONA"
-      },
-      {
-        "text": "Eurosport 1 ES",
-        "url": "https://nowomi.quest/exo.php?Id=EURO1ES"
-      },
-      {
-        "text": "Eurosport 2 ES",
-        "url": "https://nowomi.quest/exo.php?Id=EURO2ES"
-      }
-    ]
-  },
-  {
-    "nombre": "dazn f1",
-    "url": "https://nowomi.quest/canales/DAZN_F1.png?up23",
-    "options": [
-      {
-        "text": "DAZN F1 ES",
-        "url": "https://nowomi.quest/exo.php?Id=DZF1"
-      }
-    ]
-  },
-  {
-    "nombre": "dazn eleven pt",
-    "url": "https://nowomi.quest/canales/DAZNELEVEN.png?up23",
-    "options": [
-      {
-        "text": "DAZN Eleven 1 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT"
-      },
-      {
-        "text": "DAZN Eleven 2 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT2"
-      },
-      {
-        "text": "DAZN Eleven 3 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT3"
-      },
-      {
-        "text": "DAZN Eleven 4 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT4"
-      },
-      {
-        "text": "DAZN Eleven 5 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT5"
-      },
-      {
-        "text": "DAZN Eleven 6 PT",
-        "url": "https://nowomi.quest/exo.php?Id=DZPT6"
-      }
-    ]
-  },
-  {
-    "nombre": "la liga hypermotion",
-    "url": "https://nowomi.quest/canales/hypermotion.png?up24",
-    "options": [
-      {
-        "text": "Hypermotion 1",
-        "url": "https://nowomi.quest/exo.php?Id=DZLALIGAHYPER1"
-      },
-      {
-        "text": "Hypermotion 1 OP.2",
-        "url": "https://nowomi.quest/exo.php?Id=HYPER1"
-      },
-      {
-        "text": "Hypermotion 2",
-        "url": "https://nowomi.quest/exo.php?Id=HYPER2"
-      },
-      {
-        "text": "Hypermotion 3",
-        "url": "https://nowomi.quest/exo.php?Id=HYPER3"
-      }
-    ]
-  },
-  {
-    "nombre": "tnt sports uk",
-    "url": "https://nowomi.quest/canales/TNT_SportsUK.png?up25",
-    "options": [
-      {
-        "text": "TNT Sports 1 UK",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS1UK"
-      },
-      {
-        "text": "TNT Sports 2 UK",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS2UK"
-      },
-      {
-        "text": "TNT Sports 3 UK",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS3UK"
-      },
-      {
-        "text": "TNT Sports 4 UK",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS4UK"
-      },
-      {
-        "text": "TNT Sports 5 UK",
-        "url": "https://nowomi.quest/exo.php?Id=TNTSPORTS5UK"
-      }
-    ]
-  },
-  {
-    "nombre": "DSports",
-    "url": "https://nowomi.quest/canales/DSports.png?up29",
-    "options": [
-      {
-        "text": "DSports",
-        "url": "https://streamtp1.com/global1.php?stream=dsports"
-      }
-    ]
-  },
-  {
-    "nombre": "DSports 2",
-    "url": "https://nowomi.quest/canales/DSports_2.png?up29",
-    "options": [
-      {
-        "text": "DSports 2",
-        "url": "https://streamtp1.com/global1.php?stream=dsports_2"
-      }
-    ]
-  },
-  {
-    "nombre": "DSports+",
-    "url": "https://nowomi.quest/canales/DSports_Plus.png?up29",
-    "options": [
-      {
-        "text": "DSports+",
-        "url": "https://streamtp1.com/global1.php?stream=dsports_plus"
-      }
-    ]
-  },
-  {
-    "nombre": "ecdf el canal del futbol",
-    "url": "https://nowomi.quest/canales/ecdf.png?up29",
-    "options": [
-      {
-        "text": "ECDF (VPN/Ecuador)",
-        "url": "https://nowomi.quest/exo.php?Id=ECDF"
-      }
-    ]
-  },
-  {
-    "nombre": "win futbol+",
-    "url": "https://nowomi.quest/canales/winplus.png?up29",
-    "options": [
-      {
-        "text": "Win Fútbol+",
-        "url": "https://streamtp1.com/global1.php?stream=winplus"
-      },
-      {
-        "text": "Win Fútbol+ OP.2",
-        "url": "https://streamtp1.com/global1.php?stream=winplus2"
-      }
-    ]
-  },
-  {
-    "nombre": "bym sport venezuela",
-    "url": "https://nowomi.quest/canales/bym.png?up29",
-    "options": [
-      {
-        "text": "ByM Sport (VPN/Venezuela)",
-        "url": "https://st.nowomi.quest/v3/embed/bym.php"
-      }
-    ]
-  }
-]
+<script>
+    const canalesData = [
+        {
+            "nombre": "LATINAPE",
+            "tipo": "video1",
+            "url": "https://live-evg1.tv360.bitel.com.pe/bitel/latina/playlist.m3u8",
+            "params": "{}"
+        },
+        
+        {
+            "nombre": "x",
+            "tipo": "video2",
+            "url": "https://alba-ec-tvc-tvc.stream.mediatiquestream.com/index.m3u8",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "referer": "https://www.tvc.com.ec/"
+            })
+        },
+        {
+            "nombre": "ESPNBR",
+            "tipo": "video1",
+            "url": "https://anonmedia.foo/espn/tracks-v1a1/mono.m3u8",
+            "params": "{}"
+        },
+        {
+            "nombre": "ESPN2BR",
+            "tipo": "video1",
+            "url": "https://anonmedia.foo/espn2/tracks-v1a1/mono.m3u8",
+            "params": "{}"
+        },
+        {
+            "nombre": "ESPN3BR",
+            "tipo": "video1",
+            "url": "https://anonmedia.foo/espn3/tracks-v1a1/mono.m3u8",
+            "params": "{}"
+        },
+        {
+            "nombre": "ESPN4BR",
+            "tipo": "video1",
+            "url": "https://anonmedia.foo/espn4/tracks-v1a1/mono.m3u8",
+            "params": "{}"
+        },
+        {
+            "nombre": "ESPN5BR",
+            "tipo": "video1",
+            "url": "https://anonmedia.foo/espn5/tracks-v1a1/mono.m3u8",
+            "params": "{}"
+        },
+        {
+            "nombre": "MLALIGA",
+            "tipo": "video2",
+            "url": "https://xyzdddd.mizhls.ru/lb/premium84/index.m3u8",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://ilovetoplay.xyz/",
+                "Origin": "https://ilovetoplay.xyz"
+            })
+        },
+        
+        {
+            "nombre": "LATINAPEO2",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3LAT1NA/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=57ad785322e04cc3ba1c0ee5028cb9ff&key=2e465a9a43cc7d3038cd423d24d5d25e"
+            })
+        },
+        
+        {
+            "nombre": "ESPNPE",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNUN03Q/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=f8d1df67eb844cfa0b00ca191b2c2bd8&key=c1166dd72f449f125b94816f67dee99f"
+            })
+        },
+        
+        {
+            "nombre": "ESPNAR",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/ESPN_HD/SA_DASH_cipix/ESPN_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=56f12bf8ad1b47f99bb92deae2165d54&key=5c4d0306c4c45054169531dcc75cb8b7"
+            })
+        },
+        
+      {
+            "nombre": "ESPN2PE",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNDOS3Q/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=bb61b5891e3c4901b64e2c2ecb625856&key=8634fa31f047d8a532e49091110b2fc5"
+            })
+        },
+        
+        {
+            "nombre": "ESPN2AR",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/ESPN_2_HD/SA_DASH_cipix/ESPN_2_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=836865c61eb14b69b9e5f44f1c3c6946&key=44e907ce0aee95c62ecb141314ed4ad5"
+            })
+        },
+        
+      {
+            "nombre": "ESPN3PE",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNTHREE/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=47ee13c211e24dadb58990b6d09c1352&key=ab0ec44e6b08d9fd205e92a668c76237"
+            })
+        },
+        
+        {
+            "nombre": "ESPN3AR",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/ESPN_3_HD/SA_DASH_cipix/ESPN_3_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=c47c7b457ba046738f112567fedec661&key=fb8d1ae0ee237d441449b27bdbebeaa9"
+            })
+        },
+        
+      {
+            "nombre": "ESPN4PE",
+            "tipo": "video2",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/QESPNCU4TRO/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/"
+                
+            })
+        },
+        
+        {
+            "nombre": "ESPN4AR",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/ESPNp_HD/SA_DASH_cipix/ESPNp_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=a8082fc466f246da80212d793fd95eaf&key=383b9f12f6bb5aa4c5086a2b76a2e8c8"
+            })
+        },
+        
+      {
+            "nombre": "ESPN5PE",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNF1VE/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=73a332a722a32d68db9f63f21cb073c1&key=1cd1404cfe6a0375353f10127eb1e113"
+            })
+        },
+        
+      {
+            "nombre": "ESPN6PE",
+            "tipo": "video3",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNS1X/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/",
+                "Origin": "https://qlobbi.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=3e9ad8760bd445f1919d82eaf647c1fe&key=f0c18ef983245cc1ed2ec5241dd68d8a"
+            })
+        },
+        
+      {
+            "nombre": "ESPN7PE",
+            "tipo": "video2",
+            "url": "https://1279247418.rsc.cdn77.org/bpk-tv/Q3ESPNS3VEN/dash/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://qlobbi.com/"
+                
+            })
+        },
+        
+        {
+            "nombre": "FOXAR",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/FOX_SPORTS_HD/SA_DASH_cipix/FOX_SPORTS_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=90fd0225253a42c89e36d4bc5a007498&key=caebfd1e078f1315f9e66ff98544c125"
+            })
+        },
+        
+        {
+            "nombre": "FOXAR2",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/Fox_Sports_2_HD/SA_DASH_cipix/Fox_Sports_2_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=0865e3d0219743a6903087a61e68912e&key=8c319b41729d0637840b987e107de46e"
+            })
+        },
+        
+        {
+            "nombre": "FOXAR3",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/Fox_Sports_3_HD/SA_DASH_cipix/Fox_Sports_3_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=878df41085e2495ab17dff538a4610c5&key=1cf280b4fa53ba1c9aa195222778a21c"
+            })
+        },
+        
+        {
+            "nombre": "ESPNPREMIUM",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/Fox_Sports_Premium_HD/SA_DASH_cipix/Fox_Sports_Premium_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=4d649bb55c4c46028b85bbb41550cb59&key=ed6da9b1ff8da94a4fdc1a1461048622"
+            })
+        },
+        {
+
+            "nombre": "ESPNPREMIUM2",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/FoxSportsPremium/live_dash_cld/FoxSportsPremium.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                "Referer": "https://webclient.antinaplayplus.com.ar/",
+                "Origin": "https://webclient.antinaplayplus.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=f8943d114e25151c8ae4f612351d5a5f&key=7f34c9a70c836020cbc3273c427ff277"
+            })
+        },
+        {
+
+            "nombre": "ESPNPREMIUM3",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/bpk-tv/ESPNPremium/default/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://webclient.antinaplayplus.com.ar/",
+                "Origin": "https://webclient.antinaplayplus.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=96326622d4b899c07b056294655c33b4&key=16639f729934844ff4c507560f2b5d03"
+            })
+        },
+        
+        {
+            "nombre": "TYCSPORTS",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/TyC_HD/SA_DASH_cipix/TyC_HD.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=63e6b0db66434556a23c855bd5b6e7d2&key=4c4f0286647963aec05c15df1ba51224"
+            })
+        },
+        
+        {
+            "nombre": "TYCSPORTS2",
+            "tipo": "video3",
+            "url": "https://anbalancer.express.com.ar/live/c1eds/TyC_Sports_2/SA_DASH_cipix/TyC_Sports_2.mpd?dvr_window_length=30&token=3E384BA6EF675BAE0372CA4D999A540",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                "Referer": "https://nowtv.express.com.ar/",
+                "Origin": "https://nowtv.express.com.ar",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=e2606caffba8441b8768b08ab01d3ea1&key=2079b1e9adb06fa132444eb1cdc6ebd4"
+            })
+        },
+        
+         {
+            "nombre": "PREMIERE1",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/4zkafrcxji/out/v1/810ebca1aff0443da717da4acdeda158/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=d98239180d8380b3a1bb28d875b1ddf2&key=cf836ced579257d1c76ae8809818e6c4"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE2",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/pgub1bh7o9/out/v1/7a59226197644bfaa2b00f488bd95288/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=fd2e8019f37211ca8b78a8b656f1b83a&key=273189c214e85b43ac36298d1c422330"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE3",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/iad-nitro/live/clients/dash/enc/8ci7l7dt0d/out/v1/98fe69f2cdc041388004305e63353268/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=9547f9aead1237c8a3b1bf0a91ed9995&key=534fab4541fef31921dd970c65d51848"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE4",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/zytzybatcd/out/v1/4e59aa00f6784bb98170741d40b33e3e/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=ce5d18ffd68650affce1985201983ab7&key=397c64e42507d95e5460830918c22a98"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE5",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/iad-nitro/live/clients/dash/enc/j4y12ucrx0/out/v1/9135597c4400465e9e752dc32de587fd/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=d5a3ac0b892bfccdf352b6def9cb2764&key=ac0936acc0036fad2273efaa42b1fafd"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE6",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/cydwktwhqj/out/v1/c6e2919fe4e04a73935691f8284a4afe/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=05cedc366ce4ec735ee4b33fcefbf01f&key=475d6dd40eaba6896e02b26a6cf34d95"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE7",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/wczqphrl5k/out/v1/7a20b4be236a4a9484fdf5cdfcbe79d5/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=7ce96e01eee54fb77e5cc4e7b753d6b0&key=184f94303d3357b9a7381ccdeee9b611"
+            })
+        },
+        
+        {
+            "nombre": "PREMIERE8",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/dabubydklo/out/v1/c272f10312ac4e81bcf2183509703dd1/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=7ba384f9d983c731ab1e3702c16e2faf&key=f28adca4375e8a041fd22aef26440009"
+            })
+        },
+        
+        {
+            "nombre": "FOXMX",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/oboxe53wyo/out/v1/f7892a9d706d419a846d738fa22ea33e/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=2fbdaa3bea0d0323ae011b318d1db716&key=8726ef7eaf5b9dce15fb6aa9f80bd53f"
+            })
+        },
+        
+        {
+            "nombre": "FOXMX2",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/tepjqej1ys/out/v1/c9c9159baee749a19612b1598495859a/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8836fb04d62dc64c9f8a39ef8640d5eb&key=d4f05ce56c5231b7cdf53455bea58621"
+            })
+        },
+        
+        {
+            "nombre": "FOXMX3",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/wybgz0orr8/out/v1/2f6d1612abd44f5883917f8a585b955f/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=11c8c1c2ef0385cf1e64d44bb9c3a395&key=5769730ffbdc4b2fd8945929d9ace063"
+            })
+        },
+        
+        {
+            "nombre": "FSP",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdx74zqzhu/out/v1/7d7a8c6981a842b98a683e9fbfe51d17/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=9f327d24c66fbd84e15ab5c9ead7c7a4&key=83837185529c0c4048f81386c2d36426"
+            })
+        },
+        {
+
+            "nombre": "SKYLALIGA",
+            "tipo": "video3",
+            "url": "https://live2-ott.izzigo.tv/out/u/dash/SKYSPORTS-16-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=c88dc6c668cac3b468d4a4c7e176ff3d&key=1aeb739de2c14ed0ad658ca8043208d8"
+            })
+        },
+        {
+
+            "nombre": "SKYBUNDESLIGA",
+            "tipo": "video3",
+            "url": "https://live-atv-cdn.izzigo.tv/5/out/u/dash/SKY-SPORTS-24-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=d8d5823d92a9ef9306a4cc4bd634b4b4&key=df9fbdaa0ef9e905b75f4692f213af19"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT1",
+            "tipo": "video3",
+            "url": "https://live1-ott.izzigo.tv/out/u/dash/SKY-LIVE-EVENT-1-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=a3636a51227fa338cdddf5892d8a621c&key=1444ee3c4d08bf39454b914f797968eb"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT2",
+            "tipo": "video3",
+            "url": "https://live-atv-cdn.izzigo.tv/5/out/u/dash/SKY-LIVE-EVENT-2-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=7239a58fb7388b222a834d549bf18d8f&key=8b04a883e88dbdebc43673d998ea1cb2"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT3",
+            "tipo": "video3",
+            "url": "https://live1-ott.izzigo.tv/out/u/dash/SKY-LIVE-EVENT-3-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=561a21ad50f806b77d328dedbe59f93e&key=edf3e70cc9de81a73e2a00fe9c0611a8"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT4",
+            "tipo": "video3",
+            "url": "https://live1-ott.izzigo.tv/out/u/dash/SKY-LIVE-EVENT-4-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=a931b2e953695ffb0cfd38573e97ba33&key=4ddd99cc4fb168d7f0e20be8a3287100"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT5",
+            "tipo": "video3",
+            "url": "https://live2-ott.izzigo.tv/out/u/dash/SKY-LIVE-EVENT-5-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=6c89e84c52eae0428b7d2c8e887a48ec&key=758a1484f920a0f1aa73e95d5f2be225"
+            })
+        },
+        {
+
+            "nombre": "SKYEVENT6",
+            "tipo": "video3",
+            "url": "https://live-atv-cdn.izzigo.tv/1/out/u/dash/SKY-LIVE-EVENT-6-HD/manifest.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=ec7229067cde06e0bedaa0d71ec0c974&key=da03b65d333e74aaae446211a83c7595"
+            })
+        },
+        {
+
+            "nombre": "TUDNMX",
+            "tipo": "video3",
+            "url": "https://live1-ott.izzigo.tv/out/u/dash/TUDN-HD/default.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=2722647f77b44824c432a3c4555830a2&key=1734befb82f4b438bd84195f6c212e7b"
+            })
+        },
+        {
+
+            "nombre": "DZLALIGA",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-043/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+            "nombre": "DZLALIGAOP2",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=43d1c3b25207ff38b22ccfe17d302367&key=7b1f85f6e81059473b114c16a25c829a"
+            })
+        },
+        {
+
+            "nombre": "DZLALIGAHYPER1",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-040/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZNFL",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-023/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DIGITALDE",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-022/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZ1ES",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-037/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZ2ES",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-038/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+            "nombre": "DZ3ES",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/zy1ee5sshp/out/v1/bdcffa69fa3b4f3bb3569c9c73ee1c01/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=bad8efff688c0dbb3711e4a7114c22a3&key=6ba800673b20776c0c850130d45e1920"
+            })
+        },
+        {
+            "nombre": "DZ4ES",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/up7qpwch9b/out/v1/a6d5d1a1287b4893b859c2d6ccf2c65d/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=d27104d427e4f87e75b19395a9f8796b&key=723593c70e2d4c4862754398e80168f8"
+            })
+        },
+        {
+
+            "nombre": "DZPT",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-054/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZPT2",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-055/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZPT3",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-056/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZPT4",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-057/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZPT5",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-058/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZPT6",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-059/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZ1DE",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-017/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZ2DE",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-018/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZZONA",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-024/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "EURO1ES",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-031/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "EURO2ES",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-032/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+
+            "nombre": "DZF1",
+            "tipo": "video3",
+            "url": "https://dcf-ac-live.cdn.indazn.com/dash/dazn-linear-016/stream.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozillasky",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8ab47741930c476780515f9a00decb0a&key=7ab4b9ae5a48aa526e511a913b832769"
+            })
+        },
+        {
+            "nombre": "HYPER1",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/tu06vubgf9/out/v1/7668f47d28e345979c072e361f3d3ce3/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=6d08b265a6639e32da7c880d5491e3d2&key=0c92556ca14b95f367993710e7cfbc94"
+            })
+        },
+        {
+            "nombre": "HYPER2",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/woujvkfnmn/out/v1/141b52f08a1e4e97850219729ee48dc8/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=0b1fdeaee3ffc51e9a66cf1938d57aaf&key=28e3cb88ab7b476b81ab8aa0624c4d71"
+            })
+        },
+        {
+            "nombre": "HYPER3",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/ry1hll2vi2/out/v1/7597903045b6429d8c9ef041b2ad9d98/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=d8235cccf08d0ff149a20dfcd11ff68b&key=e8ea3a1ae6892eb76a73dc1b14d216d6"
+            })
+        },
+        {
+
+            "nombre": "TNTSPORTSAR",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/bpk-tv/TNTSports/default/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+                "Origin": "https://webclient.antinaplayplus.com.ar",
+                 "Referer": "https://webclient.antinaplayplus.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=08fe89bb41ac5f4825bbaa358b3458c7&key=c1ea85d94fb80f64d53747529e488a75"
+            })
+        },
+        {
+
+            "nombre": "TNTSPORTSARG",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/TNTSports/live_dash_cld/TNTSports.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+                "Origin": "https://webclient.antinaplayplus.com.ar",
+                 "Referer": "https://webclient.antinaplayplus.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=c26371079e89206d63e1454893e881b6&key=adac3c3b3774e411d6e49724f7ea0ee3"
+            })
+        },
+        {
+            "nombre": "LIGA1MAX",
+            "tipo": "video3",
+            "url": "https://pelivechannelsdash-3.clarovideo.com/bpk-tv/LIGA1MAX/dash_fk/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "Origin": "https://www.clarovideo.com",
+                 "Referer": "https://www.clarovideo.com/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=bb6c1e99086464733d3bf1bea8482059&key=9518a94bd81f8cb8210baa319def2699"
+            })
+        },
+        
+        {
+            "nombre": "TNTSPORTS1UK",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=ae26845bd33038a9c0774a0981007294&key=63ac662dde310cfb4cc6f9b43b34196d"
+            })
+        },
+        {
+            "nombre": "TNTSPORTS2UK",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=6d1708b185c6c4d7b37600520c7cc93c&key=1aace05f58d8edef9697fd52cb09f441"
+            })
+        },
+        {
+            "nombre": "TNTSPORTS3UK",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=4e993aa8c1f295f8b94e8e9e6f6d0bfe&key=86a1ed6e96caab8eb1009fe530d2cf4f"
+            })
+        },
+        {
+            "nombre": "TNTSPORTS4UK",
+            "tipo": "video3",
+            "url": "https://ottb.live.cf.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=e31a5a81caff5d07ea2411a571fc2e59&key=96c5ef69479732ae734f962748c19729"
+            })
+        },
+        {
+            "nombre": "TNTSPORTS5UK",
+            "tipo": "video3",
+            "url": "https://live.ll.ww.aiv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/gesdwrdncn/out/v1/79e752f1eccd4e18b6a8904a0bc01f2d/cenc.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+                "referer": "https://nowtv.express.com.ar/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=60c0d9b41475e01db4ffb91ed557fbcc&key=36ee40e58948ca15e3caba8d47b8f34b"
+            })
+        },
+        {
+
+            "nombre": "ECDF",
+            "tipo": "video3",
+            "url": "https://eclocallivechannelsdash.clarovideo.com/bpk-tv/ECDFHD/dash_fk/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=29e9c8c5e5c8d2913554f1ab96477d24&key=d92ff077d47c153147354c5a2dc8805e"
+            })
+        },
+        {
+
+            "nombre": "ESPNBO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(8757cb0a-3584-40cd-901e-8937c7deba83)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=cb004fb100bd92f23793562891e3236b&key=b3e4e74ae2080b137e68bbd0ef8a7e05"
+            })
+        },
+        {
+
+            "nombre": "ESPN2BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(62567d5c-295c-4ffd-ac7e-c9749e874884)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=a81ee4a694fecd6aa8a682e5024b313c&key=6d15568e1dab59e7202ae12e71505185"
+            })
+        },
+        {
+
+            "nombre": "ESPN3BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(a38d1401-ee01-4802-812a-7cb460c9832c)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8a60d7889ff126ee1895335e92254f8e&key=de1b0ce19fa804a1c473eb8ef2d5cf6d"
+            })
+        },
+        {
+
+            "nombre": "ESPN4BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(9500bf02-0001-4199-a150-58dc5d692cca)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=54a2c11085c315ed6ff85c340a86095d&key=5f0d10cf4a5c7e22e286b7e8cb4e79f4"
+            })
+        },
+        {
+
+            "nombre": "ESPN5BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(80c74968-a2ef-4005-8661-045fe97408a8)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=4e126297fc7af35c736bdffe98eecaaa&key=fdb0091cf67d9c596dbfb07cf6f4c8f5"
+            })
+        },
+        {
+
+            "nombre": "ESPN6BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(b30aa51e-97fa-4354-bb38-871fb360e984)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=f5836382452cdca1e1c8bf8b9a713534&key=7d261930c3309ed2b06d2abb34a64410"
+            })
+        },
+        {
+
+            "nombre": "ESPN7BO",
+            "tipo": "video3",
+            "url": "https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(5ab5db84-2235-4c10-9066-be9bc2ee087a)/master.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://www.izzigo.tv/",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=98ea1e32227adcd3618baac2bbf36814&key=72a03a09d33e412f14a9bfa4ef24b542"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO",
+            "tipo": "video3",
+            "url": "https://smt-edge03.sensa.com.ar/live/eds/ESPN-Bolivia/live_dash_cld/ESPN-Bolivia.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=e1ef5c825da48fbeeaa30e8f60ce44bd&key=982d1273c4a1cf6ddb8b2306a025d2f7"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO2",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/ESPN2Bolivia/live_dash_cld/ESPN2Bolivia.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=bbf6811ca9cccba8e73817b3c1e03433&key=27a8d785579f23dde39ac1937cf7bd53"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO3",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/ESPN3/live_dash_cld/ESPN3.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=8836252059b793a79173838dc1186ff1&key=aa16f90e51ce5652dab93834e434caa8"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO4",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/ESPN4/live_dash_cld/ESPN4.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=034653d3413f23e87249d1fb7e68359a&key=a0d6b849f17c430e9cc02d07739a4e4a"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO5",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/ESPN5Bolivia/live_dash_cld/ESPN5Bolivia.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=afadc56db7e9690efdaded5bba0e6d5d&key=3363a5880018821bdd854ddcdf879780"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO6",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/bpk-tv/ESPN6Bolivia/default/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=263b433faed40d221c8de4b77113efce&key=0ce509689c0a6a9be57d366ce4129650"
+            })
+        },
+        {
+
+            "nombre": "ESPN_BO7",
+            "tipo": "video3",
+            "url": "https://cdn.sensa.com.ar/live/eds/ESPN7Bolivia/live_dash_cld/ESPN7Bolivia.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=055b26873d74bc9a7f10bd10900f461c&key=55ff1f66dd94290476672e0c1143c1a2"
+            })
+        },
+        {
+
+            "nombre": "LALIGATVBAR",
+            "tipo": "video3",
+            "url": "https://d39yh1ptkc8cq7.cloudfront.net/out/v1/960cc05ff5d342b6b87d93fd667eb1bf/index.mpd",
+            "params": JSON.stringify({
+                "user-agent": "Mozilla/5.0 (Web0S; Linux/SmartTV) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36 WebAppManager",
+                "referer": "https://webclient.axsbolivia.com/",
+                "origin": "https://webclient.axsbolivia.com",
+                "drm_scheme": "clearkey",
+                "drm_license_uri": "https://st.nowomi.quest/php/api/results.php?keyid=af2a65794e574a7faefdc8937ba007be&key=8bbfb3c188c2b803b1f820d81267edab"
+            })
+        }
+        
+        
+        
+    ];
+
+    function getParameterByName(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name);
+    }
+
+    function playSignalById(id) {
+        const canal = canalesData.find(c => c.nombre === id);
+        if (canal) {
+            if (canal.tipo === "Web") {
+                window.open(canal.url, '_blank');
+            } else if (canal.tipo === "video3") {
+                const header = JSON.parse(canal.params || '{}');
+                const json_media_item = {
+                    "media_item": {
+                        "name": canal.nombre,
+                        "uri": canal.url,
+                        "drm_scheme": header.drm_scheme,
+                        "drm_license_uri": header.drm_license_uri
+                    }
+                };
+                PlayerApp.onPlay("", JSON.stringify(header), JSON.stringify(json_media_item));
+            } else if (["video2"].includes(canal.tipo)) {
+                const header = JSON.parse(canal.params || '{}');
+                PlayerApp.onPlay(canal.url, JSON.stringify(header), "{}");
+            } else {
+                const header = JSON.parse(canal.params || '{}');
+                PlayerApp.onPlay(canal.url, "", canal.params);
+            }
+        } else {
+            console.error("Canal no encontrado");
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const canalId = getParameterByName('Id');
+        if (canalId) {
+            playSignalById(canalId);
+        }
+    });
+</script>
+<script>
+// Retrocede automáticamente a la página anterior
+        window.onload = function() { window.history.back();};
+</script>
