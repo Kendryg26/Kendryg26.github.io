@@ -1,5 +1,117 @@
 [
           {
+        "title": "Rayo Vallecano vs Real Madrid 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=d40ucy7xw0d4h8p9aq65i1h9d_image-header_pJp_1732602320000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMzA5NjAzMDMxNjQ0P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+           {
+        "title": "Juventus vs Venezia 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=59myi772jgf1hk2z7dou0rd67_image-header_pJp_1731827249000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMzA5Mzk2OTIwOTI0P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+          {
+        "title": "Nottingham Forest vs Aston Villa (2T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5zqkzhro3v1itiu877xze6zqe_image-header_pEs_1732030543000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDUwOTYyNDE4NTA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+           {
+        "title": "Nottingham Forest vs Aston Villa (1T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5zqkzhro3v1itiu877xze6zqe_image-header_pEs_1732030543000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDUwNzc4OTE3NzA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Sevilla vs Celta Vigo 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=8n4q6erxrgpyzz7ygasxfvm73_image-header_pDach_1732568869000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNjAzNDk4NDYyNDc/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Udinese vs Napoli 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=efldz936qa7o836x3u2th4ntf_image-header_pEs_1731156726000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNjAzNDk0NTMwMzE/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Marseille vs Lille 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2udq3ts5buepc7hbesax9ur1z_image-header_pDach_1732487626000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDUxMDMxMjMxMzA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+           {
+        "title": "Mallorca vs Girona 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cd9d9wd2532x0xgx7xnf44jkj_image-header_pDach_1732568869000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNTk2ODUxMTQ1OTk/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Arsenal vs Everton (2T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cgf1h0lr2sj6zgyaf8l4hiayu_image-header_pRow_1733764110000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDQyMjkyMDA1NzA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Arsenal vs Everton (1T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cgf1h0lr2sj6zgyaf8l4hiayu_image-header_pRow_1733764110000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDQxNjAyNTY2OTg/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Newcastle United vs Leicester City (1T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=f1yuc5zye8m53a2vgzwgt1uh0_image-header_pRow_1733768361000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDQxNjA0NTMzMDY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+           {
+        "title": "Liverpool vs Fulham (2T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ck22fbhcf5fjvhhuvs7lm09pu_image-header_pEs_1732027054000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDQyOTU4NTA2ODI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+           {
+        "title": "Liverpool vs Fulham (1T) 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=ck22fbhcf5fjvhhuvs7lm09pu_image-header_pEs_1732027054000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk2NDQwODg3NTY5MjI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
+        "title": "Augsburg vs Bayer Leverkusen 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1l1jfh2evl4tjt50hgv2oukuo_image-header_pEs_1731772605000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMzA2NDI3NTUwMzAwP25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+          {
+        "title": "Cagliari vs Atalanta 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=12kggrixw65sa06e3m5h8siqs_image-header_pEs_1731168827000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNTk0ODU4MTk2MjM/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+           {
+        "title": "Espanyol vs Osasuna 14/12/2024",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=dvblo8w30i7cxztgh2aj5ufu4_image-header_pDach_1732568869000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkxNTk1MjAyMjYwMjM/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+          {
         "title": "Ajax vs Lazio 12/12/2024",
         "img": "https://i.ytimg.com/vi/-mQ2N2fwCsc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDDk5xuCXLQxXbTluQTwjnDYjdLKQ",
         "status": "FINALIZADO",
