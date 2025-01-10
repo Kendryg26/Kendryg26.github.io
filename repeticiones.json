@@ -1,5 +1,19 @@
 [
         {
+        "title": "Fulham vs Watford 9/01/2025",
+        "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3IpMmMbnKbi9f0cz_sM14vydUrHrpwnA0KnAlXv-oMQrtRCvh",
+        "status": "FINALIZADO",
+        "league": "FA Cup",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2MTI3MDQ0MjI1NTY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+        {
+        "title": "Real Madrid vs Mallorca 9/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=629u7l5c1ayz2kodf09p80ruf_image-header_pDach_1734131701000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Supercopa de España",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2MTI2Mjk0NDkzNzI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+        {
         "title": "Tottenham Hotspur vs Liverpool 8/01/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=fs7x5yu2yynt1gdg9gc27f63c_image-header_pCa_1735305931000&quality=70",
         "status": "FINALIZADO",
