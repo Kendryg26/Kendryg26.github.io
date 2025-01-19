@@ -1,5 +1,68 @@
 [
   {
+        "title": "Valencia vs Real Sociedad 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6wy40l619754fjkl3fdnmgifz_image-header_pRow_1735576777000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk1NDMzMTg5NjQ5MDg/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+   {
+        "title": "Inter vs Empoli 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=eh8gohfdzooc2dma5rtqrvkie_image-header_pDach_1736324679000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Serie A",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk1Mzk5MTEwOTI3ODM/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Ipswich vs Manchester City 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cq7rbls85l2tq6enmdzvu1lf6_image-header_pRow_1735943114000",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk1NDI5Mjc4NDYwNjA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Real Madrid vs Las Palmas 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=c7ihunmh28y7q5bn3abkeycc4_image-header_pRow_1736198607000&quality=70",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkzMzg0NzcyODM5NTc/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Nottingham vs Southampton (2T) 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6c5azsg8qfct4eanggbzx924p_image-header_pRow_1735942406000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2NDU3NDA4NTgwMTI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Nottingham vs Southampton (1T) 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6c5azsg8qfct4eanggbzx924p_image-header_pRow_1735942406000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2NDU1NDU1NjA3MzI/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Manchester United vs Brighton (2T) 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6eh6rszxrcu5073m3rguwhmpv_image-header_pRow_1735939923000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2NDU3Mjk1MjAyODQ/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+   {
+        "title": "Manchester United vs Brighton (1T) 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6eh6rszxrcu5073m3rguwhmpv_image-header_pRow_1735939923000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2NDU1MDY4Mjg5NTY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Everton vs Tottenham 19/01/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=2umylgt3axpizfjoagtzf5erj_image-header_pRow_1735940473000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk1NDE5MDk4MDk4MzY/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
         "title": "Getafe vs Barcelona 18/01/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6ixddzn1o7jit70ua56wx1dnr_image-header_pRow_1725975676000",
         "status": "FINALIZADO",
