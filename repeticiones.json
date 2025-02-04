@@ -1,5 +1,12 @@
 [
   {
+        "title": "Chelsea vs West Ham 3/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=f3mf3j3c1w1r8g9y58owweuap_image-header_pRow_1737476066000",
+        "status": "FINALIZADO",
+        "league": "AFC Champions League Elite",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2OTUxOTQxOTI1NDA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
         "title": "Marseille vs Lyon 2/02/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=d92ylxq1c5a628hypyqvoryby_image-header_pRow_1737145426000",
         "status": "FINALIZADO",
@@ -49,6 +56,7 @@
         "league": "Eredivisie",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk5MjcyNzI4OTI5NDc/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
     },
+ 
   {
         "title": "Barcelona vs Deportivo Alaves 2/02/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=1xmd016v0z4tn97u08j3mqh7f_image-header_pRow_1737143954000&quality=70",
@@ -56,7 +64,69 @@
         "league": "La Liga",
         "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzg2OTA1NDcwMzQ3ODA/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
     },
-  
+   {
+        "title": "Lille vs Saint-Etienne 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=3s29q9y06irk7chtz6dlld7lc_image-header_pDach_1738089823000",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUzOTM0Nzc0ODM0P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Espanyol vs Real Madrid 1/02/2025",
+        "img": "https://www.impact.ro/wp-content/uploads/2025/02/espanyol-real-madrid.png",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUzOTM0NTEyNjkwP25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Atletico Madrid vs Mallorca 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=5op76z9texm3ijokyf7bvya7g_image-header_pRow_1737143953000",
+        "status": "FINALIZADO",
+        "league": "La Liga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUzMzkzNjQ0MDgyP25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Wolves vs Aston Villa 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=v5t4u8q8aoaf132dcckys6nfo_image-header_pRow_1737476066000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUzMzkzNzA5NjE4P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Brest vs PSG 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=264ppgodn1q2as1poahzb8z4w_image-header_pRow_1737145425000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Ligue 1",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzkyOTE3NTIwODIwMjM/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    },
+  {
+        "title": "Newcastle vs Fulham 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=6weqa1hdkwaayi9vear4kaqbt_image-header_pRow_1737476066000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUyNzMwMTU3NjE4P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Bournemouth vs Liverpool 1/02/2025",
+        "img": "https://pbs.twimg.com/media/GXm38x-WUAAJD74?format=png&name=900x900",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUxNjc4NTAxNDI2P25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+  {
+        "title": "Everton vs Leicester City 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=acssfe8hpn5v3qdmtgu1ce18i_image-header_pRow_1737476066000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Premier League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUyNzMzNTY1NDkwP25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
+   {
+        "title": "Bayern Munich vs Holstein Kiel 1/02/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4tbmfnqtq2fdc26vytke46klh_image-header_pEs_1737461038000&quality=70",
+        "status": "FINALIZADO",
+        "league": "Bundesliga",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzExMDUyNzM1NjYyNjQyP25vY2hhdD0xJmF1dG9wbGF5PTE="
+    },
    {
         "title": "PSV vs Liverpool 29/01/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=a91k280i2f43duhedn44a1bxt_image-header_pCa_1733386885000",
