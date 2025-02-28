@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta name="robots" content="none">
+      <meta name="referrer" content="no-referrer">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Cache-control" content="public, max-age=604800, immutable"/>
+<meta charset="UTF-8">
+<script src="/cdn-cgi/apps/head/ulIRyxHn-1bIcLYrnVKNzXXyMy8.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+ 
+<style type="text/css">
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; background-color: #000;
+    margin: 0;
+}
+#video {
+    width: 100vw;
+    height: 100%;
+    //max-height: 100vh;
+    //max-width: 177.78vh;
+    //margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; background-color: #000;
+    right: 0;
+}
+a{
+    text-decoration: none;
+}
+.media-control[data-media-control]{  
+    position: absolute;
+    z-index: 2;
+    background: url() no-repeat;
+    background-position: top right;
+    background-position-y: 0.8em;
+    background-size: 10em auto,auto;
+ }   
+.player-poster[data-poster].clickable {
+     background-size: contain;
+}  
+</style>
+</head>
+<body>
+<div id="video"></div>
+<p id="version"></p>
+<h3>p2p info:</h3>
+<p id="peers"></p>
+<p id="info"></p>
+<script>
+
+    var player = new Clappr.Player({
+        autoPlay: false,
+        parentId: "#video",
+      		poster:"", 
+        source: "https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena1_n/default/index.mpd",
+        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl, PlaybackRatePlugin],
+        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
+        autoplay: false,
+          width: '100%',
+          height: '100%',
+          strings: {
+            'en': {'live': 'En Vivo'},
+            'es': {'live': 'En Vivo'},
+            },
+        shakaConfiguration: {
+
+          drm: {
+clearKeys: {
+					"b3b60e79989a5b2799fa3a2394b8749f": "a25d21e333dad3d131f126b7b57730be",
+					"bfd8ff04a3625fcea8335c9575401697": "769d61a2d6fd7030a5088df2e70c2654",
+					"5a86e42c58cf5d008546861c0f0fb22a": "67b1172a05bcb38a91a304d7098ce7f5"
+            } 
+        } 
+       },
+        shakaOnBeforeLoad: function(shakaPlayerInstance) {
+            if (P2PEngineShaka.isSupported()) {
+                var engine = new P2PEngineShaka(shakaPlayerInstance, {
+                   // logLevel: 'debug',
+                });
+                 engine.on('stats', function (stats) {
+            var total = stats.totalHTTPDownloaded + stats.totalP2PDownloaded;
+            document.querySelector('#info').innerText = `p2p ratio: ${Math.round(stats.totalP2PDownloaded/total*100)}%   saved traffic: ${Math.round(stats.totalP2PDownloaded)}KB upload: ${Math.round(stats.totalP2PUploaded)}KB`;
+        })
+        engine.on('peers', function (peers) {
+            document.querySelector('#peers').innerText = `peers: ${peers.length}`;
+        })
+            }
+        }
+
+    });
+
+</script>
+
+  
+</body>
+</html>
