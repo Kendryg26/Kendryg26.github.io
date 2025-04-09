@@ -3,17 +3,25 @@
         "title": "Barcelona vs. Borussia Dortmund",
         "fecha": "9/04/2025",
         "img": "https://i.ytimg.com/vi/iFsDrrbFBKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAL1S6ItsVCRFSS-gqMaA68SYJo3A",
-        "status": "/",
+        "status": "FINALIZADO",
         "league": "UEFA Champions League",
-        "url": "#"
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTY3MTU3ODY3OTk/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
     }, 
-  {
-        "title": "PSG vs. Aston Villa",
+ {
+        "title": "PSG vs. Aston Villa (1T)",
         "fecha": "9/04/2025",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
-        "status": "/",
+        "status": "FINALIZADO",
         "league": "UEFA Champions League",
-        "url": "#"
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTY3MDExMDY3MzU/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+    }, 
+  {
+        "title": "PSG vs. Aston Villa (2T)",
+        "fecha": "9/04/2025",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
+        "status": "FINALIZADO",
+        "league": "UEFA Champions League",
+        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTY3MzExODc3NTk/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
     }, 
  {
         "title": "Arsenal vs. Real Madrid",
