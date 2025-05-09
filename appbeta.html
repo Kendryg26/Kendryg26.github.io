@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KStream | La Mejor Plataforma</title>
+  <title>Picta | Dale Play!</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pF5CpQK+M2V7QJVV6Pg5rbUbZ7uwY6kgM7jqDkH+ltHZyBNREnswZ3qxEPPk3FhLFT88nZnB3z4Vni0J+YWDaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
+    html, body {
       font-family: 'Montserrat', sans-serif;
-      background: radial-gradient(circle at top left, #1a1a1a, #000);
+      background: #181818;
       color: #fff;
+      max-width: 100vw;
       overflow-x: hidden;
     }
     .loader {
@@ -71,15 +73,19 @@
       background: #111;
       border-radius: 10px;
       overflow: hidden;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
     }
     .card:hover {
       transform: scale(1.03);
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
     }
     .card img {
       width: 100%;
       height: 140px;
-      object-fit: cover;
+      object-fit: contain;
+      background: #000;
+      padding: 10px;
     }
     .card h4 {
       padding: 0.5rem;
@@ -110,6 +116,9 @@
       aspect-ratio: 16 / 9;
       background: #000;
       position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     }
     video {
       width: 100%;
@@ -119,11 +128,11 @@
 </head>
 <body>
   <div class="loader" id="loader">
-    <span>Cargando KStream...</span>
+    <span>Cargando Picta...</span>
   </div>
 
   <header>
-    <div class="logo">KStream</div>
+    <div class="logo">Picta</div>
     <nav>
       <a href="#"><i class="fas fa-home"></i> Inicio</a>
       <a href="#channel-list"><i class="fas fa-tv"></i> Canales</a>
@@ -148,8 +157,7 @@
 
   <script>
     const channels = [
-      { name: "Real Madrid TV", logo: "https://i.ibb.co/w0qg9JF/trans.png", url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8" },
-      { name: "ESPN Deportes", logo: "https://upload.wikimedia.org/wikipedia/commons/8/82/Espn_deportes.png", url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8" }
+      { name: "Real Madrid TV", logo: "https://images.fubo.tv/station_logos/realmadridtv_m.png", url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8" }
     ];
 
     const list = document.getElementById('channel-list');
@@ -161,17 +169,19 @@
       list.appendChild(card);
     });
 
+    let playerInstance;
     async function openPlayer(url) {
       const popup = document.getElementById('player-popup');
       popup.style.display = 'flex';
 
       const video = document.getElementById('shaka-player');
-      const player = new shaka.Player(video);
+      if (!playerInstance) playerInstance = new shaka.Player(video);
 
       try {
-        await player.load(url);
+        await playerInstance.load(url);
       } catch (e) {
         console.error('Error cargando el video:', e);
+        alert('No se pudo cargar el canal.');
       }
     }
 
@@ -180,7 +190,8 @@
       popup.style.display = 'none';
       const video = document.getElementById('shaka-player');
       video.pause();
-      video.src = '';
+      video.removeAttribute('src');
+      video.load();
     }
 
     window.onload = () => {
@@ -191,3 +202,4 @@
   </script>
 </body>
 </html>
+
