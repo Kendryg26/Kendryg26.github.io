@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KStream | La Mejor Plataforma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top left, #1a1a1a, #000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .loader {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .loader span {
+      font-size: 2rem;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    header, footer {
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    header { top: 0; }
+    footer { bottom: 0; }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #00ffff;
+    }
+    .content {
+      padding: 100px 20px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+    .card h4 {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .player-popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .player-popup video {
+      width: 90%;
+      max-width: 900px;
+      border-radius: 10px;
+      outline: none;
+    }
+    .close-player {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader">
+    <span>Cargando KStream...</span>
+  </div>
+
+  <header>
+    <div class="logo">KStream</div>
+  </header>
+
+  <main class="content" id="channel-list">
+    <!-- Canales se cargan automáticamente aquí -->
+  </main>
+
+  <footer>
+    <p>© 2025 KStream. Compatible con Android, iOS y PC. Alta calidad garantizada.</p>
+  </footer>
+
+  <div class="player-popup" id="player-popup">
+    <span class="close-player" onclick="closePlayer()">&times;</span>
+    <video id="video-player" controls autoplay></video>
+  </div>
+
+  <script>
+    const channels = [
+      { name: "Tennis Channel", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Tennis_Channel_logo.svg/1280px-Tennis_Channel_logo.svg.png", url: "https://v1.thetvapp.to/hls/TennisChannel/index.m3u8" },
+      { name: "A&E", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/A%26E_Network_logo.svg/1280px-A%26E_Network_logo.svg.png", url: "https://tvpass.org/live/AEEast/hd" },
+      { name: "ABC LA", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/ABC_logo.svg/800px-ABC_logo.svg.png", url: "https://tvpass.org/live/abc-kabc-los-angeles-ca/hd" },
+      { name: "AMC", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMC_logo_2019.svg/1200px-AMC_logo_2019.svg.png", url: "https://tvpass.org/live/AMCEast/hd" },
+      { name: "Animal Planet", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Animal_Planet_logo_2018.svg/1280px-Animal_Planet_logo_2018.svg.png", url: "https://tvpass.org/live/AnimalPlanetEast/hd" }
+    ];
+
+    const list = document.getElementById('channel-list');
+    channels.forEach(ch => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<img src="${ch.logo}" alt="${ch.name}"><h4>${ch.name}</h4>`;
+      card.onclick = () => openPlayer(ch.url);
+      list.appendChild(card);
+    });
+
+    function openPlayer(url) {
+      const player = document.getElementById('video-player');
+      const popup = document.getElementById('player-popup');
+      player.src = url;
+      popup.style.display = 'flex';
+    }
+
+    function closePlayer() {
+      const player = document.getElementById('video-player');
+      document.getElementById('player-popup').style.display = 'none';
+      player.pause();
+      player.src = '';
+    }
+
+    window.onload = () => {
+      setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+      }, 1200);
+    };
+  </script>
+</body>
+</html>
