@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KStream | La Mejor Plataforma</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pF5CpQK+M2V7QJVV6Pg5rbUbZ7uwY6kgM7jqDkH+ltHZyBNREnswZ3qxEPPk3FhLFT88nZnB3z4Vni0J+YWDaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://player.bradmax.com/player.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -33,19 +35,31 @@
     }
     header, footer {
       backdrop-filter: blur(10px);
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.8);
       padding: 1rem;
       text-align: center;
       position: fixed;
       width: 100%;
       z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     header { top: 0; }
-    footer { bottom: 0; }
+    footer { bottom: 0; justify-content: center; gap: 2rem; }
     .logo {
       font-size: 1.8rem;
       font-weight: 600;
       color: #00ffff;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .content {
       padding: 100px 20px 80px;
@@ -80,12 +94,7 @@
       justify-content: center;
       align-items: center;
       z-index: 2000;
-    }
-    .player-popup video {
-      width: 90%;
-      max-width: 900px;
-      border-radius: 10px;
-      outline: none;
+      flex-direction: column;
     }
     .close-player {
       position: absolute;
@@ -94,6 +103,11 @@
       font-size: 2rem;
       color: #fff;
       cursor: pointer;
+    }
+    #bradmax-player {
+      width: 90%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
     }
   </style>
 </head>
@@ -104,6 +118,10 @@
 
   <header>
     <div class="logo">KStream</div>
+    <nav>
+      <a href="#"><i class="fas fa-home"></i> Inicio</a>
+      <a href="#channel-list"><i class="fas fa-tv"></i> Canales</a>
+    </nav>
   </header>
 
   <main class="content" id="channel-list">
@@ -111,21 +129,19 @@
   </main>
 
   <footer>
-    <p>© 2025 KStream. Compatible con Android, iOS y PC. Alta calidad garantizada.</p>
+    <a href="#"><i class="fas fa-home"></i> Inicio</a>
+    <a href="#channel-list"><i class="fas fa-tv"></i> Canales</a>
   </footer>
 
   <div class="player-popup" id="player-popup">
     <span class="close-player" onclick="closePlayer()">&times;</span>
-    <video id="video-player" controls autoplay></video>
+    <div id="bradmax-player"></div>
   </div>
 
   <script>
     const channels = [
-      { name: "Tennis Channel", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Tennis_Channel_logo.svg/1280px-Tennis_Channel_logo.svg.png", url: "https://v1.thetvapp.to/hls/TennisChannel/index.m3u8" },
-      { name: "A&E", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/A%26E_Network_logo.svg/1280px-A%26E_Network_logo.svg.png", url: "https://tvpass.org/live/AEEast/hd" },
-      { name: "ABC LA", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/ABC_logo.svg/800px-ABC_logo.svg.png", url: "https://tvpass.org/live/abc-kabc-los-angeles-ca/hd" },
-      { name: "AMC", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMC_logo_2019.svg/1200px-AMC_logo_2019.svg.png", url: "https://tvpass.org/live/AMCEast/hd" },
-      { name: "Animal Planet", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Animal_Planet_logo_2018.svg/1280px-Animal_Planet_logo_2018.svg.png", url: "https://tvpass.org/live/AnimalPlanetEast/hd" }
+      { name: "Real Madrid TV", logo: "https://i.ibb.co/w0qg9JF/trans.png", url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8" },
+      { name: "ESPN Deportes", logo: "https://upload.wikimedia.org/wikipedia/commons/8/82/Espn_deportes.png", url: "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8" }
     ];
 
     const list = document.getElementById('channel-list');
@@ -138,17 +154,22 @@
     });
 
     function openPlayer(url) {
-      const player = document.getElementById('video-player');
       const popup = document.getElementById('player-popup');
-      player.src = url;
       popup.style.display = 'flex';
+      bradmax('bradmax-player', {
+        source: {
+          hls: url
+        },
+        settings: {
+          autoPlay: true,
+          controls: true
+        }
+      });
     }
 
     function closePlayer() {
-      const player = document.getElementById('video-player');
       document.getElementById('player-popup').style.display = 'none';
-      player.pause();
-      player.src = '';
+      document.getElementById('bradmax-player').innerHTML = '';
     }
 
     window.onload = () => {
