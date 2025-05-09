@@ -6,7 +6,7 @@
   <title>KStream | La Mejor Plataforma</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pF5CpQK+M2V7QJVV6Pg5rbUbZ7uwY6kgM7jqDkH+ltHZyBNREnswZ3qxEPPk3FhLFT88nZnB3z4Vni0J+YWDaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://player.bradmax.com/player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -89,7 +89,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0,0,0,0.9);
+      background: rgba(0,0,0,0.95);
       display: none;
       justify-content: center;
       align-items: center;
@@ -104,10 +104,16 @@
       color: #fff;
       cursor: pointer;
     }
-    #bradmax-player {
+    #shaka-player-container {
       width: 90%;
       max-width: 900px;
       aspect-ratio: 16 / 9;
+      background: #000;
+      position: relative;
+    }
+    video {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -135,7 +141,9 @@
 
   <div class="player-popup" id="player-popup">
     <span class="close-player" onclick="closePlayer()">&times;</span>
-    <div id="bradmax-player"></div>
+    <div id="shaka-player-container">
+      <video id="shaka-player" controls autoplay></video>
+    </div>
   </div>
 
   <script>
@@ -153,23 +161,26 @@
       list.appendChild(card);
     });
 
-    function openPlayer(url) {
+    async function openPlayer(url) {
       const popup = document.getElementById('player-popup');
       popup.style.display = 'flex';
-      bradmax('bradmax-player', {
-        source: {
-          hls: url
-        },
-        settings: {
-          autoPlay: true,
-          controls: true
-        }
-      });
+
+      const video = document.getElementById('shaka-player');
+      const player = new shaka.Player(video);
+
+      try {
+        await player.load(url);
+      } catch (e) {
+        console.error('Error cargando el video:', e);
+      }
     }
 
     function closePlayer() {
-      document.getElementById('player-popup').style.display = 'none';
-      document.getElementById('bradmax-player').innerHTML = '';
+      const popup = document.getElementById('player-popup');
+      popup.style.display = 'none';
+      const video = document.getElementById('shaka-player');
+      video.pause();
+      video.src = '';
     }
 
     window.onload = () => {
