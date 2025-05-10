@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificación de Extensión e Inclusión de Reproductor</title>
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #player {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Aspect ratio 16:9 */
+            background: #000;
+        }
+        #player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .hidden {
+            display: none;
+        }
+        .alert-card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .alert-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .alert-card .boxicon {
+            font-size: 48px;
+            color: #ff0;
+        }
+        .alert-card p {
+            margin: 10px 0;
+            color: #ebebeb;
+        }
+        @media (max-width: 480px) {
+            .alert-card {
+                max-width: 90%;
+                padding: 15px;
+            }
+            .alert-card h2 {
+                font-size: 20px;
+            }
+            .alert-card .boxicon {
+                font-size: 36px;
+            }
+            .alert-card p {
+                font-size: 14px;
+            }
+        }
+        .event-not-started {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="player" class="hidden"></div>
+        <div id="alerta-extension" class="hidden alert">
+            <i class="bx bx-error-circle boxicon"></i>
+            <center>
+                <div id="jb" class="jumbotron">
+                    <div class="image"><img src="https://lh3.googleusercontent.com/CpjFFK0vJQElr4Xo1TAzovP8tCzedGN0h5uzSthqCaRQXlDvU6kIrIc4QTm1sPrxlD29NWLqfT_srE6MK5j7Iy9wkg=s60" width="10%"></div>
+                    <h1>Reproductor MPD/M3U8/M3U/EPG</h1>
+                </div>        
+                <p><i style="color:red">NOTA</i>: Para reproducir este canal necesitas instalar la extensión: <strong>Reproductor MPD/M3U8/M3U/EPG</strong></p>
+                <h2>Instalación</h2>
+                <p>Para instalar la extensión, ingresa a <a target="_blank" href="https://chromewebstore.google.com/detail/reproductor-mpdm3u8m3uepg/opmeopcambhfimffbomjgemehjkbbmji">Reproductor MPD/M3U8/M3U/EPG</a> o búscala en <b>Chrome Web Store o Brave</b></p>
+                <img src="https://star.nebunexa.com/disney/brave.png" width="40%">
+                <p>Una vez instalada la extensión, recarga la página y disfruta del canal.</p>
+            </center>
+        </div>
+        <div id="event-not-started" class="hidden event-not-started">
+            <h2>El evento aún no comienza</h2>
+            <p>Si es la hora del evento y aún no comienza, intenta recargar la página. Puede demorar hasta 5 minutos.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        var getURL = getParameterByName('get');
+
+        if (getURL === "") { alert('Vuelve a la página anterior'); }
+
+        // Función para verificar si es Windows o Linux
+        function isWindowsPC() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return (/windows|linux/.test(userAgent)) && !(/mobile|tablet|iphone|ipod|android/.test(userAgent));
+        }
+
+        function showUnsupportedDeviceMessage() {
+            const unsupportedMessage = document.createElement('div');
+            unsupportedMessage.classList.add('alert-card');
+            unsupportedMessage.innerHTML = `
+                <i class='bx bx-error-circle boxicon'></i>
+                <h2>Dispositivo no compatible</h2>
+                <p>Este contenido es compatible solo con PC. Por favor, usa un PC para visualizarlo.</p>
+            `;
+            document.body.appendChild(unsupportedMessage);
+        }
+
+        if (!isWindowsPC()) {
+            showUnsupportedDeviceMessage();
+        } else {
+            function isExtensionInstalled(installedCallback, notInstalledCallback) {
+                const img = document.createElement('img');
+                img.onload = installedCallback;
+                img.onerror = notInstalledCallback;
+                img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+            }
+
+            const playerDiv = document.getElementById("player");
+            const alertaDiv = document.getElementById("alerta-extension");
+            const eventNotStartedDiv = document.getElementById("event-not-started");
+
+            isExtensionInstalled(
+                () => {
+                    let clearKeys, mpd;
+if (getURL === "MAX") {
+clearKeys = {
+       '01015802d8b3d4ddf07e7a09141d4477': '62d790a9c000773f1f5a0280b48e528c',
+    '01026266a59b6427e0c581f3cba0f509': '2726f755f25a76f060a102e1b9b8c92f',
+    '0105261794903263c4b27938b21e263f': '00000000000000000000000000000000',
+    '010056967f477056f4058e7902981528': 'a7759d6e32af6f9b9d0aaf1e7a0e6229'
+                        };
+mpd = "https://gcp.live.latam.prd.media.max.com/live/use1/109_CiwxY2ZmMTg5Mi0xOWYwLTQ3MzMtOGVmZC0xODBkMTdhZDM4NWYtdXMtZWFzdBINYm9sdC1nbG8tcHJvZBoTEhFwYWNrYWdlci1tcDQtY2VuYw/main.mpd";
+} 
+else if (getURL === "MAX2") {
+clearKeys = {
+       '0101ded5ffa3879a405fb9e7926d1f3d': 'c310355da7c02c54cbca6b0779dfb568',
+    '0102ff80d368195fb12d7c6cb83c73bc': '5630f30019a32e9b236a3b5b6805b5b6',
+    '010599a7d181ba4b8a6a3b92e77c69e5': '00000000000000000000000000000000',
+    '0100c16d8afd7ada5e664a73171963e1': 'ff770e1de9b39f14813846b71f37c574'
+                        };
+mpd = "https://akm.live.latam.prd.media.max.com/live/use1/23e_CiwxMzM1ZDAxYi05NWZhLTQ1NmUtYWE3YS1mYzRkNjBiNDljYmUtdXMtZWFzdBINYm9sdC1nbG8tcHJvZBoTEhFwYWNrYWdlci1tcDQtY2VuYw/main.mpd";
+}
+
+else if (getURL === "MAX355") {
+clearKeys = {
+       '01015802d8b3d4ddf07e7a09141d4477': '62d790a9c000773f1f5a0280b48e528c',
+    '01026266a59b6427e0c581f3cba0f509': '2726f755f25a76f060a102e1b9b8c92f',
+    '0105261794903263c4b27938b21e263f': '00000000000000000000000000000000',
+    '010056967f477056f4058e7902981528': 'a7759d6e32af6f9b9d0aaf1e7a0e6229'
+                        };
+mpd = "https://gcp.live.latam.prd.media.max.com/live/use1/109_CiwxY2ZmMTg5Mi0xOWYwLTQ3MzMtOGVmZC0xODBkMTdhZDM4NWYtdXMtZWFzdBINYm9sdC1nbG8tcHJvZBoTEhFwYWNrYWdlci1tcDQtY2VuYw/main.mpd";
+}
+
+
+
+
+
+
+                    if (!clearKeys || Object.keys(clearKeys).length === 0) {
+                        eventNotStartedDiv.classList.remove("hidden");
+                    } else {
+                        var keyJson = JSON.stringify(clearKeys);
+                        var base64Key = btoa(keyJson);
+                        console.log("Base64 Key:", base64Key);
+
+                        var extensionUrl = `chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#${mpd}?&ck=${encodeURIComponent(base64Key)}`;
+
+                        playerDiv.classList.remove("hidden");
+                        playerDiv.innerHTML = `<iframe id="iframe" allow="encrypted-media" allowfullscreen src="${extensionUrl}"></iframe>`;
+                    }
+                },
+                () => {
+                    alertaDiv.classList.remove("hidden");
+                }
+            );
+        }
+    </script>
+</body>
+</html>
