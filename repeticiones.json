@@ -2,50 +2,44 @@
 {
         "title": "Barcelona vs. Real Madrid",
         "fecha": "11/05/2025",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cbzn45r4i52ck43ysf2jcpvi9_image-header_pDach_1726491721000",
-        "status": "FINALIZADO",
         "league": "La Liga",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cbzn45r4i52ck43ysf2jcpvi9_image-header_pDach_1726491721000",
         "url": "https://ok.ru/videoembed/9661910289127?nochat=1&autoplay=1"
     }, 
  {
         "title": "Barcelona vs. Borussia Dortmund",
         "fecha": "9/04/2025",
-        "img": "https://i.ytimg.com/vi/iFsDrrbFBKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAL1S6ItsVCRFSS-gqMaA68SYJo3A",
-        "status": "FINALIZADO",
         "league": "UEFA Champions League",
+        "img": "https://i.ytimg.com/vi/iFsDrrbFBKw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAL1S6ItsVCRFSS-gqMaA68SYJo3A",
         "url": "https://ok.ru/videoembed/9856715786799?nochat=1&autoplay=1"
     }, 
  {
         "title": "PSG vs. Aston Villa (1T)",
         "fecha": "9/04/2025",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
-        "status": "FINALIZADO",
         "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTY3MDExMDY3MzU/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
+        "url": "https://ok.ru/videoembed/9856701106735?nochat=1&autoplay=1"
     }, 
   {
         "title": "PSG vs. Aston Villa (2T)",
         "fecha": "9/04/2025",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
-        "status": "FINALIZADO",
         "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTY3MzExODc3NTk/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=9n8lu8o8tdwau8f0qszw4f17t_image-header_pRow_1742465932000&quality=70",
+        "url": "https://ok.ru/videoembed/9856731187759?nochat=1&autoplay=1"
     }, 
  {
         "title": "Arsenal vs. Real Madrid",
         "fecha": "8/04/2025",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=efdwqrcek5uh7v7ac0uksw9zn_image-header_pDach_1743100632000&quality=70",
-        "status": "FINALIZADO",
         "league": "UEFA Champions League",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9vay5ydS92aWRlb2VtYmVkLzk4NTM2NjA2OTUwODc/bm9jaGF0PTEmYXV0b3BsYXk9MQ=="
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=efdwqrcek5uh7v7ac0uksw9zn_image-header_pDach_1743100632000&quality=70",
+        "url": "https://ok.ru/videoembed/9853660695087?nochat=1&autoplay=1"
     }, 
  
  {
         "title": "Inter Miami vs. Toronto",
         "fecha": "6/04/2025",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4venha80z6ep5dy6jwy4r8pkn_image-header_pDach_1743668014000&quality=70",
-        "status": "FINALIZADO",
         "league": "MLS",
-        "url": "/embed/eventos/?r=aHR0cHM6Ly9nZW8uZGFpbHltb3Rpb24uY29tL3BsYXllci5odG1sP3ZpZGVvPXg5aGdlM20="
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4venha80z6ep5dy6jwy4r8pkn_image-header_pDach_1743668014000&quality=70",
+        "url": "https://geo.dailymotion.com/player.html?video=x9hge3m"
     }
 ]
