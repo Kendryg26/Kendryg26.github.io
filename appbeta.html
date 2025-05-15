@@ -1,26 +1,42 @@
- 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Lista IPTV con DRM</title>
+  <title>Lista IPTV estilo ViX</title>
   <style>
     body {
       background: #060f1d;
       color: #fff;
       font-family: sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #000;
       padding: 1rem;
+      text-align: center;
     }
 
     h2 {
-      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    #playerContainer {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
+    }
+
+    #player {
+      width: 100%;
+      height: 100%;
     }
 
     #searchBar {
       width: 100%;
       max-width: 600px;
-      margin: 0 auto 20px auto;
+      margin: 1rem auto;
       display: block;
       padding: 10px;
       border-radius: 6px;
@@ -34,6 +50,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 16px;
+      padding: 1rem;
     }
 
     .channel {
@@ -58,52 +75,6 @@
       border-radius: 4px;
     }
 
-    #modalOverlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    #modalContent {
-      background: #000;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 900px;
-      box-shadow: 0 0 10px #000;
-      position: relative;
-    }
-
-    #closeBtn {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      font-size: 22px;
-      color: white;
-      background: red;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      z-index: 10000;
-    }
-
-    #playerTitle {
-      margin: 0 0 10px 0;
-      text-align: center;
-    }
-
-    #player {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #000;
-    }
-
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
@@ -116,19 +87,17 @@
 </head>
 <body>
 
-<h2>Lista de Canales</h2>
+<header>
+  <h2 id="playerTitle">Selecciona un canal</h2>
+</header>
+
+<div id="playerContainer">
+  <div id="player"></div>
+</div>
+
 <input type="text" id="searchBar" placeholder="Buscar canal por nombre...">
 
 <div id="channelList"></div>
-
-<!-- Modal -->
-<div id="modalOverlay">
-  <div id="modalContent">
-    <button id="closeBtn" onclick="closeModal()">✖</button>
-    <h3 id="playerTitle"></h3>
-    <div id="player"></div>
-  </div>
-</div>
 
 <script>
   const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/resolve/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94/DENSTV.m3u8";
@@ -190,7 +159,6 @@
   }
 
   function playChannel(channel) {
-    const overlay = document.getElementById('modalOverlay');
     const title = document.getElementById('playerTitle');
     const url = channel.url;
     let type = '';
@@ -202,7 +170,6 @@
       return;
     }
 
-    overlay.style.display = 'flex';
     title.textContent = channel.name;
 
     jwplayer("player").remove();
@@ -241,17 +208,6 @@
     });
   }
 
-  function closeModal() {
-    const overlay = document.getElementById('modalOverlay');
-    overlay.style.display = 'none';
-    jwplayer("player").remove();
-    const playerDiv = document.getElementById("player");
-    const newDiv = document.createElement("div");
-    newDiv.id = "player";
-    playerDiv.replaceWith(newDiv);
-  }
-
-  // Búsqueda en tiempo real
   document.getElementById('searchBar').addEventListener('input', function () {
     const value = this.value.toLowerCase();
     const filtered = channels.filter(ch => ch.name.toLowerCase().includes(value));
