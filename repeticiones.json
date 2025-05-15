@@ -1,17 +1,24 @@
 [
+        {
+        "title": "Real Madrid vs. Mallorca",
+        "fecha": "14/05/2025",
+        "league": "La Liga",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=82qvvggmkzwrjldgg7p1iute7_image-header_pEs_1746022896000&quality=50",
+        "url": "https://ok.ru/videoembed/9981856254511?nochat=1&autoplay=1"
+    }, 
+        {
+        "title": "Milan vs. Bologna | Final",
+        "fecha": "14/05/2025",
+        "league": "Copa Italia",
+        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=596sr2x5ofwouuclqzf2p9y3q_image-header_pDach_1746016886000&quality=70",
+        "url": "https://dhcplay.com/e/sdj45rgjvbxz"
+    }, 
 {
         "title": "Barcelona vs. Real Madrid",
         "fecha": "11/05/2025",
         "league": "La Liga",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=cbzn45r4i52ck43ysf2jcpvi9_image-header_pDach_1726491721000",
         "url": "https://ok.ru/videoembed/9661910289127?nochat=1&autoplay=1"
-    }, 
- 
- {
-        "title": "Inter Miami vs. Toronto",
-        "fecha": "6/04/2025",
-        "league": "MLS",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=4venha80z6ep5dy6jwy4r8pkn_image-header_pDach_1743668014000&quality=70",
-        "url": "https://geo.dailymotion.com/player.html?video=x9hge3m"
     }
+ 
 ]
