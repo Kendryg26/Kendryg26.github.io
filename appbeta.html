@@ -7,27 +7,35 @@
     body {
       background: #060f1d;
       color: #fff;
-      font-family: 'Rubik', sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 1rem;
     }
+
     h2 {
       text-align: center;
-      margin-bottom: 1rem;
     }
+
+    #channelList {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
     .channel {
       display: flex;
       align-items: center;
       background: #202536;
-      margin: 8px 0;
       padding: 8px;
       border-radius: 6px;
       cursor: pointer;
       transition: background 0.3s;
     }
+
     .channel:hover {
       background: #2d3348;
     }
+
     .channel img {
       width: 80px;
       height: 45px;
@@ -35,6 +43,7 @@
       margin-right: 1rem;
       border-radius: 4px;
     }
+
     #modalOverlay {
       position: fixed;
       top: 0; left: 0;
@@ -45,37 +54,42 @@
       align-items: center;
       z-index: 9999;
     }
+
     #modalContent {
-      background: #202536;
+      background: #000;
       padding: 1rem;
       border-radius: 8px;
       width: 90%;
       max-width: 900px;
-      box-shadow: 0 0 15px #000;
+      box-shadow: 0 0 10px #000;
       position: relative;
     }
+
     #closeBtn {
       position: absolute;
       top: 10px;
       right: 12px;
       font-size: 22px;
       color: white;
-      background: crimson;
+      background: red;
       padding: 5px 10px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       z-index: 10000;
     }
+
     #playerTitle {
       margin: 0 0 10px 0;
       text-align: center;
     }
+
     #player {
       width: 100%;
       aspect-ratio: 16 / 9;
       background: #000;
     }
+
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
