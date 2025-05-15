@@ -1,100 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Lista IPTV estilo ViX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPTV Estilo Vix</title>
   <style>
     body {
-      background: #060f1d;
-      color: #fff;
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: sans-serif;
+      background-color: #060f1d;
+      color: white;
     }
 
     header {
-      background: #000;
+      background: #202536;
       padding: 1rem;
       text-align: center;
     }
 
-    h2 {
-      margin: 0.5rem 0;
-      font-size: 1.5rem;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 1rem;
-    }
-
     #playerContainer {
-      width: 100%;
-      aspect-ratio: 16/9;
       background: #000;
-      margin: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #player {
       width: 100%;
-      height: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+    }
+
+    #playerInfo {
+      text-align: center;
+      margin-top: 10px;
     }
 
     #channelList {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
     }
 
     .channel {
-      display: flex;
-      align-items: center;
       background: #202536;
-      padding: 8px;
-      border-radius: 6px;
+      border-radius: 8px;
+      overflow: hidden;
       cursor: pointer;
       transition: background 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
     }
 
     .channel:hover {
-      background: #2d3348;
+      background: #2e3345;
     }
 
     .channel img {
-      width: 80px;
-      height: 45px;
+      width: 100%;
+      height: 100px;
       object-fit: cover;
-      margin-right: 1rem;
       border-radius: 4px;
+    }
+
+    .channel span {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      #player {
+        width: 100%;
+      }
+
+      #channelList {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .channel img {
+        height: 80px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #channelList {
+        grid-template-columns: 1fr;
+      }
     }
 
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
-
-    @media (max-width: 768px) {
-      h2 {
-        font-size: 1.2rem;
-      }
-
-      .channel {
-        flex-direction: row;
-      }
-
-      .channel img {
-        width: 70px;
-        height: 40px;
-      }
-
-      .container {
-        padding: 0.5rem;
-      }
-    }
   </style>
-
   <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
   <script>
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
@@ -103,16 +106,18 @@
 <body>
 
 <header>
-  <h2 id="playerTitle">Selecciona un canal</h2>
+  <h2>TV En Vivo</h2>
 </header>
 
-<div class="container">
-  <div id="playerContainer">
-    <div id="player"></div>
+<div id="playerContainer">
+  <div id="player"></div>
+  <div id="playerInfo">
+    <img id="playerLogo" src="" alt="" style="height:30px; vertical-align:middle; margin-right:10px;">
+    <strong id="playerTitle">Selecciona un canal</strong>
   </div>
-
-  <div id="channelList"></div>
 </div>
+
+<div id="channelList"></div>
 
 <script>
   const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/resolve/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94/DENSTV.m3u8";
@@ -147,7 +152,7 @@
         }
       } else if (!line.startsWith('#')) {
         current.url = line.split('|')[0];
-        channels.push({ ...current });
+        channels.push({...current});
       }
     });
 
@@ -156,29 +161,19 @@
 
   function renderChannels() {
     const container = document.getElementById('channelList');
-    container.innerHTML = '';
-
     channels.forEach(channel => {
       const div = document.createElement('div');
       div.className = 'channel';
       div.innerHTML = `
         <img src="${channel.logo}" />
-        <div>
-          <strong>${channel.name}</strong><br/>
-          <small>${channel.group}</small>
-        </div>
+        <span>${channel.name}</span>
       `;
-      div.onclick = () => {
-        playChannel(channel);
-        // Subir al reproductor
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      };
+      div.onclick = () => playChannel(channel);
       container.appendChild(div);
     });
   }
 
   function playChannel(channel) {
-    const title = document.getElementById('playerTitle');
     const url = channel.url;
     let type = '';
 
@@ -189,14 +184,20 @@
       return;
     }
 
-    title.textContent = channel.name;
+    // Scroll arriba para ver el reproductor
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
+    document.getElementById('playerTitle').textContent = channel.name;
+    document.getElementById('playerLogo').src = channel.logo;
+
+    // Destruir y reconstruir reproductor
     jwplayer("player").remove();
     const playerDiv = document.getElementById("player");
     const newDiv = document.createElement("div");
     newDiv.id = "player";
     playerDiv.replaceWith(newDiv);
 
+    // DRM
     const drmConfig = {};
     if (channel.drm?.type === 'clearkey') {
       drmConfig.clearkey = {
