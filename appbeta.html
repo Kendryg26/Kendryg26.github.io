@@ -8,6 +8,7 @@
       background: #1c1c1c;
       color: #fff;
       font-family: sans-serif;
+      margin: 0;
       padding: 1rem;
     }
     .channel {
@@ -30,45 +31,57 @@
       margin-right: 1rem;
     }
 
-    /* Popup modal */
+    /* Modal */
     #modalOverlay {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85);
+      background: rgba(0, 0, 0, 0.85);
       display: none;
       justify-content: center;
       align-items: center;
-      z-index: 1000;
+      z-index: 9999;
     }
 
     #modalContent {
       background: #000;
       padding: 1rem;
       border-radius: 8px;
-      position: relative;
       width: 90%;
       max-width: 900px;
+      box-shadow: 0 0 10px #000;
+      position: relative;
     }
 
     #closeBtn {
       position: absolute;
-      top: 8px;
+      top: 10px;
       right: 12px;
       font-size: 22px;
       color: white;
-      cursor: pointer;
       background: red;
-      padding: 4px 10px;
+      padding: 5px 10px;
+      border: none;
       border-radius: 4px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    #playerTitle {
+      margin: 0 0 10px 0;
+      text-align: center;
     }
 
     #player {
       width: 100%;
       aspect-ratio: 16 / 9;
+      background: #000;
     }
 
-    .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
+    /* Ocultar opciones extra JWPlayer */
+    .jw-settings-sharing,
+    .jw-icon-pip,
+    .jw-rightclick {
       display: none !important;
     }
   </style>
@@ -83,10 +96,10 @@
 <h2>Lista de Canales</h2>
 <div id="channelList"></div>
 
-<!-- Popup Modal -->
+<!-- Modal -->
 <div id="modalOverlay">
   <div id="modalContent">
-    <div id="closeBtn" onclick="closeModal()">✖</div>
+    <button id="closeBtn" onclick="closeModal()">✖</button>
     <h3 id="playerTitle"></h3>
     <div id="player"></div>
   </div>
@@ -143,42 +156,56 @@
   function playChannel(channel) {
     const overlay = document.getElementById('modalOverlay');
     const title = document.getElementById('playerTitle');
-    title.textContent = channel.name;
-    overlay.style.display = 'flex';
-
     const url = channel.url;
-    let sourceType = url.endsWith('.mpd') ? 'dash' : url.endsWith('.m3u8') ? 'hls' : '';
+    let type = '';
 
-    if (!sourceType) {
+    if (url.endsWith('.mpd')) {
+      type = 'dash';
+    } else if (url.endsWith('.m3u8')) {
+      type = 'hls';
+    } else {
       alert("Formato no soportado: " + url);
       return;
     }
 
-    jwplayer("player").setup({
+    overlay.style.display = 'flex';
+    title.textContent = channel.name;
+
+    // Destruye player anterior si existe
+    if (jwplayer("player").remove) {
+      jwplayer("player").remove();
+    }
+
+    const setup = {
       playlist: [{
         title: channel.name,
         image: channel.logo,
         sources: [{
           file: url,
-          type: sourceType,
-          label: "Calidad"
+          type: type
         }]
       }],
       width: "100%",
       aspectratio: "16:9",
       autostart: true,
       cast: {},
-      sharing: {}
-    });
+      sharing: {},
+    };
+
+    jwplayer("player").setup(setup);
   }
 
   function closeModal() {
     const overlay = document.getElementById('modalOverlay');
     overlay.style.display = 'none';
-    jwplayer("player").remove(); // Destruye el reproductor al cerrar
-    const newDiv = document.createElement("div");
-    newDiv.id = "player";
-    document.getElementById("modalContent").appendChild(newDiv);
+    jwplayer("player").remove();
+
+    // reconstruye div para evitar errores visuales
+    const old = document.getElementById("player");
+    const parent = old.parentNode;
+    const newPlayer = document.createElement("div");
+    newPlayer.id = "player";
+    parent.replaceChild(newPlayer, old);
   }
 </script>
 
