@@ -29,29 +29,67 @@
       object-fit: cover;
       margin-right: 1rem;
     }
-    #playerWrapper {
-      margin-top: 20px;
+
+    /* Popup modal */
+    #modalOverlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
     }
+
+    #modalContent {
+      background: #000;
+      padding: 1rem;
+      border-radius: 8px;
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    #closeBtn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+      background: red;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
     #player {
       width: 100%;
-      max-width: 800px;
-      aspect-ratio: 16/9;
+      aspect-ratio: 16 / 9;
     }
+
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
   </style>
-  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script> 
-  <script>jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
+
+  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+  <script>
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+  </script>
 </head>
 <body>
 
 <h2>Lista de Canales</h2>
 <div id="channelList"></div>
 
-<div id="playerWrapper" style="display:none;">
-  <h3 id="playerTitle"></h3>
-  <div id="player"></div>
+<!-- Popup Modal -->
+<div id="modalOverlay">
+  <div id="modalContent">
+    <div id="closeBtn" onclick="closeModal()">✖</div>
+    <h3 id="playerTitle"></h3>
+    <div id="player"></div>
+  </div>
 </div>
 
 <script>
@@ -103,44 +141,44 @@
   }
 
   function playChannel(channel) {
-    const wrapper = document.getElementById('playerWrapper');
+    const overlay = document.getElementById('modalOverlay');
     const title = document.getElementById('playerTitle');
-    const url = channel.url;
     title.textContent = channel.name;
-    wrapper.style.display = 'block';
+    overlay.style.display = 'flex';
 
-    let sourceType = '';
-    if (url.endsWith('.mpd')) {
-      sourceType = 'dash';
-    } else if (url.endsWith('.m3u8')) {
-      sourceType = 'hls';
-    } else {
+    const url = channel.url;
+    let sourceType = url.endsWith('.mpd') ? 'dash' : url.endsWith('.m3u8') ? 'hls' : '';
+
+    if (!sourceType) {
       alert("Formato no soportado: " + url);
       return;
     }
 
-    const playlistItem = {
-      title: channel.name,
-      image: channel.logo,
-      sources: [
-        {
+    jwplayer("player").setup({
+      playlist: [{
+        title: channel.name,
+        image: channel.logo,
+        sources: [{
           file: url,
           type: sourceType,
-          label: "Calidad 1"
-          // Puedes añadir DRM aquí si conoces los datos
-          // drm: { clearkey: { keyId: "", key: "" } }
-        }
-      ]
-    };
-
-    jwplayer("player").setup({
-      playlist: [playlistItem],
+          label: "Calidad"
+        }]
+      }],
       width: "100%",
       aspectratio: "16:9",
       autostart: true,
       cast: {},
       sharing: {}
     });
+  }
+
+  function closeModal() {
+    const overlay = document.getElementById('modalOverlay');
+    overlay.style.display = 'none';
+    jwplayer("player").remove(); // Destruye el reproductor al cerrar
+    const newDiv = document.createElement("div");
+    newDiv.id = "player";
+    document.getElementById("modalContent").appendChild(newDiv);
   }
 </script>
 
