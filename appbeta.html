@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Lista IPTV</title>
+  <title>Lista IPTV con DRM</title>
   <style>
     body {
       background: #1c1c1c;
@@ -30,8 +30,6 @@
       object-fit: cover;
       margin-right: 1rem;
     }
-
-    /* Modal */
     #modalOverlay {
       position: fixed;
       top: 0; left: 0;
@@ -42,7 +40,6 @@
       align-items: center;
       z-index: 9999;
     }
-
     #modalContent {
       background: #000;
       padding: 1rem;
@@ -52,7 +49,6 @@
       box-shadow: 0 0 10px #000;
       position: relative;
     }
-
     #closeBtn {
       position: absolute;
       top: 10px;
@@ -66,22 +62,16 @@
       cursor: pointer;
       z-index: 10000;
     }
-
     #playerTitle {
       margin: 0 0 10px 0;
       text-align: center;
     }
-
     #player {
       width: 100%;
       aspect-ratio: 16 / 9;
       background: #000;
     }
-
-    /* Ocultar opciones extra JWPlayer */
-    .jw-settings-sharing,
-    .jw-icon-pip,
-    .jw-rightclick {
+    .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
   </style>
@@ -106,7 +96,7 @@
 </div>
 
 <script>
-  const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/commit/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94.diff?file=DENSTV.m3u8";
+  const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/resolve/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94/DENSTV.m3u8";
   const channels = [];
 
   fetch(m3u8Url)
@@ -116,17 +106,26 @@
   function parseM3U(data) {
     const lines = data.split('\n').map(l => l.trim()).filter(l => l !== '');
     let current = {};
-
     lines.forEach(line => {
       if (line.startsWith('#EXTINF')) {
-        const nameMatch = line.match(/,(.*)/);
-        const groupMatch = line.match(/group-title="([^"]+)"/);
-        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
-        current = {
-          name: nameMatch ? nameMatch[1] : 'Sin nombre',
-          group: groupMatch ? groupMatch[1] : 'Sin grupo',
-          logo: logoMatch ? logoMatch[1] : '',
-        };
+        const name = line.match(/,(.*)/)?.[1] || 'Sin nombre';
+        const logo = line.match(/tvg-logo="([^"]+)"/)?.[1] || '';
+        const group = line.match(/group-title="([^"]+)"/)?.[1] || '';
+        current = { name, logo, group, drm: {} };
+      } else if (line.startsWith('#KODIPROP:')) {
+        if (line.includes('license_type=')) {
+          const type = line.split('=')[1].trim();
+          current.drm.type = type;
+        }
+        if (line.includes('license_key=')) {
+          const keyData = line.split('=')[1].trim();
+          if (current.drm.type === 'clearkey') {
+            const [keyId, key] = keyData.split(':');
+            current.drm.details = { keyId, key };
+          } else if (current.drm.type === 'com.widevine.alpha') {
+            current.drm.details = { url: keyData };
+          }
+        }
       } else if (!line.startsWith('#')) {
         current.url = line.split('|')[0];
         channels.push({...current});
@@ -142,7 +141,7 @@
       const div = document.createElement('div');
       div.className = 'channel';
       div.innerHTML = `
-        <img src="${channel.logo || 'https://via.placeholder.com/80x45?text=No+Logo'}" />
+        <img src="${channel.logo}" />
         <div>
           <strong>${channel.name}</strong><br/>
           <small>${channel.group}</small>
@@ -159,11 +158,9 @@
     const url = channel.url;
     let type = '';
 
-    if (url.endsWith('.mpd')) {
-      type = 'dash';
-    } else if (url.endsWith('.m3u8')) {
-      type = 'hls';
-    } else {
+    if (url.endsWith('.mpd')) type = 'dash';
+    else if (url.endsWith('.m3u8')) type = 'hls';
+    else {
       alert("Formato no soportado: " + url);
       return;
     }
@@ -171,43 +168,55 @@
     overlay.style.display = 'flex';
     title.textContent = channel.name;
 
-    // Destruye player anterior si existe
-    if (jwplayer("player").remove) {
-      jwplayer("player").remove();
+    // Destruir y reconstruir reproductor
+    jwplayer("player").remove();
+    const playerDiv = document.getElementById("player");
+    const newDiv = document.createElement("div");
+    newDiv.id = "player";
+    playerDiv.replaceWith(newDiv);
+
+    // Preparar configuración DRM si existe
+    const drmConfig = {};
+    if (channel.drm?.type === 'clearkey') {
+      drmConfig.clearkey = {
+        keyId: channel.drm.details.keyId,
+        key: channel.drm.details.key
+      };
+    } else if (channel.drm?.type === 'com.widevine.alpha') {
+      drmConfig.widevine = {
+        url: channel.drm.details.url
+      };
     }
 
-    const setup = {
+    jwplayer("player").setup({
       playlist: [{
         title: channel.name,
         image: channel.logo,
         sources: [{
           file: url,
-          type: type
+          type: type,
+          drm: Object.keys(drmConfig).length ? drmConfig : undefined
         }]
       }],
       width: "100%",
       aspectratio: "16:9",
       autostart: true,
       cast: {},
-      sharing: {},
-    };
-
-    jwplayer("player").setup(setup);
+      sharing: {}
+    });
   }
 
   function closeModal() {
     const overlay = document.getElementById('modalOverlay');
     overlay.style.display = 'none';
     jwplayer("player").remove();
-
-    // reconstruye div para evitar errores visuales
-    const old = document.getElementById("player");
-    const parent = old.parentNode;
-    const newPlayer = document.createElement("div");
-    newPlayer.id = "player";
-    parent.replaceChild(newPlayer, old);
+    const playerDiv = document.getElementById("player");
+    const newDiv = document.createElement("div");
+    newDiv.id = "player";
+    playerDiv.replaceWith(newDiv);
   }
 </script>
 
 </body>
 </html>
+
