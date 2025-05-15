@@ -42,17 +42,6 @@
       height: 100%;
     }
 
-    #searchBar {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: none;
-      font-size: 16px;
-      background: #202536;
-      color: #fff;
-      margin-top: 1rem;
-    }
-
     #channelList {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -82,19 +71,13 @@
       border-radius: 4px;
     }
 
-    /* JWPlayer ajustes */
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       h2 {
         font-size: 1.2rem;
-      }
-
-      #searchBar {
-        font-size: 14px;
       }
 
       .channel {
@@ -127,8 +110,6 @@
   <div id="playerContainer">
     <div id="player"></div>
   </div>
-
-  <input type="text" id="searchBar" placeholder="Buscar canal por nombre...">
 
   <div id="channelList"></div>
 </div>
@@ -170,14 +151,14 @@
       }
     });
 
-    renderChannels(channels);
+    renderChannels();
   }
 
-  function renderChannels(list) {
+  function renderChannels() {
     const container = document.getElementById('channelList');
     container.innerHTML = '';
 
-    list.forEach(channel => {
+    channels.forEach(channel => {
       const div = document.createElement('div');
       div.className = 'channel';
       div.innerHTML = `
@@ -187,7 +168,11 @@
           <small>${channel.group}</small>
         </div>
       `;
-      div.onclick = () => playChannel(channel);
+      div.onclick = () => {
+        playChannel(channel);
+        // Subir al reproductor
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
       container.appendChild(div);
     });
   }
@@ -241,14 +226,7 @@
       sharing: {}
     });
   }
-
-  document.getElementById('searchBar').addEventListener('input', function () {
-    const value = this.value.toLowerCase();
-    const filtered = channels.filter(ch => ch.name.toLowerCase().includes(value));
-    renderChannels(filtered);
-  });
 </script>
 
 </body>
 </html>
-
