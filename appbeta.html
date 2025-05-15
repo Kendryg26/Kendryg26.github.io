@@ -1,222 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Lista IPTV con DRM</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerter+ Rediseño UI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jwplayer@latest/jwplayer.css">
   <style>
     body {
-      background: #1c1c1c;
-      color: #fff;
-      font-family: sans-serif;
       margin: 0;
+      background-color: #060f1d;
+      color: #fff;
+      font-family: 'Rubik', sans-serif;
+    }
+    header {
+      background-color: #080d20;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    #search {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      background-color: #1b1e2c;
+      color: #fff;
+    }
+    .menu {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1rem;
+    }
+    .menu button {
+      background: #1a1d29;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .menu button:hover {
+      background: #2a2d3f;
+    }
+    .player-container {
+      width: 100%;
+      max-width: 100%;
+      height: 56.25vw;
+      max-height: 80vh;
+      background-color: #000;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
       padding: 1rem;
     }
     .channel {
-      display: flex;
-      align-items: center;
-      background: #2c2c2c;
-      margin: 8px 0;
-      padding: 8px;
-      border-radius: 6px;
+      background-color: #101521;
+      border-radius: 8px;
+      overflow: hidden;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: transform 0.2s;
     }
     .channel:hover {
-      background: #444;
+      transform: scale(1.05);
     }
     .channel img {
-      width: 80px;
-      height: 45px;
-      object-fit: cover;
-      margin-right: 1rem;
+      width: 100%;
+      display: block;
     }
-    #modalOverlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-    #modalContent {
-      background: #000;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 900px;
-      box-shadow: 0 0 10px #000;
-      position: relative;
-    }
-    #closeBtn {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      font-size: 22px;
-      color: white;
-      background: red;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      z-index: 10000;
-    }
-    #playerTitle {
-      margin: 0 0 10px 0;
+    .channel p {
+      margin: 0;
+      padding: 0.5rem;
+      font-size: 0.9rem;
       text-align: center;
     }
-    #player {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #000;
-    }
-    .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
-      display: none !important;
-    }
   </style>
-
-  <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
-  <script>
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-  </script>
 </head>
 <body>
 
-<h2>Lista de Canales</h2>
-<div id="channelList"></div>
+<header>
+  <h1>Kerter+</h1>
+  <input id="search" type="text" placeholder="Buscar canal...">
+</header>
 
-<!-- Modal -->
-<div id="modalOverlay">
-  <div id="modalContent">
-    <button id="closeBtn" onclick="closeModal()">✖</button>
-    <h3 id="playerTitle"></h3>
-    <div id="player"></div>
-  </div>
+<div class="menu">
+  <button onclick="filterCategory('Deportes')">Deportes</button>
+  <button onclick="filterCategory('Noticias')">Noticias</button>
+  <button onclick="filterCategory('Infantiles')">Infantiles</button>
+  <button onclick="filterCategory('Cine')">Cine</button>
+  <button onclick="filterCategory('Todos')">Todos</button>
 </div>
 
+<div class="player-container">
+  <div id="player"></div>
+</div>
+
+<div class="grid" id="channelGrid">
+  <!-- Canales se insertan dinámicamente -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jwplayer@latest/jwplayer.js"></script>
 <script>
-  const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/resolve/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94/DENSTV.m3u8";
-  const channels = [];
+  jwplayer.key = "YOUR_JWPLAYER_KEY";
 
-  fetch(m3u8Url)
-    .then(res => res.text())
-    .then(parseM3U);
+  const channels = [
+    { name: "ESPN", category: "Deportes", url: "https://link1.m3u8", thumbnail: "https://via.placeholder.com/300x169?text=ESPN" },
+    { name: "CNN", category: "Noticias", url: "https://link2.m3u8", thumbnail: "https://via.placeholder.com/300x169?text=CNN" },
+    { name: "Cartoon", category: "Infantiles", url: "https://link3.m3u8", thumbnail: "https://via.placeholder.com/300x169?text=Cartoon" },
+    { name: "HBO", category: "Cine", url: "https://link4.m3u8", thumbnail: "https://via.placeholder.com/300x169?text=HBO" },
+  ];
 
-  function parseM3U(data) {
-    const lines = data.split('\n').map(l => l.trim()).filter(l => l !== '');
-    let current = {};
-    lines.forEach(line => {
-      if (line.startsWith('#EXTINF')) {
-        const name = line.match(/,(.*)/)?.[1] || 'Sin nombre';
-        const logo = line.match(/tvg-logo="([^"]+)"/)?.[1] || '';
-        const group = line.match(/group-title="([^"]+)"/)?.[1] || '';
-        current = { name, logo, group, drm: {} };
-      } else if (line.startsWith('#KODIPROP:')) {
-        if (line.includes('license_type=')) {
-          const type = line.split('=')[1].trim();
-          current.drm.type = type;
-        }
-        if (line.includes('license_key=')) {
-          const keyData = line.split('=')[1].trim();
-          if (current.drm.type === 'clearkey') {
-            const [keyId, key] = keyData.split(':');
-            current.drm.details = { keyId, key };
-          } else if (current.drm.type === 'com.widevine.alpha') {
-            current.drm.details = { url: keyData };
-          }
-        }
-      } else if (!line.startsWith('#')) {
-        current.url = line.split('|')[0];
-        channels.push({...current});
-      }
-    });
+  let currentPlayer = jwplayer("player").setup({
+    file: channels[0].url,
+    width: "100%",
+    aspectratio: "16:9",
+    autostart: true,
+    controls: true,
+    skin: { name: "netflix" },
+  });
 
-    renderChannels();
-  }
-
-  function renderChannels() {
-    const container = document.getElementById('channelList');
-    channels.forEach(channel => {
-      const div = document.createElement('div');
-      div.className = 'channel';
+  function loadChannels(filter = 'Todos') {
+    const grid = document.getElementById("channelGrid");
+    grid.innerHTML = "";
+    channels.filter(c => filter === 'Todos' || c.category === filter).forEach(channel => {
+      const div = document.createElement("div");
+      div.className = "channel";
       div.innerHTML = `
-        <img src="${channel.logo}" />
-        <div>
-          <strong>${channel.name}</strong><br/>
-          <small>${channel.group}</small>
-        </div>
+        <img src="${channel.thumbnail}" alt="${channel.name}">
+        <p>${channel.name}</p>
       `;
-      div.onclick = () => playChannel(channel);
-      container.appendChild(div);
+      div.onclick = () => currentPlayer.load({ file: channel.url });
+      grid.appendChild(div);
     });
   }
 
-  function playChannel(channel) {
-    const overlay = document.getElementById('modalOverlay');
-    const title = document.getElementById('playerTitle');
-    const url = channel.url;
-    let type = '';
+  function filterCategory(category) {
+    loadChannels(category);
+  }
 
-    if (url.endsWith('.mpd')) type = 'dash';
-    else if (url.endsWith('.m3u8')) type = 'hls';
-    else {
-      alert("Formato no soportado: " + url);
-      return;
-    }
-
-    overlay.style.display = 'flex';
-    title.textContent = channel.name;
-
-    // Destruir y reconstruir reproductor
-    jwplayer("player").remove();
-    const playerDiv = document.getElementById("player");
-    const newDiv = document.createElement("div");
-    newDiv.id = "player";
-    playerDiv.replaceWith(newDiv);
-
-    // Preparar configuración DRM si existe
-    const drmConfig = {};
-    if (channel.drm?.type === 'clearkey') {
-      drmConfig.clearkey = {
-        keyId: channel.drm.details.keyId,
-        key: channel.drm.details.key
-      };
-    } else if (channel.drm?.type === 'com.widevine.alpha') {
-      drmConfig.widevine = {
-        url: channel.drm.details.url
-      };
-    }
-
-    jwplayer("player").setup({
-      playlist: [{
-        title: channel.name,
-        image: channel.logo,
-        sources: [{
-          file: url,
-          type: type,
-          drm: Object.keys(drmConfig).length ? drmConfig : undefined
-        }]
-      }],
-      width: "100%",
-      aspectratio: "16:9",
-      autostart: true,
-      cast: {},
-      sharing: {}
+  document.getElementById("search").addEventListener("input", (e) => {
+    const term = e.target.value.toLowerCase();
+    const grid = document.getElementById("channelGrid");
+    grid.innerHTML = "";
+    channels.filter(c => c.name.toLowerCase().includes(term)).forEach(channel => {
+      const div = document.createElement("div");
+      div.className = "channel";
+      div.innerHTML = `
+        <img src="${channel.thumbnail}" alt="${channel.name}">
+        <p>${channel.name}</p>
+      `;
+      div.onclick = () => currentPlayer.load({ file: channel.url });
+      grid.appendChild(div);
     });
-  }
+  });
 
-  function closeModal() {
-    const overlay = document.getElementById('modalOverlay');
-    overlay.style.display = 'none';
-    jwplayer("player").remove();
-    const playerDiv = document.getElementById("player");
-    const newDiv = document.createElement("div");
-    newDiv.id = "player";
-    playerDiv.replaceWith(newDiv);
-  }
+  loadChannels();
 </script>
-
 </body>
 </html>
-
