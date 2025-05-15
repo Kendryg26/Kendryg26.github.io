@@ -1,8 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>Lista IPTV estilo ViX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       background: #060f1d;
@@ -20,12 +21,20 @@
 
     h2 {
       margin: 0.5rem 0;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
     }
 
     #playerContainer {
       width: 100%;
       aspect-ratio: 16/9;
       background: #000;
+      margin: auto;
     }
 
     #player {
@@ -35,22 +44,20 @@
 
     #searchBar {
       width: 100%;
-      max-width: 600px;
-      margin: 1rem auto;
-      display: block;
       padding: 10px;
       border-radius: 6px;
       border: none;
       font-size: 16px;
       background: #202536;
       color: #fff;
+      margin-top: 1rem;
     }
 
     #channelList {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 16px;
-      padding: 1rem;
+      margin-top: 1rem;
     }
 
     .channel {
@@ -75,8 +82,33 @@
       border-radius: 4px;
     }
 
+    /* JWPlayer ajustes */
     .jw-settings-sharing, .jw-icon-pip, .jw-rightclick {
       display: none !important;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      #searchBar {
+        font-size: 14px;
+      }
+
+      .channel {
+        flex-direction: row;
+      }
+
+      .channel img {
+        width: 70px;
+        height: 40px;
+      }
+
+      .container {
+        padding: 0.5rem;
+      }
     }
   </style>
 
@@ -91,13 +123,15 @@
   <h2 id="playerTitle">Selecciona un canal</h2>
 </header>
 
-<div id="playerContainer">
-  <div id="player"></div>
+<div class="container">
+  <div id="playerContainer">
+    <div id="player"></div>
+  </div>
+
+  <input type="text" id="searchBar" placeholder="Buscar canal por nombre...">
+
+  <div id="channelList"></div>
 </div>
-
-<input type="text" id="searchBar" placeholder="Buscar canal por nombre...">
-
-<div id="channelList"></div>
 
 <script>
   const m3u8Url = "https://huggingface.co/spaces/mmsubandmovies/New1/resolve/9be71f20c39d4c98fc9422a7fbbdcb840bda0e94/DENSTV.m3u8";
@@ -217,3 +251,4 @@
 
 </body>
 </html>
+
