@@ -110,7 +110,7 @@
     async function cargarEventos() {
       const container = document.getElementById('eventos-container');
       try {
-        const res = await fetch('https://streamtp4.com/eventos.json');
+        const res = await fetch('https://corsproxy.io/?=https://streamtp4.com/eventos.json');
         const data = await res.json();
         container.innerHTML = '';
 
