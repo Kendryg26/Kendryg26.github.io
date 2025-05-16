@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Cubano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Qué tengo que resolver hoy?</h1>
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Ej: Mandar el paquete a La Habana">
+            <input type="date" id="taskDate">
+            <input type="time" id="taskTime">
+            <button onclick="addTask()">Añadir</button>
+        </div>
+        <div class="filter">
+            <label for="dateFilter">Ver tareas del:</label>
+            <input type="date" id="dateFilter" onchange="loadTasks()">
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
