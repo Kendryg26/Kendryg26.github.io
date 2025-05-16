@@ -1,22 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeportesTV+ Mejorado</title>
-    <link rel="stylesheet" href="/style.css">
-    <script defer src="/app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TVPass+ | Eventos en Vivo</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background-color: #1c1c1c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .evento {
+      background-color: #1a1a1a;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .evento h2 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #ffd700;
+    }
+    .evento a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ff2e63;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .evento a:hover {
+      background-color: #e21c50;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background-color: #1c1c1c;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>DeportesTV+ Mejorado</h1>
-    </header>
-    <main id="eventos-container">
-        <p>Cargando cartelera de eventos...</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 DeportesTV+</p>
-    </footer>
+  <header>
+    <h1>TVPass+ - Deportes en Vivo</h1>
+  </header>
+
+  <main id="eventos-container">
+    <p>Cargando cartelera de eventos...</p>
+  </main>
+
+  <footer>
+    &copy; 2025 TVPass+ | Todos los derechos reservados
+  </footer>
+
+  <script>
+    async function cargarEventos() {
+      const container = document.getElementById('eventos-container');
+      try {
+        const res = await fetch('eventos.json');
+        const data = await res.json();
+        container.innerHTML = '';
+
+        data.forEach(dia => {
+          const diaHeader = document.createElement('h2');
+          diaHeader.textContent = dia.fecha;
+          container.appendChild(diaHeader);
+
+          dia.eventos.forEach(evento => {
+            const div = document.createElement('div');
+            div.className = 'evento';
+            div.innerHTML = \`
+              <h2>\${evento.nombre}</h2>
+              <p>Hora: \${evento.hora}</p>
+              <a href="\${evento.enlaces.español}" target="_blank">Ver en Español</a>
+            \`;
+            container.appendChild(div);
+          });
+        });
+      } catch (e) {
+        container.innerHTML = '<p>Error al cargar los eventos. Intenta más tarde.</p>';
+      }
+    }
+
+    window.onload = cargarEventos;
+  </script>
 </body>
 </html>
