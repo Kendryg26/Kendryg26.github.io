@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Cubano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Tareas Logo" class="logo">
+        </div>
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Ej: Mandar el paquete a La Habana">
+            <input type="date" id="taskDate">
+            <input type="time" id="taskTime">
+            <button onclick="addTask()">Añadir</button>
+        </div>
+        <div class="filter">
+            <label for="dateFilter">Ver tareas del:</label>
+            <input type="date" id="dateFilter" onchange="loadTasks()">
+        </div>
+        <ul id="taskList"></ul>
+        <div class="stats">
+            <p><strong>Total hechas:</strong> <span id="hechasCount">0</span></p>
+            <p><strong>Total no hechas:</strong> <span id="nopuseCount">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
