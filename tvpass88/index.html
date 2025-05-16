@@ -23,7 +23,7 @@
     }
     main {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     .evento {
@@ -34,9 +34,36 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
     .evento h2 {
-      margin: 0 0 10px;
-      font-size: 1.2em;
-      color: #ffd700;
+      margin: 0 0 8px;
+      font-size: 1.1em;
+    }
+    .categoria {
+      display: inline-block;
+      padding: 3px 8px;
+      background-color: #444;
+      border-radius: 5px;
+      font-size: 0.8em;
+      margin-right: 10px;
+    }
+    .status {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.85em;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .status.finalizado {
+      background-color: #ff4e4e;
+      color: #fff;
+    }
+    .status.en-vivo {
+      background-color: #00cc66;
+      color: #fff;
+    }
+    .status.programado {
+      background-color: #ffaa00;
+      color: #000;
     }
     .evento a {
       display: inline-block;
@@ -61,11 +88,11 @@
 </head>
 <body>
   <header>
-    <h1>TVPass+ - Deportes en Vivo</h1>
+    <h1>TVPass+ - Eventos Deportivos en Vivo</h1>
   </header>
 
   <main id="eventos-container">
-    <p>Cargando cartelera de eventos...</p>
+    <p>Cargando eventos en vivo...</p>
   </main>
 
   <footer>
@@ -73,31 +100,37 @@
   </footer>
 
   <script>
+    function formatearEstado(status) {
+      status = status.toLowerCase();
+      if (status.includes("en vivo")) return { clase: "status en-vivo", texto: "EN VIVO" };
+      if (status.includes("final")) return { clase: "status finalizado", texto: "FINALIZADO" };
+      return { clase: "status programado", texto: "PROGRAMADO" };
+    }
+
     async function cargarEventos() {
       const container = document.getElementById('eventos-container');
       try {
-        const res = await fetch('eventos.json');
+        const res = await fetch('https://streamtp4.com/eventos.json');
         const data = await res.json();
         container.innerHTML = '';
 
-        data.forEach(dia => {
-          const diaHeader = document.createElement('h2');
-          diaHeader.textContent = dia.fecha;
-          container.appendChild(diaHeader);
+        data.forEach(evento => {
+          const estado = formatearEstado(evento.status);
 
-          dia.eventos.forEach(evento => {
-            const div = document.createElement('div');
-            div.className = 'evento';
-            div.innerHTML = \`
-              <h2>\${evento.nombre}</h2>
-              <p>Hora: \${evento.hora}</p>
-              <a href="\${evento.enlaces.español}" target="_blank">Ver en Español</a>
-            \`;
-            container.appendChild(div);
-          });
+          const div = document.createElement('div');
+          div.className = 'evento';
+          div.innerHTML = `
+            <h2>${evento.title}</h2>
+            <span class="categoria">${evento.category}</span>
+            <span class="${estado.clase}">${estado.texto}</span>
+            <p>⏰ ${evento.time}</p>
+            <a href="${evento.link}" target="_blank">Ver evento</a>
+          `;
+          container.appendChild(div);
         });
       } catch (e) {
         container.innerHTML = '<p>Error al cargar los eventos. Intenta más tarde.</p>';
+        console.error(e);
       }
     }
 
