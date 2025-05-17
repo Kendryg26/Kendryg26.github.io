@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reproductor Plyr con Calidades</title>
 
+  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -24,7 +25,10 @@
 
   <video id="player" controls playsinline></video>
 
+  <!-- Plyr JS -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+  <!-- HLS.js -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   <script>
@@ -39,26 +43,33 @@
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         const levels = hls.levels;
 
-        // Calidades ordenadas ascendente
+        // Ordenar de menor a mayor resolución
         const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
 
-        const qualityOptions = sortedLevels.map((level, index) => {
+        const qualityOptions = sortedLevels.map((level) => {
           const height = level.height || 0;
           const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
           return {
             label: `${height}p ${bitrate}`,
-            value: levels.indexOf(level), // usar índice real del level
+            value: levels.indexOf(level), // usamos el índice real de hls.levels
           };
         });
 
-        // Auto primero
+        // Auto al principio
         qualityOptions.unshift({ label: 'Auto', value: -1 });
 
+        // Crear mapa de etiquetas
+        const labels = qualityOptions.reduce((acc, q) => {
+          acc[q.value] = q.label;
+          return acc;
+        }, {});
+
+        // Inicializar Plyr
         const player = new Plyr(video, {
           controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
           settings: ['quality'],
           i18n: {
-            quality: 'Calidades', // traducción aquí
+            quality: 'Calidades',
           },
           quality: {
             default: -1,
@@ -70,14 +81,32 @@
           }
         });
 
-        // Etiquetas visuales corregidas
+        // Aplicar etiquetas
+        player.config.quality.labels = labels;
+        player.quality = {
+          default: -1,
+          options: qualityOptions.map(q => q.value),
+          forced: true,
+          onChange: (newQuality) => {
+            hls.currentLevel = newQuality;
+          }
+        };
+
+        // Actualizar los botones visuales del menú
         setTimeout(() => {
           const buttons = document.querySelectorAll('[data-plyr="quality"]');
           buttons.forEach((btn) => {
             const value = parseInt(btn.value);
-            const label = qualityOptions.find(q => q.value === value)?.label || `${value}p`;
+            const label = labels[value] || 'Auto';
             btn.innerHTML = `<span>${label}</span>`;
           });
+
+          // Mostrar la calidad actual junto al engranaje
+          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"] span');
+          const gearLabel = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+          if (selected && gearLabel) {
+            gearLabel.textContent = selected.textContent;
+          }
         }, 500);
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
