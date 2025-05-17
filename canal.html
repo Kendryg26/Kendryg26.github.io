@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr con En Vivo Integrado</title>
+  <title>Reproductor Plyr EN VIVO</title>
 
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
@@ -20,7 +20,7 @@
       background: #000;
     }
 
-    /* Estilo del badge dentro del control */
+    /* Badge EN VIVO */
     .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -48,12 +48,22 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.3; }
     }
+
+    /* Eliminar foco azul y fondo azul en botones */
+    .plyr__control:focus,
+    .plyr__control:hover,
+    .plyr__control[aria-expanded="true"] {
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
   </style>
 </head>
 <body>
 
   <video id="player" controls playsinline></video>
 
+  <!-- Scripts -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -141,9 +151,9 @@
             updateGearLabel(selectedValue);
           }
 
-          // Insertar el badge de EN VIVO después del botón de play
+          // Insertar badge EN VIVO al lado del botón de play
           const controlBar = document.querySelector('.plyr__controls');
-          const playButton = controlBar.querySelector('.plyr__control--overlaid') || controlBar.querySelector('[data-plyr="play"]');
+          const playButton = controlBar.querySelector('[data-plyr="play"]');
 
           const liveBadge = document.createElement('div');
           liveBadge.classList.add('live-badge');
