@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr con Calidades y En Vivo</title>
+  <title>Reproductor Plyr con En Vivo Integrado</title>
 
-  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -21,39 +20,45 @@
       background: #000;
     }
 
-    .live-indicator {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      background-color: red;
+    /* Estilo del badge dentro del control */
+    .plyr__controls .live-badge {
       color: white;
-      padding: 6px 14px;
-      font-size: 14px;
+      background-color: red;
+      font-size: 12px;
       font-weight: bold;
-      border-radius: 8px;
-      z-index: 9999;
-      box-shadow: 0 0 5px rgba(0,0,0,0.5);
-      font-family: Arial, sans-serif;
-      letter-spacing: 0.5px;
-      display: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .plyr__controls .live-badge::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Reproductor -->
   <video id="player" controls playsinline></video>
 
-  <!-- Indicador "EN VIVO" -->
-  <div class="live-indicator">🔴 EN VIVO</div>
-
-  <!-- Plyr y HLS.js -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   <script>
     const video = document.getElementById('player');
-    const liveBadge = document.querySelector('.live-indicator');
     const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
     if (Hls.isSupported()) {
@@ -135,6 +140,19 @@
             const selectedValue = parseInt(selected.value);
             updateGearLabel(selectedValue);
           }
+
+          // Insertar el badge de EN VIVO después del botón de play
+          const controlBar = document.querySelector('.plyr__controls');
+          const playButton = controlBar.querySelector('.plyr__control--overlaid') || controlBar.querySelector('[data-plyr="play"]');
+
+          const liveBadge = document.createElement('div');
+          liveBadge.classList.add('live-badge');
+          liveBadge.textContent = 'EN VIVO';
+
+          if (playButton && playButton.parentNode) {
+            playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
+          }
+
         }, 500);
 
         function updateGearLabel(value) {
@@ -145,24 +163,9 @@
           }
         }
       });
-
-      // Mostrar/Ocultar el badge EN VIVO según estado
-      video.addEventListener('playing', () => {
-        liveBadge.style.display = 'block';
-      });
-
-      video.addEventListener('pause', () => {
-        liveBadge.style.display = 'none';
-      });
-
-      video.addEventListener('error', () => {
-        liveBadge.style.display = 'none';
-      });
-
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
       new Plyr(video);
-      liveBadge.style.display = 'block';
     }
   </script>
 
