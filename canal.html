@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr con Calidad Real</title>
+  <title>Reproductor Plyr con Calidades</title>
 
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-
   <style>
     html, body {
       margin: 0;
@@ -40,23 +39,27 @@
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         const levels = hls.levels;
 
-        // Crear opciones de calidad con resolución + bitrate
-        const qualityOptions = levels.map((level, index) => {
+        // Calidades ordenadas ascendente
+        const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
+
+        const qualityOptions = sortedLevels.map((level, index) => {
           const height = level.height || 0;
           const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
           return {
             label: `${height}p ${bitrate}`,
-            value: index
+            value: levels.indexOf(level), // usar índice real del level
           };
         });
 
-        // Añadir opción "Auto"
-        qualityOptions.push({ label: 'Auto', value: -1 });
+        // Auto primero
+        qualityOptions.unshift({ label: 'Auto', value: -1 });
 
-        // Inicializar Plyr manualmente
         const player = new Plyr(video, {
           controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
           settings: ['quality'],
+          i18n: {
+            quality: 'Calidades', // traducción aquí
+          },
           quality: {
             default: -1,
             options: qualityOptions.map(q => q.value),
@@ -67,20 +70,10 @@
           }
         });
 
-        // Este truco aplica las etiquetas personalizadas
-        player.quality = {
-          default: -1,
-          options: qualityOptions.map(q => q.value),
-          forced: true,
-          onChange: (newQuality) => {
-            hls.currentLevel = newQuality;
-          }
-        };
-
-        // Aplicar etiquetas manualmente con acceso al DOM
+        // Etiquetas visuales corregidas
         setTimeout(() => {
           const buttons = document.querySelectorAll('[data-plyr="quality"]');
-          buttons.forEach((btn, i) => {
+          buttons.forEach((btn) => {
             const value = parseInt(btn.value);
             const label = qualityOptions.find(q => q.value === value)?.label || `${value}p`;
             btn.innerHTML = `<span>${label}</span>`;
