@@ -20,7 +20,6 @@
       background: #000;
     }
 
-    /* Badge EN VIVO */
     .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -32,7 +31,7 @@
       align-items: center;
       cursor: pointer;
       transition: background 0.2s ease;
-      margin-right: 8px;
+      margin-left: 10px;
     }
 
     .live-badge:hover {
@@ -55,7 +54,7 @@
       50% { opacity: 0.3; }
     }
 
-    /* iOS menú calidad */
+    /* Estilo menú iOS */
     .plyr__menu__container {
       background-color: #0C161C94 !important;
       backdrop-filter: saturate(180%) blur(55px) !important;
@@ -74,7 +73,7 @@
       color: #00bfff !important;
     }
 
-    /* Ocultar barra de progreso y tiempo */
+    /* Ocultar solo progreso y tiempo */
     .plyr__progress,
     .plyr__progress__container,
     .plyr__time,
@@ -85,32 +84,22 @@
       display: none !important;
     }
 
-    /* Estética minimalista sin focos azules */
-    .plyr__control:focus,
-    .plyr__control:hover,
-    .plyr__control[aria-expanded="true"] {
-      outline: none !important;
-      box-shadow: none !important;
-      background: transparent !important;
-    }
-
-    /* Distribución personalizada de controles */
     .plyr__controls {
-      justify-content: space-between !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .plyr__controls__left {
+    .left-controls,
+    .right-controls {
       display: flex;
       align-items: center;
-      gap: 8px;
     }
 
-    .plyr__controls__right {
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .left-controls .plyr__control,
+    .right-controls .plyr__control {
+      margin-right: 5px;
     }
-
   </style>
 </head>
 <body>
@@ -125,87 +114,25 @@ const video = document.getElementById('player');
 const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
 if (Hls.isSupported()) {
-  const hls = new Hls({
-    maxBufferLength: 10,
-    maxMaxBufferLength: 30,
-    abrEwmaDefaultEstimate: 500000,
-    abrBandWidthFactor: 0.95,
-    abrBandWidthUpFactor: 0.9,
-    enableWorker: true,
-    lowLatencyMode: true,
-  });
-
+  const hls = new Hls({ lowLatencyMode: true });
   hls.loadSource(source);
   hls.attachMedia(video);
 
   hls.on(Hls.Events.MANIFEST_PARSED, () => {
-    const levels = hls.levels;
-    const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
-
-    const qualityOptions = sortedLevels.map((level) => {
-      const height = level.height || 0;
-      const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
-      return {
-        label: `${height}p ${bitrate}`,
-        value: levels.indexOf(level),
-      };
-    });
-
-    qualityOptions.unshift({ label: 'Auto', value: -1 });
-
-    const labels = qualityOptions.reduce((acc, q) => {
-      acc[q.value] = q.label;
-      return acc;
-    }, {});
-
     const player = new Plyr(video, {
-      controls: ['play', 'mute', 'volume', 'settings', 'fullscreen'],
+      controls: ['play', 'mute', 'settings', 'fullscreen'],
       settings: ['quality'],
-      i18n: { quality: 'Calidades' },
-      quality: {
-        default: -1,
-        options: qualityOptions.map(q => q.value),
-        forced: true,
-        onChange: (newQuality) => {
-          if (hls.currentLevel !== newQuality) {
-            hls.currentLevel = newQuality;
-            updateGearLabel(newQuality);
-          }
-        }
-      }
+      i18n: { quality: 'Calidades' }
     });
-
-    player.config.quality.labels = labels;
 
     setTimeout(() => {
-      const controlBar = document.querySelector('.plyr__controls');
-
-      // Crear contenedores izquierdo y derecho
-      const leftControls = document.createElement('div');
-      leftControls.className = 'plyr__controls__left';
-      const rightControls = document.createElement('div');
-      rightControls.className = 'plyr__controls__right';
-
-      // Reorganizar controles
-      Array.from(controlBar.children).forEach(child => {
-        if (
-          child.dataset.plyr === 'play' ||
-          child.dataset.plyr === 'mute' ||
-          child.dataset.plyr === 'volume'
-        ) {
-          leftControls.appendChild(child);
-        } else if (
-          child.dataset.plyr === 'settings' ||
-          child.dataset.plyr === 'fullscreen'
-        ) {
-          rightControls.appendChild(child);
-        }
-      });
-
-      // Insertar EN VIVO al principio
+      // Agrega EN VIVO a la izquierda del botón de play
+      const controls = document.querySelector('.plyr__controls');
+      const playButton = controls.querySelector('[data-plyr="play"]');
       const liveBadge = document.createElement('div');
       liveBadge.classList.add('live-badge');
       liveBadge.textContent = 'EN VIVO';
+
       liveBadge.addEventListener('click', () => {
         if (video.seekable.length > 0) {
           const livePoint = video.seekable.end(0);
@@ -213,26 +140,11 @@ if (Hls.isSupported()) {
           video.play();
         }
       });
-      leftControls.insertBefore(liveBadge, leftControls.firstChild);
 
-      // Limpiar y reinsertar controles
-      controlBar.innerHTML = '';
-      controlBar.appendChild(leftControls);
-      controlBar.appendChild(rightControls);
-
-      if (!isFinite(video.duration)) {
-        document.querySelector('.plyr').classList.add('is-live');
+      if (playButton && playButton.parentNode) {
+        playButton.parentNode.insertBefore(liveBadge, playButton);
       }
-
     }, 500);
-
-    function updateGearLabel(value) {
-      const label = labels[value] || 'Auto';
-      const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
-      if (menuTriggerSpan) {
-        menuTriggerSpan.textContent = label;
-      }
-    }
   });
 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
   video.src = source;
