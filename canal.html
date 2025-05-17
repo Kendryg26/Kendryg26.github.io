@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor con selector de calidad</title>
+  <title>Reproductor en vivo con Plyr + calidad</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -24,7 +24,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      background: #000;
     }
 
     .plyr {
@@ -43,7 +42,6 @@
   <script>
     const video = document.getElementById('player');
     const source = 'https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8';
-
     const player = new Plyr('#player', {
       controls: [
         'play', 'progress', 'current-time', 'mute', 'volume',
@@ -57,38 +55,28 @@
       hls.loadSource(source);
       hls.attachMedia(video);
 
-      hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-        const availableQualities = hls.levels
-          .map((l, i) => ({ label: l.height + 'p', value: i }))
-          .filter((v, i, self) => i === self.findIndex(t => t.label === v.label));
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        // Si hay niveles, habilitamos el menú de calidad
+        if (hls.levels.length > 0) {
+          const levels = hls.levels.map((l, i) => ({
+            label: `${l.height}p`,
+            index: i
+          }));
 
-        availableQualities.unshift({ label: 'Auto', value: -1 });
+          // Agrega opción automática
+          levels.unshift({ label: 'Auto', index: -1 });
 
-        player.options.quality = {
-          default: -1,
-          options: availableQualities.map(q => q.value),
-          forced: true,
-          onChange: (newQuality) => {
-            hls.currentLevel = newQuality;
-          }
-        };
-
-        player.config.quality = {
-          default: -1,
-          options: availableQualities.map(q => q.value),
-          forced: true,
-          onChange: (newQuality) => {
-            hls.currentLevel = newQuality;
-          }
-        };
-
-        // Agrega opciones al menú visual
-        player.settings.set('quality', {
-          options: availableQualities.map(q => q.value),
-          labels: Object.fromEntries(availableQualities.map(q => [q.value, q.label])),
-          current: -1,
-          default: -1,
-        });
+          // Configurar selector en Plyr
+          player.settings.set('quality', {
+            options: levels.map(l => l.index),
+            labels: Object.fromEntries(levels.map(l => [l.index, l.label])),
+            current: -1,
+            default: -1,
+            onChange: (index) => {
+              hls.currentLevel = index;
+            }
+          });
+        }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
