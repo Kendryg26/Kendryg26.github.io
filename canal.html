@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr con Calidades</title>
+  <title>Reproductor Plyr Optimizado</title>
 
-  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -23,98 +22,111 @@
 </head>
 <body>
 
-  <video id="player" controls playsinline></video>
+<video id="player" controls playsinline></video>
 
-  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-  <script>
-    const video = document.getElementById('player');
-    const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
+<script>
+  const video = document.getElementById('player');
+  const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(source);
-      hls.attachMedia(video);
+  if (Hls.isSupported()) {
+    // ⚙️ OPCIONES AVANZADAS para rendimiento
+    const hls = new Hls({
+      maxBufferLength: 10,              // Reduce lag al cambiar calidad
+      maxMaxBufferLength: 30,
+      abrEwmaDefaultEstimate: 500000,   // Mejora estimación de red inicial
+      abrBandWidthFactor: 0.95,
+      abrBandWidthUpFactor: 0.9,
+      enableWorker: true,
+      lowLatencyMode: true,             // Menor latencia si el servidor lo permite
+    });
 
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        const levels = hls.levels;
-        const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
+    hls.loadSource(source);
+    hls.attachMedia(video);
 
-        const qualityOptions = sortedLevels.map((level) => {
-          const height = level.height || 0;
-          const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
-          return {
-            label: `${height}p ${bitrate}`,
-            value: levels.indexOf(level),
-          };
-        });
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      const levels = hls.levels;
+      const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
 
-        qualityOptions.unshift({ label: 'Auto', value: -1 });
+      const qualityOptions = sortedLevels.map((level) => {
+        const height = level.height || 0;
+        const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
+        return {
+          label: `${height}p ${bitrate}`,
+          value: levels.indexOf(level),
+        };
+      });
 
-        const labels = qualityOptions.reduce((acc, q) => {
-          acc[q.value] = q.label;
-          return acc;
-        }, {});
+      qualityOptions.unshift({ label: 'Auto', value: -1 });
 
-        const player = new Plyr(video, {
-          controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
-          settings: ['quality'],
-          i18n: {
-            quality: 'Calidades',
-          },
-          quality: {
-            default: -1,
-            options: qualityOptions.map(q => q.value),
-            forced: true,
-            onChange: (newQuality) => {
-              hls.currentLevel = newQuality;
-              updateGearLabel(newQuality); // actualizar engranaje en tiempo real
-            }
-          }
-        });
+      const labels = qualityOptions.reduce((acc, q) => {
+        acc[q.value] = q.label;
+        return acc;
+      }, {});
 
-        player.config.quality.labels = labels;
-        player.quality = {
+      const player = new Plyr(video, {
+        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+        settings: ['quality'],
+        i18n: {
+          quality: 'Calidades',
+        },
+        quality: {
           default: -1,
           options: qualityOptions.map(q => q.value),
           forced: true,
           onChange: (newQuality) => {
-            hls.currentLevel = newQuality;
-            updateGearLabel(newQuality);
-          }
-        };
-
-        // Reemplazar etiquetas del menú
-        setTimeout(() => {
-          const buttons = document.querySelectorAll('[data-plyr="quality"]');
-          buttons.forEach((btn) => {
-            const value = parseInt(btn.value);
-            const label = labels[value] || 'Auto';
-            btn.innerHTML = `<span>${label}</span>`;
-          });
-
-          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-          if (selected) {
-            const selectedValue = parseInt(selected.value);
-            updateGearLabel(selectedValue);
-          }
-        }, 500);
-
-        // Función para actualizar el texto al lado del engranaje
-        function updateGearLabel(value) {
-          const label = labels[value] || 'Auto';
-          const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
-          if (menuTriggerSpan) {
-            menuTriggerSpan.textContent = label;
+            // Solo cambiar si es necesario
+            if (hls.currentLevel !== newQuality) {
+              hls.currentLevel = newQuality;
+              updateGearLabel(newQuality);
+            }
           }
         }
       });
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = source;
-      new Plyr(video);
-    }
-  </script>
+
+      player.config.quality.labels = labels;
+      player.quality = {
+        default: -1,
+        options: qualityOptions.map(q => q.value),
+        forced: true,
+        onChange: (newQuality) => {
+          if (hls.currentLevel !== newQuality) {
+            hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
+          }
+        }
+      };
+
+      setTimeout(() => {
+        const buttons = document.querySelectorAll('[data-plyr="quality"]');
+        buttons.forEach((btn) => {
+          const value = parseInt(btn.value);
+          const label = labels[value] || 'Auto';
+          btn.innerHTML = `<span>${label}</span>`;
+        });
+
+        const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
+        if (selected) {
+          const selectedValue = parseInt(selected.value);
+          updateGearLabel(selectedValue);
+        }
+      }, 500);
+
+      function updateGearLabel(value) {
+        const label = labels[value] || 'Auto';
+        const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+        if (menuTriggerSpan) {
+          menuTriggerSpan.textContent = label;
+        }
+      }
+    });
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = source;
+    new Plyr(video);
+  }
+</script>
 
 </body>
 </html>
