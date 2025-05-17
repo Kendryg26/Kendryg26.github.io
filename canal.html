@@ -20,6 +20,7 @@
       background: #000;
     }
 
+    /* Badge EN VIVO */
     .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -54,6 +55,7 @@
       50% { opacity: 0.3; }
     }
 
+    /* Eliminar efectos de foco azul */
     .plyr__control:focus,
     .plyr__control:hover,
     .plyr__control[aria-expanded="true"] {
@@ -62,6 +64,7 @@
       background: transparent !important;
     }
 
+    /* Estilo iOS para menú de calidad */
     .plyr__menu__container {
       background-color: #0C161C94 !important;
       backdrop-filter: saturate(180%) blur(55px) !important;
@@ -80,6 +83,7 @@
       color: #00bfff !important;
     }
 
+    /* Ocultar todo rastro de progreso en EN VIVO */
     .is-live .plyr__progress__container,
     .is-live .plyr__progress,
     .is-live .plyr__time--current,
@@ -92,7 +96,7 @@
 </head>
 <body>
 
-<video id="player" controls playsinline autoplay muted></video>
+<video id="player" controls playsinline></video>
 
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -136,13 +140,21 @@ if (Hls.isSupported()) {
     }, {});
 
     const player = new Plyr(video, {
-      controls: ['play', 'mute', 'volume', 'settings', 'fullscreen'],
+      controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
       settings: ['quality'],
       i18n: { quality: 'Calidades' },
-      autoplay: true
+      quality: {
+        default: -1,
+        options: qualityOptions.map(q => q.value),
+        forced: true,
+        onChange: (newQuality) => {
+          if (hls.currentLevel !== newQuality) {
+            hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
+          }
+        }
+      }
     });
-
-    video.play().catch(() => {}); // Forzar autoplay si el navegador lo bloquea
 
     player.config.quality.labels = labels;
     player.quality = {
@@ -192,6 +204,7 @@ if (Hls.isSupported()) {
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
       }
+
     }, 500);
 
     function updateGearLabel(value) {
@@ -204,12 +217,9 @@ if (Hls.isSupported()) {
   });
 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
   video.src = source;
-  video.autoplay = true;
-  video.muted = true;
   new Plyr(video);
 }
 </script>
 
 </body>
 </html>
-
