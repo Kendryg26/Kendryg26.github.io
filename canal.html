@@ -25,10 +25,7 @@
 
   <video id="player" controls playsinline></video>
 
-  <!-- Plyr JS -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-
-  <!-- HLS.js -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   <script>
@@ -42,8 +39,6 @@
 
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         const levels = hls.levels;
-
-        // Ordenar de menor a mayor resolución
         const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
 
         const qualityOptions = sortedLevels.map((level) => {
@@ -51,20 +46,17 @@
           const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
           return {
             label: `${height}p ${bitrate}`,
-            value: levels.indexOf(level), // usamos el índice real de hls.levels
+            value: levels.indexOf(level),
           };
         });
 
-        // Auto al principio
         qualityOptions.unshift({ label: 'Auto', value: -1 });
 
-        // Crear mapa de etiquetas
         const labels = qualityOptions.reduce((acc, q) => {
           acc[q.value] = q.label;
           return acc;
         }, {});
 
-        // Inicializar Plyr
         const player = new Plyr(video, {
           controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
           settings: ['quality'],
@@ -77,11 +69,11 @@
             forced: true,
             onChange: (newQuality) => {
               hls.currentLevel = newQuality;
+              updateGearLabel(newQuality); // actualizar engranaje en tiempo real
             }
           }
         });
 
-        // Aplicar etiquetas
         player.config.quality.labels = labels;
         player.quality = {
           default: -1,
@@ -89,10 +81,11 @@
           forced: true,
           onChange: (newQuality) => {
             hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
           }
         };
 
-        // Actualizar los botones visuales del menú
+        // Reemplazar etiquetas del menú
         setTimeout(() => {
           const buttons = document.querySelectorAll('[data-plyr="quality"]');
           buttons.forEach((btn) => {
@@ -101,13 +94,21 @@
             btn.innerHTML = `<span>${label}</span>`;
           });
 
-          // Mostrar la calidad actual junto al engranaje
-          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"] span');
-          const gearLabel = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
-          if (selected && gearLabel) {
-            gearLabel.textContent = selected.textContent;
+          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
+          if (selected) {
+            const selectedValue = parseInt(selected.value);
+            updateGearLabel(selectedValue);
           }
         }, 500);
+
+        // Función para actualizar el texto al lado del engranaje
+        function updateGearLabel(value) {
+          const label = labels[value] || 'Auto';
+          const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+          if (menuTriggerSpan) {
+            menuTriggerSpan.textContent = label;
+          }
+        }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
