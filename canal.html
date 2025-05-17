@@ -20,7 +20,6 @@
       background: #000;
     }
 
-    /* Badge EN VIVO */
     .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -49,7 +48,7 @@
       50% { opacity: 0.3; }
     }
 
-    /* Eliminar foco azul y fondo azul en botones */
+    /* Eliminar efectos azules */
     .plyr__control:focus,
     .plyr__control:hover,
     .plyr__control[aria-expanded="true"] {
@@ -57,13 +56,18 @@
       box-shadow: none !important;
       background: transparent !important;
     }
+
+    /* Ocultar barra de progreso en vivo */
+    .is-live .plyr__progress,
+    .is-live .plyr__time--duration {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
 
   <video id="player" controls playsinline></video>
 
-  <!-- Scripts -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -151,16 +155,18 @@
             updateGearLabel(selectedValue);
           }
 
-          // Insertar badge EN VIVO al lado del botón de play
           const controlBar = document.querySelector('.plyr__controls');
           const playButton = controlBar.querySelector('[data-plyr="play"]');
-
           const liveBadge = document.createElement('div');
           liveBadge.classList.add('live-badge');
           liveBadge.textContent = 'EN VIVO';
-
           if (playButton && playButton.parentNode) {
             playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
+          }
+
+          // Detectar si es LIVE y ocultar barra de progreso
+          if (hls.levels[0]?.details?.live) {
+            document.querySelector('.plyr').classList.add('is-live');
           }
 
         }, 500);
