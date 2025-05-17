@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor Fullscreen con Plyr</title>
+  <title>Reproductor con selector de calidad</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -44,36 +44,55 @@
     const video = document.getElementById('player');
     const source = 'https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8';
 
-    if (Hls.isSupported()) {
-      const hls = new Hls({
-        // Aquí puedes configurar para manejar calidades manualmente más adelante
-      });
-
-      hls.loadSource(source);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        video.play();
-      });
-
-      // Acceso a niveles de calidad
-      window.hls = hls; // Para futuras extensiones
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = source;
-      video.addEventListener('loadedmetadata', function () {
-        video.play();
-      });
-    }
-
     const player = new Plyr('#player', {
       controls: [
         'play', 'progress', 'current-time', 'mute', 'volume',
-        'settings', 'fullscreen' // Aquí está el botón de pantalla completa
+        'settings', 'fullscreen'
       ],
-      ratio: '16:9',
-      autoplay: true
+      settings: ['quality'],
     });
 
-    window.player = player;
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(source);
+      hls.attachMedia(video);
+
+      hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+        const availableQualities = hls.levels
+          .map((l, i) => ({ label: l.height + 'p', value: i }))
+          .filter((v, i, self) => i === self.findIndex(t => t.label === v.label));
+
+        availableQualities.unshift({ label: 'Auto', value: -1 });
+
+        player.options.quality = {
+          default: -1,
+          options: availableQualities.map(q => q.value),
+          forced: true,
+          onChange: (newQuality) => {
+            hls.currentLevel = newQuality;
+          }
+        };
+
+        player.config.quality = {
+          default: -1,
+          options: availableQualities.map(q => q.value),
+          forced: true,
+          onChange: (newQuality) => {
+            hls.currentLevel = newQuality;
+          }
+        };
+
+        // Agrega opciones al menú visual
+        player.settings.set('quality', {
+          options: availableQualities.map(q => q.value),
+          labels: Object.fromEntries(availableQualities.map(q => [q.value, q.label])),
+          current: -1,
+          default: -1,
+        });
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = source;
+    }
   </script>
 
 </body>
