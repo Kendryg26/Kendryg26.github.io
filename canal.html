@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor en vivo con Plyr + calidad</title>
+  <title>Disney+ Style Player</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -10,30 +10,57 @@
       padding: 0;
       height: 100%;
       background-color: #000;
+      font-family: 'Arial', sans-serif;
     }
 
-    .video-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    .video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
     }
 
     video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      background: black;
     }
 
-    .plyr {
-      border-radius: 0;
+    .plyr--video {
+      --plyr-color-main: #00aaff;
+    }
+
+    .video-title {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+      z-index: 10;
+    }
+
+    .plyr__controls {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      padding-bottom: 20px;
+    }
+
+    .plyr__progress {
+      height: 5px;
+    }
+
+    .plyr__time {
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-  <div class="video-wrapper">
+  <div class="video-container">
+    <div class="video-title">Marvel Studios' Avengers: Endgame</div>
     <video id="player" controls playsinline></video>
   </div>
 
@@ -42,42 +69,20 @@
   <script>
     const video = document.getElementById('player');
     const source = 'https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8';
+
     const player = new Plyr('#player', {
       controls: [
-        'play', 'progress', 'current-time', 'mute', 'volume',
+        'play', 'rewind', 'fast-forward', 'progress', 'current-time', 'mute', 'volume',
         'settings', 'fullscreen'
       ],
       settings: ['quality'],
+      autoplay: true
     });
 
     if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(source);
       hls.attachMedia(video);
-
-      hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        // Si hay niveles, habilitamos el menú de calidad
-        if (hls.levels.length > 0) {
-          const levels = hls.levels.map((l, i) => ({
-            label: `${l.height}p`,
-            index: i
-          }));
-
-          // Agrega opción automática
-          levels.unshift({ label: 'Auto', index: -1 });
-
-          // Configurar selector en Plyr
-          player.settings.set('quality', {
-            options: levels.map(l => l.index),
-            labels: Object.fromEntries(levels.map(l => [l.index, l.label])),
-            current: -1,
-            default: -1,
-            onChange: (index) => {
-              hls.currentLevel = index;
-            }
-          });
-        }
-      });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
     }
