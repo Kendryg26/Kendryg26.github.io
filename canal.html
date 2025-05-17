@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr con Selector de Calidad</title>
+  <title>Reproductor Plyr con Calidad Real</title>
 
-  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
   <style>
@@ -19,6 +17,7 @@
     video {
       width: 100%;
       height: 100vh;
+      background: #000;
     }
   </style>
 </head>
@@ -26,16 +25,12 @@
 
   <video id="player" controls playsinline></video>
 
-  <!-- Plyr JS -->
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-
-  <!-- HLS.js -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
   <script>
     const video = document.getElementById('player');
     const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
-    let player;
 
     if (Hls.isSupported()) {
       const hls = new Hls();
@@ -45,38 +40,56 @@
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         const levels = hls.levels;
 
-        const availableQualities = levels.map((level, index) => {
+        // Crear opciones de calidad con resolución + bitrate
+        const qualityOptions = levels.map((level, index) => {
           const height = level.height || 0;
           const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
           return {
             label: `${height}p ${bitrate}`,
-            value: index,
+            value: index
           };
         });
 
-        availableQualities.push({ label: 'Auto', value: -1 });
+        // Añadir opción "Auto"
+        qualityOptions.push({ label: 'Auto', value: -1 });
 
-        player = new Plyr(video, {
+        // Inicializar Plyr manualmente
+        const player = new Plyr(video, {
           controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
           settings: ['quality'],
           quality: {
             default: -1,
-            options: availableQualities.map(q => q.value),
+            options: qualityOptions.map(q => q.value),
             forced: true,
             onChange: (newQuality) => {
               hls.currentLevel = newQuality;
-            },
-          },
+            }
+          }
         });
 
-        player.config.quality.labels = availableQualities.reduce((acc, q) => {
-          acc[q.value] = q.label;
-          return acc;
-        }, {});
+        // Este truco aplica las etiquetas personalizadas
+        player.quality = {
+          default: -1,
+          options: qualityOptions.map(q => q.value),
+          forced: true,
+          onChange: (newQuality) => {
+            hls.currentLevel = newQuality;
+          }
+        };
+
+        // Aplicar etiquetas manualmente con acceso al DOM
+        setTimeout(() => {
+          const buttons = document.querySelectorAll('[data-plyr="quality"]');
+          buttons.forEach((btn, i) => {
+            const value = parseInt(btn.value);
+            const label = qualityOptions.find(q => q.value === value)?.label || `${value}p`;
+            btn.innerHTML = `<span>${label}</span>`;
+          });
+        }, 500);
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
-      player = new Plyr(video);
+      new Plyr(video);
     }
   </script>
 
