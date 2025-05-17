@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reproductor EN VIVO Pro</title>
-
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -92,7 +91,7 @@
 </head>
 <body>
 
-<!-- ÍCONO FULLSCREEN PERSONALIZADO -->
+<!-- Iconos personalizados fullscreen -->
 <svg style="display: none;">
   <symbol id="custom-fullscreen-enter" viewBox="0 0 24 24">
     <path fill="white" d="M4 4h6v2H6v4H4V4zm16 0v6h-2V6h-4V4h6zm0 16h-6v-2h4v-4h2v6zM4 20v-6h2v4h4v2H4z"/>
@@ -106,7 +105,6 @@
 
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-
 <script>
 const video = document.getElementById('player');
 const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
@@ -139,7 +137,6 @@ if (Hls.isSupported()) {
     });
 
     qualityOptions.unshift({ label: 'Auto', value: -1 });
-
     const labels = qualityOptions.reduce((acc, q) => {
       acc[q.value] = q.label;
       return acc;
@@ -152,8 +149,7 @@ if (Hls.isSupported()) {
       fullscreen: { enabled: true, fallback: true }
     });
 
-    player.config.quality.labels = labels;
-    player.quality = {
+    player.config.quality = {
       default: -1,
       options: qualityOptions.map(q => q.value),
       forced: true,
@@ -166,7 +162,6 @@ if (Hls.isSupported()) {
     };
 
     setTimeout(() => {
-      // Aplicar etiquetas a calidad
       const buttons = document.querySelectorAll('[data-plyr="quality"]');
       buttons.forEach((btn) => {
         const value = parseInt(btn.value);
@@ -175,11 +170,8 @@ if (Hls.isSupported()) {
       });
 
       const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-      if (selected) {
-        updateGearLabel(parseInt(selected.value));
-      }
+      if (selected) updateGearLabel(parseInt(selected.value));
 
-      // Botón EN VIVO
       const controlBar = document.querySelector('.plyr__controls');
       const playButton = controlBar.querySelector('[data-plyr="play"]');
       const liveBadge = document.createElement('div');
@@ -197,12 +189,10 @@ if (Hls.isSupported()) {
         playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
       }
 
-      // Detectar si es stream EN VIVO
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
       }
 
-      // Reemplazar ícono de fullscreen
       const fsButton = document.querySelector('[data-plyr="fullscreen"]');
       if (fsButton) {
         fsButton.innerHTML = `
@@ -212,7 +202,6 @@ if (Hls.isSupported()) {
           <span class="label--not-pressed plyr__sr-only">Enter fullscreen</span>
         `;
       }
-
     }, 500);
 
     function updateGearLabel(value) {
@@ -228,6 +217,5 @@ if (Hls.isSupported()) {
   new Plyr(video);
 }
 </script>
-
 </body>
 </html>
