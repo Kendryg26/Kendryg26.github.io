@@ -30,6 +30,12 @@
       margin-left: 10px;
       display: flex;
       align-items: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .plyr__controls .live-badge:hover {
+      background-color: #e0134e;
     }
 
     .plyr__controls .live-badge::before {
@@ -57,7 +63,7 @@
       background: transparent !important;
     }
 
-    /* Ocultar barra de progreso en vivo */
+    /* Ocultar progreso y duración si es EN VIVO */
     .is-live .plyr__progress,
     .is-live .plyr__time--duration {
       display: none !important;
@@ -66,124 +72,132 @@
 </head>
 <body>
 
-  <video id="player" controls playsinline></video>
+<video id="player" controls playsinline></video>
 
-  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-  <script>
-    const video = document.getElementById('player');
-    const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
+<script>
+const video = document.getElementById('player');
+const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
-    if (Hls.isSupported()) {
-      const hls = new Hls({
-        maxBufferLength: 10,
-        maxMaxBufferLength: 30,
-        abrEwmaDefaultEstimate: 500000,
-        abrBandWidthFactor: 0.95,
-        abrBandWidthUpFactor: 0.9,
-        enableWorker: true,
-        lowLatencyMode: true,
-      });
+if (Hls.isSupported()) {
+  const hls = new Hls({
+    maxBufferLength: 10,
+    maxMaxBufferLength: 30,
+    abrEwmaDefaultEstimate: 500000,
+    abrBandWidthFactor: 0.95,
+    abrBandWidthUpFactor: 0.9,
+    enableWorker: true,
+    lowLatencyMode: true,
+  });
 
-      hls.loadSource(source);
-      hls.attachMedia(video);
+  hls.loadSource(source);
+  hls.attachMedia(video);
 
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        const levels = hls.levels;
-        const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
+  hls.on(Hls.Events.MANIFEST_PARSED, () => {
+    const levels = hls.levels;
+    const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
 
-        const qualityOptions = sortedLevels.map((level) => {
-          const height = level.height || 0;
-          const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
-          return {
-            label: `${height}p ${bitrate}`,
-            value: levels.indexOf(level),
-          };
-        });
+    const qualityOptions = sortedLevels.map((level) => {
+      const height = level.height || 0;
+      const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
+      return {
+        label: `${height}p ${bitrate}`,
+        value: levels.indexOf(level),
+      };
+    });
 
-        qualityOptions.unshift({ label: 'Auto', value: -1 });
+    qualityOptions.unshift({ label: 'Auto', value: -1 });
 
-        const labels = qualityOptions.reduce((acc, q) => {
-          acc[q.value] = q.label;
-          return acc;
-        }, {});
+    const labels = qualityOptions.reduce((acc, q) => {
+      acc[q.value] = q.label;
+      return acc;
+    }, {});
 
-        const player = new Plyr(video, {
-          controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
-          settings: ['quality'],
-          i18n: {
-            quality: 'Calidades',
-          },
-          quality: {
-            default: -1,
-            options: qualityOptions.map(q => q.value),
-            forced: true,
-            onChange: (newQuality) => {
-              if (hls.currentLevel !== newQuality) {
-                hls.currentLevel = newQuality;
-                updateGearLabel(newQuality);
-              }
-            }
-          }
-        });
-
-        player.config.quality.labels = labels;
-        player.quality = {
-          default: -1,
-          options: qualityOptions.map(q => q.value),
-          forced: true,
-          onChange: (newQuality) => {
-            if (hls.currentLevel !== newQuality) {
-              hls.currentLevel = newQuality;
-              updateGearLabel(newQuality);
-            }
-          }
-        };
-
-        setTimeout(() => {
-          const buttons = document.querySelectorAll('[data-plyr="quality"]');
-          buttons.forEach((btn) => {
-            const value = parseInt(btn.value);
-            const label = labels[value] || 'Auto';
-            btn.innerHTML = `<span>${label}</span>`;
-          });
-
-          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-          if (selected) {
-            const selectedValue = parseInt(selected.value);
-            updateGearLabel(selectedValue);
-          }
-
-          const controlBar = document.querySelector('.plyr__controls');
-          const playButton = controlBar.querySelector('[data-plyr="play"]');
-          const liveBadge = document.createElement('div');
-          liveBadge.classList.add('live-badge');
-          liveBadge.textContent = 'EN VIVO';
-          if (playButton && playButton.parentNode) {
-            playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
-          }
-
-          // Detectar si es LIVE y ocultar barra de progreso
-          if (hls.levels[0]?.details?.live) {
-            document.querySelector('.plyr').classList.add('is-live');
-          }
-
-        }, 500);
-
-        function updateGearLabel(value) {
-          const label = labels[value] || 'Auto';
-          const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
-          if (menuTriggerSpan) {
-            menuTriggerSpan.textContent = label;
+    const player = new Plyr(video, {
+      controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+      settings: ['quality'],
+      i18n: { quality: 'Calidades' },
+      quality: {
+        default: -1,
+        options: qualityOptions.map(q => q.value),
+        forced: true,
+        onChange: (newQuality) => {
+          if (hls.currentLevel !== newQuality) {
+            hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
           }
         }
+      }
+    });
+
+    player.config.quality.labels = labels;
+    player.quality = {
+      default: -1,
+      options: qualityOptions.map(q => q.value),
+      forced: true,
+      onChange: (newQuality) => {
+        if (hls.currentLevel !== newQuality) {
+          hls.currentLevel = newQuality;
+          updateGearLabel(newQuality);
+        }
+      }
+    };
+
+    setTimeout(() => {
+      const buttons = document.querySelectorAll('[data-plyr="quality"]');
+      buttons.forEach((btn) => {
+        const value = parseInt(btn.value);
+        const label = labels[value] || 'Auto';
+        btn.innerHTML = `<span>${label}</span>`;
       });
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = source;
-      new Plyr(video);
+
+      const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
+      if (selected) {
+        const selectedValue = parseInt(selected.value);
+        updateGearLabel(selectedValue);
+      }
+
+      const controlBar = document.querySelector('.plyr__controls');
+      const playButton = controlBar.querySelector('[data-plyr="play"]');
+      const liveBadge = document.createElement('div');
+      liveBadge.classList.add('live-badge');
+      liveBadge.textContent = 'EN VIVO';
+
+      // ▶️ Al hacer clic, saltar al final del buffer
+      liveBadge.addEventListener('click', () => {
+        if (video.seekable.length > 0) {
+          const livePoint = video.seekable.end(0);
+          video.currentTime = livePoint;
+          video.play();
+        }
+      });
+
+      if (playButton && playButton.parentNode) {
+        playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
+      }
+
+      // 🔍 Detectar si es stream en vivo (duración infinita)
+      if (!isFinite(video.duration)) {
+        document.querySelector('.plyr').classList.add('is-live');
+      }
+
+    }, 500);
+
+    function updateGearLabel(value) {
+      const label = labels[value] || 'Auto';
+      const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+      if (menuTriggerSpan) {
+        menuTriggerSpan.textContent = label;
+      }
     }
-  </script>
+  });
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = source;
+  new Plyr(video);
+}
+</script>
 
 </body>
 </html>
