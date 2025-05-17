@@ -21,25 +21,25 @@
     }
 
     /* Badge EN VIVO */
-    .plyr__controls .live-badge {
+    .live-badge {
       color: white;
       background-color: #FA1B5E;
       font-size: 12px;
       font-weight: bold;
       padding: 4px 8px;
       border-radius: 4px;
-      margin-left: 10px;
       display: flex;
       align-items: center;
       cursor: pointer;
       transition: background 0.2s ease;
+      margin-right: 8px;
     }
 
-    .plyr__controls .live-badge:hover {
+    .live-badge:hover {
       background-color: #e0134e;
     }
 
-    .plyr__controls .live-badge::before {
+    .live-badge::before {
       content: '';
       display: inline-block;
       width: 8px;
@@ -55,16 +55,7 @@
       50% { opacity: 0.3; }
     }
 
-    /* Eliminar efectos de foco azul */
-    .plyr__control:focus,
-    .plyr__control:hover,
-    .plyr__control[aria-expanded="true"] {
-      outline: none !important;
-      box-shadow: none !important;
-      background: transparent !important;
-    }
-
-    /* Estilo iOS para menú de calidad */
+    /* iOS menú calidad */
     .plyr__menu__container {
       background-color: #0C161C94 !important;
       backdrop-filter: saturate(180%) blur(55px) !important;
@@ -83,15 +74,43 @@
       color: #00bfff !important;
     }
 
-    /* Ocultar todo rastro de progreso en EN VIVO */
-    .is-live .plyr__progress__container,
-    .is-live .plyr__progress,
-    .is-live .plyr__time--current,
-    .is-live .plyr__time--duration,
-    .is-live input[data-plyr="seek"],
-    .is-live .plyr__tooltip {
+    /* Ocultar barra de progreso y tiempo */
+    .plyr__progress,
+    .plyr__progress__container,
+    .plyr__time,
+    .plyr__time--current,
+    .plyr__time--duration,
+    input[data-plyr="seek"],
+    .plyr__tooltip {
       display: none !important;
     }
+
+    /* Estética minimalista sin focos azules */
+    .plyr__control:focus,
+    .plyr__control:hover,
+    .plyr__control[aria-expanded="true"] {
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
+
+    /* Distribución personalizada de controles */
+    .plyr__controls {
+      justify-content: space-between !important;
+    }
+
+    .plyr__controls__left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .plyr__controls__right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -140,7 +159,7 @@ if (Hls.isSupported()) {
     }, {});
 
     const player = new Plyr(video, {
-      controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+      controls: ['play', 'mute', 'volume', 'settings', 'fullscreen'],
       settings: ['quality'],
       i18n: { quality: 'Calidades' },
       quality: {
@@ -157,38 +176,36 @@ if (Hls.isSupported()) {
     });
 
     player.config.quality.labels = labels;
-    player.quality = {
-      default: -1,
-      options: qualityOptions.map(q => q.value),
-      forced: true,
-      onChange: (newQuality) => {
-        if (hls.currentLevel !== newQuality) {
-          hls.currentLevel = newQuality;
-          updateGearLabel(newQuality);
-        }
-      }
-    };
 
     setTimeout(() => {
-      const buttons = document.querySelectorAll('[data-plyr="quality"]');
-      buttons.forEach((btn) => {
-        const value = parseInt(btn.value);
-        const label = labels[value] || 'Auto';
-        btn.innerHTML = `<span>${label}</span>`;
+      const controlBar = document.querySelector('.plyr__controls');
+
+      // Crear contenedores izquierdo y derecho
+      const leftControls = document.createElement('div');
+      leftControls.className = 'plyr__controls__left';
+      const rightControls = document.createElement('div');
+      rightControls.className = 'plyr__controls__right';
+
+      // Reorganizar controles
+      Array.from(controlBar.children).forEach(child => {
+        if (
+          child.dataset.plyr === 'play' ||
+          child.dataset.plyr === 'mute' ||
+          child.dataset.plyr === 'volume'
+        ) {
+          leftControls.appendChild(child);
+        } else if (
+          child.dataset.plyr === 'settings' ||
+          child.dataset.plyr === 'fullscreen'
+        ) {
+          rightControls.appendChild(child);
+        }
       });
 
-      const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-      if (selected) {
-        const selectedValue = parseInt(selected.value);
-        updateGearLabel(selectedValue);
-      }
-
-      const controlBar = document.querySelector('.plyr__controls');
-      const playButton = controlBar.querySelector('[data-plyr="play"]');
+      // Insertar EN VIVO al principio
       const liveBadge = document.createElement('div');
       liveBadge.classList.add('live-badge');
       liveBadge.textContent = 'EN VIVO';
-
       liveBadge.addEventListener('click', () => {
         if (video.seekable.length > 0) {
           const livePoint = video.seekable.end(0);
@@ -196,10 +213,12 @@ if (Hls.isSupported()) {
           video.play();
         }
       });
+      leftControls.insertBefore(liveBadge, leftControls.firstChild);
 
-      if (playButton && playButton.parentNode) {
-        playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
-      }
+      // Limpiar y reinsertar controles
+      controlBar.innerHTML = '';
+      controlBar.appendChild(leftControls);
+      controlBar.appendChild(rightControls);
 
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
