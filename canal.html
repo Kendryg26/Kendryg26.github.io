@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor EN VIVO con Fullscreen Icono Personalizado</title>
+  <title>Reproductor EN VIVO Pro</title>
 
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
@@ -20,27 +20,90 @@
       background: #000;
     }
 
-    /* ... (mantenemos los estilos anteriores que ya tienes) ... */
+    .plyr__controls .live-badge {
+      color: white;
+      background-color: #FA1B5E;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
 
-    /* Estilos anteriores omitidos para brevedad, ya están incluidos en tu código actual */
+    .plyr__controls .live-badge:hover {
+      background-color: #e0134e;
+    }
+
+    .plyr__controls .live-badge::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .plyr__control:focus,
+    .plyr__control:hover,
+    .plyr__control[aria-expanded="true"] {
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
+
+    .plyr__menu__container {
+      background-color: #0C161C94 !important;
+      backdrop-filter: saturate(180%) blur(55px) !important;
+      -webkit-backdrop-filter: saturate(180%) blur(55px) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+      color: white !important;
+    }
+
+    .plyr__menu__container .plyr__control {
+      background: transparent !important;
+      color: white !important;
+    }
+
+    .plyr__menu__container .plyr__control[aria-checked="true"] {
+      color: #00bfff !important;
+    }
+
+    .is-live .plyr__progress__container,
+    .is-live .plyr__progress,
+    .is-live .plyr__time--current,
+    .is-live .plyr__time--duration,
+    .is-live input[data-plyr="seek"],
+    .is-live .plyr__tooltip {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
 
-<!-- NUEVO SVG PERSONALIZADO para fullscreen -->
+<!-- ÍCONO FULLSCREEN PERSONALIZADO -->
 <svg style="display: none;">
   <symbol id="custom-fullscreen-enter" viewBox="0 0 24 24">
-    <path d="M4 4h6v2H6v4H4V4zm16 0v6h-2V6h-4V4h6zm0 16h-6v-2h4v-4h2v6zM4 20v-6h2v4h4v2H4z" fill="white"/>
+    <path fill="white" d="M4 4h6v2H6v4H4V4zm16 0v6h-2V6h-4V4h6zm0 16h-6v-2h4v-4h2v6zM4 20v-6h2v4h4v2H4z"/>
   </symbol>
   <symbol id="custom-fullscreen-exit" viewBox="0 0 24 24">
-    <path d="M6 16h4v2H4v-6h2v4zm12-8h-4V6h6v6h-2V8zm0 8v-4h2v6h-6v-2h4zM8 8v4H6V6h6v2H8z" fill="white"/>
+    <path fill="white" d="M6 16h4v2H4v-6h2v4zm12-8h-4V6h6v6h-2V8zm0 8v-4h2v6h-6v-2h4zM8 8v4H6V6h6v2H8z"/>
   </symbol>
 </svg>
 
-<!-- Video -->
 <video id="player" controls playsinline></video>
 
-<!-- Scripts -->
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
@@ -86,22 +149,8 @@ if (Hls.isSupported()) {
       controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
       settings: ['quality'],
       i18n: { quality: 'Calidades' },
-      iconUrl: '#', // Desactiva los íconos predeterminados
       fullscreen: { enabled: true, fallback: true }
     });
-
-    // Sobrescribir los íconos fullscreen
-    setTimeout(() => {
-      const fsButton = document.querySelector('[data-plyr="fullscreen"]');
-      if (fsButton) {
-        fsButton.innerHTML = `
-          <svg class="icon--not-pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-enter"></use></svg>
-          <svg class="icon--pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-exit"></use></svg>
-          <span class="label--pressed plyr__sr-only">Exit fullscreen</span>
-          <span class="label--not-pressed plyr__sr-only">Enter fullscreen</span>
-        `;
-      }
-    }, 1000);
 
     player.config.quality.labels = labels;
     player.quality = {
@@ -117,6 +166,7 @@ if (Hls.isSupported()) {
     };
 
     setTimeout(() => {
+      // Aplicar etiquetas a calidad
       const buttons = document.querySelectorAll('[data-plyr="quality"]');
       buttons.forEach((btn) => {
         const value = parseInt(btn.value);
@@ -126,10 +176,10 @@ if (Hls.isSupported()) {
 
       const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
       if (selected) {
-        const selectedValue = parseInt(selected.value);
-        updateGearLabel(selectedValue);
+        updateGearLabel(parseInt(selected.value));
       }
 
+      // Botón EN VIVO
       const controlBar = document.querySelector('.plyr__controls');
       const playButton = controlBar.querySelector('[data-plyr="play"]');
       const liveBadge = document.createElement('div');
@@ -138,8 +188,7 @@ if (Hls.isSupported()) {
 
       liveBadge.addEventListener('click', () => {
         if (video.seekable.length > 0) {
-          const livePoint = video.seekable.end(0);
-          video.currentTime = livePoint;
+          video.currentTime = video.seekable.end(0);
           video.play();
         }
       });
@@ -148,9 +197,22 @@ if (Hls.isSupported()) {
         playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
       }
 
+      // Detectar si es stream EN VIVO
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
       }
+
+      // Reemplazar ícono de fullscreen
+      const fsButton = document.querySelector('[data-plyr="fullscreen"]');
+      if (fsButton) {
+        fsButton.innerHTML = `
+          <svg class="icon--not-pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-enter"></use></svg>
+          <svg class="icon--pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-exit"></use></svg>
+          <span class="label--pressed plyr__sr-only">Exit fullscreen</span>
+          <span class="label--not-pressed plyr__sr-only">Enter fullscreen</span>
+        `;
+      }
+
     }, 500);
 
     function updateGearLabel(value) {
