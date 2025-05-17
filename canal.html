@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor EN VIVO Pro</title>
+  <title>Reproductor EN VIVO Estilo iOS</title>
+
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -91,7 +92,7 @@
 </head>
 <body>
 
-<!-- Iconos personalizados fullscreen -->
+<!-- Iconos personalizados para fullscreen -->
 <svg style="display: none;">
   <symbol id="custom-fullscreen-enter" viewBox="0 0 24 24">
     <path fill="white" d="M4 4h6v2H6v4H4V4zm16 0v6h-2V6h-4V4h6zm0 16h-6v-2h4v-4h2v6zM4 20v-6h2v4h4v2H4z"/>
@@ -105,6 +106,7 @@
 
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
 <script>
 const video = document.getElementById('player');
 const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
@@ -137,6 +139,7 @@ if (Hls.isSupported()) {
     });
 
     qualityOptions.unshift({ label: 'Auto', value: -1 });
+
     const labels = qualityOptions.reduce((acc, q) => {
       acc[q.value] = q.label;
       return acc;
@@ -149,18 +152,6 @@ if (Hls.isSupported()) {
       fullscreen: { enabled: true, fallback: true }
     });
 
-    player.config.quality = {
-      default: -1,
-      options: qualityOptions.map(q => q.value),
-      forced: true,
-      onChange: (newQuality) => {
-        if (hls.currentLevel !== newQuality) {
-          hls.currentLevel = newQuality;
-          updateGearLabel(newQuality);
-        }
-      }
-    };
-
     setTimeout(() => {
       const buttons = document.querySelectorAll('[data-plyr="quality"]');
       buttons.forEach((btn) => {
@@ -170,7 +161,10 @@ if (Hls.isSupported()) {
       });
 
       const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-      if (selected) updateGearLabel(parseInt(selected.value));
+      if (selected) {
+        const selectedValue = parseInt(selected.value);
+        updateGearLabel(selectedValue);
+      }
 
       const controlBar = document.querySelector('.plyr__controls');
       const playButton = controlBar.querySelector('[data-plyr="play"]');
@@ -180,7 +174,8 @@ if (Hls.isSupported()) {
 
       liveBadge.addEventListener('click', () => {
         if (video.seekable.length > 0) {
-          video.currentTime = video.seekable.end(0);
+          const livePoint = video.seekable.end(0);
+          video.currentTime = livePoint;
           video.play();
         }
       });
@@ -193,15 +188,17 @@ if (Hls.isSupported()) {
         document.querySelector('.plyr').classList.add('is-live');
       }
 
+      // Icono personalizado fullscreen
       const fsButton = document.querySelector('[data-plyr="fullscreen"]');
       if (fsButton) {
         fsButton.innerHTML = `
           <svg class="icon--not-pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-enter"></use></svg>
           <svg class="icon--pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-exit"></use></svg>
-          <span class="label--pressed plyr__sr-only">Exit fullscreen</span>
-          <span class="label--not-pressed plyr__sr-only">Enter fullscreen</span>
+          <span class="label--pressed plyr__sr-only">Salir de pantalla completa</span>
+          <span class="label--not-pressed plyr__sr-only">Pantalla completa</span>
         `;
       }
+
     }, 500);
 
     function updateGearLabel(value) {
@@ -217,5 +214,6 @@ if (Hls.isSupported()) {
   new Plyr(video);
 }
 </script>
+
 </body>
 </html>
