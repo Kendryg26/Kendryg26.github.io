@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr EN VIVO</title>
+  <title>Reproductor EN VIVO Estilo iOS</title>
 
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
@@ -20,6 +20,7 @@
       background: #000;
     }
 
+    /* EN VIVO badge */
     .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -54,7 +55,7 @@
       50% { opacity: 0.3; }
     }
 
-    /* Eliminar efectos azules */
+    /* Sin efectos azules al tocar botones */
     .plyr__control:focus,
     .plyr__control:hover,
     .plyr__control[aria-expanded="true"] {
@@ -63,10 +64,29 @@
       background: transparent !important;
     }
 
-    /* Ocultar progreso y duración si es EN VIVO */
+    /* Ocultar progreso y duración en vivo */
     .is-live .plyr__progress,
     .is-live .plyr__time--duration {
       display: none !important;
+    }
+
+    /* Menú de calidad estilo iOS */
+    .plyr__menu__container {
+      background-color: #0C161C94 !important;
+      backdrop-filter: saturate(180%) blur(55px) !important;
+      -webkit-backdrop-filter: saturate(180%) blur(55px) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+      color: white !important;
+    }
+
+    .plyr__menu__container .plyr__control {
+      background: transparent !important;
+      color: white !important;
+    }
+
+    .plyr__menu__container .plyr__control[aria-checked="true"] {
+      color: #00bfff !important;
     }
   </style>
 </head>
@@ -165,7 +185,6 @@ if (Hls.isSupported()) {
       liveBadge.classList.add('live-badge');
       liveBadge.textContent = 'EN VIVO';
 
-      // ▶️ Al hacer clic, saltar al final del buffer
       liveBadge.addEventListener('click', () => {
         if (video.seekable.length > 0) {
           const livePoint = video.seekable.end(0);
@@ -178,7 +197,6 @@ if (Hls.isSupported()) {
         playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
       }
 
-      // 🔍 Detectar si es stream en vivo (duración infinita)
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
       }
