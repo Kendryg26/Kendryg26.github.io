@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor con Calidad en Settings</title>
+  <title>Reproductor HLS con selector de calidad</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -13,11 +13,9 @@
     }
 
     .video-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
     }
 
     video {
@@ -27,17 +25,16 @@
     }
 
     .plyr {
-      --plyr-color-main: #00aaff;
-      border-radius: 0;
+      --plyr-color-main: #1db954;
     }
 
-    .plyr__menu__container .plyr__control[role="menuitemradio"]::after {
-      content: attr(data-label);
-      margin-left: auto;
-      margin-right: 0.5rem;
-      font-size: 0.75rem;
-      font-weight: bold;
-      color: #ccc;
+    /* Estilo para mostrar badge HD o SD */
+    .plyr__menu__value .plyr__badge {
+      background: #333;
+      padding: 2px 6px;
+      font-size: 10px;
+      margin-left: 5px;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -53,7 +50,7 @@
     const video = document.getElementById('player');
     const source = 'https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8';
 
-    const player = new Plyr('#player', {
+    const player = new Plyr(video, {
       controls: [
         'play', 'progress', 'current-time', 'mute', 'volume',
         'settings', 'fullscreen'
@@ -67,58 +64,43 @@
       hls.attachMedia(video);
 
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
-        const availableQualities = hls.levels.map((l, i) => ({
+        const qualities = hls.levels.map((l, i) => ({
           label: `${l.height}p`,
           value: i,
-          resolution: l.height,
           badge: l.height >= 720 ? 'HD' : 'SD'
         }));
 
-        // Eliminar duplicados
-        const uniqueQualities = availableQualities.filter(
-          (v, i, a) => a.findIndex(t => t.label === v.label) === i
+        // Quitar duplicados
+        const unique = qualities.filter(
+          (q, i, self) => i === self.findIndex(t => t.label === q.label)
         );
 
-        // Agrega opción Auto
-        uniqueQualities.unshift({ label: 'Auto', value: -1, badge: '' });
+        // Insertar "Auto"
+        unique.unshift({ label: 'Auto', value: -1, badge: '' });
 
+        // Establecer valores en Plyr
         player.options.quality = {
           default: -1,
-          options: uniqueQualities.map(q => q.value),
+          options: unique.map(q => q.value),
           forced: true,
-          onChange: (val) => {
-            hls.currentLevel = val;
-          }
+          onChange: val => hls.currentLevel = val,
         };
 
-        // Agrega el menú de calidad personalizado
-        player.setQualityMenu = () => {
-          const menu = player.elements.settings.quality;
-
-          if (!menu) return;
-
-          // Limpiar y agregar opciones
-          menu.innerHTML = '';
-          uniqueQualities.forEach(q => {
-            const btn = document.createElement('button');
-            btn.className = 'plyr__control';
-            btn.setAttribute('role', 'menuitemradio');
-            btn.setAttribute('data-plyr', 'quality');
-            btn.setAttribute('value', q.value);
-            btn.setAttribute('data-label', q.badge || '');
-            btn.innerText = q.label;
-
-            btn.addEventListener('click', () => {
-              player.quality = q.value;
-              hls.currentLevel = q.value;
-            });
-
-            menu.appendChild(btn);
+        // Forzar creación visual del menú
+        const qualityMenu = document.querySelector('[aria-controls*="quality"]')?.parentElement;
+        if (qualityMenu) {
+          const menuItems = qualityMenu.querySelectorAll('[data-plyr="quality"]');
+          menuItems.forEach(item => {
+            const value = parseInt(item.value);
+            const q = unique.find(q => q.value === value);
+            if (q && q.badge) {
+              const badge = document.createElement('span');
+              badge.className = 'plyr__menu__value';
+              badge.innerHTML = `<span class="plyr__badge">${q.badge}</span>`;
+              item.querySelector('span')?.appendChild(badge);
+            }
           });
-        };
-
-        // Inicializar menú
-        player.setQualityMenu();
+        }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
