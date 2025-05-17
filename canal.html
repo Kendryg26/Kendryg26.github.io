@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reproductor Plyr Optimizado</title>
+  <title>Reproductor Plyr con Calidades y En Vivo</title>
 
+  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -13,120 +14,157 @@
       height: 100%;
       background: #000;
     }
+
     video {
       width: 100%;
       height: 100vh;
       background: #000;
     }
+
+    .live-indicator {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: red;
+      color: white;
+      padding: 6px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 8px;
+      z-index: 9999;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.5px;
+      display: none;
+    }
   </style>
 </head>
 <body>
 
-<video id="player" controls playsinline></video>
+  <!-- Reproductor -->
+  <video id="player" controls playsinline></video>
 
-<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- Indicador "EN VIVO" -->
+  <div class="live-indicator">🔴 EN VIVO</div>
 
-<script>
-  const video = document.getElementById('player');
-  const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
+  <!-- Plyr y HLS.js -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-  if (Hls.isSupported()) {
-    // ⚙️ OPCIONES AVANZADAS para rendimiento
-    const hls = new Hls({
-      maxBufferLength: 10,              // Reduce lag al cambiar calidad
-      maxMaxBufferLength: 30,
-      abrEwmaDefaultEstimate: 500000,   // Mejora estimación de red inicial
-      abrBandWidthFactor: 0.95,
-      abrBandWidthUpFactor: 0.9,
-      enableWorker: true,
-      lowLatencyMode: true,             // Menor latencia si el servidor lo permite
-    });
+  <script>
+    const video = document.getElementById('player');
+    const liveBadge = document.querySelector('.live-indicator');
+    const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
-    hls.loadSource(source);
-    hls.attachMedia(video);
-
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      const levels = hls.levels;
-      const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
-
-      const qualityOptions = sortedLevels.map((level) => {
-        const height = level.height || 0;
-        const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
-        return {
-          label: `${height}p ${bitrate}`,
-          value: levels.indexOf(level),
-        };
+    if (Hls.isSupported()) {
+      const hls = new Hls({
+        maxBufferLength: 10,
+        maxMaxBufferLength: 30,
+        abrEwmaDefaultEstimate: 500000,
+        abrBandWidthFactor: 0.95,
+        abrBandWidthUpFactor: 0.9,
+        enableWorker: true,
+        lowLatencyMode: true,
       });
 
-      qualityOptions.unshift({ label: 'Auto', value: -1 });
+      hls.loadSource(source);
+      hls.attachMedia(video);
 
-      const labels = qualityOptions.reduce((acc, q) => {
-        acc[q.value] = q.label;
-        return acc;
-      }, {});
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        const levels = hls.levels;
+        const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
 
-      const player = new Plyr(video, {
-        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
-        settings: ['quality'],
-        i18n: {
-          quality: 'Calidades',
-        },
-        quality: {
+        const qualityOptions = sortedLevels.map((level) => {
+          const height = level.height || 0;
+          const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
+          return {
+            label: `${height}p ${bitrate}`,
+            value: levels.indexOf(level),
+          };
+        });
+
+        qualityOptions.unshift({ label: 'Auto', value: -1 });
+
+        const labels = qualityOptions.reduce((acc, q) => {
+          acc[q.value] = q.label;
+          return acc;
+        }, {});
+
+        const player = new Plyr(video, {
+          controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+          settings: ['quality'],
+          i18n: {
+            quality: 'Calidades',
+          },
+          quality: {
+            default: -1,
+            options: qualityOptions.map(q => q.value),
+            forced: true,
+            onChange: (newQuality) => {
+              if (hls.currentLevel !== newQuality) {
+                hls.currentLevel = newQuality;
+                updateGearLabel(newQuality);
+              }
+            }
+          }
+        });
+
+        player.config.quality.labels = labels;
+        player.quality = {
           default: -1,
           options: qualityOptions.map(q => q.value),
           forced: true,
           onChange: (newQuality) => {
-            // Solo cambiar si es necesario
             if (hls.currentLevel !== newQuality) {
               hls.currentLevel = newQuality;
               updateGearLabel(newQuality);
             }
           }
+        };
+
+        setTimeout(() => {
+          const buttons = document.querySelectorAll('[data-plyr="quality"]');
+          buttons.forEach((btn) => {
+            const value = parseInt(btn.value);
+            const label = labels[value] || 'Auto';
+            btn.innerHTML = `<span>${label}</span>`;
+          });
+
+          const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
+          if (selected) {
+            const selectedValue = parseInt(selected.value);
+            updateGearLabel(selectedValue);
+          }
+        }, 500);
+
+        function updateGearLabel(value) {
+          const label = labels[value] || 'Auto';
+          const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+          if (menuTriggerSpan) {
+            menuTriggerSpan.textContent = label;
+          }
         }
       });
 
-      player.config.quality.labels = labels;
-      player.quality = {
-        default: -1,
-        options: qualityOptions.map(q => q.value),
-        forced: true,
-        onChange: (newQuality) => {
-          if (hls.currentLevel !== newQuality) {
-            hls.currentLevel = newQuality;
-            updateGearLabel(newQuality);
-          }
-        }
-      };
+      // Mostrar/Ocultar el badge EN VIVO según estado
+      video.addEventListener('playing', () => {
+        liveBadge.style.display = 'block';
+      });
 
-      setTimeout(() => {
-        const buttons = document.querySelectorAll('[data-plyr="quality"]');
-        buttons.forEach((btn) => {
-          const value = parseInt(btn.value);
-          const label = labels[value] || 'Auto';
-          btn.innerHTML = `<span>${label}</span>`;
-        });
+      video.addEventListener('pause', () => {
+        liveBadge.style.display = 'none';
+      });
 
-        const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
-        if (selected) {
-          const selectedValue = parseInt(selected.value);
-          updateGearLabel(selectedValue);
-        }
-      }, 500);
+      video.addEventListener('error', () => {
+        liveBadge.style.display = 'none';
+      });
 
-      function updateGearLabel(value) {
-        const label = labels[value] || 'Auto';
-        const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
-        if (menuTriggerSpan) {
-          menuTriggerSpan.textContent = label;
-        }
-      }
-    });
-  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = source;
-    new Plyr(video);
-  }
-</script>
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = source;
+      new Plyr(video);
+      liveBadge.style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
