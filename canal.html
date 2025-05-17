@@ -1,17 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plyr M3U8 con Calidad</title>
+  <title>Reproductor Plyr con Selector de Calidad</title>
 
+  <!-- Plyr CSS -->
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background: #000;
       height: 100%;
+      background: #000;
     }
     video {
       width: 100%;
@@ -21,56 +24,61 @@
 </head>
 <body>
 
-<video id="player" controls playsinline></video>
+  <video id="player" controls playsinline></video>
 
-<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- Plyr JS -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
-<script>
-  const video = document.getElementById('player');
-  const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
+  <!-- HLS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-  let player;
+  <script>
+    const video = document.getElementById('player');
+    const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
+    let player;
 
-  if (Hls.isSupported()) {
-    const hls = new Hls();
-    hls.loadSource(source);
-    hls.attachMedia(video);
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(source);
+      hls.attachMedia(video);
 
-    hls.on(Hls.Events.MANIFEST_PARSED, function () {
-      const availableQualities = hls.levels.map((l, i) => ({
-        label: l.height + "p",
-        value: i
-      }));
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        const levels = hls.levels;
 
-      // Agregar opción de auto
-      availableQualities.push({ label: 'Auto', value: -1 });
+        const availableQualities = levels.map((level, index) => {
+          const height = level.height || 0;
+          const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
+          return {
+            label: `${height}p ${bitrate}`,
+            value: index,
+          };
+        });
 
-      player = new Plyr(video, {
-        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
-        settings: ['quality'],
-        quality: {
-          default: -1,
-          options: availableQualities.map(q => q.value),
-          forced: true,
-          onChange: (newQuality) => {
-            hls.currentLevel = newQuality;
+        availableQualities.push({ label: 'Auto', value: -1 });
+
+        player = new Plyr(video, {
+          controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+          settings: ['quality'],
+          quality: {
+            default: -1,
+            options: availableQualities.map(q => q.value),
+            forced: true,
+            onChange: (newQuality) => {
+              hls.currentLevel = newQuality;
+            },
           },
-        }
-      });
+        });
 
-      // Mostrar etiquetas legibles
-      player.config.quality.options = availableQualities.map(q => q.value);
-      player.config.quality.labels = availableQualities.reduce((acc, q) => {
-        acc[q.value] = q.label;
-        return acc;
-      }, {});
-    });
-  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = source;
-    player = new Plyr(video);
-  }
-</script>
+        player.config.quality.labels = availableQualities.reduce((acc, q) => {
+          acc[q.value] = q.label;
+          return acc;
+        }, {});
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = source;
+      player = new Plyr(video);
+    }
+  </script>
 
 </body>
 </html>
