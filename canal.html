@@ -20,25 +20,26 @@
       background: #000;
     }
 
-    .live-badge {
+    /* Badge EN VIVO */
+    .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
       font-size: 12px;
       font-weight: bold;
       padding: 4px 8px;
       border-radius: 4px;
+      margin-left: 10px;
       display: flex;
       align-items: center;
       cursor: pointer;
       transition: background 0.2s ease;
-      margin-left: 10px;
     }
 
-    .live-badge:hover {
+    .plyr__controls .live-badge:hover {
       background-color: #e0134e;
     }
 
-    .live-badge::before {
+    .plyr__controls .live-badge::before {
       content: '';
       display: inline-block;
       width: 8px;
@@ -54,7 +55,16 @@
       50% { opacity: 0.3; }
     }
 
-    /* Estilo menú iOS */
+    /* Eliminar efectos de foco azul */
+    .plyr__control:focus,
+    .plyr__control:hover,
+    .plyr__control[aria-expanded="true"] {
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
+
+    /* Estilo iOS para menú de calidad */
     .plyr__menu__container {
       background-color: #0C161C94 !important;
       backdrop-filter: saturate(180%) blur(55px) !important;
@@ -73,32 +83,14 @@
       color: #00bfff !important;
     }
 
-    /* Ocultar solo progreso y tiempo */
-    .plyr__progress,
-    .plyr__progress__container,
-    .plyr__time,
-    .plyr__time--current,
-    .plyr__time--duration,
-    input[data-plyr="seek"],
-    .plyr__tooltip {
+    /* Ocultar todo rastro de progreso en EN VIVO */
+    .is-live .plyr__progress__container,
+    .is-live .plyr__progress,
+    .is-live .plyr__time--current,
+    .is-live .plyr__time--duration,
+    .is-live input[data-plyr="seek"],
+    .is-live .plyr__tooltip {
       display: none !important;
-    }
-
-    .plyr__controls {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .left-controls,
-    .right-controls {
-      display: flex;
-      align-items: center;
-    }
-
-    .left-controls .plyr__control,
-    .right-controls .plyr__control {
-      margin-right: 5px;
     }
   </style>
 </head>
@@ -114,21 +106,85 @@ const video = document.getElementById('player');
 const source = "https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8";
 
 if (Hls.isSupported()) {
-  const hls = new Hls({ lowLatencyMode: true });
+  const hls = new Hls({
+    maxBufferLength: 10,
+    maxMaxBufferLength: 30,
+    abrEwmaDefaultEstimate: 500000,
+    abrBandWidthFactor: 0.95,
+    abrBandWidthUpFactor: 0.9,
+    enableWorker: true,
+    lowLatencyMode: true,
+  });
+
   hls.loadSource(source);
   hls.attachMedia(video);
 
   hls.on(Hls.Events.MANIFEST_PARSED, () => {
-    const player = new Plyr(video, {
-      controls: ['play', 'mute', 'settings', 'fullscreen'],
-      settings: ['quality'],
-      i18n: { quality: 'Calidades' }
+    const levels = hls.levels;
+    const sortedLevels = [...levels].sort((a, b) => a.height - b.height);
+
+    const qualityOptions = sortedLevels.map((level) => {
+      const height = level.height || 0;
+      const bitrate = level.bitrate ? Math.round(level.bitrate / 1000) + ' kbps' : '';
+      return {
+        label: `${height}p ${bitrate}`,
+        value: levels.indexOf(level),
+      };
     });
 
+    qualityOptions.unshift({ label: 'Auto', value: -1 });
+
+    const labels = qualityOptions.reduce((acc, q) => {
+      acc[q.value] = q.label;
+      return acc;
+    }, {});
+
+    const player = new Plyr(video, {
+      controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
+      settings: ['quality'],
+      i18n: { quality: 'Calidades' },
+      quality: {
+        default: -1,
+        options: qualityOptions.map(q => q.value),
+        forced: true,
+        onChange: (newQuality) => {
+          if (hls.currentLevel !== newQuality) {
+            hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
+          }
+        }
+      }
+    });
+
+    player.config.quality.labels = labels;
+    player.quality = {
+      default: -1,
+      options: qualityOptions.map(q => q.value),
+      forced: true,
+      onChange: (newQuality) => {
+        if (hls.currentLevel !== newQuality) {
+          hls.currentLevel = newQuality;
+          updateGearLabel(newQuality);
+        }
+      }
+    };
+
     setTimeout(() => {
-      // Agrega EN VIVO a la izquierda del botón de play
-      const controls = document.querySelector('.plyr__controls');
-      const playButton = controls.querySelector('[data-plyr="play"]');
+      const buttons = document.querySelectorAll('[data-plyr="quality"]');
+      buttons.forEach((btn) => {
+        const value = parseInt(btn.value);
+        const label = labels[value] || 'Auto';
+        btn.innerHTML = `<span>${label}</span>`;
+      });
+
+      const selected = document.querySelector('[data-plyr="quality"][aria-checked="true"]');
+      if (selected) {
+        const selectedValue = parseInt(selected.value);
+        updateGearLabel(selectedValue);
+      }
+
+      const controlBar = document.querySelector('.plyr__controls');
+      const playButton = controlBar.querySelector('[data-plyr="play"]');
       const liveBadge = document.createElement('div');
       liveBadge.classList.add('live-badge');
       liveBadge.textContent = 'EN VIVO';
@@ -142,9 +198,22 @@ if (Hls.isSupported()) {
       });
 
       if (playButton && playButton.parentNode) {
-        playButton.parentNode.insertBefore(liveBadge, playButton);
+        playButton.parentNode.insertBefore(liveBadge, playButton.nextSibling);
       }
+
+      if (!isFinite(video.duration)) {
+        document.querySelector('.plyr').classList.add('is-live');
+      }
+
     }, 500);
+
+    function updateGearLabel(value) {
+      const label = labels[value] || 'Auto';
+      const menuTriggerSpan = document.querySelector('.plyr__menu__container [aria-haspopup="true"] span');
+      if (menuTriggerSpan) {
+        menuTriggerSpan.textContent = label;
+      }
+    }
   });
 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
   video.src = source;
