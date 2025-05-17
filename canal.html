@@ -2,29 +2,41 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor HLS con Plyr</title>
+  <title>Reproductor Fullscreen con Plyr</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
-    body {
-      background-color: #0e0e0e;
+    html, body {
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+    }
+
+    .video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #000;
     }
 
     .plyr {
-      width: 90%;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      border-radius: 0;
     }
   </style>
 </head>
 <body>
 
-  <video id="player" controls playsinline></video>
+  <div class="video-wrapper">
+    <video id="player" controls playsinline></video>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
@@ -33,12 +45,18 @@
     const source = 'https://srv811402.hstgr.cloud/streaming/hls/stream.m3u8';
 
     if (Hls.isSupported()) {
-      const hls = new Hls();
+      const hls = new Hls({
+        // Aquí puedes configurar para manejar calidades manualmente más adelante
+      });
+
       hls.loadSource(source);
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
         video.play();
       });
+
+      // Acceso a niveles de calidad
+      window.hls = hls; // Para futuras extensiones
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
       video.addEventListener('loadedmetadata', function () {
@@ -47,10 +65,15 @@
     }
 
     const player = new Plyr('#player', {
-      controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+      controls: [
+        'play', 'progress', 'current-time', 'mute', 'volume',
+        'settings', 'fullscreen' // Aquí está el botón de pantalla completa
+      ],
       ratio: '16:9',
       autoplay: true
     });
+
+    window.player = player;
   </script>
 
 </body>
