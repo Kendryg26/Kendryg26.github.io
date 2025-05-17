@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,6 +21,7 @@
       background: #000;
     }
 
+    /* Badge EN VIVO */
     .plyr__controls .live-badge {
       color: white;
       background-color: #FA1B5E;
@@ -54,6 +56,7 @@
       50% { opacity: 0.3; }
     }
 
+    /* Eliminar efectos de foco azul */
     .plyr__control:focus,
     .plyr__control:hover,
     .plyr__control[aria-expanded="true"] {
@@ -62,6 +65,7 @@
       background: transparent !important;
     }
 
+    /* Estilo iOS para menú de calidad */
     .plyr__menu__container {
       background-color: #0C161C94 !important;
       backdrop-filter: saturate(180%) blur(55px) !important;
@@ -80,6 +84,7 @@
       color: #00bfff !important;
     }
 
+    /* Ocultar todo rastro de progreso en EN VIVO */
     .is-live .plyr__progress__container,
     .is-live .plyr__progress,
     .is-live .plyr__time--current,
@@ -91,16 +96,6 @@
   </style>
 </head>
 <body>
-
-<!-- Iconos personalizados para fullscreen -->
-<svg style="display: none;">
-  <symbol id="custom-fullscreen-enter" viewBox="0 0 24 24">
-    <path fill="white" d="M4 4h6v2H6v4H4V4zm16 0v6h-2V6h-4V4h6zm0 16h-6v-2h4v-4h2v6zM4 20v-6h2v4h4v2H4z"/>
-  </symbol>
-  <symbol id="custom-fullscreen-exit" viewBox="0 0 24 24">
-    <path fill="white" d="M6 16h4v2H4v-6h2v4zm12-8h-4V6h6v6h-2V8zm0 8v-4h2v6h-6v-2h4zM8 8v4H6V6h6v2H8z"/>
-  </symbol>
-</svg>
 
 <video id="player" controls playsinline></video>
 
@@ -149,8 +144,31 @@ if (Hls.isSupported()) {
       controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'],
       settings: ['quality'],
       i18n: { quality: 'Calidades' },
-      fullscreen: { enabled: true, fallback: true }
+      quality: {
+        default: -1,
+        options: qualityOptions.map(q => q.value),
+        forced: true,
+        onChange: (newQuality) => {
+          if (hls.currentLevel !== newQuality) {
+            hls.currentLevel = newQuality;
+            updateGearLabel(newQuality);
+          }
+        }
+      }
     });
+
+    player.config.quality.labels = labels;
+    player.quality = {
+      default: -1,
+      options: qualityOptions.map(q => q.value),
+      forced: true,
+      onChange: (newQuality) => {
+        if (hls.currentLevel !== newQuality) {
+          hls.currentLevel = newQuality;
+          updateGearLabel(newQuality);
+        }
+      }
+    };
 
     setTimeout(() => {
       const buttons = document.querySelectorAll('[data-plyr="quality"]');
@@ -186,17 +204,6 @@ if (Hls.isSupported()) {
 
       if (!isFinite(video.duration)) {
         document.querySelector('.plyr').classList.add('is-live');
-      }
-
-      // Icono personalizado fullscreen
-      const fsButton = document.querySelector('[data-plyr="fullscreen"]');
-      if (fsButton) {
-        fsButton.innerHTML = `
-          <svg class="icon--not-pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-enter"></use></svg>
-          <svg class="icon--pressed" aria-hidden="true"><use xlink:href="#custom-fullscreen-exit"></use></svg>
-          <span class="label--pressed plyr__sr-only">Salir de pantalla completa</span>
-          <span class="label--not-pressed plyr__sr-only">Pantalla completa</span>
-        `;
       }
 
     }, 500);
