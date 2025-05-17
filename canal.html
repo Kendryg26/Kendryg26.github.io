@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Disney+ Style Player</title>
+  <title>Reproductor con Calidad en Settings</title>
   <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <style>
     html, body {
@@ -10,57 +10,40 @@
       padding: 0;
       height: 100%;
       background-color: #000;
-      font-family: 'Arial', sans-serif;
     }
 
-    .video-container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+    .video-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     video {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      background: black;
     }
 
-    .plyr--video {
+    .plyr {
       --plyr-color-main: #00aaff;
+      border-radius: 0;
     }
 
-    .video-title {
-      position: absolute;
-      top: 30px;
-      width: 100%;
-      text-align: center;
-      color: white;
-      font-size: 2rem;
+    .plyr__menu__container .plyr__control[role="menuitemradio"]::after {
+      content: attr(data-label);
+      margin-left: auto;
+      margin-right: 0.5rem;
+      font-size: 0.75rem;
       font-weight: bold;
-      text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
-      z-index: 10;
-    }
-
-    .plyr__controls {
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-      padding-bottom: 20px;
-    }
-
-    .plyr__progress {
-      height: 5px;
-    }
-
-    .plyr__time {
-      font-size: 14px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
 
-  <div class="video-container">
-    <div class="video-title">Marvel Studios' Avengers: Endgame</div>
+  <div class="video-wrapper">
     <video id="player" controls playsinline></video>
   </div>
 
@@ -72,17 +55,71 @@
 
     const player = new Plyr('#player', {
       controls: [
-        'play', 'rewind', 'fast-forward', 'progress', 'current-time', 'mute', 'volume',
+        'play', 'progress', 'current-time', 'mute', 'volume',
         'settings', 'fullscreen'
       ],
       settings: ['quality'],
-      autoplay: true
     });
 
     if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(source);
       hls.attachMedia(video);
+
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        const availableQualities = hls.levels.map((l, i) => ({
+          label: `${l.height}p`,
+          value: i,
+          resolution: l.height,
+          badge: l.height >= 720 ? 'HD' : 'SD'
+        }));
+
+        // Eliminar duplicados
+        const uniqueQualities = availableQualities.filter(
+          (v, i, a) => a.findIndex(t => t.label === v.label) === i
+        );
+
+        // Agrega opción Auto
+        uniqueQualities.unshift({ label: 'Auto', value: -1, badge: '' });
+
+        player.options.quality = {
+          default: -1,
+          options: uniqueQualities.map(q => q.value),
+          forced: true,
+          onChange: (val) => {
+            hls.currentLevel = val;
+          }
+        };
+
+        // Agrega el menú de calidad personalizado
+        player.setQualityMenu = () => {
+          const menu = player.elements.settings.quality;
+
+          if (!menu) return;
+
+          // Limpiar y agregar opciones
+          menu.innerHTML = '';
+          uniqueQualities.forEach(q => {
+            const btn = document.createElement('button');
+            btn.className = 'plyr__control';
+            btn.setAttribute('role', 'menuitemradio');
+            btn.setAttribute('data-plyr', 'quality');
+            btn.setAttribute('value', q.value);
+            btn.setAttribute('data-label', q.badge || '');
+            btn.innerText = q.label;
+
+            btn.addEventListener('click', () => {
+              player.quality = q.value;
+              hls.currentLevel = q.value;
+            });
+
+            menu.appendChild(btn);
+          });
+        };
+
+        // Inicializar menú
+        player.setQualityMenu();
+      });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = source;
     }
