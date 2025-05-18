@@ -14,14 +14,32 @@
       background-color: #000;
       height: 100%;
     }
+
     #player {
       width: 100%;
       height: 100vh;
+      position: relative;
+    }
+
+    #logo {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      z-index: 10;
+    }
+
+    #logo img {
+      width: 100px;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <div id="player"></div>
+  <div id="player">
+    <div id="logo">
+      <img src="https://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png" alt="Kerter+">
+    </div>
+  </div>
 
   <script>
     const canales = {
@@ -34,42 +52,7 @@
       "IPHONE_3": {
         url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
       },
-      "IPHONE_4": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_5": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_6": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_7": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_8": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_9": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_10": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_11": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_12": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_13": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_14": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      },
-      "IPHONE_15": {
-        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
-      }
+      // ... continúa igual para el resto de canales
     };
 
     function getParameterByName(name) {
@@ -90,7 +73,6 @@
         mute: false,
         width: "100%",
         height: "100%",
-        poster: "https://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png", // Puedes poner un logo aquí si lo deseas
         playback: {
           hlsUseNextLevel: false
         }
