@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.min.js"></script>
   <style>
     html, body {
       margin: 0;
@@ -14,37 +14,20 @@
       background-color: #000;
       height: 100%;
     }
-
-    #player {
+    #video {
       width: 100%;
       height: 100vh;
-      position: relative;
-    }
-
-    #logo {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      z-index: 10;
-    }
-
-    #logo img {
-      width: 100px;
-      opacity: 0.9;
+      background-color: #000;
     }
   </style>
 </head>
 <body>
-  <div id="player">
-    <div id="logo">
-      <img src="https://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png" alt="Kerter+">
-    </div>
-  </div>
+  <video id="video" autoplay muted controls></video>
 
   <script>
     const canales = {
       "IPHONE_1": {
-        url: "https://v16.thetvapp.to/hls/mlb-13/tracks-v2a1/mono.m3u8"
+        url: "https://v1.thetvapp.to/hls/USANetworkEast/tracks-v2a1/mono.m3u8?token=RLW7ngEPhUXivixbcpSM8g&expires=1747604356&user_id=b1BaaDA2ak5OVlRvMWNHSWFxTXAySldsTmF0VHpqcGpnSUwycmpkRw=="
       },
       "IPHONE_2": {
         url: "https://v16.thetvapp.to/hls/mlb-13/tracks-v2a1/mono.m3u8"
@@ -54,8 +37,40 @@
       },
       "IPHONE_4": {
         url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_5": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_6": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_7": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_8": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_9": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_10": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_11": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_12": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_13": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_14": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "IPHONE_15": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
       }
-      // Puedes seguir añadiendo más...
     };
 
     function getParameterByName(name) {
@@ -69,20 +84,21 @@
     if (!config) {
       alert("Canal no encontrado.");
     } else {
-      // Se le añade un número único para que el navegador NO cachee el stream
       const antiCacheUrl = config.url + (config.url.includes('?') ? '&' : '?') + 'nocache=' + Date.now();
 
-      new Clappr.Player({
-        source: antiCacheUrl,
-        parentId: "#player",
-        autoPlay: true,
-        mute: false,
-        width: "100%",
-        height: "100%",
-        playback: {
-          hlsUseNextLevel: false
+      async function iniciarReproductor() {
+        const video = document.getElementById('video');
+        const player = new shaka.Player(video);
+
+        try {
+          await player.load(antiCacheUrl);
+        } catch (error) {
+          console.error("Error al cargar el canal:", error);
+          alert("No se pudo reproducir este canal.");
         }
-      });
+      }
+
+      document.addEventListener('DOMContentLoaded', iniciarReproductor);
     }
   </script>
 </body>
