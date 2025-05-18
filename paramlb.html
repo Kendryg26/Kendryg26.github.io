@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproductor EN VIVO</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100vh;
+    }
+
+    #player {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <video id="player" playsinline controls></video>
+
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const canales = {
+      "AZTECA_GT": {
+        url: "https://ch1-tva.duin.dev/hls/stream.m3u8"
+      },
+      "AZTECA_7_VPN": {
+        url: "https://mdstrm.com/live-stream-playlist/609ad46a7a441137107d7a81.m3u8"
+      },
+      "ESPN_NL": {
+        url: "https://.../NL_000107_019441.mpd",
+        k1: "3e999e38253834baa63881ea451f2839",
+        k2: "99b88d9cde1d8986decbc5985da87187"
+      },
+      "ZDF_DE": {
+        url: "https://.../zdf-de-hd/cenc-default.mpd",
+        k1: "7757d3fa8cdab673a2dd9f3ed7b41360",
+        k2: "96e498b70eeecfc0164ed4e0a78e36f3"
+      }
+    };
+
+    function getParameterByName(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name);
+    }
+
+    const canalId = getParameterByName('id');
+    const config = canales[canalId];
+
+    if (!config) {
+      alert("Canal no encontrado o no disponible.");
+    } else {
+      const player = new Plyr('#player');
+
+      if (config.url.includes(".m3u8")) {
+        player.source = {
+          type: 'video',
+          sources: [{
+            src: config.url,
+            type: 'application/x-mpegURL',
+          }]
+        };
+      } else if (config.url.includes(".mpd") && config.k1 && config.k2) {
+        player.source = {
+          type: 'video',
+          sources: [{
+            src: config.url,
+            type: 'application/dash+xml'
+          }],
+          drm: {
+            clearKey: {
+              [config.k1]: config.k2
+            }
+          }
+        };
+      } else {
+        alert("Formato no soportado.");
+      }
+    }
+  </script>
+</body>
+</html>
