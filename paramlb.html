@@ -2,11 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor EN VIVO</title>
+  <title>Kerter+ EN VIVO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.5/shaka-player.compiled.min.js"></script>
+  <script src="https://cdn.jwplayer.com/libraries/KB5zFt7A.js"></script>
+  <script>
+    jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+  </script>
   <style>
     html, body {
       margin: 0;
@@ -14,20 +17,20 @@
       background-color: #000;
       height: 100%;
     }
-    #video {
+
+    #player {
       width: 100%;
       height: 100vh;
-      background-color: #000;
     }
   </style>
 </head>
 <body>
-  <video id="video" autoplay muted controls></video>
+  <div id="player"></div>
 
   <script>
     const canales = {
       "IPHONE_1": {
-        url: "https://v1.thetvapp.to/hls/USANetworkEast/tracks-v2a1/mono.m3u8?token=RLW7ngEPhUXivixbcpSM8g&expires=1747604356&user_id=b1BaaDA2ak5OVlRvMWNHSWFxTXAySldsTmF0VHpqcGpnSUwycmpkRw=="
+        url: "https://v16.thetvapp.to/hls/mlb-13/tracks-v2a1/mono.m3u8"
       },
       "IPHONE_2": {
         url: "https://v16.thetvapp.to/hls/mlb-13/tracks-v2a1/mono.m3u8"
@@ -86,19 +89,19 @@
     } else {
       const antiCacheUrl = config.url + (config.url.includes('?') ? '&' : '?') + 'nocache=' + Date.now();
 
-      async function iniciarReproductor() {
-        const video = document.getElementById('video');
-        const player = new shaka.Player(video);
-
-        try {
-          await player.load(antiCacheUrl);
-        } catch (error) {
-          console.error("Error al cargar el canal:", error);
-          alert("No se pudo reproducir este canal.");
-        }
-      }
-
-      document.addEventListener('DOMContentLoaded', iniciarReproductor);
+      jwplayer("player").setup({
+        file: antiCacheUrl,
+        width: "100%",
+        height: "100%",
+        autostart: true,
+        stretching: "exactfit",
+        logo: {
+          file: "https://kerterplus.com/wp-content/uploads/2023/09/Diseno-sin-titulo-60.png",
+          position: "bottom-left"
+        },
+        cast: {},
+        sharing: {}
+      });
     }
   </script>
 </body>
