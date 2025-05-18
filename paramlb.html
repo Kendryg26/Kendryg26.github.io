@@ -6,26 +6,23 @@
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
   <style>
-    body, html {
+    html, body {
       margin: 0;
       padding: 0;
-      background: #000;
-      height: 100vh;
+      background-color: #000;
+      height: 100%;
     }
-
     #player {
       width: 100%;
       height: 100vh;
-      background-color: #000;
     }
   </style>
 </head>
 <body>
-  <video id="player" playsinline controls></video>
+  <div id="player"></div>
 
-  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
   <script>
     const canales = {
       "IPHONE_1": {
@@ -84,34 +81,20 @@
     const config = canales[canalId];
 
     if (!config) {
-      alert("Canal no encontrado o no disponible.");
+      alert("Canal no encontrado.");
     } else {
-      const player = new Plyr('#player');
-
-      if (config.url.includes(".m3u8")) {
-        player.source = {
-          type: 'video',
-          sources: [{
-            src: config.url,
-            type: 'application/x-mpegURL',
-          }]
-        };
-      } else if (config.url.includes(".mpd") && config.k1 && config.k2) {
-        player.source = {
-          type: 'video',
-          sources: [{
-            src: config.url,
-            type: 'application/dash+xml'
-          }],
-          drm: {
-            clearKey: {
-              [config.k1]: config.k2
-            }
-          }
-        };
-      } else {
-        alert("Formato no soportado.");
-      }
+      new Clappr.Player({
+        source: config.url,
+        parentId: "#player",
+        autoPlay: true,
+        mute: false,
+        width: "100%",
+        height: "100%",
+        poster: "", // Puedes poner un logo aquí si lo deseas
+        playback: {
+          hlsUseNextLevel: false
+        }
+      });
     }
   </script>
 </body>
