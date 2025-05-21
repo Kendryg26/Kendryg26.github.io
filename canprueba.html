@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Canales Deportivos</title>
+  <script src="https://cdn.jsdelivr.net/npm/jwplayer@8.32.0/jwplayer.js"></script>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .canal {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .canal img {
+      width: 60px;
+      height: auto;
+      margin-right: 15px;
+      border-radius: 6px;
+    }
+    .canal span {
+      flex: 1;
+    }
+    .canal button {
+      background: #0af;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #player {
+      margin-top: 20px;
+      max-width: 100%;
+      height: 360px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lista de Canales Deportivos</h2>
+  <div id="lista-canales"></div>
+
+  <div id="player"></div>
+
+  <script>
+    const canales = [
+      {
+        nombre: "30A Golf Kingdom",
+        logo: "https://golfkingdom.net/wp-content/uploads/2022/04/golf-kingdom-st.jpg",
+        url: "https://30a-tv.com/feeds/vidaa/golf.m3u8"
+      },
+      {
+        nombre: "Šport (1080p)",
+        logo: "https://i.imgur.com/oAtcxNZ.png",
+        url: "http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8"
+      },
+      {
+        nombre: "A Spor",
+        logo: "https://i.imgur.com/ZhkZzLf.png",
+        url: "https://trkvz-live.daioncdn.net/aspor/aspor.m3u8"
+      }
+      // Puedes seguir agregando más canales aquí manualmente.
+    ];
+
+    canales.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+    const contenedor = document.getElementById("lista-canales");
+
+    canales.forEach(canal => {
+      const div = document.createElement("div");
+      div.className = "canal";
+      div.innerHTML = `
+        <img src="${canal.logo}" alt="${canal.nombre}">
+        <span>${canal.nombre}</span>
+        <button onclick="reproducir('${canal.url}')">Ver</button>
+        <button onclick="copiarURL('${canal.url}')">Copiar URL</button>
+      `;
+      contenedor.appendChild(div);
+    });
+
+    function reproducir(url) {
+      jwplayer("player").setup({
+        file: url,
+        width: "100%",
+        aspectratio: "16:9",
+        autostart: true
+      });
+    }
+
+    function copiarURL(url) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert("URL copiada al portapapeles");
+      });
+    }
+  </script>
+
+</body>
+</html>
