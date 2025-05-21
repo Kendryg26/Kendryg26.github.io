@@ -17,18 +17,14 @@
         "url": "https://ok.ru/videoembed/9980861680365?nochat=1&autoplay=1"
     }, 
         {
-        "title": "Barcelona vs. Villarreal (1T)",
+        "title": "Barcelona vs. Villarreal",
         "fecha": "18/05/2025",
         "league": "La Liga",
         "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=f4ws3ojq32opjjj6u3faw1jlu_image-header_pRow_1746615936000&quality=70",
-        "url": "https://ok.ru/videoembed/9992961919535?nochat=1&autoplay=1"
-    }, 
-        {
-        "title": "Barcelona vs. Villarreal (2T)",
-        "fecha": "18/05/2025",
-        "league": "La Liga",
-        "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=f4ws3ojq32opjjj6u3faw1jlu_image-header_pRow_1746615936000&quality=70",
-        "url": "https://ok.ru/videoembed/9992961985071?nochat=1&autoplay=1"
+                 "url": [
+      { "label": "Primer Tiempo", "url": "https://ok.ru/videoembed/9992961919535?nochat=1&autoplay=1" },
+      { "label": "Segundo Tiempo", "url": "https://ok.ru/videoembed/9992961985071?nochat=1&autoplay=1" }
+    ]
     }, 
         
         {
