@@ -1,0 +1,34 @@
+{
+  "carrusel": [
+    {
+      "titulo": "Destino Secreto",
+      "categoria": "Thriller, Suspenso",
+      "imagen": "https://kerterplus.com/wp-content/uploads/2024/07/Diseno-sin-titulo-68.png",
+      "link": "https://tusitio.com/ver/destino-secreto"
+    },
+    {
+      "titulo": "Planeta Alfa",
+      "categoria": "Ciencia Ficción, Aventura",
+      "imagen": "https://kerterplus.com/wp-content/uploads/2024/07/Diseno-sin-titulo-68.png",
+      "link": "https://tusitio.com/ver/planeta-alfa"
+    },
+    {
+      "titulo": "Código Infierno",
+      "categoria": "Acción, Tecnología",
+      "imagen": "https://kerterplus.com/wp-content/uploads/2024/07/Diseno-sin-titulo-68.png",
+      "link": "https://tusitio.com/ver/codigo-infierno"
+    },
+    {
+      "titulo": "Ecos del Pasado",
+      "categoria": "Drama, Misterio",
+      "imagen": "https://kerterplus.com/wp-content/uploads/2024/07/Diseno-sin-titulo-68.png",
+      "link": "https://tusitio.com/ver/ecos-del-pasado"
+    },
+    {
+      "titulo": "Reino Desconocido",
+      "categoria": "Fantasía, Épico",
+      "imagen": "https://kerterplus.com/wp-content/uploads/2024/07/Diseno-sin-titulo-68.png",
+      "link": "https://tusitio.com/ver/reino-desconocido"
+    }
+  ]
+}
