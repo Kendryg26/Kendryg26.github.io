@@ -39,18 +39,36 @@
 
     const auth = btoa(`${key}:${secret}`);
 
+    async function getAllPages(endpoint) {
+      const perPage = 100;
+      let page = 1;
+      let allData = [];
+      let hasMore = true;
+
+      while (hasMore) {
+        const res = await fetch(`${site}/wp-json/wc/v3/${endpoint}&per_page=${perPage}&page=${page}`, {
+          headers: { 'Authorization': `Basic ${auth}` }
+        });
+
+        const data = await res.json();
+
+        if (data && data.length > 0) {
+          allData = allData.concat(data);
+          page++;
+        } else {
+          hasMore = false;
+        }
+      }
+
+      return allData;
+    }
+
     async function getStats() {
       try {
         const [orders, products, customers] = await Promise.all([
-          fetch(`${site}/wp-json/wc/v3/orders?status=completed&per_page=100`, {
-            headers: { 'Authorization': `Basic ${auth}` }
-          }).then(res => res.json()),
-          fetch(`${site}/wp-json/wc/v3/products?per_page=100`, {
-            headers: { 'Authorization': `Basic ${auth}` }
-          }).then(res => res.json()),
-          fetch(`${site}/wp-json/wc/v3/customers?per_page=100`, {
-            headers: { 'Authorization': `Basic ${auth}` }
-          }).then(res => res.json()),
+          getAllPages('orders?status=completed'),
+          getAllPages('products?'),
+          getAllPages('customers?'),
         ]);
 
         const totalSales = orders.reduce((sum, order) => sum + parseFloat(order.total), 0);
