@@ -1,7 +1,17 @@
 [
    {
   "title": "Portugal vs. España",
-  "fecha": "10/06/2025",
+  "fecha": "08/06/2025",
+  "league": "UEFA Nations League",
+  "img": "https://i.ytimg.com/vi/QNuMhAIS4QM/maxresdefault.jpg",
+  "url": [
+      { "label": "Primer Tiempo", "url": "https://ok.ru/videoembed/10055476775471?nochat=1&autoplay=1" },
+      { "label": "Segundo Tiempo", "url": "https://ok.ru/videoembed/10055476841007?nochat=1&autoplay=1" }
+    ]
+},
+   {
+  "title": "Alemania vs. Francia",
+  "fecha": "08/06/2025",
   "league": "UEFA Nations League",
   "img": "https://image.discovery.indazn.com/ca/v2/ca/image?id=bvlee57nsibwwltouv2l4vxa4_image-header_pCa_1749160205000&quality=70",
   "url": [
